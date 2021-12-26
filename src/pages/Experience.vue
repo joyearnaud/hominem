@@ -5,23 +5,29 @@
       <h2 v-html="$page.metadata.siteDescription" />
     </header>
     <section class="experience">
-      <div
+      <ExperienceList
         v-for="edge in $page.allExperience.edges"
         :key="edge.node.id"
         :experience="edge.node"
-      >
-        {{ edge.node.client }}
+      />
       </div>
     </section>
   </Layout>
 </template>
 
 <script>
+
+import ExperienceList from "@/components/ExperienceList";
+
 export default {
+  components: {
+    ExperienceList,
+  },
   metaInfo: {
-    title: "A simple blog",
+    title: "A simple CV",
   },
 };
+
 </script>
 
 <page-query>
@@ -34,6 +40,12 @@ query {
     edges {
       node {
         id
+				fileInfo {
+          extension
+          directory
+          path
+          name
+        }
         client
         project
         role
@@ -42,6 +54,7 @@ query {
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
         path
+        content
       }
     }
   }
