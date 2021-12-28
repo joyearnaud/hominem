@@ -2,28 +2,26 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.experience" />
+      <h2 v-html="$page.metadata.thoughts" />
     </header>
-    <section class="experience">
-      <ExperienceList
-        v-for="edge in $page.allExperience.edges"
+    <section class="posts">
+      <PostList
+        v-for="edge in $page.allPost.edges"
         :key="edge.node.id"
-        :experience="edge.node"
+        :post="edge.node"
       />
-      </div>
     </section>
   </Layout>
 </template>
 
 <script>
-import ExperienceList from "@/components/ExperienceList";
-
+import PostList from "@/components/PostList";
 export default {
   components: {
-    ExperienceList,
+    PostList,
   },
   metaInfo: {
-    title: "A simple CV",
+    title: "A simple blog",
   },
 };
 </script>
@@ -33,29 +31,21 @@ query {
   metadata {
     siteName
     siteDescription
-    experience
+    thoughts
   }
-  allExperience {
+  allPost {
+    totalCount
     edges {
       node {
         id
-				fileInfo {
-          extension
-          directory
-          path
-          name
-        }
-        client
-        project
-        role
+        title
         timeToRead
         description
-        datestart(format: "D MMMM YYYY")
-        dateend(format: "D MMMM YYYY")
+        date (format: "D MMMM YYYY")
         path
-        content
       }
     }
+
   }
 }
 </page-query>

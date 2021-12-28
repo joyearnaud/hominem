@@ -2,14 +2,15 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.home" />
+      <h2 v-html="$page.metadata.about" />
     </header>
-    <section class="home"></section>
+    <section class="about"></section>
   </Layout>
 </template>
 
 <script>
 import PostList from "@/components/PostList";
+
 export default {
   components: {
     PostList,
@@ -25,7 +26,7 @@ query {
   metadata {
     siteName
     siteDescription
-    home
+    about
   }
 }
 </page-query>

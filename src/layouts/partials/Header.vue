@@ -6,9 +6,9 @@
           <div class="menu col-1">LOGO</div>
           <div class="menu col-10">
             <g-link class="navlink" to="/">HOME</g-link>
-            <g-link class="navlink" to="/">ABOUT</g-link>
+            <g-link class="navlink" to="/about">ABOUT</g-link>
             <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
-            <g-link class="navlink" to="/">THOUGHTS</g-link>
+            <g-link class="navlink" to="/thoughts">THOUGHTS</g-link>
           </div>
           <div class="col-1 switch">
             <ToggleTheme />

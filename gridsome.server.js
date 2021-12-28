@@ -5,10 +5,36 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const elements = [
+  {
+    name: 'home',
+    desc: 'A simple blog designed with Gridsome'
+  },
+  {
+    name: 'about',
+    desc: 'about page'
+  },
+  {
+    name: 'experience',
+    desc: 'experience page'
+  },
+  {
+    name: 'thoughts',
+    desc: 'thoughts page'
+  },
+
+]
+
+function addAllToMetadata (api, els) {
+  els.forEach(el => {
+    api.loadSource(async store => {
+      store.addMetadata(el.name, el.desc)
+    })
+  });
+}
+
 module.exports = function (api) {
-  api.loadSource(({ addContentType }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api
-  })
+  addAllToMetadata(api, elements)
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
