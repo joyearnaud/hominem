@@ -7,7 +7,7 @@
         Built with
         <a class="link" href="//gridsome.org">Gridsome</a>
         & Made with ❤️ by
-        <a class="link" href="//twitter.com/lauragift_">Gift Egwuenu</a>
+        <a class="link" href="//github.com/joyearnaud">Arnaud JOYE</a>
       </p>
     </div>
   </main>
@@ -38,10 +38,11 @@ export default {
 
 :root [data-theme="dark"] {
   --text-color: #ffffff;
-  --border-color: #fecd43;
+  --border-color: #425BB5;
   --bkg-color: #030200;
   --line-color: #fecd43;
 }
+
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;

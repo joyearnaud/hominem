@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 import ExperienceList from "@/components/ExperienceList";
 
 export default {

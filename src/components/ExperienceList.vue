@@ -29,22 +29,14 @@
 </template>
 
 <script>
-// import 'bootstrap/dist/css/bootstrap.css'
-// import 'bootstrap-vue/dist/bootstrap-vue.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default {
   props: ["experience"],
 };
-
-AOS.init()
 </script>
 
 <style>
 #experience {
-    padding: 20px 0;
-    background: #f3f3f3
+    padding: 1px 10px 1px 1px;
 }
 
 .experience-row {
@@ -79,7 +71,7 @@ AOS.init()
 }
 
 .timeline:before {
-    background-color: black;
+    background-color: var(--text-color);
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -96,19 +88,21 @@ AOS.init()
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #425BB5;
+    background-color: var(--border-color);
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #425BB5;
+    box-shadow: inset 40em 0 0 0 var(--border-color);
 }
 
 .timeline-event-copy {
-    padding: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     position: relative;
     top: -1.875em;
     left: 4em;
-    width: 100%;
+    width: auto;
 }
 
 .timeline-event-copy h3 {
@@ -135,7 +129,7 @@ AOS.init()
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: #425BB5;
+    background-color: var(--border-color);
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -153,13 +147,18 @@ AOS.init()
     -webkit-transition-delay: 0.1s;
     -webkit-transition: box-shadow 0.5s ease-in 0.1s;
     transition: box-shadow 0.5s ease-in 0.1s;
-    color: white;
+    color: var(--bkg-color);
     font-size: 12px;
     font-weight: bold;
-    background-color: black;
-    box-shadow: inset 0 0 0 0em #425BB5;
+    background-color: var(--text-color);
+    box-shadow: inset 0 0 0 0em var(--text-color);
     display: inline-block;
+    margin-top: 0.2em;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail).content {
+  padding-bottom: 0.1em;
 }
 </style>
