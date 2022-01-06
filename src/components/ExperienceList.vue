@@ -19,6 +19,11 @@
                               </h3>
                             <h4 class="role" v-html="experience.role" />
                             <p class="content" v-html="experience.content" />
+                            <div>
+                                <span class="skill badge rounded-pill" v-for="k in experience.keyword" v-bind:key="k">
+                                    {{k}}
+                                </span>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -160,5 +165,27 @@ export default {
 
 .timeline-event-copy p:not(.timeline-event-thumbnail).content {
   padding-bottom: 0.1em;
+}
+
+.skill {
+    background-color: var(--text-color);
+    color: var(--border-color);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .6em;
+    margin-right: .5em;
+    margin-top: .5em;
+}
+
+.skill:hover {
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    background-color: var(--border-color);
+    color: var(--bkg-color);;
 }
 </style>

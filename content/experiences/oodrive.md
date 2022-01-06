@@ -7,8 +7,15 @@ description: "Migration d'un système de facturation maison vers une solution su
 datestart: 2020-01-05
 dateend: 2022-01-05
 keyword:
-  - test
-  - toto
+  - "Java 1.8"
+  - "Spring Boot"
+  - "Kotlin"
+  - "Docker"
+  - "EKL"
+  - "JavaScript"
+  - "Vuejs"
+  - "Golang"
+  - "Gitlab CI"
 ---
 
 ## Tache
@@ -18,8 +25,3 @@ keyword:
 - Ecriture des besoins fonctionnels et techniques
 - Rédaction de documentations
 - Animation de projet
-
-## Skills
-
-- Toto
-- tata

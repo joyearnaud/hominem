@@ -15,8 +15,3 @@ dateend: 2020-27-12
 - Ecriture des besoins fonctionnels et techniques
 - Rédaction de documentations
 - Animation de projet
-
-## Skills
-
-- Toto
-- tata

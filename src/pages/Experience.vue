@@ -10,7 +10,6 @@
         :key="edge.node.id"
         :experience="edge.node"
       />
-      </div>
     </section>
   </Layout>
 </template>
@@ -35,7 +34,7 @@ query {
     siteDescription
     experience
   }
-  allExperience {
+  allExperience (sort: [{by: "datestart"}]) { 
     edges {
       node {
         id
@@ -52,6 +51,7 @@ query {
         description
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
+        keyword
         path
         content
       }
