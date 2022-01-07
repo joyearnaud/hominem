@@ -2,7 +2,14 @@
   <div>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo" to="/">LOGO</g-link>
+        <g-link class="navlink logo" to="/"
+          ><g-image
+            src="~/assets/cosmonaut.png"
+            width="40"
+            blur="40"
+            immediate="true"
+          />
+        </g-link>
         <g-link class="navlink" to="/about">ABOUT</g-link>
         <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
         <g-link class="navlink" to="/thoughts">THOUGHTS</g-link>
@@ -31,13 +38,13 @@ export default {
   font-family: "Stylish";
   text-decoration: inherit;
   color: var(--border-color);
-  transition: color-color 1s;
+  transition: color 2s;
   padding: 1em;
 }
 .navbar a:hover {
   text-decoration: underline;
-  color: inherit;
-  transition: color-color 0.3s;
+  color: var(--link-color);
+  transition: color 0.3s;
 }
 .layout-header {
   width: 103%;
