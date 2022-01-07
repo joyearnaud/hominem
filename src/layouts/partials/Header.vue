@@ -1,20 +1,18 @@
 <template>
   <div>
-    <header class="layout-header">
-      <nav class="nav">
-        <div class="row justify-content-start">
-          <div class="menu col-1">LOGO</div>
-          <div class="menu col-10">
-            <g-link class="navlink" to="/">HOME</g-link>
-            <g-link class="navlink" to="/about">ABOUT</g-link>
-            <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
-            <g-link class="navlink" to="/thoughts">THOUGHTS</g-link>
-          </div>
-          <div class="col-1 switch">
-            <ToggleTheme />
-          </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <g-link class="navlink logo" to="/">LOGO</g-link>
+        <g-link class="navlink" to="/about">ABOUT</g-link>
+        <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
+        <g-link class="navlink" to="/thoughts">THOUGHTS</g-link>
+        <div class="col-1 switch">
+          <ToggleTheme />
         </div>
-      </nav>
+      </div>
+    </nav>
+    <header class="layout-header">
+      <nav class="nav"></nav>
     </header>
   </div>
 </template>
@@ -29,6 +27,18 @@ export default {
 </script>
 
 <style>
+.navbar a {
+  font-family: "Stylish";
+  text-decoration: inherit;
+  color: var(--border-color);
+  transition: color-color 1s;
+  padding: 1em;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  color: inherit;
+  transition: color-color 0.3s;
+}
 .layout-header {
   width: 103%;
   font-family: "Stylish";
