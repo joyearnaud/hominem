@@ -25,7 +25,7 @@ export default {
 <style>
 :root {
   --text-color: #333;
-  --border-color: #fecd43;
+  --border-color: #feae45;
   --bkg-color: white;
   --line-color: #cdc8c5;
 }

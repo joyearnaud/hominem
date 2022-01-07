@@ -38,8 +38,6 @@ export default {
   margin: 0px auto;
   margin-top: 10px;
 }
-.nav {
-}
 .row {
   width: 100%;
 }
