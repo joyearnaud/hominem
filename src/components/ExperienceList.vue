@@ -103,7 +103,8 @@ export default {
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-  box-shadow: inset 40em 0 0 0 var(--border-color);
+  background-color: var(--link-color);
+  transition: background 1s;
 }
 
 .timeline-event-copy {
@@ -150,21 +151,20 @@ export default {
 }
 
 .timeline-event-thumbnail {
-  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  /* -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
   -webkit-transition: box-shadow 0.5s ease-in;
   -webkit-transition-delay: 0.1s;
-  -webkit-transition: box-shadow 0.5s ease-in 0.1s;
-  transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in 0.1s; */
   color: var(--bkg-color);
   font-size: 12px;
   font-weight: bold;
   background-color: var(--text-color);
-  box-shadow: inset 0 0 0 0em var(--text-color);
   display: inline-block;
   margin-top: 0.2em;
   margin-bottom: 1.2em;
   padding: 0.25em 1em 0.2em 1em;
+  transition: background 2s;
 }
 
 .timeline-event-copy p:not(.timeline-event-thumbnail).content {
@@ -201,7 +201,7 @@ export default {
   transition: color 1s;
 }
 .timeline a:hover {
-  color: var(--border-color);
+  color: var(--link-color);
   text-decoration: inherit;
   transition: color 0.3s;
 }

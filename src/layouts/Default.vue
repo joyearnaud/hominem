@@ -28,19 +28,22 @@ export default {
   --border-color: #feae45;
   --bkg-color: white;
   --line-color: #cdc8c5;
+  --link-color: #7a5422;
 }
 :root [data-theme="sepia"] {
   --text-color: #433422;
   --border-color: #00a672;
   --bkg-color: #f1e7d0;
   --line-color: #00a672;
+  --link-color: #015238;
 }
 
 :root [data-theme="dark"] {
   --text-color: #ffffff;
-  --border-color: #425BB5;
+  --border-color: #425bb5;
   --bkg-color: #030200;
   --line-color: #fecd43;
+  --link-color: #587af7;
 }
 
 body {
