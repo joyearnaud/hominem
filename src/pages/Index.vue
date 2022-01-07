@@ -2,7 +2,7 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.home" />
+      <h2>home</h2>
     </header>
     <section class="home"></section>
   </Layout>
@@ -25,7 +25,6 @@ query {
   metadata {
     siteName
     siteDescription
-    home
   }
 }
 </page-query>

@@ -2,7 +2,7 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.thoughts" />
+      <h2>thoughts</h2>
     </header>
     <section class="posts">
       <PostList
@@ -31,7 +31,6 @@ query {
   metadata {
     siteName
     siteDescription
-    thoughts
   }
   allPost {
     totalCount

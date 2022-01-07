@@ -2,7 +2,7 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.experience" />
+      <h2>experience</h2>
     </header>
     <section class="experience">
       <ExperienceList
@@ -32,18 +32,11 @@ query {
   metadata {
     siteName
     siteDescription
-    experience
   }
   allExperience (sort: [{by: "datestart"}]) { 
     edges {
       node {
         id
-				fileInfo {
-          extension
-          directory
-          path
-          name
-        }
         client
         project
         role
@@ -51,7 +44,10 @@ query {
         description
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
-        keyword
+        keywords {
+          name
+          note
+        }
         path
         content
       }
