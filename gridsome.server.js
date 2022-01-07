@@ -15,6 +15,18 @@ module.exports = function (api) {
   })
 
   api.loadSource(actions => {
+    actions.addSchemaTypes(
+      `
+      type Experience implements Node @infer {
+        keywords: [Keyword]
+      }
+      type Keyword {
+        id: ID!
+        name: String
+        note: Int
+      }
+      `
+    )
     // Add nodes to collections: https://gridsome.org/docs/data-store-api/#add-nodes-to-collections
     const test = actions.addCollection({
       typeName: 'test'

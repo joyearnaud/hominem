@@ -9,7 +9,8 @@ module.exports = {
   siteDescription: 'A simple blog designed with Gridsome',
   templates: {
     Post: '/blog/:title',
-    Experience: '/experience/:client'
+    Experience: '/experience/:client',
+    Skill: '/skill/:name',
   },
   plugins: [
     {
@@ -24,6 +25,13 @@ module.exports = {
       options: {
         path: 'content/experiences/**/*.md',
         typeName: 'Experience',
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/skills/**/*.md',
+        typeName: 'Skill',
       }
     },
   ],
