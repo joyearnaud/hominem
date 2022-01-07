@@ -15,6 +15,7 @@ module.exports = function (api) {
   })
 
   api.loadSource(actions => {
+    // Add nodes to collections: https://gridsome.org/docs/data-store-api/#add-nodes-to-collections
     const test = actions.addCollection({
       typeName: 'test'
     })
