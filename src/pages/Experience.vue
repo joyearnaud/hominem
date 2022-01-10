@@ -33,22 +33,29 @@ query {
     siteName
     siteDescription
   }
-  allExperience (sort: [{by: "datestart"}]) { 
+  allExperience(sort: [{ by: "datestart" }]) {
     edges {
       node {
         id
         client
+        path
         project
         role
         timeToRead
         description
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
-        keywords {
-          name
-          note
+        info {
+          skills {
+            id
+            name
+            path
+          }
+          keywords {
+            name
+            note
+          }
         }
-        path
         content
       }
     }

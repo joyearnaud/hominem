@@ -15,22 +15,40 @@ module.exports = function (api) {
   })
 
   api.loadSource(actions => {
+    // actions.addSchemaResolvers({
+    //   Skill: {
+    //     id: {
+    //       type: 'ID!',
+    //       resolve(obj) {
+    //         return `${obj.name}`
+    //       }
+    //     }
+    //   }
+    // })
+
     actions.addSchemaTypes(
       `
       type Experience implements Node @infer {
+
+        info: Info,
+      }
+      type Info {
+        desc: String!
+        skills: [Skill] @reference(by: "name")
         keywords: [Keyword]
       }
       type Keyword {
         id: ID!
-        name: String
-        note: Int
+        name: String!
+        note: Int,
       }
       `
-    )
+    );
+
     // Add nodes to collections: https://gridsome.org/docs/data-store-api/#add-nodes-to-collections
     const test = actions.addCollection({
       typeName: 'test'
-    })
+    });
 
     test.addNode({
       title: 'My first blog post',
@@ -43,8 +61,12 @@ module.exports = function (api) {
           name: {local:"tata", interna: "eeee"}
         }
     ]
-    })
-  
+    });
+
+    const experiences = actions.addCollection('Experience');
+    const skills = actions.addCollection('Skill');
+    // makes all ids in the `tags` field reference a `Tag`
+    experiences.addReference('skills', 'Skill');
   })
 
 }
