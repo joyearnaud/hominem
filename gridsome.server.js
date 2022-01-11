@@ -29,13 +29,8 @@ module.exports = function (api) {
     actions.addSchemaTypes(
       `
       type Experience implements Node @infer {
-
-        info: Info,
-      }
-      type Info {
-        desc: String!
-        skills: [Skill] @reference(by: "name")
-        keywords: [Keyword]
+        keySkill: Skill @reference,
+        skills: [Skill] @reference(by: "name"),
       }
       type Keyword {
         id: ID!
@@ -64,9 +59,9 @@ module.exports = function (api) {
     });
 
     const experiences = actions.addCollection('Experience');
-    const skills = actions.addCollection('Skill');
+    const skill = actions.addCollection('Skill');
     // makes all ids in the `tags` field reference a `Tag`
-    experiences.addReference('skills', 'Skill');
+    experiences.addReference('skill', 'Skill');
   })
 
 }

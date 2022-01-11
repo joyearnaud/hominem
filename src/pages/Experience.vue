@@ -45,18 +45,45 @@ query {
         description
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
-        info {
-          skills {
-            id
-            name
-            path
-          }
-          keywords {
-            name
-            note
-          }
+        keySkill {
+          id
+          name
+          path
+        }
+        skills {
+          id
+          name
+          path
+        }
+        keywords {
+          name
+          note
         }
         content
+      }
+    }
+  }
+  allSkill {
+    edges {
+      node {
+        id
+        name
+        categorie
+        level
+        datestart
+        dateend
+        belongsTo {
+          totalCount
+          edges {
+            node {
+              ... on Experience {
+                id
+                client
+                path
+              }
+            }
+          }
+        }
       }
     }
   }
