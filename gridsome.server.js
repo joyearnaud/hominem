@@ -30,7 +30,7 @@ module.exports = function (api) {
       `
       type Experience implements Node @infer {
         keySkill: Skill @reference,
-        skills: [Skill] @reference(by: "name"),
+        skills: [Skill] @reference,
       }
       type Keyword {
         id: ID!
@@ -57,11 +57,6 @@ module.exports = function (api) {
         }
     ]
     });
-
-    const experiences = actions.addCollection('Experience');
-    const skill = actions.addCollection('Skill');
-    // makes all ids in the `tags` field reference a `Tag`
-    experiences.addReference('skill', 'Skill');
   })
 
 }

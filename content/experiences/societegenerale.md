@@ -8,8 +8,8 @@ datestart: 2017-01-05
 dateend: 2020-27-12
 keySkill: "7ea79c2fbc489eae8a0b645e8e7b6304"
 skills:
-  - "Go"
-  - "JavaScript"
+  - "7ea79c2fbc489eae8a0b645e8e7b6304"
+  - "76b24c36ca707d2c579b518c9d23c513"
 keywords:
   - name: "Autre"
     note: 4

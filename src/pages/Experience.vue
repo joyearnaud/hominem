@@ -45,11 +45,6 @@ query {
         description
         datestart(format: "D MMMM YYYY")
         dateend(format: "D MMMM YYYY")
-        keySkill {
-          id
-          name
-          path
-        }
         skills {
           id
           name
