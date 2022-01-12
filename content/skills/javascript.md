@@ -1,7 +1,7 @@
 ---
 name: "JavaScript"
-categorie: "development"
-level: 4 
+categorie: "langage"
+level: 70
 datestart: 2020-01-05
 dateend: 2022-01-05
 ---
