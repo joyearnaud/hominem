@@ -12,7 +12,7 @@
         </g-link>
         <g-link class="navlink" to="/about">ABOUT</g-link>
         <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
-        <g-link class="navlink" to="/thoughts">THOUGHTS</g-link>
+        <g-link class="navlink" to="/thought">THOUGHT</g-link>
         <div class="col-1 switch">
           <ToggleTheme />
         </div>

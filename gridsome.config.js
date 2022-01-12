@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Gridsome Blog',
   siteDescription: 'A simple blog designed with Gridsome',
   templates: {
-    Post: '/blog/:title',
+    Thought: '/thought/:title',
     Experience: '/experience/:client',
     Skill: '/skill/:name',
   },
@@ -17,7 +17,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/posts/**/*.md',
-        typeName: 'Post',
+        typeName: 'Thought',
       }
     },
     {

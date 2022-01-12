@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import PostList from "@/components/PostList";
+import ThoughtList from "@/components/ThoughtList";
 
 export default {
   components: {
-    PostList,
+    ThoughtList,
   },
   metaInfo: {
     title: "A simple blog",

@@ -46,8 +46,8 @@ module.exports = function (api) {
     });
 
     test.addNode({
-      title: 'My first blog post',
-      date: '2018-11-02',
+      title: 'Some thought about ...',
+      date: '2022-01-02',
       customField: [
         {
           name: {local:"toto", interna: "tttt"}

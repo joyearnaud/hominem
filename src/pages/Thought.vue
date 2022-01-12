@@ -2,23 +2,23 @@
   <Layout>
     <header class="header">
       <h1 v-html="$page.metadata.siteName" />
-      <h2>thoughts</h2>
+      <h2>thought</h2>
     </header>
-    <section class="posts">
-      <PostList
-        v-for="edge in $page.allPost.edges"
+    <section class="thought">
+      <ThoughtList
+        v-for="edge in $page.allThought.edges"
         :key="edge.node.id"
-        :post="edge.node"
+        :thought="edge.node"
       />
     </section>
   </Layout>
 </template>
 
 <script>
-import PostList from "@/components/PostList";
+import ThoughtList from "@/components/ThoughtList";
 export default {
   components: {
-    PostList,
+    ThoughtList,
   },
   metaInfo: {
     title: "A simple blog",
@@ -32,7 +32,7 @@ query {
     siteName
     siteDescription
   }
-  allPost {
+  allThought {
     totalCount
     edges {
       node {

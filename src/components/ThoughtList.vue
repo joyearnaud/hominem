@@ -1,18 +1,18 @@
 <template>
-  <div class="post-list">
-    <g-link :to="post.path" class="read">
+  <div class="thought-list">
+    <g-link :to="thought.path" class="read">
       <hr class="line" />
-      <p class="date" v-html="post.date" />
-      <h3 class="title" v-html="post.title" />
-      <p class="description" v-html="post.description" />
-      <b>{{ post.timeToRead }} min read</b>;
+      <p class="date" v-html="thought.date" />
+      <h3 class="title" v-html="thought.title" />
+      <p class="description" v-html="thought.description" />
+      <b>{{ thought.timeToRead }} min read</b>;
     </g-link>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["post"],
+  props: ["thought"],
 };
 </script>
 
