@@ -1,12 +1,14 @@
 <template>
   <div class="thought-list">
-    <g-link :to="thought.path" class="read">
-      <hr class="line" />
-      <p class="date" v-html="thought.date" />
-      <h3 class="title" v-html="thought.title" />
-      <p class="description" v-html="thought.description" />
-      <b>{{ thought.timeToRead }} min read</b>;
-    </g-link>
+    <div>
+      <g-link :to="thought.path" class="read">
+        <p class="date" v-html="thought.date" />
+        <h3 class="title" v-html="thought.title" />
+        <p class="description" v-html="thought.description" />
+        <b>{{ thought.timeToRead }} min read</b>;
+        <hr class="line" />
+      </g-link>
+    </div>
   </div>
 </template>
 

@@ -83,4 +83,16 @@ hr.round {
   border: 2px solid var(--border-color);
   border-radius: 5px;
 }
+
+a {
+  font-family: "Exo 2", sans-serif;
+  color: inherit;
+  text-decoration: inherit;
+  transition: color 1s;
+}
+a:hover {
+  color: var(--link-color);
+  text-decoration: inherit;
+  transition: color 0.3s;
+}
 </style>

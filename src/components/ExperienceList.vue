@@ -240,15 +240,4 @@ span.client {
   color: var(--bkg-color);
   transition: background 0.3s;
 }
-
-.timeline a {
-  color: inherit;
-  text-decoration: inherit;
-  transition: color 1s;
-}
-.timeline a:hover {
-  color: var(--link-color);
-  text-decoration: inherit;
-  transition: color 0.3s;
-}
 </style>
