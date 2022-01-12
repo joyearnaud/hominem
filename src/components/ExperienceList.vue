@@ -24,7 +24,7 @@
                   <g-link
                     :to="k.path"
                     v-for="k in experience.skills"
-                    v-bind:key="k"
+                    v-bind:key="k.id"
                   >
                     <span class="skill badge rounded-pill">
                       {{ k.name }}
@@ -61,7 +61,7 @@ export default {
   font-family: "Lato", sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
-  color: #425bb5;
+  color: inherit;
   font-size: 16px;
   font-weight: bold;
 }
@@ -81,6 +81,7 @@ export default {
   padding-left: 0;
   list-style: none;
   position: relative;
+  padding-bottom: 1em;
 }
 
 .timeline:before {
@@ -116,9 +117,52 @@ export default {
   margin-left: 4em;
   width: auto;
 }
+.timeline h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.timeline ul {
+  font-family: "Lato", sans-serif;
+}
 
 .timeline-event-copy h3 {
   font-size: 1.75em;
+}
+
+.timeline h3 {
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: inherit;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+span.client {
+  text-transform: uppercase;
+}
+
+.timeline h4 {
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  position: relative;
+  color: var(--border-color);
+  margin-left: 40px;
+  /* font-weight: 700; */
+}
+
+.timeline h4:before {
+  position: absolute;
+  width: 30px;
+  left: -40px;
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--border-color);
+  top: 9px;
 }
 
 .timeline-event-copy h4 {

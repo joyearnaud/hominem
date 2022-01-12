@@ -39,7 +39,9 @@ export default {
   text-decoration: inherit;
   color: var(--border-color);
   transition: color 2s;
-  padding: 1em;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .navbar a:hover {
   text-decoration: underline;
@@ -47,7 +49,6 @@ export default {
   transition: color 0.3s;
 }
 .layout-header {
-  width: 103%;
   font-family: "Stylish";
   font-size: 1.2em;
   text-align: center;
