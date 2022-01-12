@@ -18,9 +18,6 @@
         </div>
       </div>
     </nav>
-    <header class="layout-header">
-      <nav class="nav"></nav>
-    </header>
   </div>
 </template>
 

@@ -78,4 +78,9 @@ body {
   color: var(--text-color);
   text-decoration: none;
 }
+
+hr.round {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+}
 </style>

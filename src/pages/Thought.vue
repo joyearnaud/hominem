@@ -1,9 +1,6 @@
 <template>
   <Layout>
-    <header class="header">
-      <h1 v-html="$page.metadata.siteName" />
-      <h2>thought</h2>
-    </header>
+    <PageHeader :page="title" />
     <section class="thought">
       <ThoughtList
         v-for="edge in $page.allThought.edges"
@@ -15,13 +12,21 @@
 </template>
 
 <script>
+import PageHeader from "@/components/PageHeader";
 import ThoughtList from "@/components/ThoughtList";
+
 export default {
   components: {
+    PageHeader,
     ThoughtList,
   },
   metaInfo: {
     title: "A simple blog",
+  },
+  data() {
+    return {
+      title: "thoughts",
+    };
   },
 };
 </script>

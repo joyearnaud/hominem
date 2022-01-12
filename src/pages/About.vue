@@ -1,22 +1,26 @@
 <template>
   <Layout>
-    <header class="header">
-      <h1 v-html="$page.metadata.siteName" />
-      <h2>about</h2>
-    </header>
+    <PageHeader :page="title" />
     <section class="about"></section>
   </Layout>
 </template>
 
 <script>
+import PageHeader from "@/components/PageHeader";
 import ThoughtList from "@/components/ThoughtList";
 
 export default {
   components: {
+    PageHeader,
     ThoughtList,
   },
   metaInfo: {
     title: "A simple blog",
+  },
+  data() {
+    return {
+      title: "about",
+    };
   },
 };
 </script>
