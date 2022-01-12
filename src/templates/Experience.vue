@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/" class="link"> &larr; Go Back</g-link>
+    <g-link to="/experience" class="link"> &larr; Go Back</g-link>
     <div class="experience-title">
       <h1>{{ $page.experience.client }}</h1>
       <p class="experience-date">

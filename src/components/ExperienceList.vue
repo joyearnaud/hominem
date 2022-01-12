@@ -6,8 +6,8 @@
         <ul class="timeline">
           <li class="timeline-event" data-aos="fade-up">
             <label class="timeline-event-icon"></label>
-            <g-link :to="experience.path">
-              <div class="timeline-event-copy">
+            <div class="timeline-event-copy">
+              <g-link :to="experience.path">
                 <p class="timeline-event-thumbnail">
                   <span class="datestart" v-html="experience.datestart" />
                   <span> - </span>
@@ -21,16 +21,18 @@
                 <h4 class="role" v-html="experience.role" />
                 <p class="content" v-html="experience.content" />
                 <div>
-                  <span
-                    class="skill badge rounded-pill"
-                    v-for="k in experience.keyword"
+                  <g-link
+                    :to="k.path"
+                    v-for="k in experience.skills"
                     v-bind:key="k"
                   >
-                    {{ k }}
-                  </span>
+                    <span class="skill badge rounded-pill">
+                      {{ k.name }}
+                    </span>
+                  </g-link>
                 </div>
-              </div>
-            </g-link>
+              </g-link>
+            </div>
           </li>
         </ul>
       </div>
