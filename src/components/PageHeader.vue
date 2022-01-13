@@ -2,7 +2,7 @@
   <header class="header">
     <h1 v-html="$page.metadata.siteName" />
     <h2 v-html="page" />
-    <!-- <BreathAnimation :text="page" /> -->
+    <!-- <BreathAnimation :label="page" /> -->
     <hr class="round" />
   </header>
 </template>

@@ -1,12 +1,12 @@
 <template>
-  <breath>
-    <span class="test" v-html="text"></span>
-  </breath>
+  <section class="breath">
+    <span v-html="label"></span>
+  </section>
 </template>
 
 <script>
 export default {
-  props: ["text"],
+  props: ["label"],
 };
 </script>
 
@@ -21,7 +21,7 @@ export default {
   box-sizing: border-box;
 }
 
-breath {
+section.breath {
   font-family: "IBM Plex Sans Roman", Times;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ breath {
   text-align: center;
 }
 
-span.test {
+.breath span {
   font-weight: 100;
   font-size: 10vw;
   font-variation-settings: "wght" 100, "wdth" 85;
