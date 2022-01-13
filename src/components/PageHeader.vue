@@ -1,8 +1,7 @@
 <template>
   <header class="header">
     <h1 v-html="$page.metadata.siteName" />
-    <h2 v-html="page" />
-    <!-- <BreathAnimation :label="page" /> -->
+    <BreathAnimation :label="page" :hover="false" />
     <hr class="round" />
   </header>
 </template>
@@ -27,7 +26,10 @@ query {
 </page-query>
 
 
-<style>
+<style scoped>
+.breathe {
+  margin-top: 1em;
+}
 .header {
   font-family: "Stylish";
   font-size: 35px;
