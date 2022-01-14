@@ -35,16 +35,4 @@ query {
 </page-query>
 
 <style>
-.header {
-  font-family: "Stylish";
-  font-size: 35px;
-  text-align: center;
-  line-height: 1.4em;
-  padding: 0.7em;
-}
-
-.header h2 {
-  font-weight: 200;
-  font-size: 35px;
-}
 </style>

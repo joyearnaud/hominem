@@ -23,6 +23,12 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "IBM Plex Sans Roman";
+  src: local("IBM Plex"), url("../assets/IBMPlexSansVarRoman.ttf");
+  font-display: swap;
+}
+
 :root {
   --text-color: #333;
   --border-color: #feae45;
@@ -57,6 +63,7 @@ body {
   background-color: var(--bkg-color);
   color: var(--text-color);
   transition: background 0.3s;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 .layout {
@@ -85,7 +92,7 @@ hr.round {
 }
 
 a {
-  font-family: "Exo 2", sans-serif;
+  font-family: "IBM Plex Sans Roman";
   color: inherit;
   text-decoration: inherit;
   transition: color 1s;

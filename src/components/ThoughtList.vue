@@ -1,5 +1,5 @@
 <template>
-  <div class="thought-list">
+  <div class="thought-list" id="thought">
     <div>
       <g-link :to="thought.path" class="read">
         <p class="date" v-html="thought.date" />
@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style>
+#thought a {
+  margin: 0px;
+  padding: 0;
+}
 .line {
   border: 0.5px solid #cdc8c5;
   margin: 30px 0;

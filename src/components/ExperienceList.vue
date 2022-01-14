@@ -58,7 +58,7 @@ export default {
 }
 
 .experience-row h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans Roman";
   text-transform: capitalize;
   letter-spacing: 2px;
   color: inherit;
@@ -118,13 +118,13 @@ export default {
   width: auto;
 }
 .timeline h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans Roman";
   font-size: 30px;
   line-height: 50px;
 }
 
 .timeline ul {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans Roman";
 }
 
 .timeline-event-copy h3 {
@@ -132,7 +132,7 @@ export default {
 }
 
 .timeline h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans Roman";
   text-transform: capitalize;
   letter-spacing: 2px;
   color: inherit;
@@ -145,7 +145,7 @@ span.client {
 }
 
 .timeline h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans Roman";
   text-transform: capitalize;
   letter-spacing: 2px;
   position: relative;
@@ -202,6 +202,7 @@ span.client {
   -webkit-transition: box-shadow 0.5s ease-in;
   -webkit-transition-delay: 0.1s;
   -webkit-transition: box-shadow 0.5s ease-in 0.1s; */
+  font-family: "Lato", sans-serif;
   color: var(--bkg-color);
   font-size: 12px;
   font-weight: bold;
@@ -218,6 +219,7 @@ span.client {
 }
 
 .skill {
+  font-family: "Lato", sans-serif;
   background-color: var(--text-color);
   color: var(--border-color);
   padding-left: 1em;

@@ -46,7 +46,7 @@ export default {
   transition: color 0.3s;
 }
 .layout-header {
-  font-family: "Stylish";
+  font-family: "IBM Plex Sans Roman";
   font-size: 1.2em;
   text-align: center;
   line-height: 1.4em;

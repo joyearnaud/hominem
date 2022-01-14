@@ -12,11 +12,6 @@ export default {
 
 
 <style>
-@font-face {
-  font-family: "IBM Plex Sans Roman";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
-}
-
 * {
   box-sizing: border-box;
 }
