@@ -63,7 +63,6 @@ body {
   background-color: var(--bkg-color);
   color: var(--text-color);
   transition: background 0.3s;
-  overflow: hidden; /* Hide scrollbars */
 }
 
 .layout {
