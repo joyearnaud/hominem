@@ -41,6 +41,11 @@ query Experience ($path: String!) {
   font-family: "Stylish";
 }
 
+.experience-title h1 {
+  font-family: "IBM Plex Sans Roman";
+  text-transform: uppercase;
+}
+
 .experience-date {
   font-size: 16px;
   font-weight: 400;

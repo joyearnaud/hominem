@@ -1,11 +1,10 @@
 ---
-client: "Société Générale"
-project: "Entrée en relation Personne Directe"
-role: "INGÉNIEUR D'ÉTUDES
-ET DÉVELOPPEMENT" 
-description: "Mise en place de l'application ERPD"
-datestart: 2017-01-05
-dateend: 2020-27-12
+client: "société Générale BDDF pour le Crédit du Nord "
+project: "entrée en relation personne morale (ERPM)"
+role: "développeur fullstack"
+description: "mise en place de l'application ERPD"
+datestart: 2017-03-01
+dateend: 2019-12-31
 keySkill: "7ea79c2fbc489eae8a0b645e8e7b6304"
 skills:
   - "7ea79c2fbc489eae8a0b645e8e7b6304"
@@ -21,10 +20,8 @@ keywords:
     note: 4
 ---
 
-## Tache
-
-- Mise en place du socle technique (moteur de règle)
-- Conception d'API
-- Ecriture des besoins fonctionnels et techniques
-- Rédaction de documentations
-- Animation de projet
+- Conseil sur technologie & architecture
+- Refactoring, Code review, TDD, pair programming
+- Batterie de test tant au niveau de l'utilisateur, du code que du système
+- Maintenance corrective et évolutive
+- Animation Scrum

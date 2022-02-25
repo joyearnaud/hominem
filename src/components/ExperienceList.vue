@@ -19,6 +19,7 @@
                   <span class="project" v-html="experience.project" />
                 </h3>
                 <h4 class="role" v-html="experience.role" />
+                <p class="description" v-html="experience.description"></p>
                 <p class="content" v-html="experience.content" />
                 <div>
                   <g-link
@@ -50,6 +51,13 @@ export default {
 <style>
 #experience {
   padding: 1px 10px 1px 1px;
+}
+
+#experience .description::first-letter {
+    text-transform: capitalize;
+}
+#experience .role::first-letter {
+    text-transform: capitalize;
 }
 
 .experience-row {
@@ -133,7 +141,6 @@ export default {
 
 .timeline h3 {
   font-family: "IBM Plex Sans Roman";
-  text-transform: capitalize;
   letter-spacing: 2px;
   color: inherit;
   font-size: 1.5em;
@@ -146,7 +153,7 @@ span.client {
 
 .timeline h4 {
   font-family: "IBM Plex Sans Roman";
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
   color: var(--border-color);
