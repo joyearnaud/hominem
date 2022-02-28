@@ -1,0 +1,14 @@
+{
+  "about": "about",
+  "experience": "experience",
+  "thoughts": "thoughts",
+  "welcome": "Welcome to Gridsome i18n!",
+  "minute": "minute",
+  "min": "min",
+  "read": "read",
+  "back": "back",
+  "built with": "Built with",
+  "made with": "Made with",
+  "by": "by",
+  "back":"Go back"
+}

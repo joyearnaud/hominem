@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="title" />
+    <PageHeader :page="$t(title)" />
     <section class="experience">
       <ExperienceList
         v-for="edge in $page.allExperience.edges"
@@ -47,8 +47,8 @@ query {
         role
         timeToRead
         description
-        datestart(format: "D MMMM YYYY")
-        dateend(format: "D MMMM YYYY")
+        datestart(format: "YYYY-MM-DD")
+        dateend(format: "YYYY-MM-DD")
         skills {
           id
           name

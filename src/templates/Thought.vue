@@ -1,11 +1,11 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/thought" class="link"> &larr; Go Back</g-link>
+    <g-link to="/thought" class="link"> &larr; {{ $t('back') }}</g-link>
     <div class="thought-title">
       <h1>{{ $page.thought.title }}</h1>
       <p class="thought-date">
-        {{ $page.thought.date }} | {{ $page.thought.timeToRead }} min read
+        {{ $d(new Date($page.thought.date), 'short') }} | {{ $page.thought.timeToRead }} {{$t('min')}} {{$t('read')}}
       </p>
     </div>
     <div class="thought-content">

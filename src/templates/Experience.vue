@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/experience" class="link"> &larr; Go Back</g-link>
+    <g-link to="/experience" class="link"> &larr; {{ $t('back') }}</g-link>
     <div class="experience-title">
       <h1>{{ $page.experience.client }}</h1>
       <p class="experience-date">
-        {{ $page.experience.datestart }} | {{ $page.experience.dateend }}
+        {{ $d(new Date($page.experience.datestart), 'short') }} | {{ $d(new Date($page.experience.dateend), 'short') }}
       </p>
-      <p>{{ $page.experience.timeToRead }} min read</p>
+      <p>{{ $page.experience.timeToRead }} {{$t('min')}} {{$t('read')}}</p>
     </div>
     <div class="experience-content">
       <p v-html="$page.experience.content" />
@@ -24,8 +24,8 @@ query Experience ($path: String!) {
       role
       timeToRead
       description
-      datestart(format: "D MMMM YYYY")
-      dateend(format: "D MMMM YYYY")
+      datestart(format: "YYYY-MM-DD")
+      dateend(format: "YYYY-MM-DD")
       path
       content
   }

@@ -63,8 +63,8 @@ query Skill($path: String!) {
     name
     categorie
     level
-    datestart(format: "D MMMM YYYY")
-    dateend(format: "D MMMM YYYY")
+    datestart(format: "YYYY-MM-DD")
+    dateend(format: "YYYY-MM-DD")
     content
     timeToRead
     belongsTo {

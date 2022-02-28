@@ -8,11 +8,13 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import DefaultLayout from '~/layouts/Default.vue'
 import 'prismjs/themes/prism.css'
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Stylish&display=swap'
   }),
+  appOptions.i18n.setLocaleMessage('en', require('./locales/en.json')),
+  appOptions.i18n.setLocaleMessage('fr', require('./locales/fr.json'))
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)

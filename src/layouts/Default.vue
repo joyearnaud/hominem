@@ -4,9 +4,9 @@
     <slot />
     <div class="footer">
       <p>
-        Built with
+        {{$t('built with')}}
         <a class="link" href="//gridsome.org">Gridsome</a>
-        & Made with ❤️ by
+        & {{$t('made with')}} ❤️ {{$t('by')}}
         <a class="link" href="//github.com/joyearnaud">Arnaud JOYE</a>
       </p>
     </div>

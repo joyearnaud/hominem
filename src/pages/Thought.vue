@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="title" />
+    <PageHeader :page="$t(title)" />
     <section class="thought">
       <ThoughtList
         v-for="edge in $page.allThought.edges"
@@ -45,7 +45,7 @@ query {
         title
         timeToRead
         description
-        date (format: "D MMMM YYYY")
+        date (format: "YYYY-MM-DD")
         path
       }
     }

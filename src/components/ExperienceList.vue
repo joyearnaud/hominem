@@ -9,9 +9,9 @@
             <div class="timeline-event-copy">
               <g-link :to="experience.path">
                 <p class="timeline-event-thumbnail">
-                  <span class="datestart" v-html="experience.datestart" />
+                  <span class="datestart" v-html="$d(new Date(experience.datestart), 'short')"/>
                   <span> - </span>
-                  <span class="dateend" v-html="experience.dateend" />
+                  <span class="dateend" v-html="$d(new Date(experience.dateend), 'short')" />
                 </p>
                 <h3>
                   <span class="client" v-html="experience.client" />

@@ -10,9 +10,9 @@
             immediate="true"
           />
         </g-link>
-        <g-link class="navlink" to="/about">ABOUT</g-link>
-        <g-link class="navlink" to="/experience">EXPERIENCE</g-link>
-        <g-link class="navlink" to="/thought">THOUGHT</g-link>
+        <g-link class="navlink" to="/about">{{ removeAccent($t('about')) }}</g-link>
+        <g-link class="navlink" to="/experience">{{ removeAccent($t('experience')) }}</g-link>
+        <g-link class="navlink" to="/thought">{{ removeAccent($t('thoughts')) }}</g-link>
         <div class="col-1 switch">
           <ToggleTheme />
         </div>
@@ -27,6 +27,9 @@ export default {
   components: {
     ToggleTheme,
   },
+  methods: {
+    removeAccent: (text) => text.normalize("NFD").replace(/\p{Diacritic}/gu, "")
+  }
 };
 </script>
 
@@ -34,6 +37,7 @@ export default {
 .navbar a {
   font-family: "Stylish";
   text-decoration: inherit;
+  text-transform: uppercase;
   color: var(--border-color);
   transition: color 2s;
   letter-spacing: 2px;

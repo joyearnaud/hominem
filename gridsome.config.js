@@ -1,6 +1,8 @@
 // This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
+const i18n = require("./plugins/i18n");
+
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
@@ -34,6 +36,7 @@ module.exports = {
         typeName: 'Skill',
       }
     },
+    i18n,
   ],
   transformers: {
     //Add markdown support to all file-system sources

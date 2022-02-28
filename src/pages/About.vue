@@ -1,7 +1,9 @@
 <template>
   <Layout>
-    <PageHeader :page="title" />
-    <section class="about"></section>
+    <PageHeader :page="$t(title)" />
+    <section class="about">
+      {{ $t('welcome') }}
+    </section>
   </Layout>
 </template>
 
