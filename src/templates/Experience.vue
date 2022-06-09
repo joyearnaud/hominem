@@ -16,7 +16,8 @@
     <h3>Keywords</h3>
       <ul>
         <li v-for="keyword in $page.experience.keywords" :key="keyword.id">
-          <p>{{ keyword.name }} 
+          <p> 
+          <g-link class="navlink" :to="'skill/'+keyword.name">{{ keyword.name }}</g-link>
           <span v-for="version in keyword.versions" :key="version.id">
             {{ version }} 
           </span>

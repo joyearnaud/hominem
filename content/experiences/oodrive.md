@@ -11,7 +11,7 @@ skills:
   - "javascript"
   - "python"
 keywords:
-  - name: "java"
+  - name: "java-script"
     versions: 
     - "1.8"
     - "11"
