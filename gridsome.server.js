@@ -31,10 +31,12 @@ module.exports = function (api) {
       type Experience implements Node @infer {
         keySkill: Skill @reference,
         skills: [Skill] @reference,
+        keywords: [Keyword]
       }
       type Keyword {
         id: ID!
         name: String!
+        versions: [String]
         note: Int,
       }
       `
