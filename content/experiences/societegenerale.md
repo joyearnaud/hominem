@@ -5,10 +5,9 @@ role: "développeur fullstack"
 description: "mise en place de l'application ERPD"
 datestart: 2017-03-01
 dateend: 2019-12-31
-keySkill: "7ea79c2fbc489eae8a0b645e8e7b6304"
+keySkill: "javascript"
 skills:
-  - "7ea79c2fbc489eae8a0b645e8e7b6304"
-  - "76b24c36ca707d2c579b518c9d23c513"
+  - "javascript"
 keywords:
   - name: "Autre"
     note: 4

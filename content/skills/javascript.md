@@ -1,4 +1,5 @@
 ---
+id: "javascript"
 name: "JavaScript"
 categorie: "langage"
 level: 70

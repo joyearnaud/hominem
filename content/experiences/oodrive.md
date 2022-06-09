@@ -5,10 +5,10 @@ role: "ingénieur d'études et développement"
 description: "migration d'un système de facturation maison vers une solution sur étagère"
 datestart: 2020-01-05
 dateend: 2022-01-05
-keySkill: "76b24c36ca707d2c579b518c9d23c513"
+keySkill: "javascript"
 skills:
-  - "76b24c36ca707d2c579b518c9d23c513"
-  - "7ea79c2fbc489eae8a0b645e8e7b6304"
+  - "javascript"
+  - "python"
 keywords:
   - name: "Java 1.8"
     note: 4
