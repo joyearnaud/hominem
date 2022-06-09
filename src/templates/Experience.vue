@@ -13,17 +13,28 @@
       <p v-html="$page.experience.content" />
     </div>
     <div class="experience-keywords">
+    <h3>Skills</h3>
+    <ul>
+      <li v-for="skill in $page.experience.skills" :key="skill.id">
+        <p> 
+        <g-link class="navlink" :to="skill.path">{{ skill.name }}</g-link>
+        <span v-for="version in skill.versions" :key="version.id">
+          {{ version }} 
+        </span>
+        {{ skill.level }}</p> 
+      </li>
+    </ul>
     <h3>Keywords</h3>
-      <ul>
-        <li v-for="keyword in $page.experience.keywords" :key="keyword.id">
-          <p> 
-          <g-link class="navlink" :to="'skill/'+keyword.name">{{ keyword.name }}</g-link>
-          <span v-for="version in keyword.versions" :key="version.id">
-            {{ version }} 
-          </span>
-          {{ keyword.note }}</p> 
-        </li>
-      </ul>
+    <ul>
+      <li v-for="keyword in $page.experience.keywords" :key="keyword.id">
+        <p> 
+        <g-link class="navlink" :to="'skill/'+keyword.name">{{ keyword.name }}</g-link>
+        <span v-for="version in keyword.versions" :key="version.id">
+          {{ version }} 
+        </span>
+        {{ keyword.note }}</p> 
+      </li>
+    </ul>
     </div>
   </Layout>
 </template>
@@ -41,6 +52,19 @@ query Experience ($path: String!) {
       dateend(format: "YYYY-MM-DD")
       path
       content
+      skills{
+        id
+        name
+        path
+        categorie
+        content
+        excerpt
+        level
+        datestart
+        dateend
+        timeToRead
+
+      }
       keywords {
         name
         versions
