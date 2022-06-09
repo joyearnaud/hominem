@@ -16,12 +16,20 @@
     <h3>Keywords</h3>
     <ul>
       <li v-for="k in $page.experience.keywords" :key="k.id">
-        <p> 
-        <g-link class="navlink" :to="k.skill.path">{{ k.skill.name }}</g-link>
-        <span v-for="version in k.versions" :key="version.id">
-          {{ version }} 
-        </span>
-        {{ k.note }}</p> 
+        <p v-if="k.skill"> 
+          <g-link class="navlink" :to="k.skill.path">{{ k.skill.name }}</g-link>
+          <span v-for="version in k.versions" :key="version.id">
+            {{ version }} 
+          </span>
+          {{ k.note }}
+        </p> 
+        <p v-else>
+          <span>{{ k.name }}</span>
+          <span v-for="version in k.versions" :key="version.id">
+            {{ version }} 
+          </span>
+          {{ k.note }}
+        </p>
       </li>
     </ul>
     </div>
@@ -42,6 +50,7 @@ query Experience ($path: String!) {
       path
       content
       keywords {
+        name
         skill {
           id
           name

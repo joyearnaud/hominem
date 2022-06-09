@@ -10,12 +10,16 @@ skills:
   - "javascript"
 keywords:
   - skill: "Autre"
+    name: "Autre"
     note: 4
   - skill: "Spring Boot"
+    name: "Spring Boot"
     note: 4
   - skill: "Kotlin"
+    name: "Kotlin"
     note: 4
   - skill: "Docker"
+    name: "Docker"
     note: 4
 ---
 

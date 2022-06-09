@@ -12,11 +12,13 @@ skills:
   - "python"
 keywords:
   - skill: "java"
+    name: "java"
     versions: 
     - "1.8"
     - "11"
     note: 4
   - skill: "python"
+    name: "python"
     note: 4
 ---
 
