@@ -1,4 +1,5 @@
 ---
+id: "oodrive"
 client: "oodrive"
 project: "arrimage à la production (HERMES)"
 role: "ingénieur d'études et développement" 
@@ -10,7 +11,10 @@ skills:
   - "javascript"
   - "python"
 keywords:
-  - name: "Java 1.8"
+  - name: "java"
+    versions: 
+    - "1.8"
+    - "11"
     note: 4
   - name: "Spring Boot"
     note: 4

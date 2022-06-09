@@ -12,6 +12,18 @@
     <div class="experience-content">
       <p v-html="$page.experience.content" />
     </div>
+    <div class="experience-keywords">
+    <h3>Keywords</h3>
+      <ul>
+        <li v-for="keyword in $page.experience.keywords" :key="keyword.id">
+          <p>{{ keyword.name }} 
+          <span v-for="version in keyword.versions" :key="version.id">
+            {{ version }} 
+          </span>
+          {{ keyword.note }}</p> 
+        </li>
+      </ul>
+    </div>
   </Layout>
 </template>
 
@@ -28,6 +40,11 @@ query Experience ($path: String!) {
       dateend(format: "YYYY-MM-DD")
       path
       content
+      keywords {
+        name
+        versions
+        note
+      }
   }
 }
 </page-query>
