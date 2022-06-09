@@ -9,13 +9,13 @@ keySkill: "javascript"
 skills:
   - "javascript"
 keywords:
-  - name: "Autre"
+  - skill: "Autre"
     note: 4
-  - name: "Spring Boot"
+  - skill: "Spring Boot"
     note: 4
-  - name: "Kotlin"
+  - skill: "Kotlin"
     note: 4
-  - name: "Docker"
+  - skill: "Docker"
     note: 4
 ---
 

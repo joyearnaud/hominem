@@ -13,26 +13,15 @@
       <p v-html="$page.experience.content" />
     </div>
     <div class="experience-keywords">
-    <h3>Skills</h3>
-    <ul>
-      <li v-for="skill in $page.experience.skills" :key="skill.id">
-        <p> 
-        <g-link class="navlink" :to="skill.path">{{ skill.name }}</g-link>
-        <span v-for="version in skill.versions" :key="version.id">
-          {{ version }} 
-        </span>
-        {{ skill.level }}</p> 
-      </li>
-    </ul>
     <h3>Keywords</h3>
     <ul>
-      <li v-for="keyword in $page.experience.keywords" :key="keyword.id">
+      <li v-for="k in $page.experience.keywords" :key="k.id">
         <p> 
-        <g-link class="navlink" :to="'skill/'+keyword.name">{{ keyword.name }}</g-link>
-        <span v-for="version in keyword.versions" :key="version.id">
+        <g-link class="navlink" :to="k.skill.path">{{ k.skill.name }}</g-link>
+        <span v-for="version in k.versions" :key="version.id">
           {{ version }} 
         </span>
-        {{ keyword.note }}</p> 
+        {{ k.note }}</p> 
       </li>
     </ul>
     </div>
@@ -52,21 +41,19 @@ query Experience ($path: String!) {
       dateend(format: "YYYY-MM-DD")
       path
       content
-      skills{
-        id
-        name
-        path
-        categorie
-        content
-        excerpt
-        level
-        datestart
-        dateend
-        timeToRead
-
-      }
       keywords {
-        name
+        skill {
+          id
+          name
+          path
+          categorie
+          content
+          excerpt
+          level
+          datestart
+          dateend
+          timeToRead
+        }
         versions
         note
       }

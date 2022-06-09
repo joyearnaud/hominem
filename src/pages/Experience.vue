@@ -54,10 +54,6 @@ query {
           name
           path
         }
-        keywords {
-          name
-          note
-        }
         content
       }
     }

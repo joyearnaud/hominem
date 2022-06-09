@@ -11,16 +11,12 @@ skills:
   - "javascript"
   - "python"
 keywords:
-  - name: "java-script"
+  - skill: "java"
     versions: 
     - "1.8"
     - "11"
     note: 4
-  - name: "Spring Boot"
-    note: 4
-  - name: "Kotlin"
-    note: 4
-  - name: "Docker"
+  - skill: "python"
     note: 4
 ---
 
