@@ -11,7 +11,7 @@ module.exports = {
   siteDescription: 'A simple blog designed with Gridsome',
   templates: {
     Thought: '/thought/:title',
-    Experience: '/experience/:client',
+    Experience: '/experience/:project',
     Skill: '/skill/:name',
   },
   plugins: [

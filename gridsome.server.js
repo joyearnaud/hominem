@@ -30,7 +30,7 @@ module.exports = function (api) {
       `
       type Keyword {
         id: ID!,
-        name: String!,
+        name: String,
         skill: Skill @reference,
         versions: [String],
         note: Int

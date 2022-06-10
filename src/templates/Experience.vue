@@ -2,37 +2,44 @@
   <Layout>
     <br />
     <g-link to="/experience" class="link"> &larr; {{ $t('back') }}</g-link>
+
     <div class="experience-title">
-      <h1>{{ $page.experience.client }}</h1>
+      <h1>
+        <span v-html="$page.experience.client" />
+        <span> - </span>
+        <span v-html="$page.experience.project" />
+      </h1>
       <p class="experience-date">
         {{ $d(new Date($page.experience.datestart), 'short') }} | {{ $d(new Date($page.experience.dateend), 'short') }}
       </p>
-      <p>{{ $page.experience.timeToRead }} {{$t('min')}} {{$t('read')}}</p>
     </div>
+
+    <div class="experience-project">
+      <p class="label badge" v-html="$page.experience.description" />
+    </div>
+
     <div class="experience-content">
       <p v-html="$page.experience.content" />
     </div>
+
     <div class="experience-keywords">
-    <h3>Keywords</h3>
-    <ul>
-      <li v-for="k in $page.experience.keywords" :key="k.id">
-        <p v-if="k.skill"> 
-          <g-link class="navlink" :to="k.skill.path">{{ k.skill.name }}</g-link>
-          <span v-for="version in k.versions" :key="version.id">
-            {{ version }} 
-          </span>
-          {{ k.note }}
-        </p> 
-        <p v-else>
-          <span>{{ k.name }}</span>
-          <span v-for="version in k.versions" :key="version.id">
-            {{ version }} 
-          </span>
-          {{ k.note }}
-        </p>
-      </li>
-    </ul>
+      <h3>{{ $t('keywords') }}</h3>
+      <ul>
+        <li v-for="k in $page.experience.keywords" :key="k.id">
+          <p>
+            <g-link v-if="k.skill" class="skill-name navlink badge" :to="k.skill.path">{{ k.skill.name }}</g-link>
+            <span v-else class="skill-name badge ">{{ k.name }}</span>
+            <span v-for="version in k.versions" :key="version.id">
+              <span class="skill-badge badge">
+                {{ version }}
+              </span>
+            </span>
+            <span>{{ k.note }}</span>
+          </p>
+        </li>
+      </ul>
     </div>
+
   </Layout>
 </template>
 
@@ -70,12 +77,18 @@ query Experience ($path: String!) {
 }
 </page-query>
 
-<style>
+<style scoped>
+.experience-project {
+  font-size: 30px;
+  line-height: 1.4em;
+  font-family: "IBM Plex Sans Roman";
+}
+
 .experience-title {
   text-align: center;
   font-size: 30px;
-  line-height: 1.4em;
-  padding: 2em 0;
+  line-height: 1em;
+  padding: 1em 0.5em 0.5em 0.5em;
   font-family: "Stylish";
 }
 
@@ -85,11 +98,65 @@ query Experience ($path: String!) {
 }
 
 .experience-date {
-  font-size: 16px;
+  font-size: 0.6em;
   font-weight: 400;
 }
 
+.experience-project {
+  font-family: "IBM Plex Sans Roman";
+  font-size: 2em;
+}
+
+.experience-project .label {
+  background-color: var(--text-color);
+  color: var(--bkg-color);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.5em;
+  transition: background 1s;
+}
+
+.experience-project .label:hover {
+  background-color: var(--border-color);
+  color: var(--bkg-color);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.5em;
+  transition: background 1s;
+}
+
 .experience-content {
-  font-size: 20px;
+  font-size: 1.2em;
+}
+
+.skill-badge {
+  font-size: 0.7em;
+  font-family: "Lato", sans-serif;
+  /*background-color: var(--text-color);*/
+  color: var(--border-color);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  transition: background 1s;
+}
+
+.skill-name {
+  background-color: var(--border-color);
+  color: var(--bkg-color);
+  font-family: "Lato", sans-serif;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  transition: background 1s;
 }
 </style>
