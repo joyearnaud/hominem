@@ -9,7 +9,7 @@
             <div class="timeline-event-copy">
               <g-link :to="experience.path">
                 <p class="timeline-event-thumbnail">
-                  <span class="datestart" v-html="$d(new Date(experience.datestart), 'short')"/>
+                  <span class="datestart" v-html="$d(new Date(experience.datestart), 'short')" />
                   <span> - </span>
                   <span class="dateend" v-html="$d(new Date(experience.dateend), 'short')" />
                 </p>
@@ -22,11 +22,7 @@
                 <p class="description" v-html="experience.description"></p>
                 <p class="content" v-html="experience.content" />
                 <div>
-                  <g-link
-                    :to="k.path"
-                    v-for="k in experience.skills"
-                    v-bind:key="k.id"
-                  >
+                  <g-link :to="k.path" v-for="k in experience.skills" v-bind:key="k.id">
                     <span class="skill badge rounded-pill">
                       {{ k.name }}
                     </span>
@@ -48,16 +44,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #experience {
   padding: 1px 10px 1px 1px;
 }
 
 #experience .description::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
+
 #experience .role::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .experience-row {
@@ -125,6 +122,7 @@ export default {
   margin-left: 4em;
   width: auto;
 }
+
 .timeline h2 {
   font-family: "IBM Plex Sans Roman";
   font-size: 30px;
@@ -225,7 +223,7 @@ span.client {
   padding-bottom: 0.1em;
 }
 
-.skill {
+/*.skill {
   font-family: "Lato", sans-serif;
   background-color: var(--text-color);
   color: var(--border-color);
@@ -233,6 +231,20 @@ span.client {
   padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.6em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  transition: background 1s;
+}*/
+
+.skill {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  /*background-color: var(--text-color);*/
+  color: var(--border-color);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   margin-right: 0.5em;
   margin-top: 0.5em;
   transition: background 1s;

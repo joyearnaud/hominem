@@ -28,14 +28,17 @@ module.exports = function (api) {
 
     actions.addSchemaTypes(
       `
-      type Experience implements Node @infer {
-        keySkill: Skill @reference,
-        skills: [Skill] @reference,
-      }
       type Keyword {
-        id: ID!
-        name: String!
-        note: Int,
+        id: ID!,
+        name: String,
+        skill: Skill @reference,
+        versions: [String],
+        note: Int
+      }
+      type Experience implements Node @infer {
+        keySkill: Skill! @reference,
+        skills: [Skill!]! @reference,
+        keywords: [Keyword]
       }
       `
     );

@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "types": [
+      "vuejs"
+    ],
+    "jsx": "preserve"
+  },
   "include": [
     "./src/**/*"
   ]
