@@ -6,11 +6,8 @@
       <h1>{{ $page.skill.name }}</h1>
       <p>{{ $page.skill.categorie }}</p>
       <div class="progress">
-        <div
-          class="progress-bar progress-bar-striped pgdefault"
-          role="progressbar"
-          :style="'width: ' + $page.skill.level + '%'"
-        >
+        <div class="progress-bar progress-bar-striped pgdefault" role="progressbar"
+          :style="'width: ' + $page.skill.level + '%'">
           {{ skill.label.level.title }}
         </div>
       </div>
@@ -22,13 +19,11 @@
       <h2>{{ refererence.label.title }}</h2>
       <ul>
         <li v-for="edge in $page.skill.belongsTo.edges" :key="edge.node.id">
-          <g-link :to="edge.node.path">{{ edge.node.client }}</g-link>
+          <g-link :to="edge.node.path">{{ edge.node.client }} - {{ edge.node.project }}</g-link>
         </li>
       </ul>
-      <span
-        >{{ refererence.label.total }}:
-        {{ $page.skill.belongsTo.totalCount }}</span
-      >
+      <span>{{ refererence.label.total }}:
+        {{ $page.skill.belongsTo.totalCount }}</span>
     </div>
   </Layout>
 </template>
@@ -46,7 +41,7 @@ export default {
       },
       refererence: {
         label: {
-          title: "Reference in experience",
+          title: "Reference in Experience",
           total: "Total",
         },
       },
@@ -74,6 +69,7 @@ query Skill($path: String!) {
           ... on Experience {
             id
             client
+            project
             path
           }
         }
