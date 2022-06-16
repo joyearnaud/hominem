@@ -4,9 +4,9 @@
     <slot />
     <div class="footer">
       <p>
-        {{$t('built with')}}
+        {{ $t("built with") }}
         <a class="link" href="//gridsome.org">Gridsome</a>
-        & {{$t('made with')}} ❤️ {{$t('by')}}
+        & {{ $t("made with") }} ❤️ {{ $t("by") }}
         <a class="link" href="//github.com/joyearnaud">Arnaud JOYE</a>
       </p>
     </div>
@@ -75,7 +75,7 @@ body {
 .footer {
   padding-top: calc(30em / 4);
   text-align: center;
-  font-size: 1em;
+  font-size: 2vmin;
 }
 
 .link {

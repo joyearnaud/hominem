@@ -25,7 +25,6 @@ query {
 }
 </page-query>
 
-
 <style scoped>
 .breathe {
   margin-top: 1em;

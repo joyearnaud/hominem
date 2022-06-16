@@ -10,7 +10,6 @@ export default {
 };
 </script>
 
-
 <style>
 * {
   box-sizing: border-box;
@@ -27,7 +26,7 @@ section.breathe {
 
 .breathe span {
   font-weight: 100;
-  font-size: 3em;
+  font-size: 15vmin;
   animation: breathe-reversed 0.5s ease-in-out forwards;
 }
 /* .breathe span:hover {
@@ -35,7 +34,7 @@ section.breathe {
 } */
 .breathe.ho span {
   font-weight: 100;
-  font-size: 3em;
+  font-size: 15vmin;
   animation: breathe-reversed 0.5s ease-in-out forwards;
 }
 .breathe.ho span:hover {
