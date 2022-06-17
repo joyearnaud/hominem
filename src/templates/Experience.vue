@@ -14,15 +14,15 @@
       </p>
     </div>
 
-    <div class="experience-project">
-      <p class="label badge" v-html="$page.experience.description" />
+    <div class="container-fluid experience-project">
+      <p class="label" v-html="$page.experience.description" />
     </div>
 
-    <div class="experience-content">
+    <div class="container-fluid experience-content">
       <p v-html="$page.experience.content" />
     </div>
 
-    <div class="experience-keywords">
+    <div class="container-fluid experience-keywords">
       <h3>{{ $t('keywords') }}</h3>
       <ul>
         <li v-for="k in $page.experience.keywords" :key="k.id">
@@ -78,12 +78,6 @@ query Experience ($path: String!) {
 </page-query>
 
 <style scoped>
-.experience-project {
-  font-size: 30px;
-  line-height: 1.4em;
-  font-family: "IBM Plex Sans Roman";
-}
-
 .experience-title {
   text-align: center;
   font-size: 30px;
@@ -103,8 +97,9 @@ query Experience ($path: String!) {
 }
 
 .experience-project {
-  font-family: "IBM Plex Sans Roman";
   font-size: 2em;
+  line-height: 1.4em;
+  font-family: "IBM Plex Sans Roman";
 }
 
 .experience-project .label {
@@ -116,6 +111,9 @@ query Experience ($path: String!) {
   padding-bottom: 0.5em;
   margin-right: 0.5em;
   transition: background 1s;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .experience-project .label:hover {
@@ -130,7 +128,7 @@ query Experience ($path: String!) {
 }
 
 .experience-content {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .skill-badge {
@@ -145,6 +143,10 @@ query Experience ($path: String!) {
   margin-right: 0.5em;
   margin-top: 0.5em;
   transition: background 1s;
+}
+
+.skill-badge:hover {
+  background-color: var(--text-color)
 }
 
 .skill-name {

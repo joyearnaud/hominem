@@ -2,11 +2,7 @@
   <Layout>
     <PageHeader :page="$t(title)" />
     <section class="experience">
-      <ExperienceList
-        v-for="edge in $page.allExperience.edges"
-        :key="edge.node.id"
-        :experience="edge.node"
-      />
+      <ExperienceList v-for="edge in $page.allExperience.edges" :key="edge.node.id" :experience="edge.node" />
     </section>
   </Layout>
 </template>
