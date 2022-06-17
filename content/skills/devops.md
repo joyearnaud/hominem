@@ -1,6 +1,6 @@
 ---
-id: "craftsmanship"
-name: "Craftsmanship"
+id: "devops"
+name: "DevOps"
 categorie: "method"
 level: 30
 datestart: 2020-01-05
