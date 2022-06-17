@@ -1,6 +1,6 @@
 ---
-id: "mongodb"
-name: "MongoDB"
+id: "nosql"
+name: "NoSQL"
 categorie: "db"
 level: 40
 datestart: 2020-01-05
