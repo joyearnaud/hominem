@@ -25,7 +25,6 @@ keywords:
       - "Maven"
       - "JUnit"
       - "SOA"
-      - "IBM API Connect"
       - "Hystrix"
       - "Tanit CICS Connectors"
   - skill: "javascript"
@@ -41,6 +40,8 @@ keywords:
     versions:
       - "TDD"
       - "Pair programming"
+      - "Code Review"
+      - "Refactoring"
   - skill: "project-management"
     versions:
       - "JIRA"
@@ -48,6 +49,13 @@ keywords:
   - skill: "sql"
     versions:
       - "PostgresSQL"
+  - skill: "devops"
+    versions:
+      - "Ant/Maven"
+      - "GitFlow"
+      - "Jenkins"
+      - "Nexus"
+      - "IBM API Connect"
 ---
 
 Développement pour l'`Agence Digitale du Crédit du Nord` d'une application `multiplateformes` web, desktop et tablette, interagissant avec le système central via une panoplie de services dans le cadre d'une `architecture SOA`,
