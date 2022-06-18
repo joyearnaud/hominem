@@ -2,7 +2,7 @@
 id: "oodrive-2"
 client: "Oodrive"
 project: "Arrimage à la production"
-role: "software development engineer" 
+role: "Software Development Engineer" 
 description: "moteur de règles & connecteur Zuora/Sellforce"
 datestart: 2020-10-01
 dateend: 2021-09-01
