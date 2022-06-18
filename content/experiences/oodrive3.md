@@ -33,7 +33,7 @@ keywords:
 ---
 
 Suite à une expérience dans le board architecture d'Oodrive pour me former à Conception pilotée par le domaine (`DDD`) et Architecture orientée services (`SOA`) au travers de la plateforme `Archimate`, j'ai intégré l'équipe Connect.
-L'équipe Connect à pour but de mener la nouvelle politique API, c'est à dire d'accompagner les équipes dans les bonnes pratiques pour la publications de leur API.
+L'équipe Connect à pour but de mener la nouvelle `politique API`, c'est à dire d'accompagner les équipes dans les bonnes pratiques pour la publications de leur API.
 
 - mise en place de bonnes pratiques API
 - conception d'API
