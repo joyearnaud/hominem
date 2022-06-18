@@ -7,7 +7,7 @@ const i18n = require("./plugins/i18n");
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Blog',
+  siteName: 'Dev\' in Progress',
   siteDescription: 'A simple blog designed with Gridsome',
   templates: {
     Thought: '/thought/:title',
