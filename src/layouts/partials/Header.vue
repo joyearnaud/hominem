@@ -24,6 +24,7 @@
         </div>
       </div>
     </nav>
+    <hr class="round" />
   </div>
 </template>
 
@@ -41,48 +42,27 @@ export default {
 </script>
 
 <style>
-#app > div:nth-child(1) > nav > div > a {
-  font-size: 2vw;
+.round {
+  margin-top: 0.1vmin;
+  margin-bottom: 6vmin;
 }
-.navbar a {
-  font-family: "Stylish";
 
+.navbar a {
+  text-align: right;
+  font-family: "Stylish";
   text-decoration: inherit;
   text-transform: uppercase;
   color: var(--border-color);
   transition: color 2s;
-  letter-spacing: 2px;
-  font-size: 16px;
+  letter-spacing: 0.5vmin;
+  font-size: 2vmin;
   font-weight: bold;
 }
 .navbar a:hover {
+  text-align: right;
   text-decoration: underline;
   color: var(--link-color);
   transition: color 0.3s;
-}
-.layout-header {
-  font-family: "IBM Plex Sans Roman";
-  font-size: 1.2em;
-  text-align: center;
-  line-height: 1.4em;
-  margin: 0px auto;
-  margin-top: 10px;
-}
-.row {
-  width: 100%;
-}
-.menu {
-  text-align: center;
-}
-.menu .navlink {
-  padding-right: 1em;
-  color: var(--text-color);
-  text-decoration: none;
-}
-.menu .navlink:hover {
-  padding-right: 1em;
-  color: var(--border-color);
-  text-decoration: underline;
 }
 .switch {
   text-align: right;

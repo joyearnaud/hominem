@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <h1 class="site-name" v-html="$page.metadata.siteName" />
-    <BreathAnimation :label="page" :hover="false" />
+    <span class="breath">
+      <BreathAnimation :label="page" :hover="false" />
+    </span>
     <hr class="round" />
   </header>
 </template>
@@ -26,25 +28,17 @@ query {
 </page-query>
 
 <style scoped>
-.breathe {
-  margin-top: 1em;
-}
-
-.header h2 {
-  font-weight: 200;
-  font-size: 35px;
-  font-family: "Stylish";
-  text-decoration: inherit;
-  color: var(--border-color);
-  transition: color 2s;
-  letter-spacing: 2px;
-  font-size: 0.8em;
+.round {
+  margin-top: -6vmin;
+  margin-bottom: 6vmin;
+  margin-left: 6vmin;
+  margin-right: 6vmin;
 }
 
 .site-name {
   font-family: "Stylish";
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.7vmin;
   text-align: center;
 }
 </style>
