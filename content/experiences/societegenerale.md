@@ -11,6 +11,7 @@ skills:
   - "java"
   - "javascript"
   - "craftsmanship"
+  - "devops"
   - "project-management"
   - "sql"
 keywords:
