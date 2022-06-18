@@ -3,24 +3,50 @@ id: "oodrive-1"
 client: "Oodrive"
 project: "HERMES"
 role: "software development engineer" 
-description: "migration d'un système de facturation maison vers une solution sur étagère"
+description: "Migration d'un système de facturation maison vers une solution sur étagère"
 datestart: 2020-01-01
 dateend: 2022-04-01
 # keySkill: "javascript"
 skills:
-  - "java"
   - "kotlin"
+  - "container"
+  - "craftsmanship"
+  - "project-management"
 keywords:
-  - skill: "java"
-    versions: 
-    - "1.8"
-    - "11"
-    note: 4
   - skill: "kotlin"
+    versions:
+      - "Arrow-kt"
+      - "Spring Boot"
+      - "Maven"
+      - "JUnit/AssertJ/Testcontainers"
+  - skill: "container"
+    versions:
+      - "Docker Compose"
+      - "Testcontainers"
+  - skill: "craftsmanship"
+    versions:
+      - "TDD"
+      - "Pair programming"
+      - "Code Review"
+  - skill: "project-management"
+    versions:
+      - "Atelier métier"
+  - skill: "sql"
+    versions:
+      - "PostgresSQL"
+      - "Liquibase"
+      - "HikariCP"
+      - "JetBrain Exposed"
+  - skill: "devops"
+    versions:
+      - "Maven"
+      - "GitFlow"
 ---
 
-- Mise en place du socle technique (moteur de règle)
-- Conception d'API
+Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont été menés pour comprendre comment faire intéragir le legacy (les anciens processus) avec l'opérationnel (les produits déjà vendu) et le `connecteur` à développer et les automatisations qui puissent en découlées. Pendant cette période, un socle technique `conteneurisé` à été fournis.
+
 - Ecriture des besoins fonctionnels et techniques
 - Rédaction de documentations
 - Animation de projet
+- Mise en place du socle technique
+- Conception d'API

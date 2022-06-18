@@ -1,6 +1,6 @@
 ---
-id: "kubernetes"
-name: "Kubernetes"
+id: "container"
+name: "Container"
 categorie: "cloud"
 level: 40
 datestart: 2020-01-05
