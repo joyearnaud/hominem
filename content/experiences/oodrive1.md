@@ -2,7 +2,7 @@
 id: "oodrive-1"
 client: "Oodrive"
 project: "HERMES"
-role: "software development engineer" 
+role: "Software Development Engineer" 
 description: "Migration d'un système de facturation maison vers une solution sur étagère"
 datestart: 2020-01-01
 dateend: 2022-04-01
