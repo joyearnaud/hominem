@@ -9,27 +9,32 @@ dateend: 2023-01-01
 # keySkill: "javascript"
 skills:
   - "go"
-  - "kubernetes"
+  - "container"
+  - "apim"
+  - "devops"
 keywords:
-  - skill: "kubernetes"
-  - name: "docker"
   - skill: "go"
-  - name: "APIm"
+  - skill: "container"
+    versions:
+      - "Docker Compose"
+      - "Kubernetes"
+  - skill: "apim"
     versions:
       - "Kong"
       - "KrakenD"
       - "Goo Edge"
       - "Gravitee"
-  - name: "iPaaS"
+  - skill: "devops"
     versions:
-      - "Anypoint"
-
+      - "GitFlow"
+      - "Gitlab CI"
+      - "Postman"
+      - "jmeter"
 ---
 
-J'ai rejoint le board architecture d'Oodrive pour me former à Conception pilotée par le domaine (DDD) au travers de la plateforme Archimate, avant d'intégré complétement l'équipe Connect.
-L'équipe Connect à pour but de mener la nouvelle politique API et de l'implémenter.
+Suite à une expérience dans le board architecture d'Oodrive pour me former à Conception pilotée par le domaine (`DDD`) et Architecture orientée services (`SOA`) au travers de la plateforme `Archimate`, j'ai intégré l'équipe Connect.
+L'équipe Connect à pour but de mener la nouvelle politique API, c'est à dire d'accompagner les équipes dans les bonnes pratiques pour la publications de leur API.
 
-- Mise en place de bonnes pratiques API
-- Conception d'API
-- POC de solution API
-- mise en place APIm avec une gateway API
+- mise en place de bonnes pratiques API
+- conception d'API
+- POC/benchmark de solution API
