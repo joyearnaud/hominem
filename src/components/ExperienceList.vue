@@ -20,7 +20,6 @@
                 </h3>
                 <h4 class="role" v-html="experience.role" />
                 <p class="description" v-html="experience.description"></p>
-                <p class="content" v-html="experience.content" />
                 <div>
                   <g-link :to="k.path" v-for="k in experience.skills" v-bind:key="k.id">
                     <span class="skill badge rounded-pill">
@@ -47,6 +46,11 @@ export default {
 <style scoped>
 #experience {
   padding: 1px 10px 1px 1px;
+}
+
+#experience .description {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #experience .description::first-letter {

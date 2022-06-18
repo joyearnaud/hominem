@@ -2,76 +2,65 @@
   <div>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo" to="/"
-          ><g-image
-            src="~/assets/cosmonaut.png"
-            width="40"
-            blur="40"
-            immediate="true"
-          />
-        </g-link>
-        <g-link class="navlink" to="/about">{{ removeAccent($t('about')) }}</g-link>
-        <g-link class="navlink" to="/experience">{{ removeAccent($t('experience')) }}</g-link>
-        <g-link class="navlink" to="/thought">{{ removeAccent($t('thoughts')) }}</g-link>
+        <g-link class="navlink logo" to="/"> <Logo /> </g-link>
+        <g-link class="navlink" to="/about">{{
+          removeAccent($t("about"))
+        }}</g-link>
+        <g-link class="navlink" to="/experience">{{
+          removeAccent($t("experience"))
+        }}</g-link>
+        <g-link class="navlink" to="/thought">{{
+          removeAccent($t("thoughts"))
+        }}</g-link>
         <div class="col-1 switch">
           <ToggleTheme />
         </div>
       </div>
     </nav>
+    <hr class="round" />
   </div>
 </template>
 
 <script>
 import ToggleTheme from "@/components/ToggleTheme";
+import Logo from "@/components/Logo";
 export default {
   components: {
     ToggleTheme,
+    Logo,
   },
   methods: {
-    removeAccent: (text) => text.normalize("NFD").replace(/\p{Diacritic}/gu, "")
-  }
+    removeAccent: (text) =>
+      text.normalize("NFD").replace(/\p{Diacritic}/gu, ""),
+  },
 };
 </script>
 
 <style>
+.round {
+  margin-top: 0.1vmin;
+}
+
 .navbar a {
+  text-align: right;
   font-family: "Stylish";
   text-decoration: inherit;
   text-transform: uppercase;
   color: var(--border-color);
   transition: color 2s;
-  letter-spacing: 2px;
-  font-size: 16px;
+  letter-spacing: 0.5vmin;
+  font-size: 2vmin;
   font-weight: bold;
 }
 .navbar a:hover {
+  text-align: right;
   text-decoration: underline;
   color: var(--link-color);
   transition: color 0.3s;
 }
-.layout-header {
-  font-family: "IBM Plex Sans Roman";
-  font-size: 1.2em;
-  text-align: center;
-  line-height: 1.4em;
-  margin: 0px auto;
-  margin-top: 10px;
-}
-.row {
-  width: 100%;
-}
-.menu {
-  text-align: center;
-}
-.menu .navlink {
-  padding-right: 1em;
-  color: var(--text-color);
-  text-decoration: none;
-}
-.menu .navlink:hover {
-  padding-right: 1em;
-  color: var(--border-color);
-  text-decoration: underline;
+
+.logo {
+  transform: rotate(113deg);
 }
 .switch {
   text-align: right;
