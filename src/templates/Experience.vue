@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/experience" class="link"> &larr; {{ $t('back') }}</g-link>
+    <g-link to="/experience" class="link"> &larr; {{ $t("back") }}</g-link>
 
     <div class="experience-title">
       <h1>
@@ -10,7 +10,8 @@
         <span v-html="$page.experience.project" />
       </h1>
       <p class="experience-date">
-        {{ $d(new Date($page.experience.datestart), 'short') }} | {{ $d(new Date($page.experience.dateend), 'short') }}
+        {{ $d(new Date($page.experience.datestart), "short") }} |
+        {{ $d(new Date($page.experience.dateend), "short") }}
       </p>
     </div>
 
@@ -23,12 +24,17 @@
     </div>
 
     <div class="container-fluid experience-keywords">
-      <h3>{{ $t('keywords') }}</h3>
+      <h3>{{ $t("keywords") }}</h3>
       <ul>
         <li v-for="k in $page.experience.keywords" :key="k.id">
           <p>
-            <g-link v-if="k.skill" class="skill-name navlink badge" :to="k.skill.path">{{ k.skill.name }}</g-link>
-            <span v-else class="skill-name badge ">{{ k.name }}</span>
+            <g-link
+              v-if="k.skill"
+              class="skill-name navlink badge"
+              :to="k.skill.path"
+              >{{ k.skill.name }}</g-link
+            >
+            <span v-else class="skill-name badge">{{ k.name }}</span>
             <span v-for="version in k.versions" :key="version.id">
               <span class="skill-badge badge">
                 {{ version }}
@@ -39,7 +45,6 @@
         </li>
       </ul>
     </div>
-
   </Layout>
 </template>
 
@@ -98,8 +103,9 @@ query Experience ($path: String!) {
 
 .experience-project {
   font-size: 2em;
-  line-height: 1.4em;
+  line-height: 1em;
   font-family: "IBM Plex Sans Roman";
+  display: inline-block;
 }
 
 .experience-project .label {
@@ -107,23 +113,16 @@ query Experience ($path: String!) {
   color: var(--bkg-color);
   padding-left: 0.5em;
   padding-right: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   margin-right: 0.5em;
   transition: background 1s;
   text-align: center;
-  width: 100%;
   border-radius: 20px;
 }
 
 .experience-project .label:hover {
   background-color: var(--border-color);
-  color: var(--bkg-color);
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-right: 0.5em;
   transition: background 1s;
 }
 
@@ -146,7 +145,7 @@ query Experience ($path: String!) {
 }
 
 .skill-badge:hover {
-  background-color: var(--text-color)
+  background-color: var(--text-color);
 }
 
 .skill-name {
