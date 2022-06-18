@@ -44,7 +44,6 @@ export default {
 <style>
 .round {
   margin-top: 0.1vmin;
-  margin-bottom: 6vmin;
 }
 
 .navbar a {
