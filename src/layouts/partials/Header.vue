@@ -2,14 +2,7 @@
   <div>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo" to="/"
-          ><g-image
-            src="~/assets/cosmonaut.png"
-            width="40"
-            blur="40"
-            immediate="true"
-          />
-        </g-link>
+        <g-link class="navlink logo" to="/"> <Logo /> </g-link>
         <g-link class="navlink" to="/about">{{
           removeAccent($t("about"))
         }}</g-link>
@@ -30,9 +23,11 @@
 
 <script>
 import ToggleTheme from "@/components/ToggleTheme";
+import Logo from "@/components/Logo";
 export default {
   components: {
     ToggleTheme,
+    Logo,
   },
   methods: {
     removeAccent: (text) =>
@@ -62,6 +57,10 @@ export default {
   text-decoration: underline;
   color: var(--link-color);
   transition: color 0.3s;
+}
+
+.logo {
+  transform: rotate(113deg);
 }
 .switch {
   text-align: right;
