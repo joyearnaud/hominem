@@ -43,6 +43,8 @@ keywords:
       - "Pair programming"
       - "Code Review"
       - "Refactoring"
+      - "Tests d'intégration"
+      - "Tests fonctionnel/Cucumber/Selenium"
   - skill: "project-management"
     versions:
       - "JIRA"
@@ -54,6 +56,7 @@ keywords:
     versions:
       - "Ant/Maven"
       - "GitFlow"
+      - "postman"
       - "Jenkins"
       - "Nexus"
       - "IBM API Connect"
