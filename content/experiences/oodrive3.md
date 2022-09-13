@@ -5,7 +5,7 @@ project: "Connect"
 role: "Tech Lead" 
 description: "API management & vision cloud"
 datestart: 2021-09-01
-dateend: 2023-01-01
+dateend: 2022-09-09
 # keySkill: "javascript"
 skills:
   - "go"
