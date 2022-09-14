@@ -2,8 +2,8 @@
 id: "oodrive-3"
 client: "Oodrive"
 project: "Connect"
-role: "Tech Lead" 
-description: "API management & vision cloud"
+role: "Software Architect" 
+description: "API management"
 datestart: 2021-09-01
 dateend: 2022-09-09
 # keySkill: "javascript"
@@ -13,7 +13,12 @@ skills:
   - "apim"
   - "devops"
 keywords:
-  - skill: "go"
+  - skill: "archimate"
+    versions:
+      - "Référentiel d'architecture d'entreprise"
+      - "UML"
+      - "BPMN"
+      - "Archi"
   - skill: "container"
     versions:
       - "Docker Compose"
@@ -32,9 +37,12 @@ keywords:
       - "jmeter"
 ---
 
-Suite à une expérience dans le board architecture d'Oodrive pour me former à Conception pilotée par le domaine (`DDD`) et Architecture orientée services (`SOA`) au travers de la plateforme `Archimate`, j'ai intégré l'équipe Connect.
-L'équipe Connect à pour but de mener la nouvelle `politique API`, c'est à dire d'accompagner les équipes dans les bonnes pratiques pour la publications de leur API.
+Dans le board architecture d'Oodrive, j'ai pu me former à la Conception Pilotée par le Domaine (`DDD`) et l'Architecture Orientée Services (`SOA`) au travers de la plateforme `Archimate`, dans le cadre d'une évolution vers une architecture `microservice`.
 
-- mise en place de bonnes pratiques API
-- conception d'API
-- POC/benchmark de solution API
+Cette expérience m'a amené à l'équipe Connect, qui a pour but de mener la nouvelle `politique API`, principalement REST. 
+
+Cela consiste à fournir un manifeste de bonnes pratiques accordé aux nécessités projet; accompagner les équipes pour une publication OpenAPI harmonisée et respectueuse des standards; fournir les solutions logiciels et matériels pour faciliter l'usage et la propagation de ces API ; apporter des solutions de migrations vers ces solutions.
+
+- cartographie de l'existant technique et métier
+- mise en place de bonnes pratiques API & workshop
+- POC/benchmark de solution API Management
