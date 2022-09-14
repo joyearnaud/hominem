@@ -3,28 +3,25 @@
     <PageHeader :page="$t(title)" />
     <section class="about">
       <!-- {{ $t('welcome') }} -->
-      <h3>
-        My, Myself & I
-      </h3>
+      <h3>Me, Myself & I</h3>
+      <p>Que peut faire un « développeur full-stack », me demandez-vous ?</p>
       <p>
-        What can a “full-stack developer” do, you ask?
+        Je peux invoquer un site Web à partir de rien, entièrement formé. Je
+        n'utilise pas d'astuce, encore moins de magie. Je me spécialise dans la
+        manipulation de l'essence même du Web, de ses matières premières HTML,
+        CSS et JavaScript. Les serveurs me servent, les domaines sont mon
+        domaine et les certificats sont certains.
       </p>
       <p>
-        I can conjur a website from nothing into existence, fully formed. I do
-        not use tricks, nor is this magic. I specialize in manipulating the very
-        fabric of the web, its raw materials of HTML, CSS, JavaScript, and SVG.
-        Linux servers serve me, domains are my domain, and certificates are
-        certain.
+        Je peux planifier, concevoir, créer, lancer et maintenir une API
+        moi-même. Ai-je mentionné que je créer également des applications
+        backend ? J'ai travaillé plus de 10 ans sur de nombreux projets publiés
+        et je recherche maintenant de nouveaux horizons dans le Cloud.
       </p>
       <p>
-        I can plan, design, build, launch, and maintain an API myself — did I
-        mention that I build backend apps too? I have worked 10+ years on a lot
-        of published project and now seek about new horizon in the Cloud.
-      </p>
-      <p>
-        A full-stack developer knows no bounds. And when they find one they
-        cross it without hesitation, boldly going into the unknown to return
-        richer for it.
+        Un développeur full-stack ne connaît pas de limites. Et quand ils en
+        trouvent une, ils la traversent sans hésitation, s'enfonçant hardiment
+        dans l'inconnu pour en revenir plus riches.
       </p>
     </section>
   </Layout>
