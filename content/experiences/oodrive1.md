@@ -6,7 +6,7 @@ role: "Software Development Engineer"
 description: "Migration d'un système de facturation maison vers une solution sur étagère"
 datestart: 2020-01-01
 dateend: 2022-04-01
-# keySkill: "javascript"
+keySkill: "kotlin"
 skills:
   - "kotlin"
   - "container"
@@ -43,7 +43,7 @@ keywords:
       - "GitFlow"
 ---
 
-Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont été menés pour comprendre comment faire intéragir les anciens processus interne avec l'opérationnel et les solutions sur étagère selectionnées, débouchant sur un `connecteur` à développer et des automatisations. Pendant cette période, un socle technique `conteneurisé` à été fournis.
+Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont été menés pour comprendre comment faire intéragir les anciens processus interne avec l'opérationnel et les solutions sur étagère selectionnées, débouchant sur un `connecteur` à développer et des automatisations. Pendant cette période, un socle technique `conteneurisé` à été fourni.
 
 - Ecriture des besoins fonctionnels et techniques
 - Rédaction de documentations

@@ -1,5 +1,5 @@
 ---
-client: "mairie de Paris"
+client: "Mairie de Paris"
 project: "Equipe transverse à la DSIN"
 role: "Lead Developer"
 description: "Formation d'équipe & Mise en place de bonnes pratiques"

@@ -6,7 +6,7 @@ role: "Software Architect"
 description: "Référentiel d'architecture & API management"
 datestart: 2021-09-01
 dateend: 2022-09-09
-# keySkill: "javascript"
+keySkill: "apim"
 skills:
   - "archimate"
   - "container"
