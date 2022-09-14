@@ -12,5 +12,14 @@
   "by": "by",
   "back":"Go back",
   "keyword": "keyword",
-  "keywords": "keywords"
+  "keywords": "keywords",
+  "skill": {
+    "references": {
+      "label": "reference in Experience section",
+      "total": "total"
+    },
+    "confidence": {
+      "label": "skill confidence"
+    }
+  }
 }

@@ -6,8 +6,11 @@
       <h1>{{ $page.skill.name }}</h1>
       <p>{{ $page.skill.categorie }}</p>
       <div class="progress">
-        <div class="progress-bar progress-bar-striped pgdefault" role="progressbar"
-          :style="'width: ' + $page.skill.level + '%'">
+        <div
+          class="progress-bar progress-bar-striped pgdefault"
+          role="progressbar"
+          :style="'width: ' + $page.skill.level + '%'"
+        >
           {{ skill.label.level.title }}
         </div>
       </div>
@@ -16,14 +19,15 @@
       <p v-html="$page.skill.content" />
     </div>
     <div class="skill-belongsto">
-      <h2>{{ refererence.label.title }}</h2>
+      <br />
+      <h3>{{ $t("skill.references.title") }}</h3>
       <ul>
         <li v-for="edge in $page.skill.belongsTo.edges" :key="edge.node.id">
-          <g-link :to="edge.node.path">{{ edge.node.client }} - {{ edge.node.project }}</g-link>
+          <g-link :to="edge.node.path"
+            >{{ edge.node.client }} - {{ edge.node.project }}</g-link
+          >
         </li>
       </ul>
-      <span>{{ refererence.label.total }}:
-        {{ $page.skill.belongsTo.totalCount }}</span>
     </div>
   </Layout>
 </template>
@@ -35,14 +39,8 @@ export default {
       skill: {
         label: {
           level: {
-            title: "skill confidence",
+            title: "experience",
           },
-        },
-      },
-      refererence: {
-        label: {
-          title: "Reference in Experience",
-          total: "Total",
         },
       },
     };

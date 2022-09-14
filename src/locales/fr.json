@@ -11,5 +11,11 @@
   "by": "par",
   "back":"Retour",
   "keyword": "mot-clé",
-  "keywords": "mots-clés"
+  "keywords": "mots-clés",
+  "skill": {
+    "references": {
+      "label": "références dans la section Expérience",
+      "total": "total"
+    }
+  }
 }
