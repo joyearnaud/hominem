@@ -9,9 +9,15 @@
             <div class="timeline-event-copy">
               <g-link :to="experience.path">
                 <p class="timeline-event-thumbnail">
-                  <span class="datestart" v-html="$d(new Date(experience.datestart), 'short')" />
+                  <span
+                    class="datestart"
+                    v-html="$d(new Date(experience.datestart), 'short')"
+                  />
                   <span> - </span>
-                  <span class="dateend" v-html="$d(new Date(experience.dateend), 'short')" />
+                  <span
+                    class="dateend"
+                    v-html="$d(new Date(experience.dateend), 'short')"
+                  />
                 </p>
                 <h3>
                   <span class="client" v-html="experience.client" />
@@ -20,8 +26,12 @@
                 </h3>
                 <h4 class="role" v-html="experience.role" />
                 <p class="description" v-html="experience.description"></p>
-                <div>
-                  <g-link :to="k.path" v-for="k in experience.skills" v-bind:key="k.id">
+                <div id="skills">
+                  <g-link
+                    :to="k.path"
+                    v-for="k in experience.skills"
+                    v-bind:key="k.id"
+                  >
                     <span class="skill badge rounded-pill">
                       {{ k.name }}
                     </span>

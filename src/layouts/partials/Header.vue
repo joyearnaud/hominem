@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo" to="/"> <Logo /> </g-link>
+        <g-link class="navlink logo over" to="/"> <Logo /> </g-link>
         <g-link class="navlink" to="/about">{{
           removeAccent($t("about"))
         }}</g-link>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </nav>
-    <hr class="round" />
+    <hr class="round under" />
   </div>
 </template>
 
@@ -39,6 +39,14 @@ export default {
 <style>
 .round {
   margin-top: 0.1vmin;
+}
+
+.under {
+  z-index: -1;
+}
+
+.over {
+  z-index: 6;
 }
 
 .navbar a {
