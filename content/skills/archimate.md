@@ -21,4 +21,4 @@ ArchiMate et les outils (`Archi`, `Modelio`, ...) qui l'utilise permettent de cr
 - l'architecture métier
 - l'architecture informatique
 
-Le même référentiel est utilisé pour les modèles (ArchiMate, UML, BPMN, …) et les éléments de Vision (Exigences, Objectifs, …)  pour `réunir la vision, les objectifs et les exigences`.
+Le même référentiel est utilisé pour les modèles (ArchiMate, UML, BPMN, …) et les éléments de Vision (Exigences, Objectifs, …) pour `réunir la vision, les objectifs et les exigences`.

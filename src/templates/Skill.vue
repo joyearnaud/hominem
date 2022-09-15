@@ -20,7 +20,7 @@
     </div>
     <div class="skill-belongsto">
       <br />
-      <h3>{{ $t("skill.references.title") }}</h3>
+      <h3>{{ $t("skill.references.label") }}</h3>
       <ul>
         <li v-for="edge in $page.skill.belongsTo.edges" :key="edge.node.id">
           <g-link :to="edge.node.path"
