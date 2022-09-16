@@ -17,7 +17,8 @@ skills:
 keywords:
   - skill: "java"
     versions:
-      - "1.6/1.7"
+      - "1.6"
+      - "1.7"
       - "Spring MVC / Batch"
       - "REST / JAXRS"
       - "SOAP / JAXWS"

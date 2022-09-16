@@ -17,7 +17,7 @@ skills:
 keywords:
   - skill: "java"
     versions:
-      - "8"
+      - "1.8"
       - "Spring Boot"
       - "REST / JAXRS"
       - "SOAP / JAXWS"
