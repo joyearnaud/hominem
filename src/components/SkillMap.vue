@@ -15,7 +15,7 @@ export default {
     draw(words) {
       /*  ======================= SETUP ======================= */
       var config = {
-        spiralResolution: 0.1, //Lower = better resolution
+        spiralResolution: 1, //Lower = better resolution
         spiralLimit: 360 * 5,
         lineHeight: 0.8,
         xWordPadding: 0,
