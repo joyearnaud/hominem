@@ -9,6 +9,7 @@
         <span> - </span>
         <span v-html="$page.experience.project" />
       </h1>
+      <h2 v-html="$page.experience.role" />
       <p class="experience-date">
         {{ $d(new Date($page.experience.datestart), "short") }} |
         {{ $d(new Date($page.experience.dateend), "short") }}
@@ -94,6 +95,13 @@ query Experience ($path: String!) {
 .experience-title h1 {
   font-family: "IBM Plex Sans Roman";
   text-transform: uppercase;
+}
+
+.experience-title h2 {
+  font-family: "IBM Plex Sans Roman";
+  text-transform: lowercase;
+  color: var(--border-color);
+  transition: background 1s;
 }
 
 .experience-date {
