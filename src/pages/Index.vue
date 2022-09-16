@@ -4,6 +4,7 @@
     <section class="home">
       <section class="experience">
         <SkillMap />
+        <!-- <SkillList /> -->
       </section>
     </section>
   </Layout>
@@ -12,11 +13,13 @@
 <script>
 import PageHeader from "@/components/PageHeader";
 import SkillMap from "@/components/SkillMap";
+import SkillList from "@/components/SkillList";
 
 export default {
   components: {
     PageHeader,
     SkillMap,
+    SkillList,
   },
   metaInfo: {
     title: "A simple blog",

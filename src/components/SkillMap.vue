@@ -1,12 +1,5 @@
 <template>
   <div id="word-cloud"></div>
-
-  <!-- <div v-for="skill in skillMap">
-      <h2>{{ skill[0] }}</h2>
-      <div v-for="version in skill[1].versions">
-        <span>{{ version }}</span>
-      </div>
-    </div> -->
 </template>
 
 <script>
@@ -14,7 +7,6 @@ export default {
   data() {
     return {
       skillMap: null,
-      words: [],
     };
   },
   methods: {
