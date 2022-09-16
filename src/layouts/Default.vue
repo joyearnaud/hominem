@@ -45,8 +45,8 @@ export default {
 }
 
 :root [data-theme="dark"] {
-  --text-color: #ffffff;
-  --border-color: #425bb5;
+  --text-color: #ffffffdf;
+  --border-color: #5a64c4;
   --bkg-color: #030200;
   --line-color: #fecd43;
   --link-color: #587af7;
