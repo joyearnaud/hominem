@@ -21,6 +21,7 @@ export default {
         xWordPadding: 0,
         yWordPadding: 3,
         font: "sans-serif",
+        size: 3,
       };
 
       words.forEach((v, k) => {
@@ -30,7 +31,8 @@ export default {
       words = Array.from(words).map(function ([key, value]) {
         return {
           word: key,
-          freq: value.versions.length * 2,
+          freq: key === "DevOps" ? 19 : value.versions.length * config.size,
+          color: Math.floor(Math.random() * 16777215).toString(16),
         };
       });
 
@@ -57,10 +59,11 @@ export default {
       /* ======================= END SETUP ======================= */
 
       /* =======================  PLACEMENT FUNCTIONS =======================  */
-      function createWordObject(word, freq) {
+      function createWordObject(word, freq, color) {
         var wordContainer = document.createElement("div");
         wordContainer.style.position = "absolute";
         wordContainer.style.fontSize = freq + "px";
+        wordContainer.style.color = "#" + color;
         wordContainer.style.lineHeight = config.lineHeight;
         /*    wordContainer.style.transform = "translateX(-50%) translateY(-50%)";*/
         wordContainer.appendChild(document.createTextNode(word));
@@ -119,7 +122,12 @@ export default {
       /* =======================  LETS GO! =======================  */
       (function placeWords() {
         for (var i = 0; i < words.length; i += 1) {
-          var word = createWordObject(words[i].word, words[i].freq);
+          console.log(words[i].color, "color");
+          var word = createWordObject(
+            words[i].word,
+            words[i].freq,
+            words[i].color
+          );
 
           for (var j = 0; j < config.spiralLimit; j++) {
             //If the spiral function returns true, we've placed the word down and can break from the j loop
@@ -194,7 +202,7 @@ export default {
 
 <style scoped>
 #word-cloud {
-  margin-top: 6em;
+  margin-top: 10em;
   margin-bottom: 5em;
   width: 100%;
 }
