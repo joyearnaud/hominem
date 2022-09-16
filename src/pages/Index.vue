@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="title" />
+    <PageHeader :page="$t('welcome')" />
     <section class="home"></section>
   </Layout>
 </template>
@@ -31,8 +31,17 @@ query {
     siteName
     siteDescription
   }
+  allExperience{
+    edges{
+      node{
+        keywords{
+          skill{id name path}
+          versions
+        }
+      }
+    }
+  }
 }
 </page-query>
 
-<style>
-</style>
+<style></style>
