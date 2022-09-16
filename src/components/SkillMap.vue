@@ -1,5 +1,7 @@
 <template>
-  <div id="word-cloud"></div>
+  <section>
+    <div id="word-cloud"></div>
+  </section>
 </template>
 
 <script>
@@ -13,8 +15,7 @@ export default {
     draw(words) {
       /*  ======================= SETUP ======================= */
       var config = {
-        trace: true,
-        spiralResolution: 1, //Lower = better resolution
+        spiralResolution: 0.1, //Lower = better resolution
         spiralLimit: 360 * 5,
         lineHeight: 0.8,
         xWordPadding: 0,
@@ -22,10 +23,14 @@ export default {
         font: "sans-serif",
       };
 
-      words = words.map(function (word) {
+      words.forEach((v, k) => {
+        console.log(v);
+      });
+
+      words = Array.from(words).map(function ([key, value]) {
         return {
-          word: word,
-          freq: Math.floor(Math.random() * 50) + 10,
+          word: key,
+          freq: value.versions.length * 2,
         };
       });
 
@@ -69,12 +74,6 @@ export default {
         word.style.top = y - word.offsetHeight / 2 + "px";
 
         wordsDown.push(word.getBoundingClientRect());
-      }
-
-      function trace(x, y) {
-        //     traceCanvasCtx.lineTo(x, y);
-        //     traceCanvasCtx.stroke();
-        traceCanvasCtx.fillRect(x, y, 1, 1);
       }
 
       function spiral(i, callback) {
@@ -170,7 +169,7 @@ export default {
       });
       console.log(skillMap.keys(), "skillMap");
       this.skillMap = skillMap;
-      this.draw([...skillMap.keys()]);
+      this.draw(skillMap);
     } catch (error) {
       console.log(error);
     }
@@ -195,8 +194,8 @@ export default {
 
 <style scoped>
 #word-cloud {
-  margin-top: 15em;
-  margin-bottom: 10em;
+  margin-top: 6em;
+  margin-bottom: 5em;
   width: 100%;
 }
 </style>

@@ -44,7 +44,7 @@ keywords:
       - "ECLIPSE"
       - "SVN"
       - "GIT"
-      - "MAVEN,"
+      - "Maven,"
       - "JENKINS"
       - "BASH/SSH"
 ---
