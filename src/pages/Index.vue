@@ -1,18 +1,22 @@
 <template>
   <Layout>
     <PageHeader :page="$t('welcome')" />
-    <section class="home"></section>
+    <section class="home">
+      <section class="experience">
+        <SkillMap />
+      </section>
+    </section>
   </Layout>
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader";
-import ThoughtList from "@/components/ThoughtList";
+import SkillMap from "@/components/SkillMap";
 
 export default {
   components: {
     PageHeader,
-    ThoughtList,
+    SkillMap,
   },
   metaInfo: {
     title: "A simple blog",
