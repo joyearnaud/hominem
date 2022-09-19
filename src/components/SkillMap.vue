@@ -15,13 +15,13 @@ export default {
     draw(words) {
       /*  ======================= SETUP ======================= */
       var config = {
-        spiralResolution: 1, //Lower = better resolution
+        spiralResolution: 1.5, //Lower = better resolution
         spiralLimit: 360 * 5,
         lineHeight: 0.8,
         xWordPadding: 0,
         yWordPadding: 3,
         font: "sans-serif",
-        size: 3,
+        size: 4,
       };
 
       words.forEach((v, k) => {
