@@ -15,7 +15,7 @@ export default {
     draw(words) {
       /*  ======================= SETUP ======================= */
       var config = {
-        spiralResolution: 1.5, //Lower = better resolution
+        spiralResolution: 3, //Lower = better resolution
         spiralLimit: 360 * 5,
         lineHeight: 0.8,
         xWordPadding: 0,
@@ -146,7 +146,7 @@ export default {
       })();
     },
   },
-  async mounted() {
+  async created() {
     try {
       const skillMap = new Map();
       const edges = JSON.parse(
@@ -203,7 +203,7 @@ export default {
 <style scoped>
 #word-cloud {
   margin-top: 10em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   width: 100%;
 }
 </style>
