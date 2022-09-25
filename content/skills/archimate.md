@@ -15,7 +15,7 @@ ArchiMate se distingue des autres langages tels que le langage UML et la Busines
 
 ArchiMate est bien adapté à l'architecture d'entreprise, UML fournit les détails nécessaires à l'architecture de solution, BPMN est le langage pour la modélisation détaillée des processus métiers.
 
-ArchiMate et les outils (`Archi`, `Modelio`, ...) qui l'utilise permettent de créer un `référentiel d'architecture d'entreprise`. C'est un atout fondamental de l'entreprise qui a besoin d'outils de gestion de haut niveau. Après plusieurs cycles d'architecture d'entreprise, ce référentiel contient des connaissances clés sur:
+ArchiMate et les outils (`Archi`, `Modelio`, ...) qui l'utilisent permettent de créer un `référentiel d'architecture d'entreprise`. C'est un atout fondamental de l'entreprise qui a besoin d'outils de gestion de haut niveau. Après plusieurs cycles d'architecture d'entreprise, ce référentiel contient des connaissances clés sur:
 
 - l'organisation de l'entreprise
 - l'architecture métier
