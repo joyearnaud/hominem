@@ -43,7 +43,7 @@ keywords:
       - "GitFlow"
 ---
 
-Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont été menés pour comprendre comment faire intéragir les anciens processus interne avec l'opérationnel et les solutions sur étagère selectionnées, débouchant sur un `connecteur` à développer et des automatisations. Pendant cette période, un socle technique `conteneurisé` à été fourni.
+Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont été menés pour comprendre comment faire intéragir les anciens processus internes avec l'opérationnel et les solutions sur étagère selectionnées, débouchant sur un `connecteur` à développer et des automatisations. Pendant cette période, un socle technique `conteneurisé` à été fourni.
 
 - Ecriture des besoins fonctionnels et techniques
 - Rédaction de documentations
