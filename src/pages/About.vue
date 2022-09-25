@@ -19,9 +19,9 @@
         et je recherche maintenant de nouveaux horizons dans le Cloud.
       </p>
       <p>
-        Un développeur full-stack ne connaît pas de limites. Et quand ils en
-        trouvent une, ils la traversent sans hésitation, s'enfonçant hardiment
-        dans l'inconnu pour en revenir plus riches.
+        Un développeur full-stack ne connaît pas de limites. Et quand il en
+        trouve une, il la traverse sans hésitation, s'enfonçant hardiment
+        dans l'inconnu pour en revenir plus riche.
       </p>
     </section>
   </Layout>
