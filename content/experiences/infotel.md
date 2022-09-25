@@ -50,6 +50,6 @@ application collaborative et de réseau social interne à Infotel.
 - Mise en place de service en SOAP
 - Mise en production
 - Rédaction de documentation techniques et fonctionnels ; Mise au point d'un
-- manuel d'utilisation avec le client
+- Manuel d'utilisation avec le client
 - Maintenance corrective et évolutive
 - Support
