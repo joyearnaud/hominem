@@ -49,7 +49,7 @@ keywords:
       - "BASH/SSH"
 ---
 
-Conception et réalisation de services pour la mise à jour et l'extension des possibilités du portail association, particulier, professionnel et entreprise; Notammentsur le développement de saisie et signature de nouveaux types de virements, et sur la maintenance et migration des portails applicatifs de la Société Générale pour être compatible avec Weblogic 11g.
+Conception et réalisation de services pour la mise à jour et l'extension des possibilités du portail associations, particuliers, professionnels et entreprises; Notamment sur le développement d'outil de saisie et signature pour de nouveaux types de virements, et sur la maintenance et migration des portails applicatifs de la Société Générale pour être compatible avec Weblogic 11g.
 
 - Etudes de besoins utilisateurs
 - Rédaction des spécifications et documentations techniques
