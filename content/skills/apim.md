@@ -17,13 +17,13 @@ L'API Management couvre un large spectre d'utilisations car il intervient à plu
 - Gouvernance de données
 - Organisationnel
 
-Il s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux mode de gouvernance. Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
+Il s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux modes de gouvernance. Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
 
 Les outils de gestions peuvent comprendre, entre autres exemples:
 - aculturation
-  - manifeste: `écriture d'une vision API unifiée` entre les équipes avec contrainte et nécessités métier;
-  - `workshop`: atelier sur les API avec pour objectif amélioration continue des solutions proposés;
-  - feuille de route: le `suivis de l'évolution API`, avec l'apparition de nouvelles normes et standarts et l'évolution métier oblige à percevoir et fournir une vision souhaitées.
+  - manifeste: `écriture d'une vision API unifiée` entre les équipes avec contraintes et nécessités métier;
+  - `workshop`: atelier sur les API avec pour objectif amélioration continue des solutions proposées;
+  - feuille de route: le `suivis de l'évolution API`, avec l'apparition de nouvelles normes et standarts et l'évolution métier oblige à percevoir et fournir une vision souhaitée.
   
 
 - technique
@@ -31,7 +31,7 @@ Les outils de gestions peuvent comprendre, entre autres exemples:
   - `publication`: est l'outil que les fournisseurs d'API utilisent pour définir les API, leurs politiques d'accès et d'utilisation, l'exécution de débogage ainsi que la gestion du cycle de leur cycle de vie de l'API;
   - `portail` (API store): est un site communautaire pour les abonnés à l'API qui sont tenus par les fournisseurs d'API. Il comprend la documentation, la console interactive de l'API pour tester les API, la possibilité de s'abonner aux API et de gérer les abonnements et le service de soutien du fournisseur ou de la communauté de l'API;
   - `reporting`: outil de communication de données et d'analyse permettant d'avoir une visibilité claire sur l'utilisation de l'API. C'est en outre un outil de marketing qui permet de mesurer le comportement des abonnés et ainsi permettre à l'éditeur de l'API d'optimiser son offre;
-  - `monétisation`: le service de monétisation d'accès à l'API permet de monétiser les API hébergées chez le fournisseur d'API choisis.
+  - `monétisation`: le service de monétisation d'accès à l'API permet de monétiser les API hébergées chez le fournisseur d'API choisi.
 
 références externes:
 - [mulesoft](https://www.mulesoft.com/fr/resources/api/what-is-api-management)
