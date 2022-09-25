@@ -9,7 +9,7 @@ dateend: 2022-01-05
 
 Un `conteneur (container en anglais)` est utilisé pour bénéficier d'un espace d'exécution dédié à une application logicielle. Il peut se présenter sous la forme d'un type de données abstrait, d'une structure d'informations ou encore d'une classe.
 
-L'usage d'un conteneur permet de tester des applications en développement avec les même contrainte que sur l'environnement de production (`réplicabilité`), sur de multiple support avec le même rendu (`portabilité`). L'intérêt est de disposer d'un environnement isolé pour réaliser tous les contrôles nécessaires avant le déploiement. Il est donc plus facile de distinguer les dysfonctionnements, les failles de sécurité et d'éventuels problèmes de stabilité. 
+L'usage d'un conteneur permet de tester des applications en développement avec les mêmes contraintes que sur l'environnement de production (`réplicabilité`), sur de multiples supports avec le même rendu (`portabilité`). L'intérêt est de disposer d'un environnement isolé pour réaliser tous les contrôles nécessaires avant le déploiement. Il est donc plus facile de distinguer les dysfonctionnements, les failles de sécurité et d'éventuels problèmes de stabilité. 
 
 `A l'inverse d'une machine virtuelle (ou VM`) qui dispose de son propre système d'exploitation, le conteneur utilise l'OS de l'ordinateur où il est installé. Bien que ce dernier aspect soit pratique, `la puissance sollicitée est inférieure`, en particulier sur les ressources de la mémoire.
 
