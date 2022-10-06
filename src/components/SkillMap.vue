@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="skillmap">
     <div id="word-cloud"></div>
   </section>
 </template>
@@ -20,8 +20,8 @@ export default {
         lineHeight: 0.8,
         xWordPadding: 0,
         yWordPadding: 3,
-        font: "sans-serif",
-        size: 4,
+        font: "IBM Plex Sans Roman",
+        size: 3.5,
       };
 
       words.forEach((v, k) => {
@@ -146,7 +146,7 @@ export default {
       })();
     },
   },
-  async created() {
+  async mounted() {
     try {
       const skillMap = new Map();
       const edges = JSON.parse(
@@ -175,7 +175,6 @@ export default {
           }
         });
       });
-      console.log(skillMap.keys(), "skillMap");
       this.skillMap = skillMap;
       this.draw(skillMap);
     } catch (error) {
@@ -201,9 +200,9 @@ export default {
   </static-query>
 
 <style scoped>
-#word-cloud {
-  margin-top: 10em;
-  margin-bottom: 10em;
-  width: 100%;
+section #skillmap {
+  width: 5px;
+  height: auto;
+  padding: 10px;
 }
 </style>
