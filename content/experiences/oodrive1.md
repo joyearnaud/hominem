@@ -50,3 +50,4 @@ Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont 
 - Animation de projet
 - Mise en place du socle technique
 - Conception d'API
+- Tests unitaires, intégration

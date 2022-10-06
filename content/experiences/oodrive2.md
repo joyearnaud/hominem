@@ -46,5 +46,6 @@ Certains processus automatisés sont validés par le service de facturation dont
 - Mise en place du socle technique (moteur de règle)
 - Conception d'API
 - Ecriture des besoins fonctionnels et techniques
+- Tests unitaires, intégration et fonctionnel (end-to-end)
 - Rédaction de documentations
 - Animation de projet
