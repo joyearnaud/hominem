@@ -7,7 +7,7 @@ datestart: 2020-01-05
 dateend: 2022-01-05
 ---
 
-## Wikipedia [[source]](https://fr.wikipedia.org/wiki/Java_(langage))
+## Définition Wikipedia [[source]](https://fr.wikipedia.org/wiki/Java_(langage))
 
 **Java** est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy en 1982, présenté officiellement le 23 mai 1995 au _SunWorld_
 
@@ -17,6 +17,8 @@ Une particularité de Java est que les logiciels écrits dans ce langage sont co
 
 ---
 
+## Spring
+
 En Java, **Spring comme Java EE permettent depuis longtemps de réaliser des web services**. Néanmoins, dans le cas de Java EE, cela nécessite le recours à un serveur d'application certifié, tel que WildFly, alors **qu'en Spring, un simple serveur web (léger) tel que Tomcat suffit.**
 
 **Déployer une API de services sur un serveur d'applications Java EE est complexe** : configuration, packaging, sélection des modules… cela nécessite du temps et de l'expertise. A l'heure actuelle, Java EE avance lentement vers la voie du cloud (trop lentement, serait-on tenté de dire).
@@ -24,6 +26,8 @@ En Java, **Spring comme Java EE permettent depuis longtemps de réaliser des web
 De son côté **Spring propose Spring Boot, une approche module particulièrement rapide et efficace pour créer une API de web services**. En quelques lignes de code, avec un (tout) petit projet Maven/Gradle, on obtient un .jar directement exécutable. Tout est compris, les briques du serveur web dont vous avez besoin, et rien d'autre. Vous pouvez très simplement utiliser les frameworks dont vous avez besoin (Hibernate, par exemple, ou n'importe quelle brique du Spring classique), Spring vous package le tout en un rien de temps.
 
 ---
+
+## Kotlin
 
 **Kotlin est simplement une dépendance et un plugin pour Maven/Gradle**. C'est un langage agréable, compact et facile à utiliser qui supprime toute la lourdeur syntaxique (par opposition au "syntactic sugar") que Java fournit.
 
@@ -36,6 +40,8 @@ Ainsi, **Kotlin fonctionne bien avec Spring**, qui fournit une grande partie des
 **Kotlin a une syntaxe beaucoup plus compacte et son système de type permet un code beaucoup plus robuste grâce à la sécurité nulle (null safety), aux classes scellées (sealed classes) et aux notions d'immutabilités.**
 
 --- 
+
+## Immutabilité
 
 Il est aussi possible d'utilisé la bibliothèque Java **Immutables** ou la fonctionnalité Java des **Record** pour atteindre cette notions d'immutabilité, **permettant de facilement implémenté des valeurs (value object) associés au Domain Driven Design (DDD)**.
 
