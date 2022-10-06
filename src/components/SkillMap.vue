@@ -18,21 +18,18 @@ export default {
         spiralResolution: 3, //Lower = better resolution
         spiralLimit: 360 * 5,
         lineHeight: 0.8,
-        xWordPadding: 0,
-        yWordPadding: 3,
+        xWordPadding: 10,
+        yWordPadding: 10,
         font: "IBM Plex Sans Roman",
-        size: 3.5,
       };
-
-      words.forEach((v, k) => {
-        console.log(v);
-      });
 
       words = Array.from(words).map(function ([key, value]) {
         return {
           word: key,
-          freq: key === "DevOps" ? 19 : value.versions.length * config.size,
+          freq: key === "DevOps" ? 10 : value.versions.length,
           color: Math.floor(Math.random() * 16777215).toString(16),
+          path: value.path,
+          versions: value.versions,
         };
       });
 
@@ -59,14 +56,44 @@ export default {
       /* ======================= END SETUP ======================= */
 
       /* =======================  PLACEMENT FUNCTIONS =======================  */
-      function createWordObject(word, freq, color) {
-        var wordContainer = document.createElement("div");
+      function createLinkObject(word, path, versions) {
+        const wordLinkContainer = document.createElement("a");
+        wordLinkContainer.setAttribute("href", path);
+        wordLinkContainer.classList.add("test");
+        wordLinkContainer.innerHTML = word;
+
+        wordLinkContainer.appendChild(createVersionsObject(versions));
+
+        return wordLinkContainer;
+      }
+
+      function createVersionsObject(versions) {
+        const wordVersionsContainer = document.createElement("div");
+        wordVersionsContainer.style.fontSize = 0.1 + "em";
+        wordVersionsContainer.style.width = 3 + "em";
+
+        for (let index = 0; index < versions.length; index++) {
+          const element = versions[index];
+          let container = document.createElement("div");
+          container.innerHTML = element;
+          wordVersionsContainer.appendChild(container);
+        }
+
+        return wordVersionsContainer;
+      }
+
+      function createWordObject(word, freq, color, path, versions) {
+        const wordContainer = document.createElement("div");
         wordContainer.style.position = "absolute";
-        wordContainer.style.fontSize = freq + "px";
+        wordContainer.style.fontSize = freq / 4 + "em";
         wordContainer.style.color = "#" + color;
         wordContainer.style.lineHeight = config.lineHeight;
+        wordContainer.style.padding = "1px";
+
         /*    wordContainer.style.transform = "translateX(-50%) translateY(-50%)";*/
-        wordContainer.appendChild(document.createTextNode(word));
+        wordContainer.appendChild(createLinkObject(word, path, versions));
+        // wordContainer.appendChild(createVersionsObject(versions));
+        // wordContainer.appendChild(document.createTextNode(""));
 
         return wordContainer;
       }
@@ -122,11 +149,12 @@ export default {
       /* =======================  LETS GO! =======================  */
       (function placeWords() {
         for (var i = 0; i < words.length; i += 1) {
-          console.log(words[i].color, "color");
           var word = createWordObject(
             words[i].word,
             words[i].freq,
-            words[i].color
+            words[i].color,
+            words[i].path,
+            words[i].versions
           );
 
           for (var j = 0; j < config.spiralLimit; j++) {

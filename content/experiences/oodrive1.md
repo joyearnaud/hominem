@@ -18,7 +18,9 @@ keywords:
       - "Arrow-kt"
       - "Spring Boot"
       - "Maven"
-      - "JUnit/AssertJ/Testcontainers"
+      - "JUnit"
+      - "AssertJ"
+      - "Testcontainers"
   - skill: "container"
     versions:
       - "Docker Compose"

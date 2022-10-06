@@ -57,8 +57,8 @@ query {
 
 <style scoped>
 section .skillmap {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 15em;
+  padding-bottom: 15em;
 }
 .skillmap {
   text-align: center;
