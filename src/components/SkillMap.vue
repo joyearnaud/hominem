@@ -62,7 +62,7 @@ export default {
         wordLinkContainer.classList.add("test");
         wordLinkContainer.innerHTML = word;
 
-        wordLinkContainer.appendChild(createVersionsObject(versions));
+        // wordLinkContainer.appendChild(createVersionsObject(versions));
 
         return wordLinkContainer;
       }
