@@ -59,6 +59,8 @@ query {
 section .skillmap {
   padding-top: 10em;
   padding-bottom: 10em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .skillmap {
   text-align: center;
