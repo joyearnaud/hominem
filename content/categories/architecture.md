@@ -1,6 +1,6 @@
 ---
 id: "architecture"
-name: "architecture"
+name: "Architecture"
 ---
 
-toto titi
+**todo**

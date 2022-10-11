@@ -11,7 +11,7 @@ skills:
   - "kotlin"
   - "container"
   - "craftsmanship"
-  - "project-management"
+  - "projectManagement"
 keywords:
   - skill: "kotlin"
     versions:
@@ -30,7 +30,7 @@ keywords:
       - "TDD"
       - "Pair programming"
       - "Code Review"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "Atelier métier"
   - skill: "sql"

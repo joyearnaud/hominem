@@ -12,7 +12,7 @@ skills:
   - "javascript"
   - "craftsmanship"
   - "devops"
-  - "project-management"
+  - "projectManagement"
   - "sql"
 keywords:
   - skill: "java"
@@ -39,7 +39,7 @@ keywords:
       - "Pair programming"
       - "Code Review"
       - "Refactoring"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "JIRA"
       - "Kanban"

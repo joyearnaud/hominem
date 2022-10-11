@@ -11,7 +11,7 @@ team-size: 5
 skills:
   - "java"
   - "javascript"
-  - "project-management"
+  - "projectManagement"
   - "sql"
   - "nosql"
 keywords:
@@ -27,7 +27,7 @@ keywords:
       - "AngularJS"
       - "Node.JS"
       - "PhoneGap (Adobe)"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "Kanban"
       - "UML"

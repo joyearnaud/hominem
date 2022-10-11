@@ -1,6 +1,6 @@
 ---
 id: "method"
-name: "method"
+name: "Method"
 ---
 
-toto titi
+**todo**

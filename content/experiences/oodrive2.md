@@ -10,7 +10,7 @@ keySkill: "java"
 skills:
   - "java"
   - "craftsmanship"
-  - "project-management"
+  - "projectManagement"
   - "sql"
   - "devops"
 keywords:
@@ -26,7 +26,7 @@ keywords:
     versions:
       - "TDD"
       - "Refactoring"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "JIRA"
       - "Kanban"
