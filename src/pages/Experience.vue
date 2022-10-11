@@ -63,7 +63,7 @@ query {
       node {
         id
         name
-        category
+        category {id name}
         level
         datestart
         dateend

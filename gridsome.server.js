@@ -40,6 +40,9 @@ module.exports = function (api) {
         skills: [Skill!]! @reference,
         keywords: [Keyword]
       }
+      type Skill implements Node @infer {
+        category: Category! @reference
+      }
       `
     );
 

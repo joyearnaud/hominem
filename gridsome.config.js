@@ -13,6 +13,7 @@ module.exports = {
     Thought: '/thought/:title',
     Experience: '/experience/:project',
     Skill: '/skill/:name',
+    Category: '/category/:name'
   },
   plugins: [
     {
@@ -34,6 +35,13 @@ module.exports = {
       options: {
         path: 'content/skills/**/*.md',
         typeName: 'Skill',
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/categories/**/*.md',
+        typeName: 'Category',
       }
     },
     i18n,
