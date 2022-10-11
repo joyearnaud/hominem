@@ -1,7 +1,7 @@
 ---
 id: "nosql"
 name: "NoSQL"
-categorie: "db"
+category: "db"
 level: 40
 datestart: 2020-01-05
 dateend: 2022-01-05

@@ -68,7 +68,7 @@ query Experience ($path: String!) {
           id
           name
           path
-          categorie
+          category
           content
           excerpt
           level
