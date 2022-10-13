@@ -19,10 +19,11 @@ keywords:
   - name: "ESB Mule"
   - skill: "devops"
     versions:
-      - "GIT/SVN - SUBVERSION"
-      - "ANT"
-      - "JENKINS"
-      - "ARTIFACTORY"
+      - "Git"
+      - "SVN"
+      - "Ant"
+      - "Jenkins"
+      - "Artifactory"
       - "SPLUNK"
 ---
 

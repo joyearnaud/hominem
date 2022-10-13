@@ -38,7 +38,7 @@ keywords:
       - "GitFlow"
       - "Jenkins"
       - "Nexus"
-      - "postman"
+      - "Postman"
 ---
 
 Certains processus automatisés sont validés par le service de facturation dont l'upgrade (ou upsale) automatique. Pour convenir, un `moteur de règle`, basé sur Easy Rules et adapté à Spring Boot, est concu et permet de modeler à la convenances ces nouveaux processus à appliquer entre la production et les solutions sur étagère Zuora/Saleforce.

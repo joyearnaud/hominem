@@ -22,7 +22,8 @@ keywords:
       - "Spring Boot"
       - "REST / JAXRS"
       - "SOAP / JAXWS"
-      - "JPA / Hibernate"
+      - "JPA"
+      - "Hibernate"
       - "Jboss Wildfly"
       - "Maven"
       - "JUnit"
@@ -32,12 +33,14 @@ keywords:
   - skill: "javascript"
     versions:
       - "AngularJS"
-      - "Angular 2"
       - "ES6"
       - "Webpack"
       - "Node.JS"
       - "NPM"
       - Karma / Jasmine
+  - skill: "typescript"
+    versions:
+      - "Angular 2"
   - skill: "craftsmanship"
     versions:
       - "TDD"
@@ -45,7 +48,7 @@ keywords:
       - "Code Review"
       - "Refactoring"
       - "Tests d'intégration"
-      - "Tests fonctionnel/Cucumber/Selenium"
+      - "Tests fonctionnel / Cucumber / Selenium"
   - skill: "projectManagement"
     versions:
       - "JIRA"
@@ -55,9 +58,10 @@ keywords:
       - "PostgresSQL"
   - skill: "devops"
     versions:
-      - "Ant/Maven"
+      - "Ant"
+      - "Maven"
       - "GitFlow"
-      - "postman"
+      - "Postman"
       - "Jenkins"
       - "Nexus"
       - "IBM API Connect"
@@ -68,7 +72,7 @@ Développement pour l'`Agence Digitale du Crédit du Nord` d'une application `mu
 - Conseil sur technologies & architectures 
 - Refactoring, Code review, Test-Driven Development (TDD), Pair Programming
 - Conception d'API REST pour Back For Front (BFF)
-- CI/CD Maven, GIT, Jenkin, Nexus, Alien4Cloud, EKL stack
+- CI/CD Maven, Git, Jenkin, Nexus, Alien4Cloud, EKL stack
 - Batterie de test 
     - tests des composants ou unitaires
     - tests d'intégrations

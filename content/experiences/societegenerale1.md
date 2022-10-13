@@ -19,10 +19,12 @@ keywords:
     versions:
       - "1.6"
       - "1.7"
-      - "Spring MVC / Batch"
+      - "Spring MVC"
+      - "Spring Batch"
       - "REST / JAXRS"
       - "SOAP / JAXWS"
-      - "JPA / Hibernate"
+      - "JPA"
+      - "Hibernate"
       - "Oracle Weblogic 11G"
   - skill: "javascript"
     versions:
@@ -41,12 +43,11 @@ keywords:
       - "Oracle Database"
   - skill: "devops"
     versions:
-      - "ECLIPSE"
       - "SVN"
-      - "GIT"
-      - "Maven,"
-      - "JENKINS"
-      - "BASH/SSH"
+      - "Git"
+      - "Maven"
+      - "Jenkins"
+      - "SSH/BASH"
 ---
 
 Conception et réalisation de services pour la mise à jour et l'extension des possibilités du portail associations, particuliers, professionnels et entreprises; Notamment sur le développement d'outil de saisie et signature pour de nouveaux types de virements, et sur la maintenance et migration des portails applicatifs de la Société Générale pour être compatible avec Weblogic 11g.

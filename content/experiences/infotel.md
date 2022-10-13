@@ -26,7 +26,7 @@ keywords:
       - "JQuery"
       - "AngularJS"
       - "Node.JS"
-      - "PhoneGap (Adobe)"
+      - "PhoneGap"
   - skill: "projectManagement"
     versions:
       - "Kanban"
