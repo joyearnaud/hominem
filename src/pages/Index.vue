@@ -2,14 +2,14 @@
   <Layout>
     <section class="home">
       <PageHeader :page="$t('welcome')" />
-      <section class="experience">
-        <div class="skillmap">
+      <div>
+        <div class="skillmap container-sm">
           <SkillMap class="skillmap" />
         </div>
-        <div class="skilllist">
-          <!-- <SkillList /> -->
+        <div class="skilllist container-sm">
+          <SkillList />
         </div>
-      </section>
+      </div>
     </section>
   </Layout>
 </template>
@@ -56,13 +56,11 @@ query {
 </page-query>
 
 <style scoped>
-section .skillmap {
-  padding-top: 10em;
-  padding-bottom: 10em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
 .skillmap {
-  text-align: center;
+  margin-top: 15vh;
+  height: 50vh;
+}
+.skilllist {
+  margin-top: 15vh;
 }
 </style>

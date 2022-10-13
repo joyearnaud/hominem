@@ -1,7 +1,5 @@
 <template>
-  <section class="skillmap">
-    <div id="word-cloud"></div>
-  </section>
+  <div id="word-cloud"></div>
 </template>
 
 <script>
@@ -13,165 +11,173 @@ export default {
   },
   methods: {
     draw(words) {
-      /*  ======================= SETUP ======================= */
-      var config = {
-        spiralResolution: 3, //Lower = better resolution
-        spiralLimit: 360 * 5,
-        lineHeight: 0.8,
-        xWordPadding: 10,
-        yWordPadding: 10,
-        font: "IBM Plex Sans Roman",
-      };
-
-      words = Array.from(words).map(function ([key, value]) {
-        return {
-          word: key,
-          freq: key === "DevOps" ? 10 : value.versions.length,
-          color: Math.floor(Math.random() * 16777215).toString(16),
-          path: value.path,
-          versions: value.versions,
+      setTimeout(function () {
+        console.log("Executed after 1 second");
+        /*  ======================= SETUP ======================= */
+        var config = {
+          spiralResolution: 3, //Lower = better resolution
+          spiralLimit: 360 * 6,
+          lineHeight: 0.8,
+          xWordPadding: 10,
+          yWordPadding: 5,
+          font: "IBM Plex Sans Roman",
         };
-      });
 
-      words.sort(function (a, b) {
-        return -1 * (a.freq - b.freq);
-      });
+        words = Array.from(words).map(function ([key, value]) {
+          return {
+            word: key,
+            freq: key === "DevOps" ? 10 : value.versions.length,
+            color: Math.floor(Math.random() * 16777215).toString(16),
+            path: value.path,
+            versions: value.versions,
+          };
+        });
 
-      var cloud = document.getElementById("word-cloud");
-      cloud.style.position = "relative";
-      cloud.style.fontFamily = config.font;
+        words.sort(function (a, b) {
+          return -1 * (a.freq - b.freq);
+        });
 
-      var traceCanvas = document.createElement("canvas");
-      traceCanvas.width = cloud.offsetWidth;
-      traceCanvas.height = cloud.offsetHeight;
-      var traceCanvasCtx = traceCanvas.getContext("2d");
-      cloud.appendChild(traceCanvas);
+        var cloud = document.getElementById("word-cloud");
+        console.log(cloud.offsetWidth, "cloud.offsetWidth");
+        console.log(cloud.offsetHeight, "cloud.offsetHeight");
+        cloud.style.position = "relative";
+        cloud.style.fontFamily = config.font;
 
-      var startPoint = {
-        x: cloud.offsetWidth / 2,
-        y: cloud.offsetHeight / 2,
-      };
+        var traceCanvas = document.createElement("canvas");
+        traceCanvas.width = cloud.offsetWidth;
+        traceCanvas.height = cloud.offsetHeight;
+        var traceCanvasCtx = traceCanvas.getContext("2d");
+        cloud.appendChild(traceCanvas);
 
-      var wordsDown = [];
-      /* ======================= END SETUP ======================= */
+        var startPoint = {
+          x: cloud.offsetWidth / 2,
+          y: cloud.offsetHeight / 2,
+        };
+        console.log(startPoint);
+        console.log(window.screen.height);
+        console.log(window.screen.width);
 
-      /* =======================  PLACEMENT FUNCTIONS =======================  */
-      function createLinkObject(word, path, versions) {
-        const wordLinkContainer = document.createElement("a");
-        wordLinkContainer.setAttribute("href", path);
-        wordLinkContainer.classList.add("test");
-        wordLinkContainer.innerHTML = word;
+        var wordsDown = [];
+        /* ======================= END SETUP ======================= */
 
-        // wordLinkContainer.appendChild(createVersionsObject(versions));
+        /* =======================  PLACEMENT FUNCTIONS =======================  */
+        function createLinkObject(word, path, versions) {
+          const wordLinkContainer = document.createElement("a");
+          wordLinkContainer.setAttribute("href", path);
+          wordLinkContainer.classList.add("test");
+          wordLinkContainer.innerHTML = word;
 
-        return wordLinkContainer;
-      }
+          // wordLinkContainer.appendChild(createVersionsObject(versions));
 
-      function createVersionsObject(versions) {
-        const wordVersionsContainer = document.createElement("div");
-        wordVersionsContainer.style.fontSize = 0.1 + "em";
-        wordVersionsContainer.style.width = 3 + "em";
-
-        for (let index = 0; index < versions.length; index++) {
-          const element = versions[index];
-          let container = document.createElement("div");
-          container.innerHTML = element;
-          wordVersionsContainer.appendChild(container);
+          return wordLinkContainer;
         }
 
-        return wordVersionsContainer;
-      }
+        // function createVersionsObject(versions) {
+        //   const wordVersionsContainer = document.createElement("div");
+        //   wordVersionsContainer.style.fontSize = 0.1 + "em";
+        //   wordVersionsContainer.style.width = 3 + "em";
 
-      function createWordObject(word, freq, color, path, versions) {
-        const wordContainer = document.createElement("div");
-        wordContainer.style.position = "absolute";
-        wordContainer.style.fontSize = freq / 4 + "em";
-        wordContainer.style.color = "#" + color;
-        wordContainer.style.lineHeight = config.lineHeight;
-        wordContainer.style.padding = "1px";
+        //   for (let index = 0; index < versions.length; index++) {
+        //     const element = versions[index];
+        //     let container = document.createElement("div");
+        //     container.innerHTML = element;
+        //     wordVersionsContainer.appendChild(container);
+        //   }
 
-        /*    wordContainer.style.transform = "translateX(-50%) translateY(-50%)";*/
-        wordContainer.appendChild(createLinkObject(word, path, versions));
-        // wordContainer.appendChild(createVersionsObject(versions));
-        // wordContainer.appendChild(document.createTextNode(""));
+        //   return wordVersionsContainer;
+        // }
 
-        return wordContainer;
-      }
+        function createWordObject(word, freq, color, path, versions) {
+          const wordContainer = document.createElement("div");
+          wordContainer.style.position = "absolute";
+          wordContainer.style.fontSize = freq / 1.5 + "vw";
+          wordContainer.style.color = "#" + color;
+          wordContainer.style.lineHeight = config.lineHeight;
+          wordContainer.style.padding = "1px";
 
-      function placeWord(word, x, y) {
-        cloud.appendChild(word);
-        word.style.left = x - word.offsetWidth / 2 + "px";
-        word.style.top = y - word.offsetHeight / 2 + "px";
+          /*    wordContainer.style.transform = "translateX(-50%) translateY(-50%)";*/
+          wordContainer.appendChild(createLinkObject(word, path, versions));
+          // wordContainer.appendChild(createVersionsObject(versions));
+          // wordContainer.appendChild(document.createTextNode(""));
 
-        wordsDown.push(word.getBoundingClientRect());
-      }
-
-      function spiral(i, callback) {
-        const angle = config.spiralResolution * i;
-        let x = (1 + angle) * Math.cos(angle);
-        let y = (1 + angle) * Math.sin(angle);
-        return callback ? callback(x, y) : null;
-      }
-
-      function intersect(word, x, y) {
-        cloud.appendChild(word);
-
-        word.style.left = x - word.offsetWidth / 2 + "px";
-        word.style.top = y - word.offsetHeight / 2 + "px";
-
-        var currentWord = word.getBoundingClientRect();
-
-        cloud.removeChild(word);
-
-        for (var i = 0; i < wordsDown.length; i += 1) {
-          var comparisonWord = wordsDown[i];
-
-          if (
-            !(
-              currentWord.right + config.xWordPadding <
-                comparisonWord.left - config.xWordPadding ||
-              currentWord.left - config.xWordPadding >
-                comparisonWord.right + config.wXordPadding ||
-              currentWord.bottom + config.yWordPadding <
-                comparisonWord.top - config.yWordPadding ||
-              currentWord.top - config.yWordPadding >
-                comparisonWord.bottom + config.yWordPadding
-            )
-          ) {
-            return true;
-          }
+          return wordContainer;
         }
 
-        return false;
-      }
-      /* =======================  END PLACEMENT FUNCTIONS =======================  */
+        function placeWord(word, x, y) {
+          cloud.appendChild(word);
+          word.style.left = x - word.offsetWidth / 2 + "px";
+          word.style.top = y - word.offsetHeight / 2 + "px";
 
-      /* =======================  LETS GO! =======================  */
-      (function placeWords() {
-        for (var i = 0; i < words.length; i += 1) {
-          var word = createWordObject(
-            words[i].word,
-            words[i].freq,
-            words[i].color,
-            words[i].path,
-            words[i].versions
-          );
+          wordsDown.push(word.getBoundingClientRect());
+        }
 
-          for (var j = 0; j < config.spiralLimit; j++) {
-            //If the spiral function returns true, we've placed the word down and can break from the j loop
+        function spiral(i, callback) {
+          const angle = config.spiralResolution * i;
+          let x = (1 + angle) * Math.cos(angle);
+          let y = (1 + angle) * Math.sin(angle);
+          return callback ? callback(x, y) : null;
+        }
+
+        function intersect(word, x, y) {
+          cloud.appendChild(word);
+
+          word.style.left = x - word.offsetWidth / 2 + "px";
+          word.style.top = y - word.offsetHeight / 2 + "px";
+
+          var currentWord = word.getBoundingClientRect();
+
+          cloud.removeChild(word);
+
+          for (var i = 0; i < wordsDown.length; i += 1) {
+            var comparisonWord = wordsDown[i];
+
             if (
-              spiral(j, function (x, y) {
-                if (!intersect(word, startPoint.x + x, startPoint.y + y)) {
-                  placeWord(word, startPoint.x + x, startPoint.y + y);
-                  return true;
-                }
-              })
+              !(
+                currentWord.right + config.xWordPadding <
+                  comparisonWord.left - config.xWordPadding ||
+                currentWord.left - config.xWordPadding >
+                  comparisonWord.right + config.wXordPadding ||
+                currentWord.bottom + config.yWordPadding <
+                  comparisonWord.top - config.yWordPadding ||
+                currentWord.top - config.yWordPadding >
+                  comparisonWord.bottom + config.yWordPadding
+              )
             ) {
-              break;
+              return true;
             }
           }
+
+          return false;
         }
-      })();
+        /* =======================  END PLACEMENT FUNCTIONS =======================  */
+
+        /* =======================  LETS GO! =======================  */
+        (function placeWords() {
+          for (var i = 0; i < words.length; i += 1) {
+            var word = createWordObject(
+              words[i].word,
+              words[i].freq,
+              words[i].color,
+              words[i].path,
+              words[i].versions
+            );
+
+            for (var j = 0; j < config.spiralLimit; j++) {
+              //If the spiral function returns true, we've placed the word down and can break from the j loop
+              if (
+                spiral(j, function (x, y) {
+                  if (!intersect(word, startPoint.x + x, startPoint.y + y)) {
+                    placeWord(word, startPoint.x + x, startPoint.y + y);
+                    return true;
+                  }
+                })
+              ) {
+                break;
+              }
+            }
+          }
+        })();
+      }, 1);
     },
   },
   async mounted() {
@@ -228,9 +234,7 @@ export default {
   </static-query>
 
 <style scoped>
-section #skillmap {
-  width: 5px;
-  height: auto;
-  padding: 10px;
+div #word-cloud {
+  height: 50vh;
 }
 </style>
