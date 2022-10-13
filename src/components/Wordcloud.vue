@@ -9,7 +9,7 @@
           ? 'var(--line-color)'
           : 'var(--text-color)'
     "
-    spacing="1"
+    :spacing="settings.spacing"
   >
     <template slot-scope="{ text, weight, word }" class="link">
       <div :title="weight">
@@ -29,12 +29,10 @@ export default {
   data() {
     return {
       skillMap: null,
-      words: [
-        ["romance", 19],
-        ["horror", 3],
-        ["fantasy", 7],
-        ["adventure", 3],
-      ],
+      words: [],
+      settings: {
+        spacing: 2,
+      },
     };
   },
   async mounted() {
