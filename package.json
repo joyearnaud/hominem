@@ -16,7 +16,8 @@
     "bootstrap-vue": "^2.21.2",
     "gridsome": "^0.7.15",
     "gridsome-plugin-i18n": "^1.6.0",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
