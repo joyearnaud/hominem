@@ -3,8 +3,8 @@
     <section class="home">
       <PageHeader :page="$t('welcome')" />
       <div>
-        <div class="skillmap container-sm">
-          <SkillMap class="skillmap" />
+        <div class="wordcloud container-sm">
+          <Wordcloud></Wordcloud>
         </div>
         <div class="skilllist container-sm">
           <SkillList />
@@ -18,12 +18,14 @@
 import PageHeader from "@/components/PageHeader";
 import SkillMap from "@/components/SkillMap";
 import SkillList from "@/components/SkillList";
+import Wordcloud from "@/components/Wordcloud";
 
 export default {
   components: {
     PageHeader,
     SkillMap,
     SkillList,
+    Wordcloud,
   },
   metaInfo: {
     title: "A simple blog",
@@ -56,11 +58,12 @@ query {
 </page-query>
 
 <style scoped>
-.skillmap {
-  margin-top: 15vh;
-  height: 50vh;
-}
 .skilllist {
-  margin-top: 15vh;
+  margin-top: 5vh;
+}
+
+.wordcloud {
+  margin-top: 5vh;
+  height: 30vh;
 }
 </style>
