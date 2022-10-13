@@ -57,7 +57,7 @@ export default {
   color: var(--border-color);
   transition: color 2s;
   letter-spacing: 0.5vmin;
-  font-size: 2vmin;
+  font-size: 3vmin;
   font-weight: bold;
 }
 .navbar a:hover {

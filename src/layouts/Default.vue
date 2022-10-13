@@ -78,7 +78,8 @@ body {
 .footer {
   padding-top: calc(30em / 4);
   text-align: center;
-  font-size: 2vmin;
+  font-size: 1em;
+  line-height: 2.4em;
 }
 
 .link {
