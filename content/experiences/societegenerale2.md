@@ -13,7 +13,7 @@ skills:
   - "javascript"
   - "craftsmanship"
   - "devops"
-  - "project-management"
+  - "projectManagement"
   - "sql"
 keywords:
   - skill: "java"
@@ -46,7 +46,7 @@ keywords:
       - "Refactoring"
       - "Tests d'intégration"
       - "Tests fonctionnel/Cucumber/Selenium"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "JIRA"
       - "Scrum"

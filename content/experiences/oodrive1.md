@@ -11,14 +11,16 @@ skills:
   - "kotlin"
   - "container"
   - "craftsmanship"
-  - "project-management"
+  - "projectManagement"
 keywords:
   - skill: "kotlin"
     versions:
       - "Arrow-kt"
       - "Spring Boot"
       - "Maven"
-      - "JUnit/AssertJ/Testcontainers"
+      - "JUnit"
+      - "AssertJ"
+      - "Testcontainers"
   - skill: "container"
     versions:
       - "Docker Compose"
@@ -28,7 +30,7 @@ keywords:
       - "TDD"
       - "Pair programming"
       - "Code Review"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "Atelier métier"
   - skill: "sql"
@@ -50,3 +52,4 @@ Suite à l'évolution vers le système de facturation `Zuora`, des ateliers ont 
 - Animation de projet
 - Mise en place du socle technique
 - Conception d'API
+- Tests unitaires, intégration

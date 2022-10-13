@@ -1,7 +1,7 @@
 ---
 id: "archimate"
 name: "ArchiMate"
-categorie: "architecture"
+category: "architecture"
 level: 40
 datestart: 2020-01-05
 dateend: 2022-01-05

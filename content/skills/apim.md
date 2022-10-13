@@ -1,7 +1,7 @@
 ---
 id: "apim"
 name: "API Management"
-categorie: "cloud"
+category: "cloud"
 level: 20
 datestart: 2020-01-05
 dateend: 2022-01-05

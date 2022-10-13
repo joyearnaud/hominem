@@ -1,7 +1,7 @@
 ---
 id: "python"
 name: "Python"
-categorie: "langage"
+category: "langage"
 level: 10
 datestart: 2020-01-05
 dateend: 2022-01-05

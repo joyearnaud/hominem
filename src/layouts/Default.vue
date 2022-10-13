@@ -33,23 +33,26 @@ export default {
   --text-color: #333;
   --border-color: #feae45;
   --bkg-color: white;
-  --line-color: #cdc8c5;
+  --line-color: #00a672;
   --link-color: #7a5422;
+  --accent-color: #ff1493;
 }
 :root [data-theme="sepia"] {
   --text-color: #433422;
   --border-color: #00a672;
   --bkg-color: #f1e7d0;
-  --line-color: #00a672;
+  --line-color: #5a64c4;
   --link-color: #015238;
+  --accent-color: #ff1493;
 }
 
 :root [data-theme="dark"] {
-  --text-color: #ffffffdf;
+  --text-color: #ffffffcb;
   --border-color: #5a64c4;
   --bkg-color: #030200;
   --line-color: #fecd43;
   --link-color: #587af7;
+  --accent-color: #ff1493;
 }
 
 body {

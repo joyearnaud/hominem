@@ -4,7 +4,7 @@
     <g-link to="/experience" class="link"> &larr; Go Back</g-link>
     <div class="skill-title">
       <h1>{{ $page.skill.name }}</h1>
-      <p>{{ $page.skill.categorie }}</p>
+      <p>{{ $page.skill.category.name }}</p>
       <div class="progress">
         <div
           class="progress-bar progress-bar-striped pgdefault"
@@ -54,7 +54,7 @@ query Skill($path: String!) {
     id
     path
     name
-    categorie
+    category {id name}
     level
     datestart(format: "YYYY-MM-DD")
     dateend(format: "YYYY-MM-DD")

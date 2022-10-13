@@ -1,18 +1,31 @@
 <template>
   <Layout>
-    <PageHeader :page="$t('welcome')" />
-    <section class="home"></section>
+    <section class="home">
+      <PageHeader :page="$t('welcome')" />
+      <div>
+        <div class="wordcloud container-sm">
+          <Wordcloud></Wordcloud>
+        </div>
+        <div class="skilllist container-sm">
+          <SkillList />
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader";
-import ThoughtList from "@/components/ThoughtList";
+import SkillMap from "@/components/SkillMap";
+import SkillList from "@/components/SkillList";
+import Wordcloud from "@/components/Wordcloud";
 
 export default {
   components: {
     PageHeader,
-    ThoughtList,
+    SkillMap,
+    SkillList,
+    Wordcloud,
   },
   metaInfo: {
     title: "A simple blog",
@@ -44,4 +57,13 @@ query {
 }
 </page-query>
 
-<style></style>
+<style scoped>
+.skilllist {
+  margin-top: 5vh;
+}
+
+.wordcloud {
+  margin-top: 5vh;
+  height: 30vh;
+}
+</style>

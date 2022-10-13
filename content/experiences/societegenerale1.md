@@ -12,7 +12,7 @@ skills:
   - "java"
   - "javascript"
   - "devops"
-  - "project-management"
+  - "projectManagement"
   - "sql"
 keywords:
   - skill: "java"
@@ -31,7 +31,7 @@ keywords:
       - "JQuery"
       - "Adobe Flash"
       - "Opentext Vignette"
-  - skill: "project-management"
+  - skill: "projectManagement"
     versions:
       - "JIRA"
       - "Scrum"
@@ -44,7 +44,7 @@ keywords:
       - "ECLIPSE"
       - "SVN"
       - "GIT"
-      - "MAVEN,"
+      - "Maven,"
       - "JENKINS"
       - "BASH/SSH"
 ---
