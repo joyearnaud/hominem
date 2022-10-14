@@ -69,11 +69,11 @@ query {
 }
 </page-query>
 
-<style>
+<style scoped>
 .titre {
   margin: 2em;
 }
 .description {
-  min-width: 22em;
+  min-width: 20em;
 }
 </style>
