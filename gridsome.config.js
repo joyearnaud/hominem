@@ -8,7 +8,7 @@ const i18n = require("./plugins/i18n");
 
 module.exports = {
   siteName: 'Dev\' in Progress',
-  siteDescription: 'A simple blog designed with Gridsome',
+  siteDescription: 'Arnaud JOYE portfolio',
   templates: {
     Thought: '/thought/:title',
     Experience: '/experience/:project',
