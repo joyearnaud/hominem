@@ -50,7 +50,7 @@ export default {
     Selfie,
   },
   metaInfo: {
-    title: "A simple blog",
+    title: "Arnaud",
   },
   data() {
     return {

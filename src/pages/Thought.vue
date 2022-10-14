@@ -21,7 +21,7 @@ export default {
     ThoughtList,
   },
   metaInfo: {
-    title: "A simple blog",
+    title: "Arnaud blog",
   },
   data() {
     return {
@@ -54,5 +54,4 @@ query {
 }
 </page-query>
 
-<style>
-</style>
+<style></style>

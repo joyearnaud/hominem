@@ -21,7 +21,7 @@ export default {
     ExperienceList,
   },
   metaInfo: {
-    title: "A simple CV",
+    title: "Arnaud CV",
   },
   data() {
     return {

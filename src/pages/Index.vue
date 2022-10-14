@@ -28,7 +28,7 @@ export default {
     Wordcloud,
   },
   metaInfo: {
-    title: "A simple blog",
+    title: "Arnaud site",
   },
   data() {
     return {
