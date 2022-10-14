@@ -32,12 +32,12 @@ export default {
 </script>
 
 <page-query>
-query {
+query($locale:String) {
   metadata {
     siteName
     siteDescription
   }
-  allThought {
+  allThought(filter: {lang: {eq: $locale}}) {
     totalCount
     edges {
       node {

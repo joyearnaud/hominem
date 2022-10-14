@@ -1,7 +1,8 @@
 ---
-title: "API Management"
+title: "API Management (gestion d'API)"
 description: "Qu'est ce que l'API management et quels sont ces outils ?"
 date: 2022-09-14
+lang: fr
 ---
 
 API Management ou Gestion des API est un ensemble du processus de `conception`, de `publication`, de `documentation` et d'`analyse des API` au sein d'un environnement sécurisé. 
