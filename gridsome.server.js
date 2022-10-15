@@ -43,6 +43,9 @@ module.exports = function (api) {
       type Skill implements Node @infer {
         category: Category! @reference
       }
+      type Thought implements Node @infer {
+        relateTo: [Thought!] @reference
+      }
       `
     );
 

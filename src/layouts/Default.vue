@@ -36,6 +36,7 @@ export default {
   --line-color: #00a672;
   --link-color: #7a5422;
   --accent-color: #ff1493;
+  --reverted-color: 0;
 }
 :root [data-theme="sepia"] {
   --text-color: #433422;
@@ -44,6 +45,7 @@ export default {
   --line-color: #5a64c4;
   --link-color: #015238;
   --accent-color: #ff1493;
+  --reverted-color: 0;
 }
 
 :root [data-theme="dark"] {
@@ -53,6 +55,7 @@ export default {
   --line-color: #fecd43;
   --link-color: #587af7;
   --accent-color: #ff1493;
+  --reverted-color: 1;
 }
 
 body {

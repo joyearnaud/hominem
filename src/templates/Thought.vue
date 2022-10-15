@@ -1,18 +1,59 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/thought" class="link"> &larr; {{ $t('back') }}</g-link>
-    <div class="thought-title">
+    <g-link to="/thought" class="link"> &larr; {{ $t("back") }}</g-link>
+    <div class="title">
       <h1>{{ $page.thought.title }}</h1>
-      <p class="thought-date">
-        {{ $d(new Date($page.thought.date), 'short') }} | {{ $page.thought.timeToRead }} {{$t('min')}} {{$t('read')}}
+      <p class="date">
+        {{ $d(new Date($page.thought.date), "short") }} |
+        {{ $page.thought.timeToRead }} {{ $t("min") }} {{ $t("read") }}
       </p>
     </div>
-    <div class="thought-content">
-      <p v-html="$page.thought.content" />
-    </div>
+
+    <b-container fluid="sm">
+      <b-row>
+        <b-col class="relateto">
+          <b-row class="relateto-row">
+            <b-col>
+              <g-image class="icon" src="~/assets/translate.png" />
+            </b-col>
+            <b-col class="d-md-none"><i class="gg-arrow-long-right"></i></b-col>
+            <b-col
+              class="item"
+              v-for="item in $page.thought.relateTo"
+              :key="item.name"
+            >
+              <g-link :to="item.path">{{ item.lang }}</g-link>
+            </b-col>
+          </b-row>
+        </b-col>
+        <b-col cols="11" class="content">
+          <p class="content-text" v-html="$page.thought.content" />
+        </b-col>
+      </b-row>
+    </b-container>
   </Layout>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      translate: "translate",
+      "data-theme": "dark",
+    };
+  },
+  // computed: {
+  //   setImage() {
+  //     // this.translate = "/assets/translate";
+  //     return require("@/assets/translate");
+  //   },
+  // },
+  // async mounted() {
+  //   this.setImage();
+  // },
+};
+</script>
 
 <page-query>
 query Thought ($path: String!) {
@@ -21,26 +62,82 @@ query Thought ($path: String!) {
     title
     content
     date (format: "D MMMM YYYY")
+    relateTo {title path lang}
     timeToRead
   }
 }
 </page-query>
 
-<style>
-.thought-title {
+<style scoped>
+.title {
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
   line-height: 1.4em;
   padding: 2em 0;
   font-family: "Stylish";
 }
 
-.thought-date {
-  font-size: 16px;
+.date {
+  font-size: 0.6em;
   font-weight: 400;
 }
 
-.thought-content {
-  font-size: 20px;
+.relateto {
+  text-align: center;
+  min-width: 3em;
+  padding-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.relateto-row {
+  max-width: 30em;
+}
+.content {
+  min-width: 200px;
+  flex-grow: 2;
+}
+.content-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+  border: 2px dashed var(--border-color);
+  padding: 0.16em;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.6em;
+  -webkit-filter: invert(var(--reverted-color));
+  filter: invert(var(--reverted-color));
+}
+
+.item {
+}
+
+.gg-arrow-long-right {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 2));
+  border-top: 0.9em solid transparent;
+  border-bottom: 0.9em solid transparent;
+  box-shadow: inset 0 0 0 10px;
+  height: 1em;
+}
+.gg-arrow-long-right::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  transform: rotate(45deg);
+  right: 0;
+  bottom: -0.15em;
 }
 </style>
