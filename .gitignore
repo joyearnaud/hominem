@@ -7,3 +7,6 @@ dist
 .env
 .env.*
 **/*.Identifier
+/test-results/
+/playwright-report/
+/playwright/.cache/

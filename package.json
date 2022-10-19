@@ -20,6 +20,7 @@
     "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
     "eslint": "^7.32.0",
     "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-import": "^2.26.0",
