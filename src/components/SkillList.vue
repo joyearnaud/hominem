@@ -77,7 +77,6 @@ export default {
   },
   methods: {
     onRowClicked(item, index, event) {
-      // window.location = item.path;
       this.$router.push(item.path).catch(() => {});
     },
   },
@@ -123,9 +122,6 @@ export default {
       });
 
       this.items = res;
-      // const newLocal = Array.from(skillMap);
-      // console.log(newLocal, "skillList");
-      // newLocal.flat();
 
       this.skillMap = skillMap;
     } catch (error) {

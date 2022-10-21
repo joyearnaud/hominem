@@ -43,15 +43,6 @@ export default {
       "data-theme": "dark",
     };
   },
-  // computed: {
-  //   setImage() {
-  //     // this.translate = "/assets/translate";
-  //     return require("@/assets/translate");
-  //   },
-  // },
-  // async mounted() {
-  //   this.setImage();
-  // },
 };
 </script>
 

@@ -28,7 +28,6 @@ export default {
   },
   data() {
     return {
-      skillMap: null,
       words: [],
       settings: {
         spacing: 2,
@@ -66,22 +65,13 @@ export default {
           }
         });
       });
-      const res = [];
+
       skillMap.forEach((value, key, map) => {
         const versions = value.versions;
         const vlength = versions.length;
         const path = value.path;
-        res.push([key, vlength, path]);
+        this.words.push([key, vlength, path]);
       });
-
-      console.log(this.words, "this.words");
-      console.log(res, "res");
-      this.words = res;
-      // const newLocal = Array.from(skillMap);
-      // console.log(newLocal, "skillList");
-      // newLocal.flat();
-
-      this.skillMap = skillMap;
     } catch (error) {
       console.log(error);
     }
