@@ -48,8 +48,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-robots',
       options: {
-        host: 'https://cv.arnaudjoye.fr',
-        sitemap: 'https://cv.arnaudjoye.fr/sitemap.xml',
+        host: 'https://cv.arnaudjoye.fr/fr',
+        sitemap: 'https://cv.arnaudjoye.fr/fr/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
