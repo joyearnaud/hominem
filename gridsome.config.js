@@ -8,7 +8,7 @@ const i18n = require("./plugins/i18n");
 
 module.exports = {
   siteName: 'Dev\' in Progress',
-  siteDescription: 'Arnaud JOYE portfolio',
+  siteDescription: 'Arnaud Joye - Fullstack engineer - Paris et périphérie',
   templates: {
     Thought: '/thought/:title',
     Experience: '/experience/:project',
@@ -45,6 +45,14 @@ module.exports = {
       }
     },
     i18n,
+    {
+      use: 'gridsome-plugin-robots',
+      options: {
+        host: 'https://cv.arnaudjoye.fr',
+        sitemap: 'https://cv.arnaudjoye.fr/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
   ],
   transformers: {
     //Add markdown support to all file-system sources

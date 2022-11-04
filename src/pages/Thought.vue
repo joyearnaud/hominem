@@ -21,7 +21,7 @@ export default {
     ThoughtList,
   },
   metaInfo: {
-    title: "Arnaud JOYE blog",
+    title: "Arnaud Joye - Fullstack engineer -  blog",
   },
   data() {
     return {
