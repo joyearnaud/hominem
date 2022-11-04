@@ -17,7 +17,7 @@ Une particularité de Java est que les logiciels écrits dans ce langage sont co
 
 ---
 
-## Spring
+##  2. <a name='Spring'></a>Spring
 
 En Java, **Spring comme Java EE permettent depuis longtemps de réaliser des web services**. Néanmoins, dans le cas de Java EE, cela nécessite le recours à un serveur d'application certifié, tel que WildFly, alors **qu'en Spring, un simple serveur web (léger) tel que Tomcat suffit.**
 
@@ -27,7 +27,7 @@ De son côté **Spring propose Spring Boot, une approche module particulièremen
 
 ---
 
-## Kotlin
+##  3. <a name='Kotlin'></a>Kotlin
 
 **Kotlin est simplement une dépendance et un plugin pour Maven/Gradle**. C'est un langage agréable, compact et facile à utiliser qui supprime toute la lourdeur syntaxique (par opposition au "syntactic sugar") que Java fournit.
 
@@ -41,7 +41,7 @@ Ainsi, **Kotlin fonctionne bien avec Spring**, qui fournit une grande partie des
 
 --- 
 
-## Immutabilité
+##  4. <a name='Immutabilit'></a>Immutabilité
 
 Il est aussi possible d'utilisé la bibliothèque Java **Immutables** ou la fonctionnalité Java des **Record** pour atteindre cette notions d'immutabilité, **permettant de facilement implémenté des valeurs (value object) associés au Domain Driven Design (DDD)**.
 
@@ -49,9 +49,9 @@ Ainsi, **une requête HTTP doit être considérée comme une valeur car celle-ci
 
 ---
 
-## Version
+##  5. <a name='Versionetvolution'></a>Version et évolution
 
-### Timeline: Java 1.8 à aujourd'hui
+###  5.1. <a name='Timeline:Java1.8aujourdhui'></a>Timeline: Java 1.8 à aujourd'hui
 
 Les cycles de publication jusqu'a la version 1.8 durait environs 3 à 5 ans. `Les nouvelles versions de Java sortent désormais tous les 6 mois`.
 
@@ -120,9 +120,9 @@ Pour des fonctionnalités actualisées sur une version antérieur, l'utilisation
   </div>
 </div>
 
-### Changelog
+###  5.2. <a name='Changelog'></a>Changelog
 
-#### Ajout de la version Java 1.8 [[digitalocean]](https://www.digitalocean.com/community/tutorials/java-8-features-with-examples)
+####  5.2.1. <a name='AjoutdelaversionJava1.8digitaloceanhttps:www.digitalocean.comcommunitytutorialsjava-8-features-with-examples'></a>Ajout de la version Java 1.8 [[digitalocean]](https://www.digitalocean.com/community/tutorials/java-8-features-with-examples)
 
 Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur fonctionnent également dans les versions supérieur (tel que Java 19). Ces fonctionnalités forment une base et comprennent:
 
@@ -170,7 +170,7 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
     - `ConcurrentHashMap`
     - `CompletableFuture`
 
-#### Ajout de la version Java 9
+####  5.2.2. <a name='AjoutdelaversionJava9'></a>Ajout de la version Java 9
 
   - Collections helper de création
     - `of`
@@ -191,11 +191,11 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   - `JShell`, shell JAVA avec résultat immédiat
   - projet `Jigsaw`: Modules JAVA et Multi-Release Jar Files
 
-#### Ajout de la version Java 10
+####  5.2.3. <a name='AjoutdelaversionJava10'></a>Ajout de la version Java 10
 
   - mot-clef `var`, variable locale s'appliquant seulement au scope d'une méthode, toujours fortement typée
   
-#### Ajout de la version Java 11
+####  5.2.4. <a name='AjoutdelaversionJava11'></a>Ajout de la version Java 11
 
   - Différentes méthodes Strings et Files
   ```java
@@ -215,11 +215,11 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   - `Flight Recorder`
   - `No-Op Garbage Collector`
   
-#### Ajout de la version Java 12
+####  5.2.5. <a name='AjoutdelaversionJava12'></a>Ajout de la version Java 12
 
-#### Ajout de la version Java 13
+####  5.2.6. <a name='AjoutdelaversionJava13'></a>Ajout de la version Java 13
 
-#### Ajout de la version Java 14
+####  5.2.7. <a name='AjoutdelaversionJava14'></a>Ajout de la version Java 14
 
   - nouvelle expression `switch` en version final
     - retour possible
@@ -228,7 +228,7 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   - Garbage Collectors
     - Concurrent Mark Sweep (CMS) Garbage Collector supprimé
 
-#### Ajout de la version Java 15
+####  5.2.8. <a name='AjoutdelaversionJava15'></a>Ajout de la version Java 15
 
   - `Text-Blocks` / `Multiline Strings` en version final
   ```java
@@ -249,7 +249,7 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   - Garbage Collectors
     - ZGC, Z Garbage Collector en version final
 
-#### Ajout de la version Java 16
+####  5.2.9. <a name='AjoutdelaversionJava16'></a>Ajout de la version Java 16
 
   - `Pattern Matching for instanceof`
   ```java
@@ -284,18 +284,18 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   record Point(int x, int y) { }
   ```
 
-#### Ajout de la version Java 17
+####  5.2.10. <a name='AjoutdelaversionJava17'></a>Ajout de la version Java 17
 
   - `Sealed Classes` en version final, sont des classes et interfaces qui limitent les classes qui peuvent les étendre/implémenter
   
-#### Ajout de la version Java 18
+####  5.2.11. <a name='AjoutdelaversionJava18'></a>Ajout de la version Java 18
 
   - UTF-8 par défaut
   - `jwebserver`, web server basic
 
-#### Ajout de la version Java 19
+####  5.2.12. <a name='AjoutdelaversionJava19'></a>Ajout de la version Java 19
 
-#### Ajout toujours en `preview`
+####  5.2.13. <a name='Ajouttoujoursenpreview'></a>Ajout toujours en `preview`
 
 - Pattern Matching pour switch
 - Virtual Threads
@@ -319,16 +319,16 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   margin: 40px
 }
 
-h1 {
+.timeline h1 {
   text-align: center;
   height: 38px;
   margin: 60px 0;
 }
-h1 span {
+.timeline h1 span {
   white-space: nowrap;
 }
 
-.flex-parent {
+.timeline .flex-parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,7 +337,7 @@ h1 span {
   height: 100%;
 }
 
-.input-flex-container {
+.timeline .input-flex-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -348,7 +348,7 @@ h1 span {
   z-index: 0;
 }
 
-.input {
+.timeline .input {
   width: 25px;
   height: 25px;
   background-color: #AEB6BF;
@@ -356,11 +356,11 @@ h1 span {
   border-radius: 50%;
 }
 
-.input:hover {
+.timeline .input:hover {
   cursor: pointer;
 }
 
-.input::before, .input::after {
+.timeline .input::before, .input::after {
   content: "";
   display: block;
   position: absolute;
@@ -373,44 +373,44 @@ h1 span {
   max-width: 50px;
 }
 
-.input::before {
+.timeline .input::before {
   left: calc(-4vw + 12.5px);
 }
 
-.input::after {
+.timeline .input::after {
   right: calc(-4vw + 12.5px);
 }
 
-.input.active {
+.timeline .input.active {
   background-color: var(--border-color);
 }
 
-.input.active::before {
+.timeline .input.active::before {
   background-color: #AEB6BF;
 }
 
-.input.active::after {
+.timeline .input.active::after {
   /* background-color: #AEB6BF; */
   background-color: var(--border-color);
 }
 
-.input.active span {
+.timeline .input.active span {
   font-weight: 700;
 }
 
-.input.active span::before {
+.timeline .input.active span::before {
   font-size: 13px;
 }
 
-.input.active span::after {
+.timeline .input.active span::after {
   font-size: 15px;
 }
 
-.input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
+.timeline .input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
   background-color: var(--border-color);
 }
 
-.input span {
+.timeline .input span {
   width: 1px;
   height: 1px;
   position: absolute;
@@ -420,20 +420,20 @@ h1 span {
   visibility: hidden;
 }
 
-.input span::before, .input span::after {
+.timeline .input span::before, .input span::after {
   visibility: visible;
   position: absolute;
   left: 50%;
 }
 
-.input span::after {
+.timeline .input span::after {
   content: attr(data-year);
   top: 25px;
   transform: translateX(-50%);
   font-size: 14px;
 }
 
-.input span::before {
+.timeline .input span::before {
   content: attr(data-info);
   top: -65px;
   width: 70px;
@@ -442,7 +442,7 @@ h1 span {
   text-indent: -10px;
 }
 
-.description-flex-container {
+.timeline .description-flex-container {
   width: 80vw;
   font-weight: 400;
   font-size: 22px;
@@ -450,12 +450,12 @@ h1 span {
   max-width: 1000px;
 }
 
-.description-flex-container p {
+.timeline .description-flex-container p {
   margin-top: 0;
   display: none;
 }
 
-.description-flex-container p.active {
+.timeline .description-flex-container p.active {
   display: block;
 }
 
