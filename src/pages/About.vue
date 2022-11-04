@@ -8,9 +8,46 @@
         <b-row>
           <b-col class="text-center titre">
             <Selfie></Selfie>
-            <h3>Me, Myself & I</h3></b-col
-          >
+            <h4>Arnaud JOYE</h4>
+            <h5>développeur fullstack, ingénieur</h5>
+            <div class="social-buttons">
+              <a
+                href="mailto: arnaudjoye.contact@gmail.com"
+                class="social-button social-button--snapchat"
+                aria-label="Snapchat"
+              >
+                <p class="h6 mb-0">
+                  <b-icon icon="at" style="width: 45px; height: 45px"></b-icon>
+                </p>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/arnaud-joye/"
+                class="social-button social-button--linkedin"
+                aria-label="LinkedIn"
+              >
+                <p class="h6 mb-0">
+                  <b-icon
+                    icon="linkedin"
+                    style="width: 45px; height: 30px"
+                  ></b-icon>
+                </p>
+              </a>
+              <a
+                href="https://github.com/joyearnaud"
+                class="social-button social-button--github"
+                aria-label="GitHub"
+              >
+                <p class="h6 mb-0">
+                  <b-icon
+                    icon="github"
+                    style="width: 40px; height: 40px"
+                  ></b-icon>
+                </p>
+              </a>
+            </div>
+          </b-col>
           <b-col class="description">
+            <h4>Me, Myself & I</h4>
             <p>
               Que peut faire un « développeur full-stack », me demandez-vous ?
             </p>
@@ -75,5 +112,121 @@ query {
 }
 .description {
   min-width: 20em;
+}
+
+.social-buttons {
+  padding: 16px 16px 16px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: var(--bkg-color);
+  text-align: center;
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus,
+.social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after,
+.social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 25.6px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--mail::after {
+  background: #0072c6;
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--facebook::after {
+  background: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--github::after {
+  background: #6e5494;
+}
+.social-button--codepen {
+  color: #212121;
+}
+.social-button--codepen::after {
+  background: #212121;
+}
+.social-button--steam {
+  color: #7da10e;
+}
+.social-button--steam::after {
+  background: #7da10e;
+}
+.social-button--snapchat {
+  color: #eec900;
+}
+.social-button--snapchat::after {
+  background: #eec900;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--twitter::after {
+  background: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--instagram::after {
+  background: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+.social-button--npmjs::after {
+  background: #c12127;
 }
 </style>
