@@ -109,4 +109,12 @@ a:hover {
   text-decoration: inherit;
   transition: color 0.3s;
 }
+
+.skill-content li p {
+  margin-bottom: 0.1em;
+}
+
+.skill-content pre {
+  border-radius: 10px;
+}
 </style>
