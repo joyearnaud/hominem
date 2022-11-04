@@ -50,7 +50,7 @@ export default {
     Selfie,
   },
   metaInfo: {
-    title: "Arnaud Joye - Fullstack engineer - Paris et périphérie",
+    title: "About",
   },
   data() {
     return {

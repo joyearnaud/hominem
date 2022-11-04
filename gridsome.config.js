@@ -8,8 +8,8 @@ const i18n = require("./plugins/i18n");
 
 module.exports = {
   siteUrl: 'https://cv.arnaudjoye.fr',
-  siteName: 'Dev\' in Progress',
-  siteDescription: 'Arnaud Joye - Fullstack engineer - Paris et périphérie',
+  siteName: 'Arnaud Joye - Fullstack engineer - Paris et périphérie',
+  siteDescription: '',
   templates: {
     Thought: '/thought/:title',
     Experience: '/experience/:project',

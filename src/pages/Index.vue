@@ -28,7 +28,7 @@ export default {
     Wordcloud,
   },
   metaInfo: {
-    title: "Arnaud Joye - Fullstack engineer - Paris et périphérie",
+    title: "Welcome",
   },
   data() {
     return {

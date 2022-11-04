@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1 class="site-name" v-html="$page.metadata.siteName" />
+    <h1 class="site-name" v-html="landing" />
     <span class="breath">
       <BreathAnimation :label="page" :hover="false" />
     </span>
@@ -14,6 +14,11 @@ export default {
   props: ["page"],
   components: {
     BreathAnimation,
+  },
+  data() {
+    return {
+      landing: "'Dev' in Progress'",
+    };
   },
 };
 </script>
