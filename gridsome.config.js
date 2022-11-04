@@ -49,7 +49,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-sitemap',
       options: {
-        output: '/fr/sitemap.xml',
+        output: '/sitemap.xml',
         exclude: ['/exclude-me'],
         // config: {
         //   '/fr': {
@@ -88,8 +88,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-robots',
       options: {
-        host: 'https://cv.arnaudjoye.fr/fr',
-        sitemap: 'https://cv.arnaudjoye.fr/fr/sitemap.xml',
+        host: 'https://cv.arnaudjoye.fr',
+        sitemap: 'https://cv.arnaudjoye.fr/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
