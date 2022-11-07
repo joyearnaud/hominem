@@ -215,10 +215,6 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   - `Flight Recorder`
   - `No-Op Garbage Collector`
   
-####  5.2.5. <a name='AjoutdelaversionJava12'></a>Ajout de la version Java 12
-
-####  5.2.6. <a name='AjoutdelaversionJava13'></a>Ajout de la version Java 13
-
 ####  5.2.7. <a name='AjoutdelaversionJava14'></a>Ajout de la version Java 14
 
   - nouvelle expression `switch` en version final
