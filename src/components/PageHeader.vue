@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      landing: "'Dev' in Progress'",
+      landing: "Dev' in Progress",
     };
   },
 };
