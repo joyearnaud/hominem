@@ -10,41 +10,7 @@
             <Selfie></Selfie>
             <h4>Arnaud JOYE</h4>
             <h5>développeur fullstack, ingénieur</h5>
-            <div class="social-buttons">
-              <a
-                href="mailto: arnaudjoye.contact@gmail.com"
-                class="social-button social-button--snapchat"
-                aria-label="Snapchat"
-              >
-                <p class="h6 mb-0">
-                  <b-icon icon="at" style="width: 45px; height: 45px"></b-icon>
-                </p>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/arnaud-joye/"
-                class="social-button social-button--linkedin"
-                aria-label="LinkedIn"
-              >
-                <p class="h6 mb-0">
-                  <b-icon
-                    icon="linkedin"
-                    style="width: 45px; height: 30px"
-                  ></b-icon>
-                </p>
-              </a>
-              <a
-                href="https://github.com/joyearnaud"
-                class="social-button social-button--github"
-                aria-label="GitHub"
-              >
-                <p class="h6 mb-0">
-                  <b-icon
-                    icon="github"
-                    style="width: 40px; height: 40px"
-                  ></b-icon>
-                </p>
-              </a>
-            </div>
+            <SocialButton />
           </b-col>
           <b-col class="description">
             <h4>Me, Myself & I</h4>
@@ -80,11 +46,13 @@
 <script>
 import PageHeader from "@/components/PageHeader";
 import Selfie from "@/components/Selfie";
+import SocialButton from "@/components/SocialButton";
 
 export default {
   components: {
     PageHeader,
     Selfie,
+    SocialButton,
   },
   metaInfo: {
     title: "About",
