@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="$t(title)" />
+    <Landing :page="$t(title)" />
     <section class="thought">
       <ThoughtList
         v-for="edge in $page.allThought.edges"
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader";
+import Landing from "@/components/Landing";
 import ThoughtList from "@/components/ThoughtList";
 
 export default {
   components: {
-    PageHeader,
+    Landing,
     ThoughtList,
   },
   metaInfo: {

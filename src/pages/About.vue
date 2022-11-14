@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="$t(title)" />
+    <Landing :page="$t(title)" />
     <section class="about">
       <div class="head"></div>
 
@@ -45,14 +45,14 @@
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader";
+import Landing from "@/components/Landing";
 import Selfie from "@/components/Selfie";
 import SocialButton from "@/components/SocialButton";
 import Download from "@/components/CVDownloader";
 
 export default {
   components: {
-    PageHeader,
+    Landing,
     Selfie,
     SocialButton,
     Download,

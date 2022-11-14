@@ -1,11 +1,11 @@
 <template>
-  <header class="header">
+  <div class="header">
     <h1 class="site-name" v-html="landing" />
     <span class="breath">
       <BreathAnimation :label="page" :hover="false" />
     </span>
     <hr class="round" />
-  </header>
+  </div>
 </template>
 
 <script>

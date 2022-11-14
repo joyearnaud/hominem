@@ -2,26 +2,18 @@
   <main class="layout" role="main">
     <Header />
     <slot />
-    <div class="footer">
-      <p>
-        {{ $t("built with") }}
-        <a class="link" href="//gridsome.org">Gridsome</a>
-        & {{ $t("made with") }} ❤️ {{ $t("by") }}
-        <a class="link" href="//github.com/joyearnaud">Arnaud JOYE</a>
-      </p>
-      <p><SocialButton label="true" /></p>
-      <p>© 2021 ➔ 2022 Arnaud JOYE | <a href="#">Credits</a></p>
-    </div>
+    <Footer />
   </main>
 </template>
 
 <script>
-import Header from "./partials/Header";
-import SocialButton from "@/components/SocialButton";
+import Header from "~/layouts/partials/Header";
+import Footer from "~/layouts/partials/Footer";
+
 export default {
   components: {
     Header,
-    SocialButton,
+    Footer,
   },
 };
 </script>
@@ -81,20 +73,6 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.footer {
-  padding-top: calc(30em / 4);
-  text-align: center;
-  font-size: 1em;
-  line-height: 2.4em;
-}
-
-.link {
-  border: 2px dashed var(--border-color);
-  padding: 7px;
-  color: var(--text-color);
-  text-decoration: none;
 }
 
 hr.round {

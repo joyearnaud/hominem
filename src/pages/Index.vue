@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="home">
-      <PageHeader :page="$t('welcome')" />
+      <Landing :page="$t('welcome')" />
       <div>
         <div class="wordcloud container-sm">
           <Wordcloud></Wordcloud>
@@ -15,14 +15,14 @@
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader";
+import Landing from "@/components/Landing";
 import SkillMap from "@/components/SkillMap";
 import SkillList from "@/components/SkillList";
 import Wordcloud from "@/components/Wordcloud";
 
 export default {
   components: {
-    PageHeader,
+    Landing,
     SkillMap,
     SkillList,
     Wordcloud,

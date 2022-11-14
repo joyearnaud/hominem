@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader :page="$t(title)" />
+    <Landing :page="$t(title)" />
     <section class="experience">
       <ExperienceList
         v-for="edge in $page.allExperience.edges"
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader";
+import Landing from "@/components/Landing";
 import ExperienceList from "@/components/ExperienceList";
 
 export default {
   components: {
-    PageHeader,
+    Landing,
     ExperienceList,
   },
   metaInfo: {

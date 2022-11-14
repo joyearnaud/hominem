@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <nav class="navbar">
       <div class="container-fluid">
         <g-link class="navlink logo over" to="/"> <Logo /> </g-link>
@@ -18,7 +18,7 @@
       </div>
     </nav>
     <hr class="round under" />
-  </div>
+  </header>
 </template>
 
 <script>
