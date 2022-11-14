@@ -6,16 +6,23 @@
   "minute": "minute",
   "min": "min",
   "read": "lecture",
+  "back": "Retour",
   "built with": "Construit autour de",
   "made with": "Réalisé avec",
   "by": "par",
-  "back":"Retour",
   "keyword": "mot-clé",
   "keywords": "mots-clés",
+  "cv": {
+    "name": "CV",
+    "download": "Télécharger le CV"
+  },
   "skill": {
     "references": {
       "label": "références dans la section Expérience",
       "total": "total"
+    },
+    "confidence": {
+      "label": "Niveau"
     }
   }
 }

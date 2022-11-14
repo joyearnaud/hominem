@@ -11,6 +11,7 @@
             <h4>Arnaud JOYE</h4>
             <h5>développeur fullstack, ingénieur</h5>
             <SocialButton />
+            <Download />
           </b-col>
           <b-col class="description">
             <h4>Me, Myself & I</h4>
@@ -47,12 +48,14 @@
 import PageHeader from "@/components/PageHeader";
 import Selfie from "@/components/Selfie";
 import SocialButton from "@/components/SocialButton";
+import Download from "@/components/CVDownloader";
 
 export default {
   components: {
     PageHeader,
     Selfie,
     SocialButton,
+    Download,
   },
   metaInfo: {
     title: "About",

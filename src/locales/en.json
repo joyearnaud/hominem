@@ -10,9 +10,12 @@
   "built with": "Built with",
   "made with": "Made with",
   "by": "by",
-  "back":"Go back",
   "keyword": "keyword",
   "keywords": "keywords",
+  "cv": {
+    "name": "CV",
+    "download": "Download CV"
+  },
   "skill": {
     "references": {
       "label": "reference in Experience section",
