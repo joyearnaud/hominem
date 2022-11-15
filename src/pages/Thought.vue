@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Landing :page="$t(title)" />
+    <Landing :page="$t(title)" @change="translation('translate', $event)" />
     <section class="thought">
       <ThoughtList
         v-for="edge in thoughts"
@@ -14,11 +14,13 @@
 <script>
 import Landing from "@/components/Landing";
 import ThoughtList from "@/components/ThoughtList";
+import TranslateVue from "../components/Translate.vue";
 
 export default {
   components: {
     Landing,
     ThoughtList,
+    TranslateVue,
   },
   metaInfo: {
     title: "Blog",
@@ -31,19 +33,19 @@ export default {
     };
   },
   async mounted() {
-    // console.log(this.$i18n.locale, "locale");
-    // console.log(this.$root.lang, "root lang");
-    // console.log(
-    //   this.$root.lang ? this.$root.lang : this.$i18n.locale,
-    //   "choice"
-    // );
     this.lang = this.$root.lang ? this.$root.lang : this.$i18n.locale;
-    console.log(this.lang, "lang");
-    this.thoughts = this.$page.allThought.edges.filter(({ node: t }) => {
-      console.log(t, "t");
-      console.log(t.lang == this.lang, "=");
-      return t.lang == this.lang;
-    });
+    this.changeLang(this.lang);
+  },
+  methods: {
+    translation(message, event) {
+      this.$root.lang = event;
+      this.changeLang(event);
+    },
+    changeLang(lang) {
+      this.thoughts = this.$page.allThought.edges.filter(({ node: t }) => {
+        return t.lang == lang;
+      });
+    },
   },
 };
 </script>

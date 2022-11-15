@@ -1,17 +1,18 @@
 <template>
   <div class="header">
+    <TranslateVue @change="translation('translate', $event)" />
     <h1 class="site-name" v-html="landing" />
     <span class="breath">
       <BreathAnimation :label="page" :hover="false" />
     </span>
     <hr class="round" />
-    <TranslateVue />
   </div>
 </template>
 
 <script>
 import BreathAnimation from "@/components/BreathAnimation";
 import TranslateVue from "./Translate.vue";
+
 export default {
   props: ["page"],
   components: {
@@ -22,6 +23,12 @@ export default {
     return {
       landing: "Dev' in Progress",
     };
+  },
+  methods: {
+    translation(message, event) {
+      console.log(event, "trans");
+      this.$emit("change", event);
+    },
   },
 };
 </script>
