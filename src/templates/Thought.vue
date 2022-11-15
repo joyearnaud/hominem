@@ -25,7 +25,7 @@
               v-for="item in $page.thought.relateTo"
               :key="item.name"
             >
-              <g-link :to="item.path">{{ item.lang }}</g-link>
+              <g-link :to="$tp(item.path)">{{ item.lang }}</g-link>
             </b-col>
           </b-row>
         </b-col>
