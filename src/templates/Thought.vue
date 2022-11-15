@@ -40,10 +40,7 @@
 <script>
 export default {
   data() {
-    return {
-      translate: "translate",
-      "data-theme": "dark",
-    };
+    return {};
   },
 };
 </script>

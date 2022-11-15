@@ -1,7 +1,11 @@
 <template>
   <div class="header">
-    <TranslateVue @change="translation('translate', $event)" />
-    <h1 class="site-name" v-html="landing" />
+    <h1 class="d-inline-block site-name" v-html="landing" />
+    <TranslateVue
+      @change="translation('translate', $event)"
+      class="d-inline-block btn float-right translate"
+    />
+
     <span class="breath">
       <BreathAnimation :label="page" :hover="false" />
     </span>
@@ -42,6 +46,10 @@ query {
 </page-query>
 
 <style scoped>
+.header {
+  text-align: center;
+}
+
 .round {
   margin-top: -6vmin;
   margin-bottom: 6vmin;
@@ -54,5 +62,12 @@ query {
   text-transform: uppercase;
   letter-spacing: 0.7vmin;
   text-align: center;
+  width: auto;
+}
+
+.translate {
+  margin-bottom: 1em;
+  padding: 0px;
+  font-size: 2em;
 }
 </style>

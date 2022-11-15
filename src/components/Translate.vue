@@ -1,13 +1,17 @@
 <template>
-  <select v-model="$i18n.locale" @change="localeChanged">
-    <option
-      v-for="locale in $i18n.availableLocales"
-      :key="locale"
-      :value="locale"
-    >
-      {{ locale }}
-    </option>
-  </select>
+  <span>
+    <select v-model="$i18n.locale" @change="localeChanged" class="translate">
+      <!-- <option
+        v-for="locale in $i18n.availableLocales"
+        :key="locale"
+        :value="locale"
+      >
+        {{ locale }}
+      </option> -->
+      <option value="en">🇬🇧</option>
+      <option value="fr">🇫🇷</option>
+    </select>
+  </span>
 </template>
 
 <script>
@@ -27,3 +31,18 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.translate {
+  background-color: var(--bkg-color);
+  border-color: var(--bkg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+  padding: 0px;
+  margin: 0px;
+}
+
+select {
+  appearance: none;
+}
+</style>
