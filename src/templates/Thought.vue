@@ -63,7 +63,7 @@ query Thought ($path: String!) {
   text-align: center;
   font-size: 2em;
   line-height: 1.4em;
-  padding: 2em 0;
+  padding: 1em 0;
   font-family: "Stylish";
 }
 
