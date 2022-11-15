@@ -2,14 +2,14 @@
   <header>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo over" to="/"> <Logo /> </g-link>
-        <g-link class="navlink" to="/about">{{
+        <g-link class="navlink logo over" :to="$tp('/')"> <Logo /> </g-link>
+        <g-link class="navlink" :to="$tp('/about/')">{{
           removeAccent($t("about"))
         }}</g-link>
-        <g-link class="navlink" to="/experience">{{
+        <g-link class="navlink" :to="$tp('/experience')">{{
           removeAccent($t("experience"))
         }}</g-link>
-        <g-link class="navlink" to="/thought">{{
+        <g-link class="navlink" :to="$tp('/thought')">{{
           removeAccent($t("thoughts"))
         }}</g-link>
         <div class="col-1 switch">

@@ -5,15 +5,18 @@
       <BreathAnimation :label="page" :hover="false" />
     </span>
     <hr class="round" />
+    <TranslateVue />
   </div>
 </template>
 
 <script>
 import BreathAnimation from "@/components/BreathAnimation";
+import TranslateVue from "./Translate.vue";
 export default {
   props: ["page"],
   components: {
     BreathAnimation,
+    TranslateVue,
   },
   data() {
     return {
