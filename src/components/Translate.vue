@@ -18,13 +18,11 @@ export default {
   },
   methods: {
     async localeChanged() {
-      this.$root.lang = this.$i18n.locale;
-
       this.$router.push({
         path: this.$tp(this.$route.path, this.$i18n.locale, true),
       });
 
-      this.$emit("change", this.$root.lang);
+      this.$emit("change", this.$i18n.locale);
     },
   },
 };

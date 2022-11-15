@@ -13,7 +13,7 @@
   >
     <template slot-scope="{ text, weight, word }" class="link">
       <div :title="weight">
-        <g-link :to="word[2]">{{ text }}</g-link>
+        <g-link :to="$tp(word[2])">{{ text }}</g-link>
       </div>
     </template>
   </vue-word-cloud>

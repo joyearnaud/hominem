@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/thought" class="link"> &larr; {{ $t("back") }}</g-link>
+    <g-link :to="$tp('/thought/')" class="link">
+      &larr; {{ $t("back") }}</g-link
+    >
     <div class="title">
       <h1>{{ $page.thought.title }}</h1>
       <p class="date">

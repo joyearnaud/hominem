@@ -15,15 +15,7 @@ export default {
     Header,
     Footer,
   },
-  async mounted() {
-    if (this.$root.lang) {
-      this.$i18n.locale = this.$root.lang;
-    } else {
-      const pathArray = window.location.pathname.split("/");
-      this.$i18n.locale = pathArray[1];
-      this.$root.lang = pathArray[1];
-    }
-  },
+  async mounted() {},
 };
 </script>
 

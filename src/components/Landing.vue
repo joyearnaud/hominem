@@ -26,7 +26,6 @@ export default {
   },
   methods: {
     translation(message, event) {
-      console.log(event, "trans");
       this.$emit("change", event);
     },
   },

@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/experience" class="link"> &larr; {{ $t("back") }}</g-link>
+    <g-link :to="$tp('/experience/')" class="link">
+      &larr; {{ $t("back") }}</g-link
+    >
 
     <div class="experience-title">
       <h1>
@@ -32,7 +34,7 @@
             <g-link
               v-if="k.skill"
               class="skill-name navlink badge"
-              :to="k.skill.path"
+              :to="$tp(k.skill.path)"
               >{{ k.skill.name }}</g-link
             >
             <span v-else class="skill-name badge">{{ k.name }}</span>

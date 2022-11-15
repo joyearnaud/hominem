@@ -7,7 +7,7 @@
           <li class="timeline-event" data-aos="fade-up">
             <label class="timeline-event-icon"></label>
             <div class="timeline-event-copy">
-              <g-link :to="experience.path">
+              <g-link :to="$tp(experience.path)">
                 <p class="timeline-event-thumbnail">
                   <span
                     class="datestart"
@@ -28,7 +28,7 @@
                 <p class="description" v-html="experience.description"></p>
                 <div id="skills">
                   <g-link
-                    :to="k.path"
+                    :to="$tp(k.path)"
                     v-for="k in experience.skills"
                     v-bind:key="k.id"
                   >

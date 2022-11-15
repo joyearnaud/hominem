@@ -31,7 +31,7 @@
         <!-- Custom formatted column -->
         <template #cell(skill)="data">
           <span class="col col-skill">
-            <g-link :to="data.item.path">{{
+            <g-link :to="$tp(data.item.path)">{{
               data.value.toUpperCase()
             }}</g-link></span
           >

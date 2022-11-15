@@ -33,12 +33,10 @@ export default {
     };
   },
   async mounted() {
-    this.lang = this.$root.lang ? this.$root.lang : this.$i18n.locale;
-    this.changeLang(this.lang);
+    this.changeLang(this.$i18n.locale);
   },
   methods: {
     translation(message, event) {
-      this.$root.lang = event;
       this.changeLang(event);
     },
     changeLang(lang) {

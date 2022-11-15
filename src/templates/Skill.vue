@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <br />
-    <g-link to="/experience" class="link"> &larr; Go Back</g-link>
+    <g-link :to="$tp('/experience/')" class="link"> &larr; Go Back</g-link>
     <div class="skill-title">
       <h1>{{ $page.skill.name }}</h1>
       <p>{{ $page.skill.category.name }}</p>
@@ -23,7 +23,7 @@
       <h3>{{ $t("skill.references.label") }}</h3>
       <ul>
         <li v-for="edge in $page.skill.belongsTo.edges" :key="edge.node.id">
-          <g-link :to="edge.node.path"
+          <g-link :to="$tp(edge.node.path)"
             >{{ edge.node.client }} - {{ edge.node.project }}</g-link
           >
         </li>
