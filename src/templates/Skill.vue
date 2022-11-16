@@ -36,7 +36,7 @@
 export default {
   metaInfo() {
     return {
-      title: this.$t("template.skill.title"),
+      title: this.$t("template.skill.title") + " " + this.$page.skill.name,
       meta: [
         {
           name: "author",
@@ -44,7 +44,11 @@ export default {
         },
         {
           name: "description",
-          content: this.$t("template.skill.description"),
+          content:
+            this.$t("template.skill.description") +
+            " “" +
+            this.$page.skill.name +
+            "”",
         },
         {
           name: "robots",

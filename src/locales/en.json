@@ -33,7 +33,7 @@
     "skill": {      
       "name": "skill",
       "title": "more details about the skill",
-      "description": "More details about"
+      "description": "More details, uses and links to related experiences for the skill"
     },
     "thought": {      
       "name": "thought",
