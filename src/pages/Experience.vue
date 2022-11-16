@@ -22,7 +22,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: "curriculum vitae (CV)",
+      title: this.$t("page.experiences.title"),
       meta: [
         {
           name: "author",
@@ -30,7 +30,7 @@ export default {
         },
         {
           name: "description",
-          content: this.$t("page.welcome.description"),
+          content: this.$t("page.experiences.description"),
         },
         {
           name: "robots",

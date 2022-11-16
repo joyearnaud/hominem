@@ -15,7 +15,7 @@
     },
     "experience": {
       "name": "expériences",
-      "title": "expériences",
+      "title": "expériences et projets",
       "description": "En savoir plus sur les expériences passées et présentes, triées de la plus récente à la plus ancienne, avec des compétences surlignées cliquables."
     },
     "thoughts": {
@@ -27,8 +27,8 @@
   "template": {
     "experience": {      
       "name": "expérience",
-      "title": "plus de détail à propos de l'expérience",
-      "description": "En savoir plus sur"
+      "title": "zoom sur le projet",
+      "description": "En savoir plus sur le projet"
     },
     "skill": {      
       "name": "compétence",

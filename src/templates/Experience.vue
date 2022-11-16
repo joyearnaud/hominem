@@ -58,7 +58,12 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$t("template.experience.description"),
+      title:
+        this.$t("template.experience.title") +
+        " " +
+        this.$page.experience.project +
+        ", " +
+        this.$page.experience.client,
       meta: [
         {
           name: "author",
@@ -66,7 +71,11 @@ export default {
         },
         {
           name: "description",
-          content: this.$t("template.experience.description"),
+          content:
+            this.$t("template.experience.description") +
+            " “" +
+            this.$page.experience.description +
+            "”",
         },
         {
           name: "robots",

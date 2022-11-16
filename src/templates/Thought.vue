@@ -41,7 +41,7 @@
 export default {
   metaInfo() {
     return {
-      title: this.$t("template.thought.description"),
+      title: this.$t("template.thought.title"),
       meta: [
         {
           name: "author",

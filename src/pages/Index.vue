@@ -29,7 +29,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$t("page.welcome.name"),
+      title: this.$t("page.welcome.title"),
       meta: [
         {
           name: "author",

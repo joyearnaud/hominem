@@ -15,7 +15,7 @@
     },
     "experiences": {
       "name": "experiences",
-      "title": "experiences",
+      "title": "experiences and projects",
       "description": "Read more about past and present experiences, sort from newest to oldest, with clickable highlighted skills"
     },
     "thoughts": {
@@ -27,8 +27,8 @@
   "template": {
     "experience": {      
       "name": "experience",
-      "title": "more details about the experience",
-      "description": "More details about"
+      "title": "focus on project",
+      "description": "More details about project"
     },
     "skill": {      
       "name": "skill",

@@ -36,7 +36,7 @@
 export default {
   metaInfo() {
     return {
-      title: this.$t("template.skill.description"),
+      title: this.$t("template.skill.title"),
       meta: [
         {
           name: "author",
