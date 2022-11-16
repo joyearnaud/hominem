@@ -7,29 +7,29 @@
 
     <div class="experience-title">
       <h1>
-        <span v-html="$page.experiences.client" />
+        <span v-html="$page.experience.client" />
         <span> - </span>
-        <span v-html="$page.experiences.project" />
+        <span v-html="$page.experience.project" />
       </h1>
-      <h2 v-html="$page.experiences.role" />
+      <h2 v-html="$page.experience.role" />
       <p class="experience-date">
-        {{ $d(new Date($page.experiences.datestart), "short") }} |
-        {{ $d(new Date($page.experiences.dateend), "short") }}
+        {{ $d(new Date($page.experience.datestart), "short") }} |
+        {{ $d(new Date($page.experience.dateend), "short") }}
       </p>
     </div>
 
     <div class="container-fluid experience-project">
-      <p class="label" v-html="$page.experiences.description" />
+      <p class="label" v-html="$page.experience.description" />
     </div>
 
     <div class="container-fluid experience-content">
-      <p v-html="$page.experiences.content" />
+      <p v-html="$page.experience.content" />
     </div>
 
     <div class="container-fluid experience-keywords">
       <h3>{{ $t("keywords") }}</h3>
       <ul>
-        <li v-for="k in $page.experiences.keywords" :key="k.id">
+        <li v-for="k in $page.experience.keywords" :key="k.id">
           <p>
             <g-link
               v-if="k.skill"
@@ -53,9 +53,12 @@
 
 <script>
 export default {
+  async mounted() {
+    console.log(this.$page.experience);
+  },
   metaInfo() {
     return {
-      title: this.$t("template.experiences.description"),
+      title: this.$t("template.experience.description"),
       meta: [
         {
           name: "author",
@@ -63,7 +66,7 @@ export default {
         },
         {
           name: "description",
-          content: this.$t("template.experiences.description"),
+          content: this.$t("template.experience.description"),
         },
         {
           name: "robots",
