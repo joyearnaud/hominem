@@ -4,13 +4,13 @@
       <div class="container-fluid">
         <g-link class="navlink logo over" :to="$tp('/')"> <Logo /> </g-link>
         <g-link class="navlink" :to="$tp('/about/')">{{
-          removeAccent($t("about"))
+          removeAccent($t("page.about.name"))
         }}</g-link>
         <g-link class="navlink" :to="$tp('/experience')">{{
-          removeAccent($t("experience"))
+          removeAccent($t("page.experiences.name"))
         }}</g-link>
         <g-link class="navlink" :to="$tp('/thought')">{{
-          removeAccent($t("thoughts"))
+          removeAccent($t("page.thoughts.name"))
         }}</g-link>
         <div class="col-1 switch">
           <ToggleTheme />

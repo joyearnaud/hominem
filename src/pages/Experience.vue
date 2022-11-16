@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Landing :page="$t(title)" />
+    <Landing :page="$t('page.experiences.name')" />
     <section class="experience">
       <ExperienceList
         v-for="edge in $page.allExperience.edges"
@@ -20,13 +20,27 @@ export default {
     Landing,
     ExperienceList,
   },
-  metaInfo: {
-    title: "CV",
+  metaInfo() {
+    return {
+      title: "curriculum vitae (CV)",
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("page.welcome.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
   },
   data() {
-    return {
-      title: "experience",
-    };
+    return {};
   },
 };
 </script>

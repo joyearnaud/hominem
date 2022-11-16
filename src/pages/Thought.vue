@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <Landing :page="$t(title)" @change="translation('translate', $event)" />
+    <Landing
+      :page="$t('page.thoughts.name')"
+      @change="translation('translate', $event)"
+    />
     <section class="thought">
       <ThoughtList
         v-for="edge in thoughts"
@@ -22,12 +25,27 @@ export default {
     ThoughtList,
     TranslateVue,
   },
-  metaInfo: {
-    title: "Blog",
+  metaInfo() {
+    return {
+      title: this.$t("page.thoughts.name"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("page.thoughts.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
   },
   data() {
     return {
-      title: "thoughts",
       lang: "",
       thoughts: [],
     };

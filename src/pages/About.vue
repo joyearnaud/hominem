@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Landing :page="$t(title)" />
+    <Landing :page="$t('page.about.name')" />
     <section class="about">
       <div class="head"></div>
 
@@ -57,13 +57,27 @@ export default {
     SocialButton,
     Download,
   },
-  metaInfo: {
-    title: "About",
+  metaInfo() {
+    return {
+      title: this.$t("page.about.name"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("page.about.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
   },
   data() {
-    return {
-      title: "about",
-    };
+    return {};
   },
 };
 </script>

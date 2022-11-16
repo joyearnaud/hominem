@@ -34,6 +34,25 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("template.skill.description"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("template.skill.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
+  },
   data() {
     return {
       skill: {

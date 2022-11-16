@@ -7,29 +7,29 @@
 
     <div class="experience-title">
       <h1>
-        <span v-html="$page.experience.client" />
+        <span v-html="$page.experiences.client" />
         <span> - </span>
-        <span v-html="$page.experience.project" />
+        <span v-html="$page.experiences.project" />
       </h1>
-      <h2 v-html="$page.experience.role" />
+      <h2 v-html="$page.experiences.role" />
       <p class="experience-date">
-        {{ $d(new Date($page.experience.datestart), "short") }} |
-        {{ $d(new Date($page.experience.dateend), "short") }}
+        {{ $d(new Date($page.experiences.datestart), "short") }} |
+        {{ $d(new Date($page.experiences.dateend), "short") }}
       </p>
     </div>
 
     <div class="container-fluid experience-project">
-      <p class="label" v-html="$page.experience.description" />
+      <p class="label" v-html="$page.experiences.description" />
     </div>
 
     <div class="container-fluid experience-content">
-      <p v-html="$page.experience.content" />
+      <p v-html="$page.experiences.content" />
     </div>
 
     <div class="container-fluid experience-keywords">
       <h3>{{ $t("keywords") }}</h3>
       <ul>
-        <li v-for="k in $page.experience.keywords" :key="k.id">
+        <li v-for="k in $page.experiences.keywords" :key="k.id">
           <p>
             <g-link
               v-if="k.skill"
@@ -50,6 +50,33 @@
     </div>
   </Layout>
 </template>
+
+<script>
+export default {
+  metaInfo() {
+    return {
+      title: this.$t("template.experiences.description"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("template.experiences.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
+  },
+  data() {
+    return {};
+  },
+};
+</script>
 
 <page-query>
 query Experience ($path: String!) {

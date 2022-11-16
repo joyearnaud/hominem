@@ -39,6 +39,25 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("template.thought.description"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("template.thought.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
+  },
   data() {
     return {};
   },

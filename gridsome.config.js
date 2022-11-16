@@ -9,7 +9,7 @@ const i18n = require("./plugins/i18n");
 module.exports = {
   siteUrl: 'https://cv.arnaudjoye.fr',
   siteName: 'Arnaud Joye - Fullstack engineer - Paris et périphérie',
-  siteDescription: '',
+  // siteDescription: 'Informative blog and CV about Arnaud JOYE',
   templates: {
     Thought: '/thought/:title',
     Experience: '/experience/:project',

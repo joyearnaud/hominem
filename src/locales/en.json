@@ -1,8 +1,46 @@
 {
-  "about": "about",
-  "experience": "experience",
-  "thoughts": "thoughts",
-  "welcome": "Welcome",
+  "author": {
+    "name": "Arnaud JOYE"
+  },
+  "page": {
+    "welcome": {
+      "name": "welcome",
+      "title": "welcome",
+      "description": "Homepage of 'Dev in progress' blog and CV, with a listing of all skills already battle tested'"
+    },
+    "about": {
+      "name": "about",
+      "title": "about",
+      "description": "Presentation, contact and download of the paper CV"
+    },
+    "experiences": {
+      "name": "experiences",
+      "title": "experiences",
+      "description": "Read more about past and present experiences, sort from newest to oldest, with clickable highlighted skills"
+    },
+    "thoughts": {
+      "name": "thoughts",
+      "title": "blog",
+      "description": "Personal articles on technical or organizational subjects of development missions"
+    }
+  },
+  "template": {
+    "experience": {      
+      "name": "experience",
+      "title": "more details about the experience",
+      "description": "More details about"
+    },
+    "skill": {      
+      "name": "skill",
+      "title": "more details about the skill",
+      "description": "More details about"
+    },
+    "thought": {      
+      "name": "thought",
+      "title": "",
+      "description": ""
+    }
+  },
   "minute": "minute",
   "min": "min",
   "read": "read",
@@ -14,6 +52,7 @@
   "keywords": "keywords",
   "cv": {
     "name": "CV",
+    "fullname": "curriculum vitae",
     "download": "Download CV"
   },
   "skill": {

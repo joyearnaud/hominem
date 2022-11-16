@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="home">
-      <Landing :page="$t('welcome')" />
+      <Landing :page="$t('page.welcome.name')" />
       <div>
         <div class="wordcloud container-sm">
           <Wordcloud></Wordcloud>
@@ -27,13 +27,27 @@ export default {
     SkillList,
     Wordcloud,
   },
-  metaInfo: {
-    title: "Welcome",
+  metaInfo() {
+    return {
+      title: this.$t("page.welcome.name"),
+      meta: [
+        {
+          name: "author",
+          content: this.$t("author.name"),
+        },
+        {
+          name: "description",
+          content: this.$t("page.welcome.description"),
+        },
+        {
+          name: "robots",
+          content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
+        },
+      ],
+    };
   },
   data() {
-    return {
-      title: "welcome",
-    };
+    return {};
   },
 };
 </script>
