@@ -41,7 +41,7 @@
 export default {
   metaInfo() {
     return {
-      title: this.$t("template.thought.title"),
+      title: this.$page.thought.title,
       meta: [
         {
           name: "author",
@@ -49,7 +49,8 @@ export default {
         },
         {
           name: "description",
-          content: this.$t("template.thought.description"),
+          content:
+            this.$page.thought.title + ": " + this.$page.thought.description,
         },
         {
           name: "robots",
@@ -69,6 +70,7 @@ query Thought ($path: String!) {
    thought: thought (path: $path) {
     id
     title
+    description
     content
     date (format: "D MMMM YYYY")
     relateTo {title path lang}
