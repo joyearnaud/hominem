@@ -99,4 +99,4 @@ query {
 }
 </page-query>
 
-<style></style>
+<style scoped></style>

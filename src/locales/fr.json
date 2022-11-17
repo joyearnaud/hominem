@@ -13,8 +13,8 @@
       "title": "à propos",
       "description": "Présentation, contact et téléchargement du CV actuel"
     },
-    "experience": {
-      "name": "expériences",
+    "experiences": {
+      "name": "expériences" ,
       "title": "expériences et projets",
       "description": "En savoir plus sur les expériences passées et présentes, triées de la plus récente à la plus ancienne, avec des compétences surlignées cliquables."
     },
