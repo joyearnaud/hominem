@@ -36,6 +36,8 @@ Les outils de gestions peuvent comprendre, entre autres exemples:
   - `reporting`: outil de communication de données et d'analyse permettant d'avoir une visibilité claire sur l'utilisation de l'API. C'est en outre un outil de marketing qui permet de mesurer le comportement des abonnés et ainsi permettre à l'éditeur de l'API d'optimiser son offre;
   - `monétisation`: le service de monétisation d'accès à l'API permet de monétiser les API hébergées chez le fournisseur d'API choisis.
 
+Les solutions de gestion d'API sont essentielles pour aider les organisations à réussir avec leurs programmes API. Ces solutions fournissent une plate-forme sécurisée et évolutive pour gérer les API et garantir que les personnes qui en ont besoin peuvent y accéder rapidement et en toute sécurité. Elles fournissent également des analyses et des informations sur la manière dont les API sont utilisées, ce qui permet aux organisations de mesurer leur succès. De plus, les solutions de gestion d'API peuvent permettre aux organisations de monétiser leurs API et de s'assurer que leur utilisation est documentée et suivie pour se conformer aux réglementations. En tirant parti d'une solution de gestion d'API, les organisations peuvent stimuler le succès de leurs programmes API et maximiser la valeur qu'ils apportent à l'entreprise.
+
 références externes:
 - [mulesoft](https://www.mulesoft.com/fr/resources/api/what-is-api-management)
 - [wikipedia](https://fr.wikipedia.org/wiki/API_management)
