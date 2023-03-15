@@ -80,7 +80,7 @@ Les outils techniques, quant à eux, sont conçus pour soutenir le développemen
 
 Les outils techniques se concentrent sur la fourniture d'une plateforme API robuste et fiable, dans le but de garantir que les API sont disponibles, évolutives et performantes. Ils visent à prendre en charge les besoins techniques des développeurs d'API, des équipes informatiques et d'autres parties prenantes responsables de la plateforme API.
 
-##### passerelle d'API
+##### Passerelle d'API
 
 `A vocation de diriger le trafic des API et de relier les réseaux entre eux (client avec services ...). Il est possible de regrouper une collection de serveurs de gestion et de serveurs de passerelle pour créer des clusters afin d'équilibrer la charge et d'isoler le trafic`
 
