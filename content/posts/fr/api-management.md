@@ -104,7 +104,7 @@ En plus de la gestion des demandes et des réponses, une passerelle fournit plus
 
 ##### Publication d'API
 
-`C' est l'outil que les fournisseurs utilisent pour définir les API, leurs politiques d'accès et d'utilisation, l'exécution de débogage ainsi que la gestion du cycle de leur cycle de vie de l'API`
+`C'est l'outil que les fournisseurs utilisent pour définir les API, leurs politiques d'accès et d'utilisation, l'exécution de débogage ainsi que la gestion du cycle de leur cycle de vie de l'API`
 
 Les outils de publication sont souvent intégrés à l'application de passerelle.
 
