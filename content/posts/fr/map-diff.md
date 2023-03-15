@@ -4,7 +4,7 @@ title: "Les différentes Map en Java"
 description: "Leurs fonctionnements, différences et cas d'usages"
 date: 2022-11-07
 lang: fr
-published: true;
+published: true
 relateTo:
   - map-diff_en
 ---

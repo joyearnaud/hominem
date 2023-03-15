@@ -4,7 +4,7 @@ title: "Java Map difference"
 description: "How they work, their differences and usage"
 date: 2022-11-07
 lang: en
-published: true;
+published: true
 relateTo:
   - map-diff_fr
 ---

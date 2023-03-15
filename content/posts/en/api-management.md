@@ -4,7 +4,7 @@ title: "API Management"
 description: "Unlocking the Power of APIs: A Guide to API Management and Tools"
 date: 2023-03-15
 lang: en
-published: true;
+published: true
 relateTo:
   - APIM_fr
 ---

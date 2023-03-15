@@ -79,6 +79,7 @@ export default {
           description
           date (format: "YYYY-MM-DD")
           path
+          published
         }
       }
     }

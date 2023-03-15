@@ -4,7 +4,7 @@ title: "API Management (gestion d'API)"
 description: "Débloquer la puissance des APIs: Un guide de gestion et d'outils d'API"
 date: 2023-03-15
 lang: fr
-published: true;
+published: true
 relateTo:
   - APIM_en
 ---
