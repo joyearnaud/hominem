@@ -36,7 +36,7 @@ Acculturation can refer to the process of introducing new technologies, processe
 
 ##### API Manifesto
 
-`writing a unified business API vision between the teams with constraint and business necessities`
+`Writing a unified API vision between the teams with constraint and business necessities`
 
 A manifesto is a public declaration of an organization's intentions, goals, and values related to their API program. It outlines the principles that guide the organization's approach to API design, development, deployment, and management.
 
@@ -48,7 +48,7 @@ A manifesto may cover a variety of topics related to API management, such as sec
 
 ##### API's workshop
 
-`collaborative session for continuous improvement`
+`Collaborative session for continuous improvement`
 
 A workshop is a collaborative session in which a group of stakeholders, such as developers, architects, product owners, and business analysts, come together to explore, design, and develop APIs. Workshops can take place at various stages of the API lifecycle, from ideation to deployment and maintenance.
 
@@ -60,7 +60,7 @@ Workshops can be led by API experts or facilitated by a neutral third-party. The
 
 ##### API Roadmap
 
-`with the appearance of new norms and standards and the business evolution obliges to perceive and provide milstones`
+`With the appearance of new norms and standards and the business evolution obliges to perceive and provide milstones`
 
 A roadmap is a strategic plan that outlines the goals, milestones, and timelines for an API project or program. The roadmap provides a high-level overview of the planned features, functionalities, and improvements to be delivered through the API.
 
@@ -82,7 +82,7 @@ Technical tools focus on providing a robust and reliable API platform, with the 
 
 ##### API gateway
 
-`aims to direct API traffic and to link the networks together (client with services, etc.). It is possible to group a collection of management servers and gateway servers together to create clusters to balance the load and isolate traffic`
+`Aims to direct API traffic and to link the networks together (client with services, etc.). It is possible to group a collection of management servers and gateway servers together to create clusters to balance the load and isolate traffic`
 
 An API gateway (or reverse proxy) plays a crucial role in API management by acting as an intermediary between the client and the backend services that provide the API. The gateway provides a single entry point for all API requests and is responsible for managing and routing these requests to the appropriate backend service.
 
@@ -120,7 +120,7 @@ Once an API is published, an publication tool may also provide features to manag
 
 ##### API Portal
 
-`is a community site for API subscribers who are maintained by provider. It includes documentation, interactive API console for testing APIs, ability to subscribe to APIs and manage subscriptions, and API vendor or community support service`
+`It's a community site for API subscribers who are maintained by provider. It includes documentation, interactive API console for testing APIs, ability to subscribe to APIs and manage subscriptions, and API vendor or community support service`
 
 As for Gateway/Publication, it is not common to separate the publication tool from the portal tool, as they are often integrated into a single platform. However, it is possible to separate them conceptually to understand their individual roles in the API management process.
 
@@ -146,7 +146,7 @@ Reporting also enables providers to monitor the usage of their APIs and ensure c
 
 ##### API Monetization
 
-`the API access monetization service makes it possible to monetize the APIs hosted by the chosen API provider.`
+`It allows to generate revenue, either by usage, subscription or by creating new streams with value-added partners based on the API. It also helps to justify investments by demonstrating commercial value`
 
 After designing, publishing, and monitoring usage and performance through reporting, providers may want to monetize by charging fees for access or usage. Publishing rules and Monitoring are essential for successful monetization as it enables provider to make data-driven decisions about pricing, usage, and performance, ultimately maximizing the value of their APIs.
 

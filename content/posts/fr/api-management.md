@@ -36,7 +36,7 @@ L'acculturation peut se référer au processus d'introduction de nouvelles techn
 
 ##### Le manifeste d'API
 
-`écriture d'une vision métier API unifiée entre les équipes avec contrainte et nécessités métier`
+`Ecriture d'une vision API unifiée entre les équipes avec contraintes et nécessités métier`
 
 Un manifeste est une déclaration publique des intentions, des objectifs et des valeurs d'une organisation en ce qui concerne son programme API. Il énonce les principes qui guident l'approche de l'organisation en matière de conception, de développement, de déploiement et de gestion d'API.
 
@@ -48,7 +48,7 @@ Un manifeste peut couvrir une variété de sujets liés à la gestion d'API, tel
 
 ##### Atelier API
 
-`séance de travail collaborative pour une amélioration continue`
+`Séance de travail collaborative pour une amélioration continue`
 
 Un atelier (ou workshop en anglais) est une séance de travail collaborative au cours de laquelle un groupe de parties prenantes, telles que des développeurs, des architectes, des responsables produits et des analystes métier, se réunit pour explorer, concevoir et développer des API. Les ateliers peuvent avoir lieu à différents stades du cycle de vie des API, de l'idéation au déploiement et à la maintenance.
 
@@ -60,7 +60,7 @@ Les ateliers peuvent être dirigés par des experts en API ou animés par une ti
 
 ##### Feuille de route d'API
 
-`avec l'apparition de nouvelles normes et standarts et l'évolution métier oblige à percevoir et fournir ses jalons`
+`Avec l'apparition de nouvelles normes et standarts et l'évolution métier oblige à percevoir et fournir ses jalons`
 
 Une feuille de route (ou roadmap en anglais) est un plan stratégique qui décrit les objectifs, les jalons et les échéanciers d'un projet ou d'un programme d'API. La feuille de route offre une vue d'ensemble des fonctionnalités, des améliorations et des nouvelles versions prévues pour l'API.
 
@@ -82,7 +82,7 @@ Les outils techniques se concentrent sur la fourniture d'une plateforme API robu
 
 ##### passerelle d'API
 
-`a vocation de diriger le trafic des API et de relier les réseaux entre eux (client avec services ...). Il est possible de regrouper une collection de serveurs de gestion et de serveurs de passerelle pour créer des clusters afin d'équilibrer la charge et d'isoler le trafic`
+`A vocation de diriger le trafic des API et de relier les réseaux entre eux (client avec services ...). Il est possible de regrouper une collection de serveurs de gestion et de serveurs de passerelle pour créer des clusters afin d'équilibrer la charge et d'isoler le trafic`
 
 Une passerelle API (ou gateway, reverse proxy) joue un rôle crucial dans la gestion des API en agissant en tant qu'intermédiaire entre le client et les services backend qui fournissent l'API. La passerelle fournit un point d'entrée unique pour toutes les demandes d'API et est responsable de la gestion et du routage de ces demandes vers le service backend approprié.
 
@@ -104,7 +104,7 @@ En plus de la gestion des demandes et des réponses, une passerelle fournit plus
 
 ##### Publication d'API
 
-`est l'outil que les fournisseurs utilisent pour définir les API, leurs politiques d'accès et d'utilisation, l'exécution de débogage ainsi que la gestion du cycle de leur cycle de vie de l'API`
+`C' est l'outil que les fournisseurs utilisent pour définir les API, leurs politiques d'accès et d'utilisation, l'exécution de débogage ainsi que la gestion du cycle de leur cycle de vie de l'API`
 
 Les outils de publication sont souvent intégrés à l'application de passerelle.
 
@@ -120,7 +120,7 @@ Une fois qu'une API est publiée, un outil de publication peut également fourni
 
 ##### Portail d'API
 
-- `est un site communautaire pour les abonnés à l'API qui sont tenus par les fournisseurs. Il comprend la documentation, la console interactive de l'API pour tester les API, la possibilité de s'abonner aux API et de gérer les abonnements et le service de soutien du fournisseur ou de la communauté de l'API`
+`C'est un site communautaire pour les abonnés à l'API qui sont tenus par les fournisseurs. Il comprend la documentation, la console interactive de l'API pour tester les API, la possibilité de s'abonner aux API et de gérer les abonnements et le service de soutien du fournisseur ou de la communauté de l'API`
 
 Comme pour la passerelle/publication, il n'est pas courant de séparer l'outil de publication de l'outil de portail, car ils sont souvent intégrés dans une seule plateforme. Cependant, il est possible de les séparer conceptuellement pour comprendre leurs rôles individuels dans le processus de gestion des API.
 
@@ -134,7 +134,7 @@ Une autre fonctionnalité clé d'un portail est sa communauté de développeurs.
 
 ##### Communication de données d'API
 
-`outil de communication de données et d'analyse permettant d'avoir une visibilité claire sur l'utilisation de l'API. C'est en outre un outil de marketing qui permet de mesurer le comportement des abonnés et ainsi permettre à l'éditeur de l'API d'optimiser son offre`;
+`Outil de communication de données et d'analyse permettant d'avoir une visibilité claire sur l'utilisation de l'API. C'est en outre un outil de marketing qui permet de mesurer le comportement des abonnés et ainsi permettre à l'éditeur de l'API d'optimiser son offre`;
 
 Après la conception et la publication d'une API à partir de l'outil de publication, les utilisateurs peuvent s'y abonner sur le portail. Le provider doit surveiller son utilisation et ses performances pour s'assurer qu'elle répond aux besoins de ses utilisateurs. C'est là que les communications de données (ou reporting) interviennent.
 
@@ -146,7 +146,7 @@ Les reporting sont un composant essentiel de la gestion des API, fournissant des
 
 ##### Monétisation d'API
 
-`le service de monétisation d'accès à l'API permet de monétiser les API hébergées chez le fournisseur d'API choisis`
+`Permet de générer des revenus, à l'usage, par forfait ou en créant de nouveau flux avec des partenaires à valeur ajouté basé sur l'API. Permet aussi de justifier les investissement en démontrant la valeur commercial`
 
 Après la conception, la publication et la surveillance de l'utilisation et de la performance via la création de rapports, les fournisseurs peuvent vouloir monétiser en facturant des frais pour l'accès ou l'utilisation. Les règles de publication et la surveillance sont essentielles pour une monétisation réussie, car elles permettent aux fournisseurs de prendre des décisions basées sur des données à propos du prix, de l'utilisation et de la performance, maximisant ainsi la valeur de leurs APIs.
 
