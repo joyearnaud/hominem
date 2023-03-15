@@ -4,6 +4,7 @@ title: "Les différentes Map en Java"
 description: "Leurs fonctionnements, différences et cas d'usages"
 date: 2022-11-07
 lang: fr
+published: true;
 relateTo:
   - map-diff_en
 ---
@@ -93,7 +94,7 @@ HashMap fait partie de la collection de Java depuis Java 1.2. Il fournit l'impl�
 
 ## LinkedHashMap
 
-LinkedHashMap est comme HashMap, avec une fonctionnalité supplémentaire de `maintien de l'ordre d'insertion des éléments`. 
+LinkedHashMap est comme HashMap, avec une fonctionnalité supplémentaire de `maintien de l'ordre d'insertion des éléments`.
 
 ## TreeMap
 
@@ -107,11 +108,8 @@ D'une manière générale, il est `plus performant et plus évolutif dans un con
 ---
 
 références externes:
+
 - [geeksforgeeks](https://www.geeksforgeeks.org/map-interface-java-examples/)
-
-
-
-
 
 <style scoped>
 table {

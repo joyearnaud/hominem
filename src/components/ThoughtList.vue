@@ -1,11 +1,12 @@
 <template>
   <div class="thought-list" id="thought">
-    <div>
+    <div v-if="thought.published">
       <g-link :to="$tp(thought.path)" class="read">
         <p class="date" v-html="$d(new Date(thought.date), 'short')" />
         <h3 class="title" v-html="thought.title" />
         <p class="description" v-html="thought.description" />
-        <b>{{ thought.timeToRead }} {{$t('min')}} {{$t('read')}}</b>;
+        <b>{{ thought.timeToRead }} {{ $t("min") }} {{ $t("read") }}</b
+        >;
         <hr class="line" />
       </g-link>
     </div>

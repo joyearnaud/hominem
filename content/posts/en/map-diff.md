@@ -4,6 +4,7 @@ title: "Java Map difference"
 description: "How they work, their differences and usage"
 date: 2022-11-07
 lang: en
+published: true;
 relateTo:
   - map-diff_fr
 ---
@@ -16,9 +17,9 @@ Maps are perfect to use for `key-value association mapping` such as `dictionarie
 
 ## Characteristics of a Map Interface
 
-1.  A Map can contain `no duplicate keys` and `each key can map to at most one value`. Some implementations allow null key and null values like the HashMap and LinkedHashMap, but some do not like the TreeMap.
-2.  The order of a map depends on the specific implementations. For example, `TreeMap, LinkedHashMap and ConcurrentHashMap have predictable orders`, while `HashMap does not`.
-3.  There are `two interfaces` for implementing Map in java. They are **Map**, **SortedMap** and **ConcurrentMap**, and `three classes`: **HashMap**, **TreeMap**, **LinkedHashMap** and **ConcurrentHashMap**.
+1. A Map can contain `no duplicate keys` and `each key can map to at most one value`. Some implementations allow null key and null values like the HashMap and LinkedHashMap, but some do not like the TreeMap.
+2. The order of a map depends on the specific implementations. For example, `TreeMap, LinkedHashMap and ConcurrentHashMap have predictable orders`, while `HashMap does not`.
+3. There are `two interfaces` for implementing Map in java. They are **Map**, **SortedMap** and **ConcurrentMap**, and `three classes`: **HashMap**, **TreeMap**, **LinkedHashMap** and **ConcurrentHashMap**.
 
 ```mermaid
 classDiagram
@@ -97,21 +98,18 @@ LinkedHashMap is just like HashMap with an additional feature of `maintaining an
 
 ## TreeMap
 
-The map is sorted according to the used constructor, whether `sorted according to the natural ordering of its keys`, or whether `sorted by a Comparator provided at map creation time`. This proves to be an efficient way of sorting and storing the key-value pairs. The storing order maintained by the treemap must be consistent with equals just like any other sorted map, irrespective of the explicit comparators. 
+The map is sorted according to the used constructor, whether `sorted according to the natural ordering of its keys`, or whether `sorted by a Comparator provided at map creation time`. This proves to be an efficient way of sorting and storing the key-value pairs. The storing order maintained by the treemap must be consistent with equals just like any other sorted map, irrespective of the explicit comparators.
 
 ## ConcurrentHashMap
 
 The ConcurrentHashMap class is similar to HashMap, except that it's `thread-safe` and `synchronized` (HashMap can be thread-safe with external synchronization as Collections.synchornizedMap) and `allows modification while iteration` (regular HashMap throw a ConcurrentModificationException when another thread try to add/modify object content).
-Generaly speaking, it's `perform better and is more scalable in a thread application context` and specific usage as when a number of reader threads outnumber the number of writer threads (cache scenario, ...) 
+Generaly speaking, it's `perform better and is more scalable in a thread application context` and specific usage as when a number of reader threads outnumber the number of writer threads (cache scenario, ...)
 
 ---
 
 références externes:
+
 - [geeksforgeeks](https://www.geeksforgeeks.org/map-interface-java-examples/)
-
-
-
-
 
 <style scoped>
 table {
