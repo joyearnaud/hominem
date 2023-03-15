@@ -27,12 +27,12 @@
   "template": {
     "experience": {      
       "name": "expérience",
-      "title": "zoom sur le projet",
+      "title": "projet",
       "description": "En savoir plus sur le projet"
     },
     "skill": {      
       "name": "compétence",
-      "title": "plus de détail à propos de la compétence",
+      "title": "compétence",
       "description": "Plus de détails, d'utilisations et liens vers les expérience afférentes pour la compétence"
     },
     "thought": {      
