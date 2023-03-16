@@ -35,9 +35,8 @@
       </b-row>
     </b-container>
 
-    TEST 1: {{ items }}
-    <!-- <Vssue :title="$page.thought.id" /> -->
-    <!-- <Vssue title="Vssue Demo" /> -->
+    {{ items }}
+    <Vssue :title="$page.thought.id" />
   </Layout>
 </template>
 
