@@ -35,7 +35,6 @@
       </b-row>
     </b-container>
 
-    {{ items }}
     <Vssue :title="$page.thought.id" />
   </Layout>
 </template>
@@ -64,13 +63,9 @@ export default {
     };
   },
   data() {
-    return {
-      items: "NO INIT",
-    };
+    return {};
   },
-  async mounted() {
-    this.items = process.env.GITHUB_OWNER;
-  },
+  async mounted() {},
 };
 </script>
 

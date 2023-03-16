@@ -12,7 +12,6 @@ export default {
   methods: {
     draw(words) {
       setTimeout(function () {
-        console.log("Executed after 1 second");
         /*  ======================= SETUP ======================= */
         var config = {
           spiralResolution: 3, //Lower = better resolution
@@ -38,8 +37,6 @@ export default {
         });
 
         var cloud = document.getElementById("word-cloud");
-        console.log(cloud.offsetWidth, "cloud.offsetWidth");
-        console.log(cloud.offsetHeight, "cloud.offsetHeight");
         cloud.style.position = "relative";
         cloud.style.fontFamily = config.font;
 
@@ -53,9 +50,6 @@ export default {
           x: cloud.offsetWidth / 2,
           y: cloud.offsetHeight / 2,
         };
-        console.log(startPoint);
-        console.log(window.screen.height);
-        console.log(window.screen.width);
 
         var wordsDown = [];
         /* ======================= END SETUP ======================= */

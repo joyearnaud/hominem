@@ -53,9 +53,7 @@
 
 <script>
 export default {
-  async mounted() {
-    console.log(this.$page.experience);
-  },
+  async mounted() {},
   metaInfo() {
     return {
       title:

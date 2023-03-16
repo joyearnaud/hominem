@@ -25,9 +25,9 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(BootstrapVueIcons)
   Vue.use(Vssue, {
     api: GithubV3,
-    owner: process.env.GITHUB_OWNER,
-    repo: process.env.GITHUB_REPO,
-    clientId: process.env.GITHUB_CLIENT_ID,
-    clientSecret: process.env.GITHUB_CLIENT_SECRET,
+    owner: process.env.GRIDSOME_GITHUB_OWNER,
+    repo: process.env.GRIDSOME_GITHUB_REPO,
+    clientId: process.env.GRIDSOME_GITHUB_CLIENT_ID,
+    clientSecret: process.env.GRIDSOME_GITHUB_CLIENT_SECRET,
   })
 }
