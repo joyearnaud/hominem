@@ -35,7 +35,7 @@
       </b-row>
     </b-container>
 
-    <Vssue :title="$page.thought.id" />
+    <Vssue :title="this.vssue.title" />
   </Layout>
 </template>
 
@@ -63,9 +63,16 @@ export default {
     };
   },
   data() {
-    return {};
+    return {
+      vssue: {
+        title: "",
+      },
+    };
   },
-  async mounted() {},
+  async mounted() {
+    this.vssue.title = this.$page.thought.id.split("_")[0];
+    console.log(this.vssue.title);
+  },
 };
 </script>
 
