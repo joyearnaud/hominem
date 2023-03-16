@@ -34,10 +34,15 @@
         </b-col>
       </b-row>
     </b-container>
+
+    TEST 1: {{ items }}
+    <!-- <Vssue :title="$page.thought.id" /> -->
+    <!-- <Vssue title="Vssue Demo" /> -->
   </Layout>
 </template>
 
 <script>
+import { mounted } from "vuewordcloud";
 export default {
   metaInfo() {
     return {
@@ -60,7 +65,12 @@ export default {
     };
   },
   data() {
-    return {};
+    return {
+      items: "NO INIT",
+    };
+  },
+  async mounted() {
+    this.items = process.env.GITHUB_OWNER;
   },
 };
 </script>

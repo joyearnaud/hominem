@@ -8,6 +8,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import DefaultLayout from '~/layouts/Default.vue'
 import 'prismjs/themes/prism.css'
 
+import Vssue from 'vssue';
+import GithubV3 from '@vssue/api-github-v3';
+import 'vssue/dist/vssue.css'
+
 export default function (Vue, { router, head, isClient, appOptions }) {
   head.link.push({
     rel: 'stylesheet',
@@ -19,4 +23,11 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
   Vue.use(BootstrapVueIcons)
+  Vue.use(Vssue, {
+    api: GithubV3,
+    owner: process.env.GITHUB_OWNER,
+    repo: process.env.GITHUB_REPO,
+    clientId: process.env.GITHUB_CLIENT_ID,
+    clientSecret: process.env.GITHUB_CLIENT_SECRET,
+  })
 }
