@@ -15,15 +15,6 @@ relateTo:
      alt="Automation"
      style="object-fit: cover; width: 100%; border-radius: 10px;">
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/N8n-logo.png"
-     alt="n8n icon"
-     style="width: 10em;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
-     alt="openAI icon"
-     style="width: 10em;">
-</div>
-
 Lorsque l'on écrit des articles et que l'on gère son blog quotidiennement, cela prend du temps. Je vais vous présenter comment tirer profit de l'automatisation avec n8n et OpenAI pour écrire des articles de blog automatiquement et de manière régulière. Ce processus fait gagner un temps considérable et permet par exemple de publier régulièrement des articles sur des sujets novateurs qui se mettent parfois à jour plus rapidement que ce que nous pouvons rédiger manuellement. L'objectif de cet article n'est pas de fournir une méthode pas à pas pour l'installation et la configuration, mais plutôt de donner une idée générale de ce que l'on peut faire avec ces outils.
 
 ### Présentation de la stack
@@ -57,8 +48,18 @@ Très bien, commençons les présentations !
 
 #### Services d'automatisation
 
+<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/N8n-logo.png"
+     alt="n8n icon"
+     style="width: 8em;">
+</div>
 **n8n** est une plateforme d'automatisation qui permet de connecter différentes applications entre elles pour automatiser des tâches récurrentes. Avec n8n, vous pouvez créer des workflows d'automatisation en utilisant des nœuds préfabriqués ou en créant vos propres nœuds personnalisés. Cette solutions peux être autohébergée ou en SaaS. C'est ce que j'utilise pour automatiser l'écriture d'article de blog.
 
+<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
+     alt="openAI icon"
+     style="width: 8em;">
+</div>
 De son côté, **OpenAI** est une entreprise de recherche en intelligence artificielle qui a développé des modèles de langage de pointe tels que GPT-3. Ces modèles peuvent être utilisés pour générer du texte, répondre à des questions, traduire des langues, etc. OpenAI propose également une API qui permet d'accéder à ces modèles. C'est ce que nous allons utiliser pour générer du contenu.
 
 #### Infrastructure du blog
