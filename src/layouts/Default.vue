@@ -92,4 +92,27 @@ a:hover {
   text-decoration: inherit;
   transition: color 0.3s;
 }
+
+.mermaid {
+  font-family: "IBM Plex Sans Roman";
+  font-size: 1.2em;
+  color: var(--text-color);
+  background-color: var(--bkg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1em;
+  text-align: center;
+  transition: 2s;
+}
+
+.mermaid:hover {
+  position: absolute;
+  padding-left: -1em;
+  left: 2vw;
+  margin-bottom: 1em;
+  width: 94vw;
+  text-align: center;
+  transition: 2s;
+}
 </style>
