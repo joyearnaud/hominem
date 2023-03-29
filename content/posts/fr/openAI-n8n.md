@@ -11,48 +11,45 @@ relateTo:
 
 <article>
 
-## OpenAI et n8n, les outils d'automatisation parfaits pour l'écriture d'article de blog
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Collaborative_Robot_Cobot.png/640px-Collaborative_Robot_Cobot.png"
      alt="Automation"
      style="object-fit: cover; width: 100%; border-radius: 10px;">
 
 <div class="contenttable">
 
-- [OpenAI et n8n, les outils d'automatisation parfaits pour l'écriture d'article de blog](#openai-et-n8n-les-outils-dautomatisation-parfaits-pour-lécriture-darticle-de-blog)
-  - [Présentation de la stack](#présentation-de-la-stack)
-    - [Services d'automatisation](#services-dautomatisation)
-    - [Infrastructure du blog](#infrastructure-du-blog)
-  - [Idée générale du projet](#idée-générale-du-projet)
-    - [La cible](#la-cible)
-      - [Diagramme d'état](#diagramme-détat)
-      - [Explication](#explication)
-    - [Les difficultés](#les-difficultés)
-  - [Scénario d'automatisation](#scénario-dautomatisation)
-    - [Diagramme de flux dans n8n](#diagramme-de-flux-dans-n8n)
-  - [n8n dans la pratique](#n8n-dans-la-pratique)
-    - [Capture d'écran d'implémentation dans n8n](#capture-décran-dimplémentation-dans-n8n)
-    - [Exemple de configuration des noeuds](#exemple-de-configuration-des-noeuds)
-      - [HTTP Request \[GET github search repositories\]](#http-request-get-github-search-repositories)
-        - [Parameters](#parameters)
-        - [Content](#content)
-      - [Code \[randomize and format\] 2](#code-randomize-and-format-2)
-        - [Parameters](#parameters-1)
-        - [Content](#content-1)
-      - [OpenAI \[build an article about subject\]](#openai-build-an-article-about-subject)
-        - [Parameters](#parameters-2)
-        - [Content](#content-2)
-      - [GitHub \[create file EN\]](#github-create-file-en)
-        - [Parameters](#parameters-3)
-        - [Content](#content-3)
-  - [Ce qu'il reste à faire](#ce-quil-reste-à-faire)
-  - [Outro](#outro)
+- [Présentation de la stack](#présentation-de-la-stack)
+  - [Services d'automatisation](#services-dautomatisation)
+  - [Infrastructure du blog](#infrastructure-du-blog)
+- [Idée générale du projet](#idée-générale-du-projet)
+  - [La cible](#la-cible)
+    - [Diagramme d'état](#diagramme-détat)
+    - [Explication](#explication)
+  - [Les difficultés](#les-difficultés)
+- [Scénario d'automatisation](#scénario-dautomatisation)
+  - [Diagramme de flux dans n8n](#diagramme-de-flux-dans-n8n)
+- [n8n dans la pratique](#n8n-dans-la-pratique)
+  - [Capture d'écran d'implémentation dans n8n](#capture-décran-dimplémentation-dans-n8n)
+  - [Exemple de configuration des noeuds](#exemple-de-configuration-des-noeuds)
+    - [HTTP Request \[GET github search repositories\]](#http-request-get-github-search-repositories)
+      - [Parameters](#parameters)
+      - [Content](#content)
+    - [Code \[randomize and format\] 2](#code-randomize-and-format-2)
+      - [Parameters](#parameters-1)
+      - [Content](#content-1)
+    - [OpenAI \[build an article about subject\]](#openai-build-an-article-about-subject)
+      - [Parameters](#parameters-2)
+      - [Content](#content-2)
+    - [GitHub \[create file EN\]](#github-create-file-en)
+      - [Parameters](#parameters-3)
+      - [Content](#content-3)
+- [Ce qu'il reste à faire](#ce-quil-reste-à-faire)
+- [Outro](#outro)
 
 </div>
 
 Lorsque l'on écrit des articles et que l'on gère son blog quotidiennement, cela prend du temps. Je vais vous présenter comment tirer profit de l'automatisation avec n8n et OpenAI pour écrire des articles de blog automatiquement et de manière régulière. Ce processus fait gagner un temps considérable et permet par exemple de publier régulièrement des articles sur des sujets novateurs qui se mettent parfois à jour plus rapidement que ce que nous pouvons rédiger manuellement. L'objectif de cet article n'est pas de fournir une méthode pas à pas pour l'installation et la configuration, mais plutôt de donner une idée générale de ce que l'on peut faire avec ces outils.
 
-### Présentation de la stack
+## Présentation de la stack
 
 Voici une liste des outils que j'utilise pour automatiser l'écriture d'article de blog :
 
@@ -81,7 +78,7 @@ E --> F
 
 Très bien, commençons les présentations !
 
-#### Services d'automatisation
+### Services d'automatisation
 
 <div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/N8n-logo.png"
@@ -99,7 +96,7 @@ Très bien, commençons les présentations !
 
 De son côté, **OpenAI** est une entreprise de recherche en intelligence artificielle qui a développé des modèles de langage de pointe tels que GPT-3. Ces modèles peuvent être utilisés pour générer du texte, répondre à des questions, traduire des langues, etc. OpenAI propose également une API qui permet d'accéder à ces modèles. C'est ce que nous allons utiliser pour générer du contenu.
 
-#### Infrastructure du blog
+### Infrastructure du blog
 
 <div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
 <img src="https://gridsome.org/logos/logo-normal.svg"
@@ -130,7 +127,7 @@ J'utilise également **Checkly** pour surveiller les performances de notre site 
 
 Maintenant que vous connaissez les outils que j'utilise, je peux vous expliquer l'idée générale du projet.
 
-### Idée générale du projet
+## Idée générale du projet
 
 Avant de passer au scénario d'automatisation, il est important de comprendre l'idée générale du projet. Voici les points clés à retenir :
 
@@ -141,9 +138,9 @@ Avant de passer au scénario d'automatisation, il est important de comprendre l'
   - Gridsome utilise des fichiers Markdown pour générer le site web statique
   - Vercel déclenche un build à chaque commit sur GitHub pour déployer le site en ligne.
 
-#### La cible
+### La cible
 
-##### Diagramme d'état
+#### Diagramme d'état
 
 ```mermaid
 graph TB
@@ -157,7 +154,7 @@ E -- Checkly --> G[Monitor website]
 
 Automatisation de l'écriture de blog en 7 étapes.
 
-##### Explication
+#### Explication
 
 Notre processus d'automatisation de l'écriture de blog se déroule en 7 étapes, comme indiqué dans le diagramme ci-dessus :
 
@@ -175,7 +172,7 @@ Notre processus d'automatisation de l'écriture de blog se déroule en 7 étapes
 
 7. Checkly surveille le processus de transcription du Markdown généré en HTML pour s'assurer que tout se passe bien et que le site web est disponible.
 
-#### Les difficultés
+### Les difficultés
 
 Le principal défi dans ce projet est de trouver une source fiable de "buzzwords". Pour résoudre ce problème, je vais commencer par utiliser une liste statique de mots clés, puis passer à une liste de repositories populaires sur GitHub, car je suis familier avec leur API.
 
@@ -191,7 +188,7 @@ Voici les sources que j'ai utilisées pour trouver des buzzwords pertinents :
 
 En utilisant ces sources, je suis confiant de trouver des buzzwords pertinents pour mes articles de blog, et de les générer automatiquement avec OpenAI et n8n.
 
-### Scénario d'automatisation
+## Scénario d'automatisation
 
 Maintenant que l'idée générale est posée et les difficultés identifiées, je vais commencer à travailler sur le scénario d'automatisation. Pour cela, j'utiliserai n8n.
 
@@ -207,7 +204,7 @@ Le workflow sera déclenché par un timer "Schedule Trigger" programmé chaque s
 
 5. Enfin, pour chaque article généré, un nœud "GitHub" créera un nouveau fichier Markdown dans le dépôt du blog avec le contenu de l'article généré et les informations du noeud "interface".
 
-#### Diagramme de flux dans n8n
+### Diagramme de flux dans n8n
 
 ```mermaid
 graph TB
@@ -233,7 +230,7 @@ graph TB
     end
 ```
 
-### n8n dans la pratique
+## n8n dans la pratique
 
 Pour utiliser n8n efficacement et tirer le meilleur parti de cet outil d'automatisation, voici quelques conseils pratiques et des informations sur son utilisation en local ou en SaaS :
 
@@ -251,7 +248,7 @@ Pour utiliser n8n efficacement et tirer le meilleur parti de cet outil d'automat
 
 En suivant ces conseils et en choisissant entre l'utilisation en local ou en SaaS en fonction de vos besoins, vous pourrez exploiter pleinement le potentiel de n8n pour automatiser vos tâches et optimiser vos processus.
 
-#### Capture d'écran d'implémentation dans n8n
+### Capture d'écran d'implémentation dans n8n
 
 Nous avons ici un exemple de workflow d'automatisation qui génère des articles de blog à partir de sujets et de buzzwords sélectionnés, développer à partir du diagramme de flux précédent pour suivre la cible.
 
@@ -259,29 +256,29 @@ n8n permet de concevoir et d'implémenter un workflow d'automatisation visuellem
 
 J'ai tenter ici de nommé au mieux les nœuds pour que vous puissiez facilement comprendre le fonctionnement du workflow.
 
-#### Exemple de configuration des noeuds
+### Exemple de configuration des noeuds
 
 Un exemple de configuration des noeuds pour le workflow d'automatisation de génération d'articles de blog pour donner une idée de la façon dont cela fonctionne. N'hesitez pas à consulter la documentation officielle de n8n pour plus d'informations ou à me contacter pour plus de détails.
 
-##### HTTP Request [GET github search repositories]
+#### HTTP Request [GET github search repositories]
 
-###### Parameters
+##### Parameters
 
 - Method: GET
 
-###### Content
+##### Content
 
 ```url
 https://api.github.com/search/repositories?q= +created:>{{ new Date(new Date().getTime() - 3 * 28 * 24 * 60 * 60 * 1000).format('yyyy-MM-dd') }} +pushed:>{{ new Date(new Date().getTime() - 28 * 24 * 60 * 60 * 1000).format('yyyy-MM-dd') }} -topic:"algorithm" -topic:"algorithms" -topic:"interview" -topic:"certification" -topic:"books" -topic:"education" -topic:"awesome" -topic:"roadmap" -topic:"tutorials" -topic:"snippets" +topics:>=1 +language:java,javascript,go,python &sort=stars&order=desc &per_page=10
 ```
 
-##### Code [randomize and format] 2
+#### Code [randomize and format] 2
 
-###### Parameters
+##### Parameters
 
 - Method: GET
 
-###### Content
+##### Content
 
 ```javascript
 const randomIndex = Math.floor(Math.random() * $input.first().json.items.length);
@@ -292,11 +289,11 @@ return [{
 }];
 ```
 
-##### OpenAI [build an article about subject]
+#### OpenAI [build an article about subject]
 
 J'utilise le template par défaut, il est possible de passer par une requete HTTP custom pour avoir plus de contrôle sur les paramètres.
 
-###### Parameters
+##### Parameters
 
 - Resource: Chat/Text
 - Operation: Complete
@@ -305,7 +302,7 @@ J'utilise le template par défaut, il est possible de passer par une requete HTT
   - Role: User
 - Simplify: true
 
-###### Content
+##### Content
 
 ```markdown
 You are a computer science blogger, senior architect in XXXX, a XXXX tech compagny, named XXXX. You love to explain and share your knowledge. 
@@ -317,9 +314,9 @@ Add link to subject "${{ $node["Code [Interface]"].json["url"] }}" if any.
 Code, schemas/diagram (lowchart and sequence diagram of the architecture using  Mermaid) and short specific explanations as if you speak to a kid are greatly encoureaged.
 ```
 
-##### GitHub [create file EN]
+#### GitHub [create file EN]
 
-###### Parameters
+##### Parameters
 
 - Resource: File
 - Operation: Create
@@ -327,7 +324,7 @@ Code, schemas/diagram (lowchart and sequence diagram of the architecture using  
 - File Path: content/posts/en/{{ new Date().format("yyyy-MM-dd") }}.md
 - Commit Message: {{ new Date().format("yyyy-MM-dd") }}-EN.md
 
-###### Content
+##### Content
 
 ```markdown
 ---
@@ -347,7 +344,7 @@ relateTo:
 
 ```
 
-### Ce qu'il reste à faire
+## Ce qu'il reste à faire
 
 Bien que l'automatisation de l'écriture d'articles de blog avec n8n et OpenAI puisse être un gain de temps considérable, il y a toujours des améliorations à apporter et des défis à relever. Voici quelques points à considérer pour améliorer et étendre ce système :
 
@@ -363,7 +360,7 @@ Bien que l'automatisation de l'écriture d'articles de blog avec n8n et OpenAI p
 
 6. **Analyse des performances** : Mettre en place un suivi des performances des articles générés automatiquement, en mesurant les indicateurs clés tels que le taux de rebond, le temps passé sur la page et le nombre de vues. Ces données peuvent être utilisées pour affiner davantage le processus d'automatisation et améliorer la qualité des articles générés. Une partie peux être déjà réalisé avec Vercel et Clicky.
 
-### Outro
+## Outro
 
 En conclusion, l'utilisation de n8n et OpenAI pour automatiser la rédaction d'articles de blog présente de nombreux avantages, notamment un gain de temps considérable et la possibilité de publier des articles sur des sujets novateurs de manière régulière. Bien sûr, cela ne produit pas un article parfait à 100%, mais cela peut être un excellent point de départ pour une ébauche. J'utilise souvent cette technique pour générer des idées d'article ou des introductions, et je les peaufine ensuite à la main.
 
