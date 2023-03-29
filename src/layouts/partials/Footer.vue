@@ -7,7 +7,7 @@
       <a class="link" href="/about">Arnaud JOYE</a>
     </p>
     <p><SocialButton label="true" /></p>
-    <p>© 2022 ➔ 2022 Arnaud JOYE | <a href="#">Credits</a></p>
+    <p>© 2022 ➔ 2023 Arnaud JOYE | <a href="#">Credits</a></p>
   </footer>
 </template>
 

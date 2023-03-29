@@ -13,7 +13,7 @@ relateTo:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Collaborative_Robot_Cobot.png/640px-Collaborative_Robot_Cobot.png"
      alt="Automation"
-     style="object-fit: cover; width: 100%; border-radius: 10px;">
+     class="img-cover">
 
 <div class="contenttable">
 
@@ -80,47 +80,47 @@ Très bien, commençons les présentations !
 
 ### Services d'automatisation
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
+<div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/N8n-logo.png"
      alt="n8n icon"
-     style="width: 8em;">
+     class="text-img">
 </div>
 
 **n8n** est une plateforme d'automatisation qui permet de connecter différentes applications entre elles pour automatiser des tâches récurrentes. Avec n8n, vous pouvez créer des workflows d'automatisation en utilisant des nœuds préfabriqués ou en créant vos propres nœuds personnalisés. Cette solutions peux être autohébergée ou en SaaS. C'est ce que j'utilise pour automatiser l'écriture d'article de blog.
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
+<div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
      alt="openAI icon"
-     style="width: 8em;">
+     class="text-img">
 </div>
 
 De son côté, **OpenAI** est une entreprise de recherche en intelligence artificielle qui a développé des modèles de langage de pointe tels que GPT-3. Ces modèles peuvent être utilisés pour générer du texte, répondre à des questions, traduire des langues, etc. OpenAI propose également une API qui permet d'accéder à ces modèles. C'est ce que nous allons utiliser pour générer du contenu.
 
 ### Infrastructure du blog
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
+<div class="text-img-container">
 <img src="https://gridsome.org/logos/logo-normal.svg"
      alt="Gridsome icon"
-     style="width: 8em;">
+     class="text-img">
 </div>
 
 Dans mon cas, je suis un blogueur utilisant la stack **Gridsome**, un générateur de site web statique pour Vue.js. Celui-ci va produire à partir de fichiers statiques Markdown contenant nos articles, une page HTML elle aussi statique. Cela signifie que notre site est rapide, sécurisé et facile à maintenir, sans avoir besoin d'une base de données ou d'un serveur web.
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
+<div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/GitHub_Logo.png/640px-GitHub_Logo.png"
      alt="GitHub icon"
-     style="width: 8em;">
+     class="text-img">
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
      alt="openAI icon"
-     style="width: 8em;">
+     class="text-img">
 </div>
 
 Mon site est hébergé sur **GitHub**, ce qui nous permet de le versionner et de le partager facilement. J'ai choisi de déployer mon site sur **Vercel** pour une disponibilité en ligne 24/7. Vercel génère le site web statique à partir du code source lorsqu'un commit est poussé sur GitHub, ce qui permet de mettre à jour le site automatiquement et rapidement. Ce combo est parfait pour un blog, car il est facile à mettre en place et à maintenir tout en offrant une disponibilité maximale pour un coût minimal. Dans mon cas, c'est gratuit et plus performant que d'héberger le site sur un serveur personnel.
 
-<div style="float: left; margin-right: 1em; padding: 1em; width: 10em; background-color: white; border-radius: 10px; text-align: center;">
+<div class="text-img-container">
 <img src="https://avatars.githubusercontent.com/u/25982255?s=200&v=4"
      alt="openAI icon"
-     style="width: 8em;">
+     class="text-img">
 </div>
 
 J'utilise également **Checkly** pour surveiller les performances de notre site web, tester l'intégration continue et nous assurer que tout fonctionne correctement. Checkly nous permet de surveiller la vitesse de chargement de notre site, les erreurs de serveur, les temps de réponse, etc. Cela nous aide à résoudre rapidement les problèmes et à améliorer la qualité de notre site.
@@ -252,7 +252,7 @@ En suivant ces conseils et en choisissant entre l'utilisation en local ou en Saa
 
 <img src="https://github.com/joyearnaud/hominem/raw/939a0498eb033750963ef8bd80b6e22bec6a4588/src/assets/capture-n8n.png"
     alt="n8n screen"
-    style="object-fit: cover; width: 100%; border-radius: 10px;">
+    class="img-cover">
 
 Nous avons ici un exemple de workflow d'automatisation qui génère des articles de blog à partir de sujets et de buzzwords sélectionnés, développer à partir du diagramme de flux précédent pour suivre la cible.
 

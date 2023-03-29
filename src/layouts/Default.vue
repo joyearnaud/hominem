@@ -134,6 +134,26 @@ article .mermaid .label {
 }
 article .mermaid .edgeLabel {
 }
+article pre {
+  border-radius: 10px;
+}
+article .img-cover {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+article .text-img-container {
+  float: left;
+  margin-right: 1em;
+  padding: 1em;
+  width: 10em;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+article .text-img {
+  width: 8em;
+}
 article .contenttable {
   font-size: 0.8em;
   margin: 1em;
