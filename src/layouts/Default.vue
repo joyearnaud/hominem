@@ -104,6 +104,16 @@ article a:hover {
   text-decoration: inherit;
   transition: color 0.3s;
 }
+article h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  text-justify: none;
+}
 article .mermaid {
   text-align: center;
   transition: 2s;
@@ -133,6 +143,7 @@ article .contenttable {
   color: var(--text-color) !important;
   border: 2px solid var(--border-color);
   border-radius: 5px;
+  text-justify: none;
 }
 article .contenttable p {
   margin: 0;
