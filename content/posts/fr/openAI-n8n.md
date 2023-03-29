@@ -250,7 +250,7 @@ En suivant ces conseils et en choisissant entre l'utilisation en local ou en Saa
 
 ### Capture d'écran d'implémentation dans n8n
 
-<img src="https://github.com/joyearnaud/hominem/raw/bca1be56e77fc780a14a5ad0b9f3a607da8b3a23/src/assets/capture-n8n.png"
+<img src="https://github.com/joyearnaud/hominem/raw/939a0498eb033750963ef8bd80b6e22bec6a4588/src/assets/capture-n8n.png"
     alt="n8n screen"
     style="object-fit: cover; width: 100%; border-radius: 10px;">
 
