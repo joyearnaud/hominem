@@ -11,6 +11,29 @@ relateTo:
 
 <article>
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Physical_culture_%281908%29_%2814759598416%29.jpg/640px-Physical_culture_%281908%29_%2814759598416%29.jpg"
+     alt="Acculturation"
+     class="img-cover">
+
+<div class="contenttable">
+
+- [What is API Mangement?](#what-is-api-mangement)
+- [How to deal with it?](#how-to-deal-with-it)
+  - [Tools](#tools)
+    - [Acculturation](#acculturation)
+      - [API Manifesto](#api-manifesto)
+      - [API's workshop](#apis-workshop)
+      - [API Roadmap](#api-roadmap)
+    - [Technical approach](#technical-approach)
+      - [API gateway](#api-gateway)
+      - [API Publication](#api-publication)
+      - [API Portal](#api-portal)
+      - [API Reporting](#api-reporting)
+      - [API Monetization](#api-monetization)
+- [Outro](#outro)
+
+</div>
+
 ## What is API Mangement?
 
 API Management is a set of processes for `designing, publishing, documenting and analyzing APIs` within a secure environment.

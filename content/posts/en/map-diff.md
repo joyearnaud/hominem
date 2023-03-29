@@ -11,13 +11,31 @@ relateTo:
 
 <article>
 
-# Overview
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kepler-world.jpg/640px-Kepler-world.jpg"
+     alt="World Map"
+     class="img-cover">
 
-## Why and when to use Maps?
+<div class="contenttable">
+
+- [Overview](#overview)
+  - [Why and when to use Maps?](#why-and-when-to-use-maps)
+  - [Characteristics of a Map Interface](#characteristics-of-a-map-interface)
+    - [Methods in Map Interface](#methods-in-map-interface)
+- [Differences](#differences)
+  - [HashMap](#hashmap)
+  - [LinkedHashMap](#linkedhashmap)
+  - [TreeMap](#treemap)
+  - [ConcurrentHashMap](#concurrenthashmap)
+
+</div>
+
+## Overview
+
+### Why and when to use Maps?
 
 Maps are perfect to use for `key-value association mapping` such as `dictionaries`. The maps are used to perform lookups by keys or when someone wants to retrieve and update elements by keys.
 
-## Characteristics of a Map Interface
+### Characteristics of a Map Interface
 
 1. A Map can contain `no duplicate keys` and `each key can map to at most one value`. Some implementations allow null key and null values like the HashMap and LinkedHashMap, but some do not like the TreeMap.
 2. The order of a map depends on the specific implementations. For example, `TreeMap, LinkedHashMap and ConcurrentHashMap have predictable orders`, while `HashMap does not`.
@@ -63,7 +81,7 @@ classDiagram
     }
 ```
 
-### Methods in Map Interface
+#### Methods in Map Interface
 
 | Method | Action Performed  |
 | --- | --- |
@@ -85,24 +103,24 @@ classDiagram
 | **merge**(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction) | If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
 | **putIfAbsent**(K key, V value) | If the specified key is not already associated with a value (or is mapped to null) associates it with the given value and returns null, else returns the curassociaterent value. |
 
-# Differences
+## Differences
 
 `Map` is the interface type of map, while `HashMap`, `LinkedHashMap`, `TreeMap` and `ConcurrentHashMap` are the implementation type of map.
 This means that the compiler will treat map object as being one of type Map, even though at runtime, it may point to any subtype of it.
 
-## HashMap
+### HashMap
 
 HashMap is a part of Java's collection since Java 1.2. It provides the basic implementation of the Map interface of Java. It stores the data in (Key, Value) pairs. To access a value one must know its key. This class uses a technique called `Hashing`. Hashing is a technique of converting a large String to a small String that represents the same String. A shorter value helps in `indexing and faster searches`. HashMap provided the advantage of `quick insertion, search, and deletion`.
 
-## LinkedHashMap
+### LinkedHashMap
 
 LinkedHashMap is just like HashMap with an additional feature of `maintaining an order of elements inserted into it`.
 
-## TreeMap
+### TreeMap
 
 The map is sorted according to the used constructor, whether `sorted according to the natural ordering of its keys`, or whether `sorted by a Comparator provided at map creation time`. This proves to be an efficient way of sorting and storing the key-value pairs. The storing order maintained by the treemap must be consistent with equals just like any other sorted map, irrespective of the explicit comparators.
 
-## ConcurrentHashMap
+### ConcurrentHashMap
 
 The ConcurrentHashMap class is similar to HashMap, except that it's `thread-safe` and `synchronized` (HashMap can be thread-safe with external synchronization as Collections.synchornizedMap) and `allows modification while iteration` (regular HashMap throw a ConcurrentModificationException when another thread try to add/modify object content).
 Generaly speaking, it's `perform better and is more scalable in a thread application context` and specific usage as when a number of reader threads outnumber the number of writer threads (cache scenario, ...)
@@ -112,32 +130,5 @@ Generaly speaking, it's `perform better and is more scalable in a thread applica
 références externes:
 
 - [geeksforgeeks](https://www.geeksforgeeks.org/map-interface-java-examples/)
-
-<style scoped>
-table {
-  margin-bottom: 2em;
-  padding: 2em;
-}
-table tr {
-  border: 1px solid var(--border-color);
-  padding: 5px
-}
-table td {
-  border: 1px solid var(--border-color);
-  padding: 10px
-}
-table th {
-  padding: 10px;
-  text-align: center;
-  color: var(--border-color);
-}
-.mermaid {
-  border: 3px solid var(--border-color);
-  border-radius: 15px;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 2em;
-}
-</style>
 
 </article>

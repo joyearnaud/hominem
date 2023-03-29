@@ -134,36 +134,38 @@ article h3 {
   counter-reset: h4counter;
 }
 article h3:before {
-  content: counter(h3counter) ".\0000a0\0000a0";
+  content: counter(h3counter) ".\0000a0";
   counter-increment: h3counter;
 }
 article h4 {
   counter-reset: h5counter;
 }
 article h4:before {
-  content: counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+  content: counter(h3counter) "." counter(h4counter) ".\0000a0";
   counter-increment: h4counter;
 }
 article h5 {
   counter-reset: h6counter;
 }
 article h5:before {
-  content: counter(h5counter) ")" "\0000a0\0000a0";
+  content: counter(h5counter) ")" "\0000a0";
   counter-increment: h5counter;
 }
 article h6 {
   counter-reset: h7counter;
 }
 article h6:before {
-  content: counter(h5counter) "." counter(h6counter) ")" "\0000a0\0000a0";
+  content: counter(h5counter) "." counter(h6counter) ")" "\0000a0";
   counter-increment: h6counter;
 }
 
 article .mermaid {
-  text-align: center;
-  transition: 2s;
-  margin-top: 1em;
+  border: 3px solid var(--border-color);
+  border-radius: 15px;
+  margin: auto;
   margin-bottom: 2em;
+  transition: 2s;
+  text-align: center;
 }
 article .mermaid rect {
   fill: var(--accent-color) !important;
@@ -226,5 +228,22 @@ article .contenttable a:hover {
 }
 article code {
   font-size: 0.8em !important;
+}
+article table {
+  margin-bottom: 2em;
+  padding: 2em;
+}
+article table tr {
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
+article table td {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+article table th {
+  padding: 10px;
+  text-align: center;
+  color: var(--border-color);
 }
 </style>

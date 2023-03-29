@@ -11,13 +11,31 @@ relateTo:
 
 <article>
 
-# Présentation
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kepler-world.jpg/640px-Kepler-world.jpg"
+     alt="World Map"
+     class="img-cover">
 
-## Pourquoi et quand utiliser une Maps?
+<div class="contenttable">
+
+- [Présentation](#présentation)
+  - [Pourquoi et quand utiliser une Maps?](#pourquoi-et-quand-utiliser-une-maps)
+  - [Charactéristique d'une Map](#charactéristique-dune-map)
+    - [Methodes disponbile à partir de l'interface Map](#methodes-disponbile-à-partir-de-linterface-map)
+- [Différences](#différences)
+  - [HashMap](#hashmap)
+  - [LinkedHashMap](#linkedhashmap)
+  - [TreeMap](#treemap)
+  - [ConcurrentHashMap](#concurrenthashmap)
+
+</div>
+
+## Présentation
+
+### Pourquoi et quand utiliser une Maps?
 
 Les maps sont parfaites pour le `mappage d'association clé-valeur` tel que les `dictionnaires`. Les maps sont utilisées pour effectuer des recherches par clés ou lorsque l'on veut récupérer et mettre à jour des éléments par leur clés.
 
-## Charactéristique d'une Map
+### Charactéristique d'une Map
 
 1. Une map n'a `pas de duplication de clé` et `chaque clé peut correspondre au plus une valeur`. Certaines implémentations autorisent une clé nulle et des valeurs nulles comme HashMap, LinkedHashMap, ConcurrentHashMap, mais d'autres non, comme TreeMap.
 2. L'ordre d'une map dépend des implémentations spécifiques. Par exemple, `TreeMap et LinkedHashMap ont des ordres prévisibles`, alors que `HashMap et ConcurrentHashMap n'en a pas`.
@@ -63,7 +81,7 @@ classDiagram
     }
 ```
 
-### Methodes disponbile à partir de l'interface Map
+#### Methodes disponbile à partir de l'interface Map
 
 | Method | Action Performed  |
 | --- | --- |
@@ -85,24 +103,24 @@ classDiagram
 | **merge**(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction) | Si la clé spécifiée n'est pas déjà associée à une valeur ou est associée à null, l'associe à la valeur non nulle donnée. |
 | **putIfAbsent**(K key, V value) | Si la clé spécifiée n'est pas déjà associée à une valeur (ou est mappée sur null), l'associe à la valeur donnée et renvoie null, sinon renvoie la valeur actuelle associée. |
 
-# Différences
+## Différences
 
 `Map` est le type d'interface de la map, tandis que `HashMap`, `LinkedHashMap`, `TreeMap` et `ConcurrentHashMap` sont le type d'implémentation de la map.
 Cela signifie que le compilateur traitera l'objet map comme étant de type Map, même si au moment de l'exécution, il peut pointer vers n'importe quel sous-type de celui-ci.
 
-## HashMap
+### HashMap
 
 HashMap fait partie de la collection de Java depuis Java 1.2. Il fournit l'implémentation de base de l'interface Map de Java. Il stocke les données dans des paires (clé, valeur). Pour accéder à une valeur, il faut connaître sa clé. Cette classe utilise une technique appelée `hachage`. Le hachage est une technique de conversion d'une grande chaîne de charactère en une petite chaîne de charactère qui représente la même valeur. Une valeur plus courte permet une `indexation et des recherches plus rapides`. HashMap a fourni l'avantage d'une `insertion, d'une recherche et d'une suppression rapides`.
 
-## LinkedHashMap
+### LinkedHashMap
 
 LinkedHashMap est comme HashMap, avec une fonctionnalité supplémentaire de `maintien de l'ordre d'insertion des éléments`.
 
-## TreeMap
+### TreeMap
 
 La map est triée selon le constructeur utilisé soit `triée selon l'ordre naturel de ses clés`, soit `triée par un comparateur fourni au moment de la création de la map`. Cela s'avère être un moyen efficace de trier et de stocker les paires clé-valeur.
 
-## ConcurrentHashMap
+### ConcurrentHashMap
 
 La classe ConcurrentHashMap est similaire à HashMap, sauf qu'elle est `thread-safe` et `synchronisée` (HashMap peut être thread-safe avec une synchronisation externe comme Collections.synchornizedMap) et `permet la modification pendant l'itération` (un HashMap lance une ConcurrentModificationException lorsqu'un autre thread essayez d'ajouter/modifier le contenu de l'objet).
 D'une manière générale, il est `plus performant et plus évolutif dans un contexte avec thread` et dans des utilisations spécifiques comme lorsqu'un nombre de threads de lecture dépassent le nombre de threads d'écriture (scénario de cache, ...)
@@ -112,32 +130,5 @@ D'une manière générale, il est `plus performant et plus évolutif dans un con
 références externes:
 
 - [geeksforgeeks](https://www.geeksforgeeks.org/map-interface-java-examples/)
-
-<style scoped>
-table {
-  margin-bottom: 2em;
-  padding: 2em;
-}
-table tr {
-  border: 1px solid var(--border-color);
-  padding: 5px
-}
-table td {
-  border: 1px solid var(--border-color);
-  padding: 10px
-}
-table th {
-  padding: 10px;
-  text-align: center;
-  color: var(--border-color);
-}
-.mermaid {
-  border: 3px solid var(--border-color);
-  border-radius: 15px;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 2em;
-}
-</style>
 
 </article>

@@ -11,6 +11,29 @@ relateTo:
 
 <article>
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Physical_culture_%281908%29_%2814759598416%29.jpg/640px-Physical_culture_%281908%29_%2814759598416%29.jpg"
+     alt="Acculturation"
+     class="img-cover">
+
+<div class="contenttable">
+
+- [Qu'est ce que l'API Management?](#quest-ce-que-lapi-management)
+- [Comment la mettre en place?](#comment-la-mettre-en-place)
+  - [Les outils](#les-outils)
+    - [Aculturation](#aculturation)
+      - [Le manifeste d'API](#le-manifeste-dapi)
+      - [Atelier API](#atelier-api)
+      - [Feuille de route d'API](#feuille-de-route-dapi)
+    - [Approche technique](#approche-technique)
+      - [Passerelle d'API](#passerelle-dapi)
+      - [Publication d'API](#publication-dapi)
+      - [Portail d'API](#portail-dapi)
+      - [Communication de données d'API](#communication-de-données-dapi)
+      - [Monétisation d'API](#monétisation-dapi)
+- [Outro](#outro)
+
+</div>
+
 ## Qu'est ce que l'API Management?
 
 API Management ou Gestion des API est un ensemble du processus de `conception`, de `publication`, de `documentation` et d'`analyse des API` au sein d'un environnement sécurisé.
