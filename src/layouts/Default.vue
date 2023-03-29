@@ -104,16 +104,61 @@ article a:hover {
   text-decoration: inherit;
   transition: color 0.3s;
 }
-article h1,
-h2,
+article h2,
 h3,
 h4,
 h5,
-h6,
-h7,
-h8 {
+h6 {
   text-justify: none;
+  text-align: start;
+  margin: 0;
+  font-family: Gotham, Tahoma, sans-serif;
+  color: var(--border-color);
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
+article h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+article h2 {
+  font-size: 2em;
+  text-decoration: none;
+  counter-reset: h3counter;
+}
+article h3 {
+  font-size: 1.5em;
+  counter-reset: h4counter;
+}
+article h3:before {
+  content: counter(h3counter) ".\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+article h4 {
+  counter-reset: h5counter;
+}
+article h4:before {
+  content: counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+  counter-increment: h4counter;
+}
+article h5 {
+  counter-reset: h6counter;
+}
+article h5:before {
+  content: counter(h5counter) ")" "\0000a0\0000a0";
+  counter-increment: h5counter;
+}
+article h6 {
+  counter-reset: h7counter;
+}
+article h6:before {
+  content: counter(h5counter) "." counter(h6counter) ")" "\0000a0\0000a0";
+  counter-increment: h6counter;
+}
+
 article .mermaid {
   text-align: center;
   transition: 2s;
@@ -164,6 +209,7 @@ article .contenttable {
   border: 2px solid var(--border-color);
   border-radius: 5px;
   text-justify: none;
+  text-align: start;
 }
 article .contenttable p {
   margin: 0;
