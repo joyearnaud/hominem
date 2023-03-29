@@ -250,6 +250,10 @@ En suivant ces conseils et en choisissant entre l'utilisation en local ou en Saa
 
 ### Capture d'écran d'implémentation dans n8n
 
+<img src="https://github.com/joyearnaud/hominem/raw/bca1be56e77fc780a14a5ad0b9f3a607da8b3a23/src/assets/capture-n8n.png"
+    alt="n8n screen"
+    style="object-fit: cover; width: 100%; border-radius: 10px;">
+
 Nous avons ici un exemple de workflow d'automatisation qui génère des articles de blog à partir de sujets et de buzzwords sélectionnés, développer à partir du diagramme de flux précédent pour suivre la cible.
 
 n8n permet de concevoir et d'implémenter un workflow d'automatisation visuellement et de manière intuitive. Dans cet exemple, on peut observer les différents nœuds et les connexions qui les relient, représentant les étapes successives du processus automatisé. Chaque nœud correspond à une action spécifique, comme l'extraction de données, la connexion à des services externes (openAI, gitHub) ou la manipulation d'informations.

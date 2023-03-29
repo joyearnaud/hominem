@@ -147,4 +147,7 @@ article .contenttable a:hover {
   color: var(--accent-color);
   text-decoration: none;
 }
+article code {
+  font-size: 0.8em !important;
+}
 </style>
