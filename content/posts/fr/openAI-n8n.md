@@ -1,6 +1,6 @@
 ---
 id: "openAI-n8n_fr"
-title: "Un blog avec OpenAI et n8n"
+title: "OpenAI et n8n"
 description: "Les outils d'automatisation parfaits pour l'écriture d'article de blog"
 date: 2023-03-20
 lang: fr

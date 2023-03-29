@@ -9,6 +9,8 @@ relateTo:
   - APIM_fr
 ---
 
+<article>
+
 ## What is API Mangement?
 
 API Management is a set of processes for `designing, publishing, documenting and analyzing APIs` within a secure environment.
@@ -173,3 +175,5 @@ External reference:
 - [mulesoft](https://www.mulesoft.com/fr/resources/api/what-is-api-management)
 - [wikipedia](https://fr.wikipedia.org/wiki/API_management)
 - [cross-systems](https://cross-systems.ch/actualites/api-management/)
+
+</article>

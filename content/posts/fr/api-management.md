@@ -9,6 +9,8 @@ relateTo:
   - APIM_en
 ---
 
+<article>
+
 ## Qu'est ce que l'API Management?
 
 API Management ou Gestion des API est un ensemble du processus de `conception`, de `publication`, de `documentation` et d'`analyse des API` au sein d'un environnement sécurisé.
@@ -173,3 +175,5 @@ références externes:
 - [mulesoft](https://www.mulesoft.com/fr/resources/api/what-is-api-management)
 - [wikipedia](https://fr.wikipedia.org/wiki/API_management)
 - [cross-systems](https://cross-systems.ch/actualites/api-management/)
+
+</article>

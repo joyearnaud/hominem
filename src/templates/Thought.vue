@@ -6,29 +6,26 @@
     >
     <div class="title">
       <h1>{{ $page.thought.title }}</h1>
+
       <p class="date">
         {{ $d(new Date($page.thought.date), "short") }} |
         {{ $page.thought.timeToRead }} {{ $t("min") }} {{ $t("read") }}
       </p>
+
+      <p>{{ $page.thought.description }}</p>
+
+      <div
+        class="translation"
+        v-for="item in $page.thought.relateTo"
+        :key="item.name"
+      >
+        <g-image class="icon" src="~/assets/translate.png" />
+        <g-link class="icon-link" :to="$tp(item.path)">{{ item.lang }}</g-link>
+      </div>
     </div>
 
     <b-container fluid="sm">
       <b-row>
-        <b-col class="relateto">
-          <b-row class="relateto-row">
-            <b-col>
-              <g-image class="icon" src="~/assets/translate.png" />
-            </b-col>
-            <b-col class="d-md-none"><i class="gg-arrow-long-right"></i></b-col>
-            <b-col
-              class="item"
-              v-for="item in $page.thought.relateTo"
-              :key="item.name"
-            >
-              <g-link :to="$tp(item.path)">{{ item.lang }}</g-link>
-            </b-col>
-          </b-row>
-        </b-col>
         <b-col cols="11" class="content">
           <p class="content-text" v-html="$page.thought.content" />
         </b-col>
@@ -116,22 +113,6 @@ query Thought ($path: String!) {
   text-justify: inter-word;
 }
 
-a {
-  border: 2px dashed var(--border-color);
-  padding: 0.16em;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.icon {
-  width: 1.6em;
-  -webkit-filter: invert(var(--reverted-color));
-  filter: invert(var(--reverted-color));
-}
-
-.item {
-}
-
 .gg-arrow-long-right {
   box-sizing: border-box;
   position: relative;
@@ -154,5 +135,43 @@ a {
   transform: rotate(45deg);
   right: 0;
   bottom: -0.15em;
+}
+
+.translation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.translation .icon {
+  width: 1.6em;
+  -webkit-filter: invert(var(--reverted-color));
+  filter: invert(var(--reverted-color));
+}
+.translation .icon-link {
+  margin-left: 0.2em;
+  padding: 0.1em;
+  color: var(--link-color);
+  text-decoration: underline;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.translation .icon-link:hover {
+  margin-left: 0.2em;
+  padding: 0.1em;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.translation a {
+  border: 2px dashed var(--border-color);
+  border-radius: 7px;
+  padding: 0.16em;
+  color: var(--link-color);
+  text-decoration: none;
 }
 </style>

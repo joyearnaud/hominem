@@ -9,6 +9,8 @@ relateTo:
   - map-diff_fr
 ---
 
+<article>
+
 # Overview
 
 ## Why and when to use Maps?
@@ -137,3 +139,5 @@ table th {
   margin-bottom: 2em;
 }
 </style>
+
+</article>

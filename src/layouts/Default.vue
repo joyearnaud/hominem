@@ -83,16 +83,27 @@ hr.round {
 
 a {
   font-family: "IBM Plex Sans Roman";
-  color: var(--link-color);
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: inherit;
   transition: color 1s;
 }
 a:hover {
-  color: var(--accent-color);
+  color: var(--link-color);
   text-decoration: inherit;
   transition: color 0.3s;
 }
 
+article a {
+  font-family: "IBM Plex Sans Roman";
+  color: var(--link-color);
+  text-decoration: underline;
+  transition: color 1s;
+}
+article a:hover {
+  color: var(--accent-color);
+  text-decoration: inherit;
+  transition: color 0.3s;
+}
 article .mermaid {
   text-align: center;
   transition: 2s;

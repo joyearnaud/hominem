@@ -9,6 +9,8 @@ relateTo:
   - map-diff_en
 ---
 
+<article>
+
 # Présentation
 
 ## Pourquoi et quand utiliser une Maps?
@@ -137,3 +139,5 @@ table th {
   margin-bottom: 2em;
 }
 </style>
+
+</article>
