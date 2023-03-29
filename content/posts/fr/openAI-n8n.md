@@ -9,11 +9,46 @@ relateTo:
   - openAI-n8n_en
 ---
 
+<article>
+
 ## OpenAI et n8n, les outils d'automatisation parfaits pour l'écriture d'article de blog
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Collaborative_Robot_Cobot.png/640px-Collaborative_Robot_Cobot.png"
      alt="Automation"
      style="object-fit: cover; width: 100%; border-radius: 10px;">
+
+<div class="contenttable">
+
+- [OpenAI et n8n, les outils d'automatisation parfaits pour l'écriture d'article de blog](#openai-et-n8n-les-outils-dautomatisation-parfaits-pour-lécriture-darticle-de-blog)
+  - [Présentation de la stack](#présentation-de-la-stack)
+    - [Services d'automatisation](#services-dautomatisation)
+    - [Infrastructure du blog](#infrastructure-du-blog)
+  - [Idée générale du projet](#idée-générale-du-projet)
+    - [La cible](#la-cible)
+      - [Diagramme d'état](#diagramme-détat)
+      - [Explication](#explication)
+    - [Les difficultés](#les-difficultés)
+  - [Scénario d'automatisation](#scénario-dautomatisation)
+    - [Diagramme de flux dans n8n](#diagramme-de-flux-dans-n8n)
+  - [n8n dans la pratique](#n8n-dans-la-pratique)
+    - [Capture d'écran d'implémentation dans n8n](#capture-décran-dimplémentation-dans-n8n)
+    - [Exemple de configuration des noeuds](#exemple-de-configuration-des-noeuds)
+      - [HTTP Request \[GET github search repositories\]](#http-request-get-github-search-repositories)
+        - [Parameters](#parameters)
+        - [Content](#content)
+      - [Code \[randomize and format\] 2](#code-randomize-and-format-2)
+        - [Parameters](#parameters-1)
+        - [Content](#content-1)
+      - [OpenAI \[build an article about subject\]](#openai-build-an-article-about-subject)
+        - [Parameters](#parameters-2)
+        - [Content](#content-2)
+      - [GitHub \[create file EN\]](#github-create-file-en)
+        - [Parameters](#parameters-3)
+        - [Content](#content-3)
+  - [Ce qu'il reste à faire](#ce-quil-reste-à-faire)
+  - [Outro](#outro)
+
+</div>
 
 Lorsque l'on écrit des articles et que l'on gère son blog quotidiennement, cela prend du temps. Je vais vous présenter comment tirer profit de l'automatisation avec n8n et OpenAI pour écrire des articles de blog automatiquement et de manière régulière. Ce processus fait gagner un temps considérable et permet par exemple de publier régulièrement des articles sur des sujets novateurs qui se mettent parfois à jour plus rapidement que ce que nous pouvons rédiger manuellement. L'objectif de cet article n'est pas de fournir une méthode pas à pas pour l'installation et la configuration, mais plutôt de donner une idée générale de ce que l'on peut faire avec ces outils.
 
@@ -93,7 +128,7 @@ Mon site est hébergé sur **GitHub**, ce qui nous permet de le versionner et de
 
 J'utilise également **Checkly** pour surveiller les performances de notre site web, tester l'intégration continue et nous assurer que tout fonctionne correctement. Checkly nous permet de surveiller la vitesse de chargement de notre site, les erreurs de serveur, les temps de réponse, etc. Cela nous aide à résoudre rapidement les problèmes et à améliorer la qualité de notre site.
 
-Maintenant que vous connaissez les outils que j'utilise, quelle idée je veux automatiser ?
+Maintenant que vous connaissez les outils que j'utilise, je peux vous expliquer l'idée générale du projet.
 
 ### Idée générale du projet
 
@@ -111,7 +146,7 @@ Avant de passer au scénario d'automatisation, il est important de comprendre l'
 ##### Diagramme d'état
 
 ```mermaid
-graph LR
+graph TB
 A[Find buzzwords from reliable source] -- RSS/Website/Text file/API --> B[Choose keyword]
 B -- OpenAI --> C[Generate blog post]
 C -- Github API --> D[Create new Markdown file in blog repo]
@@ -172,31 +207,29 @@ Le workflow sera déclenché par un timer "Schedule Trigger" programmé chaque s
 
 5. Enfin, pour chaque article généré, un nœud "GitHub" créera un nouveau fichier Markdown dans le dépôt du blog avec le contenu de l'article généré et les informations du noeud "interface".
 
-#### Diagramme de flux
+#### Diagramme de flux dans n8n
 
 ```mermaid
-graph LR
-    subgraph n8n
-      subgraph Reactor
-          trig[Schedule Trigger]
-          trigN[Schedule Trigger]
-      end
-      subgraph Initializer
-          trig--start-->source[HTTP Request]
-          trigN--start-->sourceN[Database/File/String/...]
-          source --return response--> data[JS Function]
-          sourceN --return response--> dataN[JS Function]
-      end
-      subgraph Generator
-          data--return data-->Interface[Interface: Topic & URL Data]
-          dataN--return data-->Interface
-          Interface--contextualize-->OpenAIG[OpenAI Generation]
-          OpenAIG-->OpenAIT[OpenAI Translation]
-      end
-      subgraph Publisher
-          OpenAIG--generate-->GitHub
-          OpenAIT--translate-->GitHub
-      end
+graph TB
+    subgraph Reactor
+        trig[Schedule Trigger]
+        trigN[Schedule Trigger]
+    end
+    subgraph Initializer
+        trig--start-->source[HTTP Request]
+        trigN--start-->sourceN[Database/File/String/...]
+        source --return response--> data[JS Function]
+        sourceN --return response--> dataN[JS Function]
+    end
+    subgraph Generator
+        data--return data-->Interface[Interface: Topic & URL Data]
+        dataN--return data-->Interface
+        Interface--contextualize-->OpenAIG[OpenAI Generation]
+        OpenAIG-->OpenAIT[OpenAI Translation]
+    end
+    subgraph Publisher
+        OpenAIG--generate-->GitHub
+        OpenAIT--translate-->GitHub
     end
 ```
 
@@ -339,3 +372,5 @@ En combinant les puissantes fonctionnalités de n8n en matière d'automatisation
 Pour vous donner un exemple concret, j'ai utilisé ce workflow pour générer un article sur l'hyperautomation, qui explique l'idée générale et démontre le fonctionnement de ce processus d'automatisation. Vous pouvez lire cet article [ici](https://exemple.com/hyperautomation-article).
 
 Alors, n'hésitez pas à explorer ces outils et à intégrer l'automatisation dans votre propre processus de création de contenu. Vous pourriez être agréablement surpris par les résultats ... :D
+
+</article>

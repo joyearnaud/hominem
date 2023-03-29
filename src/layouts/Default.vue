@@ -83,36 +83,57 @@ hr.round {
 
 a {
   font-family: "IBM Plex Sans Roman";
-  color: inherit;
-  text-decoration: inherit;
+  color: var(--link-color);
+  text-decoration: underline;
   transition: color 1s;
 }
 a:hover {
-  color: var(--link-color);
+  color: var(--accent-color);
   text-decoration: inherit;
   transition: color 0.3s;
 }
 
-.mermaid {
-  font-family: "IBM Plex Sans Roman";
-  font-size: 1.2em;
-  color: var(--text-color);
-  background-color: var(--bkg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 1em;
+article .mermaid {
   text-align: center;
   transition: 2s;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
-
-.mermaid:hover {
-  position: absolute;
-  padding-left: -1em;
-  left: 2vw;
-  margin-bottom: 1em;
-  width: 94vw;
-  text-align: center;
-  transition: 2s;
+article .mermaid rect {
+  fill: var(--accent-color) !important;
+  stroke: var(--bkg-color) !important;
+  stroke-width: 1px !important;
+}
+article .mermaid path {
+  stroke: var(--text-color) !important;
+  stroke-width: 2px !important;
+}
+article .mermaid .label {
+  color: var(--bkg-color) !important;
+}
+article .mermaid .edgeLabel {
+}
+article .contenttable {
+  font-size: 0.8em;
+  margin: 1em;
+  padding: 1em;
+  text-decoration: none;
+  background-color: var(--line-color) !important;
+  color: var(--text-color) !important;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+}
+article .contenttable p {
+  margin: 0;
+  padding: 0;
+}
+article .contenttable a {
+  padding: 1px;
+  color: var(--bkg-color);
+  text-decoration: underline;
+}
+article .contenttable a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 </style>
