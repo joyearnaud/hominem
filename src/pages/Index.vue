@@ -2,6 +2,9 @@
   <Layout>
     <section class="home">
       <Landing :page="$t('page.welcome.name')" />
+      <p>
+        {{ $t("page.welcome.welcome-message") }}
+      </p>
       <div>
         <div class="wordcloud container-sm">
           <Wordcloud></Wordcloud>

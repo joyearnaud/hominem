@@ -6,7 +6,8 @@
     "welcome": {
       "name": "welcome",
       "title": "welcome",
-      "description": "Homepage of 'Dev in progress' with tech blog, job experiences and a listing of all skills already battle tested"
+      "description": "Homepage of 'Dev in progress' with tech blog, job experiences and a listing of all skills already battle tested",
+      "welcome-message": "Welcome to my portfolio website, where I showcase my skills and accomplishments and share insightful blog articles on countless topics. Explore my work history, education and projects to learn about my expertises. Don't hesitate to get in touch for collaboration opportunities, inquiries, or to discuss my articles."
     },
     "about": {
       "name": "about",

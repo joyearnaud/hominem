@@ -6,7 +6,8 @@
     "welcome": {
       "name": "bienvenue",
       "title": "bienvenue",
-      "description": "Page d'accueil de 'Dev in progress' avec un blog technologique, des expériences professionnelles et une liste de toutes les compétences déjà testées"
+      "description": "Page d'accueil de 'Dev in progress' avec un blog technologique, des expériences professionnelles et une liste de toutes les compétences déjà testées",
+      "welcome-message": "Bienvenue sur mon site de portfolio, où je présente mes compétences et réalisations et partage des articles de blog perspicaces sur d'innombrables sujets. Découvrez mon historique professionnel et mes projets pour en savoir plus sur mes expertises. N'hésitez pas à me contacter pour des opportunités de collaboration, des demandes de renseignements ou pour discuter de mes articles."
     },
     "about": {
       "name": "à propos",
