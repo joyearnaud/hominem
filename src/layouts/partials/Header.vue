@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar">
       <div class="container-fluid">
-        <g-link class="navlink logo over" :to="$tp('/')"> <Logo /> </g-link>
+        <g-link class="col-1 logo switch" :to="$tp('/')"> <Logo /> </g-link>
         <g-link class="navlink" :to="$tp('/about/')">{{
           removeAccent($t("page.about.name"))
         }}</g-link>
@@ -68,7 +68,9 @@ export default {
 }
 
 .logo {
-  transform: rotate(113deg);
+  transform: rotate(0deg);
+  width: 2vmax;
+  max-width: 500px;
 }
 .switch {
   text-align: right;

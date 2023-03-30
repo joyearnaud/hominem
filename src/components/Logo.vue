@@ -1,9 +1,23 @@
 <template>
   <section class="logo">
-    <div><hr class="round" /></div>
-    <div><hr class="round" /></div>
-    <div><hr class="round" /></div>
-    <div><hr class="round" /></div>
+    <div>
+      <hr class="round" />
+    </div>
+    <div>
+      <hr class="round" />
+    </div>
+    <div>
+      <hr class="round" />
+    </div>
+    <div>
+      <hr class="round" />
+    </div>
+    <span class="label ll"
+      ><svg class="ll" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m19.07 4.93c-1.85-1.93-4.41-2.97-7.07-2.93-2.66-.04-5.21 1-7.06 2.93-1.94 1.85-2.98 4.41-2.94 7.07-.04 2.66 1 5.21 2.93 7.06 1.85 1.94 4.41 2.98 7.07 2.94 2.66.04 5.21-1 7.06-2.93 1.94-1.85 2.98-4.41 2.94-7.07.04-2.66-1-5.22-2.93-7.07m-2.07 7.07v6h-3.5v-5h-3v5h-3.5v-6h-2l7-7 7.5 7z"
+        /></svg
+    ></span>
   </section>
 </template>
 
@@ -20,6 +34,18 @@ export default {
   box-sizing: border-box;
 }
 
+.label {
+  position: absolute;
+  font-weight: 100;
+  color: var(--border-color);
+  animation: breathe-reversed 0.5s ease-in-out forwards;
+}
+
+.ll {
+  width: 3.5vmax;
+  fill: var(--link-color);
+}
+
 hr.round {
   border: 0.3vmin solid var(--border-color);
   border-radius: 5px;
@@ -33,8 +59,8 @@ section {
 
 .logo {
   position: relative;
-  width: 1.3vmax;
-  height: 1.3vmax;
+  width: 1vmax;
+  height: 1vmax;
   background: black;
   /*animation: rotate 1s linear infinite forwards paused;*/
 }
