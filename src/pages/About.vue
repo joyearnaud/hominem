@@ -9,35 +9,24 @@
           <b-col class="text-center titre">
             <Selfie></Selfie>
             <h4>Arnaud JOYE</h4>
-            <h5>développeur fullstack, ingénieur</h5>
+            <h5>{{ $t("page.about.job.title") }}</h5>
+            <h6>
+              {{ $t("page.about.job.company") }} /
+              {{ $t("page.about.job.location") }}
+            </h6>
+            <h7>{{ $t("page.about.job.period") }}</h7>
             <SocialButton />
             <Download />
           </b-col>
           <b-col class="description">
             <h4>Me, Myself & I</h4>
-            <p>
-              Que peut faire un « développeur full-stack », me demandez-vous ?
-            </p>
-            <p>
-              Je peux invoquer un site Web à partir de rien, entièrement formé.
-              Je n'utilise pas d'astuce, encore moins de magie. Je me spécialise
-              dans la manipulation de l'essence même du Web, de ses matières
-              premières HTML, CSS et JavaScript. Les serveurs me servent, les
-              domaines sont mon domaine et les certificats sont certains.
-            </p>
-            <p>
-              Je peux planifier, concevoir, créer, lancer et maintenir une API
-              moi-même. Ai-je mentionné que je créer également des applications
-              backend ? J'ai travaillé plus de 10 ans sur de nombreux projets
-              publiés et je recherche maintenant de nouveaux horizons dans le
-              Cloud.
-            </p>
-            <p>
-              Un développeur full-stack ne connaît pas de limites. Et quand il
-              en trouve une, il la traverse sans hésitation, s'enfonçant
-              hardiment dans l'inconnu pour en revenir plus riche.
-            </p></b-col
-          >
+
+            <p>{{ $t("page.about.presentation1") }}</p>
+            <p>{{ $t("page.about.presentation2") }}</p>
+            <p>{{ $t("page.about.presentation3") }}</p>
+            <p>{{ $t("page.about.presentation4") }}</p>
+            <p>{{ $t("page.about.presentation5") }}</p>
+          </b-col>
         </b-row>
       </b-container>
     </section>

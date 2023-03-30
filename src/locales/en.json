@@ -11,7 +11,18 @@
     "about": {
       "name": "about",
       "title": "about",
-      "description": "Presentation, contact and download of the current CV"
+      "description": "Presentation, contact and download of the current CV",
+      "job": {
+        "title": "Full-stack engineer",
+        "company": "Freelance",
+        "location": "Paris, France",
+        "period": "since 2013"
+      },
+      "presentation1": "You might wonder what a passionate full-stack web artisan can achieve?",
+      "presentation2": "I shape websites from scratch, harmonizing the foundations of the Web by revving up V8 and unleashing the agility of SpiderMonkey. Servers respond to my call, domains represent my space for expression, and certificates attest to my reliability.",
+      "presentation3": "However, it is behind the scenes of the Web where I truly thrive. As a backend expert, I design, develop, and deploy solid and efficient APIs. My 10 years of experience and the success of numerous projects bear witness to my passion for the inner workings of the Web.",
+      "presentation4": "Always eager for new challenges, I am now looking towards the future and exploring the universe of the Cloud, where I can give free rein to my creativity and expertise.",
+      "presentation5": "As a web artisan, I recognize that there is always more to learn and discover. Faced with an obstacle, I overcome it with audacity and plunge into the unknown, always ready to push the boundaries of what is possible."
     },
     "experiences": {
       "name": "experiences",

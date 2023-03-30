@@ -11,7 +11,18 @@
     "about": {
       "name": "à propos",
       "title": "à propos",
-      "description": "Présentation, contact et téléchargement du CV actuel"
+      "description": "Présentation, contact et téléchargement du CV actuel",
+      "job": {
+        "title": "Ingénieur full-stack",
+        "company": "Freelance",
+        "location": "Paris, France",
+        "period": "depuis 2013"
+      },
+      "presentation1": "Vous vous demandez ce qu'un artisan du Web full-stack et passionné peut réaliser ?",
+      "presentation2": "Je façonne les sites Web à partir du néant, en harmonisant les fondations du Web en faisant vrombir V8 et en déchaînant l'agilité du SpiderMonkey. Les serveurs répondent à mon appel, les domaines constituent mon espace d'expression et les certificats attestent de ma fiabilité.",
+      "presentation3": "Néanmoins, c'est dans les coulisses du Web que je m'épanouis éellement. En tant qu'expert backend, je conçois, développe et déploie des API solides et performantes. Mes 10 années d'expérience et la réussite de nombreux projets témoignent de ma passion pour les rouages internes du Web.",
+      "presentation4": "Toujours avide de nouveaux défis, je suis à présent tourné vers le futur et explore l'univers du Cloud, où je peux laisser libre cours à ma créativité et mon savoir-faire.",
+      "presentation5": "En tant qu'artisan du Web, je reconnais qu'il y a toujours plus à apprendre et à découvrir. Face à un obstacle, je le surmonte avec audace et m'élance dans l'inconnu, toujours prêt à repousser les frontières du possible."
     },
     "experiences": {
       "name": "expériences" ,
