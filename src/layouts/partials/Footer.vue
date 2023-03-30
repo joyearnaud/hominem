@@ -1,11 +1,15 @@
 <template>
   <footer class="footer">
-    <p>
-      {{ $t("built with") }}
-      <a class="link" href="//gridsome.org">Gridsome</a>
-      & {{ $t("made with") }} ❤️ {{ $t("by") }}
-      <a class="link" href="/about">Arnaud JOYE</a>
-    </p>
+    <span>
+      <p>
+        {{ $t("built with") }}
+        <a class="link" href="//gridsome.org">Gridsome</a>
+      </p>
+      <p>
+        & {{ $t("made with") }} ❤️ {{ $t("by") }}
+        <a class="link" href="/about">Arnaud JOYE</a>
+      </p>
+    </span>
     <p><SocialButton label="true" /></p>
     <p>© 2022 ➔ 2023 Arnaud JOYE | <a href="#">Credits</a></p>
   </footer>
