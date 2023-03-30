@@ -105,10 +105,10 @@ article a:hover {
   transition: color 0.3s;
 }
 article h2,
-h3,
-h4,
-h5,
-h6 {
+article h3,
+article h4,
+article h5,
+article h6 {
   text-justify: none;
   text-align: start;
   margin: 0;
@@ -120,8 +120,8 @@ h6 {
   letter-spacing: 0.08em;
 }
 article h4,
-h5,
-h6 {
+article h5,
+article h6 {
   font-size: 1em;
 }
 article h2 {
@@ -158,7 +158,6 @@ article h6:before {
   content: counter(h5counter) "." counter(h6counter) ")" "\0000a0";
   counter-increment: h6counter;
 }
-
 article .mermaid {
   border: 3px solid var(--border-color);
   border-radius: 15px;
