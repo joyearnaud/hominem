@@ -68,7 +68,7 @@ export default {
 }
 
 .logo {
-  transform: rotate(0deg);
+  transform: rotate(22deg);
   width: 2vmax;
   max-width: 500px;
 }

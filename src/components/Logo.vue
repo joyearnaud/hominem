@@ -12,18 +12,6 @@
     <div>
       <hr class="round" />
     </div>
-    <div>
-      <hr class="round" />
-    </div>
-    <div>
-      <hr class="round" />
-    </div>
-    <span class="label ll"
-      ><svg class="ll" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m19.07 4.93c-1.85-1.93-4.41-2.97-7.07-2.93-2.66-.04-5.21 1-7.06 2.93-1.94 1.85-2.98 4.41-2.94 7.07-.04 2.66 1 5.21 2.93 7.06 1.85 1.94 4.41 2.98 7.07 2.94 2.66.04 5.21-1 7.06-2.93 1.94-1.85 2.98-4.41 2.94-7.07.04-2.66-1-5.22-2.93-7.07m-2.07 7.07v6h-3.5v-5h-3v5h-3.5v-6h-2l7-7 7.5 7z"
-        /></svg
-    ></span>
   </section>
 </template>
 
@@ -116,38 +104,46 @@ section {
   top: -75%;
   left: 0px;
   transform-origin: bottom right;
+  border-radius: 3px;
 }
 
 .logo div:nth-child(1)::before {
-  background: var(--line-color);
+  background: yellow;
+  border-radius: 3px;
 }
 
 .logo div:nth-child(2) {
   right: -75%;
   top: 0px;
   transform-origin: bottom left;
+  border-radius: 3px;
 }
 .logo div:nth-child(2)::before {
-  background: var(--accent-color);
+  background: greenyellow;
+  border-radius: 3px;
 }
 
 .logo div:nth-child(3) {
   bottom: -75%;
   left: 0px;
   transform-origin: top left;
+  border-radius: 3px;
 }
 
 .logo div:nth-child(3)::before {
-  background: var(--link-color);
+  background: pink;
+  border-radius: 3px;
 }
 .logo div:nth-child(4) {
   left: -75%;
   top: 0px;
   transform-origin: top right;
+  border-radius: 3px;
 }
 
 .logo div:nth-child(4)::before {
-  background: var(--accent-color);
+  background: cyan;
+  border-radius: 3px;
 }
 
 .logo:before,
@@ -158,7 +154,7 @@ section {
   left: 1px;
   right: 1px;
   bottom: 1px;
-  background: linear-gradient(var(--border-color), pink);
+  background: linear-gradient(var(--border-color), var(--accent-color));
   padding: 5px;
   animation: colorate 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -168,10 +164,13 @@ section {
     background: linear-gradient(var(--border-color), pink);
   }
   50% {
+    background: linear-gradient(pink, cyan);
   }
   75% {
+    background: linear-gradient(cyan, greenyellow);
   }
   100% {
+    background: linear-gradient(greenyellow, yellow);
   }
 }
 </style>
