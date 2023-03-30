@@ -12,6 +12,12 @@
     <div>
       <hr class="round" />
     </div>
+    <div>
+      <hr class="round" />
+    </div>
+    <div>
+      <hr class="round" />
+    </div>
     <span class="label ll"
       ><svg class="ll" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -42,8 +48,8 @@ export default {
 }
 
 .ll {
-  width: 3.5vmax;
-  fill: var(--link-color);
+  width: 3.3vmax;
+  fill: var(--border-color);
 }
 
 hr.round {
@@ -113,7 +119,7 @@ section {
 }
 
 .logo div:nth-child(1)::before {
-  background: yellow;
+  background: var(--line-color);
 }
 
 .logo div:nth-child(2) {
@@ -122,7 +128,7 @@ section {
   transform-origin: bottom left;
 }
 .logo div:nth-child(2)::before {
-  background: greenyellow;
+  background: var(--accent-color);
 }
 
 .logo div:nth-child(3) {
@@ -132,7 +138,7 @@ section {
 }
 
 .logo div:nth-child(3)::before {
-  background: pink;
+  background: var(--link-color);
 }
 .logo div:nth-child(4) {
   left: -75%;
@@ -141,7 +147,7 @@ section {
 }
 
 .logo div:nth-child(4)::before {
-  background: cyan;
+  background: var(--accent-color);
 }
 
 .logo:before,
