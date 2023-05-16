@@ -14,10 +14,19 @@ relateTo:
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Physical_culture_%281908%29_%2814759598416%29.jpg/640px-Physical_culture_%281908%29_%2814759598416%29.jpg"
      alt="Acculturation"
      class="img-cover">
-
 <div class="contenttable">
 
-- [Qu'est ce que l'API Management?](#quest-ce-que-lapi-management)
+- [API Management, quésaco ?](#api-management-quésaco-)
+  - [API Management : un couteau suisse dans le monde du numérique](#api-management--un-couteau-suisse-dans-le-monde-du-numérique)
+    - [1. Banque et Finance](#1-banque-et-finance)
+    - [2. Santé](#2-santé)
+    - [3. Retail et E-commerce](#3-retail-et-e-commerce)
+  - [L'historique](#lhistorique)
+    - [Les débuts de l'API Management : Le DIY (Do It Yourself)](#les-débuts-de-lapi-management--le-diy-do-it-yourself)
+    - [L'arrivée des fournisseurs spécialisés](#larrivée-des-fournisseurs-spécialisés)
+    - [L'entrée en jeu des géants de la tech](#lentrée-en-jeu-des-géants-de-la-tech)
+    - [L'émergence des solutions open source](#lémergence-des-solutions-open-source)
+    - [Le panorama actuel](#le-panorama-actuel)
 - [Comment la mettre en place?](#comment-la-mettre-en-place)
   - [Les outils](#les-outils)
     - [Aculturation](#aculturation)
@@ -34,22 +43,94 @@ relateTo:
 
 </div>
 
-## Qu'est ce que l'API Management?
+## API Management, quésaco ?
 
-API Management ou Gestion des API est un ensemble du processus de `conception`, de `publication`, de `documentation` et d'`analyse des API` au sein d'un environnement sécurisé.
+L'API Management, ou Gestion des API en bon français, c'est un peu comme le maestro d'un orchestre. Son job, c'est de s'assurer que tout est bien réglé, que les musiciens (ici les API) sont bien à leur place et qu'ils jouent la bonne partition. En gros, c'est une série de processus qui couvrent la `conception`, la `publication`, la `documentation` et l'`analyse des API` dans un environnement sécurisé.
 
-Ce processus permet d'exploiter au mieux les API sans mettre en péril le système d'information et sans affecter l'expérience utilisateur. Il s'agit d'une solution de gestion qui permet aux entreprises de `garantir que les API publiques/internes ou privées qu'elles conçoivent soient utilisables et sécurisées`.
+C'est un peu comme un gardien silencieux qui surveille que les API puissent travailler tranquille sans mettre le chaos dans le système d'information, et surtout sans faire grincer les dents des utilisateurs. Il s'agit d'une solution de gestion qui facilite la vie des entreprises en `s'assurant que leurs API publiques/internes ou privées sont non seulement utilisables, mais aussi sécurisées`.
 
-L'API Management couvre un large spectre d'utilisations car il intervient à plusieurs niveaux :
+C'est complexe, car l'API Management, ça touche à tout :
 
-- Technique (sécurité, haute disponibilité, validation de données, …)
-- Architecture (gateway proxy)
-- Gouvernance de données
-- Organisationnel
+- Au technique (sécurité, haute disponibilité, validation de données, etc.)
+- À l'architecture (gateway proxy)
+- À la gouvernance de données
+- Et même à l'organisationnel
+
+### API Management : un couteau suisse dans le monde du numérique
+
+<div class="text-img-container">
+<img src="https://www.midiatismo.com.br/wp-content/uploads/2017/10/digiday-wtf-open-banking.jpg"
+     alt="apim icon"
+     class="text-img">
+</div>
+<div class="text-img-container">
+
+Les API, c'est un peu comme les petites mains invisibles qui font tourner notre monde numérique. Elles permettent aux développeurs de construire des applications plus complexes qu'un Rubik's Cube en s'appuyant sur une flopée de services et de plateformes externes. Mais quand tu as une armée d'APIs à gérer, ça peut vite tourner au casse-tête. Voici des exemples de problématiques qu'essaie de résoudre l'API management pour différents secteurs.
+
+#### 1\. Banque et Finance
+
+<img src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*XlHpzB84LoIfiC4TmF_VuQ.jpeg"
+     alt="open-banking icon"
+     class="text-img">
+</div>
+
+Dans le domaine de la banque et de la finance, les APIs sont un outil précieux. Elles permettent aux banques, aux jeunes entreprises fintech et aux fournisseurs de divers horizons de partager des données et des services. C'est comme une grande conférence où tous les participants partagent leurs idées. Cela a facilité l'émergence de l'open banking, un concept innovant qui utilise les APIs pour permettre aux développeurs de créer des applications et des services qui se connectent directement aux données et aux services bancaires.
+
+Cependant, avec un tel rassemblement d'informations, la responsabilité est immense. Les données bancaires sont sensibles et nécessitent une protection rigoureuse. C'est là que les outils de gestion des API interviennent. Ils agissent comme des régulateurs, veillant à ce que les bonnes données soient accessibles aux bonnes personnes, tout en surveillant l'activité pour prévenir les problèmes potentiels. Grâce à l'API Management, l'`open banking` peut fonctionner efficacement et en toute sécurité.
+
+#### 2\. Santé
+
+<img src="https://technofaq.org/wp-content/uploads/2017/11/hipaa-compliant-logo-600x342.png"
+     alt="HIPAA icon"
+     class="text-img">
+</div>
+
+Dans le secteur de la santé, les APIs sont un outil crucial pour partager des informations, un peu comme un système d'archives électroniques ultra-efficace. Elles permettent la transmission de données de patients et de dossiers médicaux électroniques entre différents prestataires de soins de santé, tels que les hôpitaux, les cliniques et les pharmacies.
+
+Mais il y a un hic. On parle ici de données très sensibles. Des informations que vous ne voudriez pas voir traîner n'importe où. C'est là que les outils de gestion des API entrent en jeu. Ils agissent comme des gardiens, assurant que ces données sensibles sont transmises en toute sécurité et conformément aux réglementations strictes comme la `HIPAA`.
+
+Avec l'API Management, les données de santé peuvent être partagées de manière sécurisée et efficace, assurant une meilleure coordination des soins pour les patients tout en respectant les normes de confidentialité et de sécurité les plus strictes.
+
+#### 3\. Retail et E-commerce
+
+<img src="https://rtslabs.com/wp-content/uploads/2017/10/Retail-Graphic.jpg"
+     alt="retail icon"
+     class="text-img">
+</div>
+
+Dans le monde du retail et de l'e-commerce, les APIs agissent comme des connecteurs essentiels qui relient divers services et plateformes. Elles permettent aux organisations de s'interfacer avec des services externes tels que les passerelles de paiement, les fournisseurs d'expédition et les plateformes de médias sociaux.
+
+Mais ce n'est pas une tâche facile. Imaginez-vous jongler avec une multitude de services tout en maintenant une performance optimale. C'est là que les outils de gestion des API entrent en scène. Ils permettent de gérer la charge de trafic sur un site e-commerce pendant les périodes de forte affluence, tout en surveillant l'utilisation des API pour identifier d'éventuels problèmes de performance.
+
+En somme, avec l'API Management, le monde du e-commerce peut fonctionner de manière fluide, évolutive et sécurisée, offrant ainsi la meilleure expérience utilisateur possible.
+
+### L'historique
+
+C'est parti pour un petit voyage dans le temps pour découvrir l'évolution de l'API Management au fil des ans et les solutions adoptées par les grandes entreprises, les boîtes tech, et les fondations.
+
+#### Les débuts de l'API Management : Le DIY (Do It Yourself)
+
+Au début, les APIs étaient gérées en interne par les entreprises. C'était l'époque du "Do It Yourself", où chaque entreprise devait développer ses propres outils pour gérer ses APIs. C'était un processus coûteux et chronophage, qui demandait beaucoup de compétences techniques. Mais à cette époque, l'API Management n'était pas encore un enjeu majeur, et le DIY était la norme.
+
+#### L'arrivée des fournisseurs spécialisés
+
+Puis sont arrivés les premiers fournisseurs spécialisés dans l'API Management. Des entreprises comme `Apigee`, `Mulesoft` ou encore `Mashery` ont commencé à proposer des solutions dédiées à la gestion des APIs. Ces outils permettaient de simplifier grandement la gestion des APIs, avec des fonctionnalités comme la sécurité, la scalabilité, le monitoring, etc. Ces fournisseurs ont grandement contribué à démocratiser l'API Management et à le rendre accessible à un plus grand nombre d'entreprises.
+
+#### L'entrée en jeu des géants de la tech
+
+Par la suite, les géants de la tech comme `Google`, `Amazon` et `Microsoft` ont commencé à s'intéresser à l'API Management. Ils ont développé leurs propres solutions, comme `Google Cloud Endpoints`, `Amazon API Gateway`, et `Azure API Management`. Ces solutions s'intégraient parfaitement avec leurs autres services cloud, ce qui les rendait très attrayantes pour les entreprises déjà utilisatrices de ces plateformes.
+
+#### L'émergence des solutions open source
+
+Plus récemment, on a vu l'émergence de solutions open source pour la gestion des APIs. Des outils comme `Kong`, `Tyk`, ou encore `WSO2` ont gagné en popularité grâce à leur flexibilité et leur transparence. Ces solutions sont soutenues par des communautés actives et permettent aux entreprises de personnaliser entièrement leur gestion des APIs.
+
+#### Le panorama actuel
+
+Aujourd'hui, le marché de l'API Management est dominé par quelques grands acteurs. Les solutions de Google, Amazon et Microsoft sont très populaires. Les fournisseurs spécialisés comme Apigee (racheté par Google) et Mulesoft (racheté par Salesforce) continuent également de jouer un rôle majeur. Enfin, les solutions open source comme Kong et Tyk gagnent de plus en plus en popularité.
 
 ## Comment la mettre en place?
 
-Il s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux mode de gouvernance. Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
+L'API Management s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux mode de gouvernance. Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
 
 ### Les outils
 
