@@ -14,6 +14,7 @@ relateTo:
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Collaborative_Robot_Cobot.png/640px-Collaborative_Robot_Cobot.png"
      alt="Automation"
      class="img-cover">
+
 <div class="contenttable">
 
 - [Présentation de la stack](#présentation-de-la-stack)

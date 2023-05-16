@@ -45,9 +45,13 @@ relateTo:
 
 ## API Management, quésaco ?
 
-L'API Management, ou Gestion des API en bon français, c'est un peu comme le maestro d'un orchestre. Son job, c'est de s'assurer que tout est bien réglé, que les musiciens (ici les API) sont bien à leur place et qu'ils jouent la bonne partition. En gros, c'est une série de processus qui couvrent la `conception`, la `publication`, la `documentation` et l'`analyse des API` dans un environnement sécurisé.
+L'API Management, ou Gestion des API en bon français, c'est un peu comme le maestro d'un orchestre. Son job, c'est de s'assurer que tout est bien réglé, que les musiciens (ici les API) sont bien à leur place et qu'ils jouent la bonne partition.
 
-C'est un peu comme un gardien silencieux qui surveille que les API puissent travailler tranquille sans mettre le chaos dans le système d'information, et surtout sans faire grincer les dents des utilisateurs. Il s'agit d'une solution de gestion qui facilite la vie des entreprises en `s'assurant que leurs API publiques/internes ou privées sont non seulement utilisables, mais aussi sécurisées`.
+En gros, c'est une série de processus qui couvrent la `conception`, la `publication`, la `documentation` et l'`analyse des API` dans un environnement sécurisé.
+
+C'est un peu comme un gardien silencieux qui surveille que les API puissent travailler tranquille sans mettre le chaos dans le système d'information, et surtout sans faire grincer les dents des utilisateurs.
+
+Il s'agit d'une solution de gestion qui facilite la vie des entreprises en `s'assurant que leurs API publiques/internes ou privées sont non seulement utilisables, mais aussi sécurisées`.
 
 C'est complexe, car l'API Management, ça touche à tout :
 
@@ -58,21 +62,19 @@ C'est complexe, car l'API Management, ça touche à tout :
 
 ### API Management : un couteau suisse dans le monde du numérique
 
-<div class="text-img-container">
 <img src="https://www.midiatismo.com.br/wp-content/uploads/2017/10/digiday-wtf-open-banking.jpg"
      alt="apim icon"
-     class="text-img">
-</div>
-<div class="text-img-container">
+     class="img-cover">
 
-Les API, c'est un peu comme les petites mains invisibles qui font tourner notre monde numérique. Elles permettent aux développeurs de construire des applications plus complexes qu'un Rubik's Cube en s'appuyant sur une flopée de services et de plateformes externes. Mais quand tu as une armée d'APIs à gérer, ça peut vite tourner au casse-tête. Voici des exemples de problématiques qu'essaie de résoudre l'API management pour différents secteurs.
+Les API, c'est un peu comme les petites mains invisibles qui font tourner notre monde numérique. Elles permettent aux développeurs de construire des applications plus complexes qu'un Rubik's Cube en s'appuyant sur une flopée de services et de plateformes externes.
+
+Mais quand tu as une armée d'APIs à gérer, ça peut vite tourner au casse-tête. Voici des exemples de problématiques qu'essaie de résoudre l'API management pour différents secteurs.
 
 #### 1\. Banque et Finance
 
 <img src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*XlHpzB84LoIfiC4TmF_VuQ.jpeg"
      alt="open-banking icon"
-     class="text-img">
-</div>
+     class="img-cover">
 
 Dans le domaine de la banque et de la finance, les APIs sont un outil précieux. Elles permettent aux banques, aux jeunes entreprises fintech et aux fournisseurs de divers horizons de partager des données et des services. C'est comme une grande conférence où tous les participants partagent leurs idées. Cela a facilité l'émergence de l'open banking, un concept innovant qui utilise les APIs pour permettre aux développeurs de créer des applications et des services qui se connectent directement aux données et aux services bancaires.
 
@@ -82,8 +84,7 @@ Cependant, avec un tel rassemblement d'informations, la responsabilité est imme
 
 <img src="https://technofaq.org/wp-content/uploads/2017/11/hipaa-compliant-logo-600x342.png"
      alt="HIPAA icon"
-     class="text-img">
-</div>
+     class="img-cover">
 
 Dans le secteur de la santé, les APIs sont un outil crucial pour partager des informations, un peu comme un système d'archives électroniques ultra-efficace. Elles permettent la transmission de données de patients et de dossiers médicaux électroniques entre différents prestataires de soins de santé, tels que les hôpitaux, les cliniques et les pharmacies.
 
@@ -95,8 +96,7 @@ Avec l'API Management, les données de santé peuvent être partagées de maniè
 
 <img src="https://rtslabs.com/wp-content/uploads/2017/10/Retail-Graphic.jpg"
      alt="retail icon"
-     class="text-img">
-</div>
+     class="img-cover">
 
 Dans le monde du retail et de l'e-commerce, les APIs agissent comme des connecteurs essentiels qui relient divers services et plateformes. Elles permettent aux organisations de s'interfacer avec des services externes tels que les passerelles de paiement, les fournisseurs d'expédition et les plateformes de médias sociaux.
 
@@ -114,23 +114,63 @@ Au début, les APIs étaient gérées en interne par les entreprises. C'était l
 
 #### L'arrivée des fournisseurs spécialisés
 
-Puis sont arrivés les premiers fournisseurs spécialisés dans l'API Management. Des entreprises comme `Apigee`, `Mulesoft` ou encore `Mashery` ont commencé à proposer des solutions dédiées à la gestion des APIs. Ces outils permettaient de simplifier grandement la gestion des APIs, avec des fonctionnalités comme la sécurité, la scalabilité, le monitoring, etc. Ces fournisseurs ont grandement contribué à démocratiser l'API Management et à le rendre accessible à un plus grand nombre d'entreprises.
+<div class="text-img-container">
+<img src="https://nordicapis.com/wp-content/uploads/Apigee_TransparentPrimaryLogo-4.png"
+     alt="openAI icon"
+     class="text-img">
+<img src="https://assets.themuse.com/uploaded/companies/411/small_logo.png"
+     alt="openAI icon"
+     class="text-img">
+<img src="https://techcrunch.com/wp-content/uploads/2012/07/mashery_from_eps.png?w=500"
+     alt="openAI icon"
+     class="text-img">
+</div>
+
+Puis sont arrivés les premiers fournisseurs spécialisés dans l'API Management.
+
+Des entreprises comme `Apigee`, `Mulesoft` ou encore `Mashery` ont commencé à proposer des solutions dédiées à la gestion des APIs. Ces outils permettaient de simplifier grandement la gestion des APIs, avec des fonctionnalités comme la sécurité, la scalabilité, le monitoring, etc.
+
+Ces fournisseurs ont grandement contribué à démocratiser l'API Management et à le rendre accessible à un plus grand nombre d'entreprises.
 
 #### L'entrée en jeu des géants de la tech
 
-Par la suite, les géants de la tech comme `Google`, `Amazon` et `Microsoft` ont commencé à s'intéresser à l'API Management. Ils ont développé leurs propres solutions, comme `Google Cloud Endpoints`, `Amazon API Gateway`, et `Azure API Management`. Ces solutions s'intégraient parfaitement avec leurs autres services cloud, ce qui les rendait très attrayantes pour les entreprises déjà utilisatrices de ces plateformes.
+<div class="text-img-container">
+<img src="https://www.tuexperto.com/wp-content/uploads/2017/04/amazon-google-microsoft.png"
+     alt="openAI icon"
+     class="text-img">
+</div>
+
+Par la suite, les géants de la tech comme `Google`, `Amazon` et `Microsoft` ont commencé à s'intéresser à l'API Management. Ils ont développé leurs propres solutions, comme `Google Cloud Endpoints`, `Amazon API Gateway`, et `Azure API Management`.
+
+Ces solutions s'intégraient parfaitement avec leurs autres services cloud, ce qui les rendait très attrayantes pour les entreprises déjà utilisatrices de ces plateformes.
 
 #### L'émergence des solutions open source
 
-Plus récemment, on a vu l'émergence de solutions open source pour la gestion des APIs. Des outils comme `Kong`, `Tyk`, ou encore `WSO2` ont gagné en popularité grâce à leur flexibilité et leur transparence. Ces solutions sont soutenues par des communautés actives et permettent aux entreprises de personnaliser entièrement leur gestion des APIs.
+<div class="text-img-container">
+<img src="https://static.goodrain.com/app/logo/f9a8852403894c1ba970076c16d2ef95.png"
+     alt="openAI icon"
+     class="text-img">
+</div>
+
+Plus récemment, on a vu l'émergence de solutions open source pour la gestion des APIs.
+
+Des outils comme `Kong`, `Tyk`, ou encore `WSO2` ont gagné en popularité grâce à leur flexibilité et leur transparence.
+
+Ces solutions sont soutenues par des communautés actives et permettent aux entreprises de personnaliser entièrement leur gestion des APIs.
 
 #### Le panorama actuel
 
-Aujourd'hui, le marché de l'API Management est dominé par quelques grands acteurs. Les solutions de Google, Amazon et Microsoft sont très populaires. Les fournisseurs spécialisés comme Apigee (racheté par Google) et Mulesoft (racheté par Salesforce) continuent également de jouer un rôle majeur. Enfin, les solutions open source comme Kong et Tyk gagnent de plus en plus en popularité.
+Aujourd'hui, le marché de l'API Management est dominé par quelques grands acteurs.
+
+Les solutions de Google, Amazon et Microsoft sont très populaires. Les fournisseurs spécialisés comme Apigee (racheté par Google) et Mulesoft (racheté par Salesforce) continuent également de jouer un rôle majeur.
+
+Enfin, les solutions open source comme Kong et Tyk gagnent de plus en plus en popularité.
 
 ## Comment la mettre en place?
 
-L'API Management s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux mode de gouvernance. Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
+L'API Management s'accompagne de `nouveaux concepts avec lesquels les équipes métiers et techniques doivent se familiariser`. Cela passe par une phase d'apprentissage où l'organisation doit également intégrer de nouvelles fonctions et de nouveaux mode de gouvernance.
+
+Ces dernières sont relatives à une `nécessaire approche API produit` qui s'étend du marketing des API à leur diffusion et à leur commercialisation.
 
 ### Les outils
 
@@ -138,7 +178,9 @@ Les outils de gestions peuvent comprendre, entre autres exemples:
 
 #### Aculturation
 
-L'acculturation peut se référer au processus d'introduction de nouvelles technologies, de processus ou de modes de pensée à une équipe ou à une organisation, et de les aider à s'adapter et à intégrer ces changements dans leur travail quotidien. Elle aide à garantir que les équipes et les organisations peuvent s'adapter aux nouveaux outils et approches et les exploiter efficacement pour atteindre leurs objectifs.
+L'acculturation peut se référer au processus d'introduction de nouvelles technologies, de processus ou de modes de pensée à une équipe ou à une organisation, et de les aider à s'adapter et à intégrer ces changements dans leur travail quotidien.
+
+Elle aide à garantir que les équipes et les organisations peuvent s'adapter aux nouveaux outils et approches et les exploiter efficacement pour atteindre leurs objectifs.
 
 ##### Le manifeste d'API
 
