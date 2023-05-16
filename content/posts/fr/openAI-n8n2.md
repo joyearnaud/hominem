@@ -6,8 +6,7 @@ date: 2023-03-20
 lang: fr
 published: true
 relateTo:
-
-- openAI-n8n2_en
+# - openAI-n8n_en
 ---
 
 <article>

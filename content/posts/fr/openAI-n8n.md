@@ -4,7 +4,7 @@ title: "OpenAI et n8n"
 description: "Les outils d'automatisation parfaits pour l'écriture d'article de blog"
 date: 2023-03-20
 lang: fr
-published: true
+published: false
 relateTo:
   - openAI-n8n_en
 ---
