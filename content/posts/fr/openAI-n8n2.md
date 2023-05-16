@@ -47,7 +47,11 @@ relateTo:
 
 </div>
 
-Rédiger des billets de blog et faire tourner la machine au quotidien, je peux vous dire que ça bouffe du temps comme un troll devant une série Netflix. Mais j'ai une petite astuce à vous partager. J'ai découvert comment on peut dégainer le power-up de l'automatisation avec n8n et OpenAI pour produire des articles de blog tout seul, comme un grand. On parle d'une économie de temps monstre, et d'un moyen d'assurer une cadence de publication régulière sur des sujets aussi frais qu'un poisson à Tsukiji, qui évoluent parfois plus vite que notre capacité à taper sur le clavier. Attention, le but du jeu ici n'est pas de vous balancer un tutoriel complet pour l'installation et la configuration. Non, je veux juste vous balancer un teaser de ce qu'on peut faire avec ces outils de Jedi.
+Rédiger des billets de blog et faire tourner la machine au quotidien, je peux vous dire que ça prend du temps. Mais j'ai une petite astuce à vous partager. J'ai découvert comment on peut dégainer le power-up de l'automatisation avec n8n et OpenAI pour produire des articles de blog tout seul, comme un grand et atteindre ce que l'on appel l'hyper-automatisation.
+
+On parle ainsi d'une économie de temps monstre, et d'un moyen d'assurer une cadence de publication régulière sur des sujets aussi frais qu'un poisson à Tsukiji, qui évoluent parfois plus vite que notre capacité à taper sur le clavier.
+
+Attention, le but du jeu ici n'est pas de vous donner un tutoriel complet pour l'installation et la configuration. Non, je veux juste vous teaser sur ce que l'on peut faire avec ces outils.
 
 ## Présentation de la stack
 
@@ -67,11 +71,11 @@ E --> F
 ```
 
 - Généralissimes de l'automatisation
-  - [n8n.io](https://n8n.io/): la bête qui va vous permettre de brancher visuellement vos applis entre elles, comme un puzzle de super-héros. Se décline en version autohébergée ou en SaaS pour les plus feignants.
+  - [n8n.io](https://n8n.io/): le marionnettiste qui va vous permettre de brancher visuellement vos applis, API entre elles, comme un puzzle.
   - [OpenAI](https://openai.com/): le Mozart de la génération de texte, en mode SaaS.
 - Commando du blog
-  - [Gridsome](https://gridsome.org/): le forgeron qui va transformer votre code en site web statique pour Vue.js. Un vrai Thor de la génération de site.
-  - [GitHub](https://github.com/): le coffre-fort de votre code, en mode SaaS, qui garde tout ça bien au chaud et vous permet de revenir en arrière en cas de boulette.
+  - [Gridsome](https://gridsome.org/): le forgeron qui va transformer votre code en site web statique Vue.js.
+  - [GitHub](https://github.com/): le coffre-fort de votre code, en mode SaaS, qui garde tout ça bien au chaud et vous permet de revenir en arrière en cas de problème.
   - [Vercel](https://vercel.com): l'as de la logistique, qui héberge votre site dès que vous poussez un commit vers Github, en mode SaaS.
   - [Checkly](https://www.checklyhq.com/): l'oeil de lynx qui surveille la performance de votre site et fait des tests d'intégration continue, surtout lors du build avec Vercel, en mode SaaS.
 
@@ -85,7 +89,7 @@ Allez, maintenant que les présentations sont faites, on peut passer aux choses 
      class="text-img">
 </div>
 
-**n8n**, c'est comme votre assistant personnel qui gère tout ce qui vous fait ch\*\*\* dans votre routine. Cette plateforme d'automatisation connecte toutes vos applications favorites pour vous épargner les tâches qui vous font perdre du temps. Vous pouvez créer des workflows sur mesure en utilisant des modules préfabriqués ou en bidouillant vos propres modules. Option : self-hosting pour les bricoleurs ou version SaaS pour les tranquilles. C'est mon petit secret pour automatiser la rédaction des articles de blog.
+**n8n**, c'est comme votre assistant personnel qui gère tout ce qui vous embêtes dans votre routine. Cette plateforme d'automatisation connecte toutes vos applications favorites pour vous épargner les tâches qui vous font perdre du temps. Vous pouvez créer des workflows sur mesure en utilisant des modules préfabriqués ou en ajoutant vos propres modules. C'est mon petit secret pour automatiser la rédaction des articles de blog.
 
 <div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
@@ -93,7 +97,7 @@ Allez, maintenant que les présentations sont faites, on peut passer aux choses 
      class="text-img">
 </div>
 
-**OpenAI** est un laboratoire de recherche en IA qui a pondu des trucs hallucinants comme GPT-3. On parle de modèles capables de pondre du texte, répondre à vos interrogations, traduire dans toutes les langues possibles... Ils ont même une API pour accéder à tout ça. Et c'est ce joujou-là que je vais utiliser pour générer du contenu.
+**OpenAI** est un laboratoire de recherche en IA qui est notamment à l'origine du tsunami chatGPT. On parle de modèles capables de générer du texte, répondre à vos interrogations, traduire dans toutes les langues possibles... Ils ont même une API pour accéder à tout ça. Et c'est ce joujou-là que je vais utiliser pour générer du contenu.
 
 ### Le QG du blog
 
@@ -103,7 +107,7 @@ Allez, maintenant que les présentations sont faites, on peut passer aux choses 
      class="text-img">
 </div>
 
-Côté blog, je roule avec la stack **Gridsome**, un générateur de site web statique pour Vue.js. Il transforme les fichiers Markdown de mes articles en de belles pages HTML statiques. Autrement dit, mon site est plus rapide qu'Usain Bolt, sécurisé comme Fort Knox et facile à gérer, sans se prendre la tête avec une BDD ou un serveur web.
+Côté blog, je roule avec la stack **Gridsome**, un générateur de site web statique pour Vue.js. Il transforme les fichiers Markdown de mes articles en de belles pages HTML statiques. Autrement dit, mon site est plus rapide qu'Usain Bolt, sécurisé comme Fort Knox et facile à gérer, sans se prendre la tête avec une base de donnée ou un serveur web.
 
 <div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/GitHub_Logo.png/640px-GitHub_Logo.png"
@@ -114,7 +118,7 @@ Côté blog, je roule avec la stack **Gridsome**, un générateur de site web st
      class="text-img">
 </div>
 
-Mon antre se trouve sur **GitHub**, c'est là que tout le code est stocké et versionné. Pour que le site soit toujours dispo, je le déploie sur **Vercel**. Dès que je pousse un commit sur GitHub, Vercel se réveille, génère le site et voilà, c'est en ligne. Franchement, pour un blog, c'est l'arsenal idéal : facile à installer, à gérer, et ça coûte que dalle. Dans mon cas, ça me coûte zéro et ça tourne mieux qu'un serveur perso.
+Mon antre se trouve sur **GitHub**, c'est là que tout le code est stocké et versionné. Pour que le site soit toujours dispo, je le déploie sur **Vercel**. Dès que je pousse un commit sur GitHub, Vercel se réveille, génère le site et voilà, c'est en ligne. Franchement, pour un blog, c'est l'arsenal idéal : facile à installer, à gérer, et ça coûte peu cher. Dans mon cas précis, cela me coûte zéro et les perfomances sont meilleur qu'un serveur perso.
 
 <div class="text-img-container">
 <img src="https://avatars.githubusercontent.com/u/25982255?s=200&v=4"
@@ -151,7 +155,7 @@ E -- Vercel --> F[Deploy website]
 E -- Checkly --> G[Monitor website]
 ```
 
-Et voilà, la recette secrète pour automatiser l'écriture de votre blog en 7 étapes. On est en mode pilotage automatique, baby!
+Et voilà, la recette secrète pour automatiser l'écriture de votre blog en 7 étapes.
 
 #### Le décodage
 
@@ -161,7 +165,7 @@ Le grand plan d'automatisation de l'écriture de blog se déroule en sept étape
 
 2. On sélectionne le mot-clé qui sort du lot parmi tous ces buzzwords.
 
-3. On fait bosser OpenAI pour générer un article de blog à partir de ce mot-clé. On peut aussi lui demander de nous pondre la traduction de l'article en français pour avoir un rendu similaire à ce qu'on publie d'habitude.
+3. On fait bosser OpenAI pour générer un article de blog à partir de ce mot-clé. On peut aussi lui demander de nous donner la traduction de l'article en français pour avoir un rendu similaire à ce qu'on publie d'habitude.
 
 4. On utilise l'API GitHub pour créer un nouveau fichier Markdown dans le repo du blog, avec le contenu tout frais de l'article.
 
@@ -199,11 +203,37 @@ Le flux de travail sera déclenché par un "Schedule Trigger", une sorte de chro
 
 2. Le résultat du premier nœud sera ensuite simplifié avec un autre nœud de code pour donner une sortie uniforme pour l'étape suivante.
 
-3. Le nœud suivant, que nous appellerons l'"interface", fournira un objet de travail avec plusieurs champs (sujet, url, ...) à partir du mot-clé récupéré, pour les étapes suivantes (la partie génération OpenAI, github ...). Selon le nœud d'initialisation utilisé, cette étape pourra se faire soit avec la liste de mots-clés toute prête, soit avec la liste récupérée depuis l'API de Github.
+3. Le nœud suivant, que nous appellerons l'"interface", fournira un objet de travail avec plusieurs champs (sujet, url, ...) à partir du mot-clé récupéré, pour les étapes suivantes (la partie génération OpenAI, github ...). Selon le nœud d'initialisation utilisé, cette étape pourra se faire soit avec la liste de mots-clés toute prête, soit avec la liste récupérée depuis l'API de Github, cela n'aura pas d'importance grâce à ce nœud "interface"
 
-4. Un nœud sera dédié à la récupération de l'article généré par OpenAI. Il utilisera l'API de OpenAI et le nœud "interface" pour récupérer le mot-clé. Un autre nœud sera utilisé pour traduire l'article si nécessaire.
+4. Un nœud sera dédié à la récupération de l'article généré par OpenAI. Il utilisera l'API de OpenAI et les informations du nœud "interface". Un autre nœud sera utilisé pour traduire l'article si nécessaire.
 
 5. Enfin, pour chaque article généré, un nœud "GitHub" créera un nouveau fichier Markdown dans le dépôt du blog avec le contenu de l'article généré et les informations du nœud "interface".
+
+Cela peux se représenter de cette manière:
+
+```mermaid
+graph TB
+    subgraph Reactor
+        trig[Schedule Trigger]
+        trigN[Schedule Trigger]
+    end
+    subgraph Initializer
+        trig--start-->source[HTTP Request]
+        trigN--start-->sourceN[Database/File/String/...]
+        source --return response--> data[JS Function]
+        sourceN --return response--> dataN[JS Function]
+    end
+    subgraph Generator
+        data--return data-->Interface[Interface: Topic & URL Data]
+        dataN--return data-->Interface
+        Interface--contextualize-->OpenAIG[OpenAI Generation]
+        OpenAIG-->OpenAIT[OpenAI Translation]
+    end
+    subgraph Publisher
+        OpenAIG--generate-->GitHub
+        OpenAIT--translate-->GitHub
+    end
+```
 
 Voilà, c'est notre plan ! Avec ça, on va pouvoir sortir des articles de blog tout chauds du four, sans lever le petit doigt. Prêt à automatiser ? Allons-y !
 
@@ -227,7 +257,7 @@ Bon, ça y est, vous avez décidé de vous lancer dans la grande aventure de l'a
 
 <img src="https://github.com/joyearnaud/hominem/raw/939a0498eb033750963ef8bd80b6e22bec6a4588/src/assets/capture-n8n.png" alt="n8n screen" class="img-cover">
 
-Et voilà, un exemple parfait de comment n8n peut générer des articles de blog à partir de sujets et de buzzwords bien ciblés, le tout bien mis en scène dans un workflow d'automatisation. C'est comme un puzzle, chaque pièce à sa place, tout est parfaitement agencé et tout roule comme sur des roulettes.
+Et voilà, un exemple parfait de comment n8n peut générer des articles de blog à partir de sujets et de buzzwords bien ciblés, le tout bien mis en scène dans un workflow d'automatisation.
 
 n8n, c'est un peu le Lego de l'automatisation, avec des briques que l'on assemble visuellement pour créer des workflows de manière intuitive. Chaque brique, chaque nœud correspond à une action spécifique, comme l'extraction de données, la connexion à des services externes (openAI, gitHub) ou la manipulation d'informations.
 
@@ -235,7 +265,7 @@ J'ai essayé de bien nommer les nœuds pour que vous puissiez comprendre le fonc
 
 ### Exemple de configuration des noeuds
 
-Et maintenant, un petit coup d'oeil sous le capot avec un exemple de configuration des noeuds pour le workflow d'automatisation de génération d'articles de blog. C'est un peu comme le manuel de la voiture, ça peut sembler un peu compliqué au premier abord, mais une fois qu'on a compris comment ça marche, c'est un jeu d'enfant. Et si jamais vous avez besoin d'un coup de main, n'hésitez pas à consulter la documentation officielle de n8n ou à me contacter pour plus de détails. Allez, courage, c'est la dernière ligne droite, après ça, vous serez parés pour l'automatisation !
+Et maintenant, un petit coup d'oeil sous le capot avec un exemple de configuration des noeuds pour le workflow. C'est un peu comme le manuel de la voiture, ça peut sembler un peu compliqué au premier abord, mais une fois qu'on a compris comment ça marche, c'est un jeu d'enfant. Et si jamais vous avez besoin d'un coup de main, n'hésitez pas à consulter la documentation officielle de n8n ou à me contacter pour plus de détails. Allez, courage, c'est la dernière ligne droite, après ça, vous serez parés pour l'automatisation !
 
 #### HTTP Request [GET github search repositories]
 
@@ -323,15 +353,15 @@ relateTo:
 
 ## Liste de choses à faire ou mieux faire
 
-Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des articles de blog, il y a toujours des trucs à peaufiner et des challenges à relever. Voici quelques points sur ma liste pour améliorer et étendre ce système :
+Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des articles de blog, il y a toujours des éléments à peaufiner et des challenges à relever. Voici quelques points sur ma liste pour améliorer et étendre ce système :
 
 1. **Affiner la sélection des mots clés** : Il y a toujours d'autres sources de buzzwords à explorer et on peut encore améliorer nos critères de sélection pour garantir que les sujets abordés dans les articles sont ultra-pertinents et intéressants.
 
-2. **Optimiser la génération de texte** : Il faut que je continue à bidouiller les paramètres de l'API OpenAI pour obtenir des résultats plus homogènes et de meilleure qualité. Cela peut inclure l'ajustement des niveaux de créativité, la longueur du texte, l'introduction de balises pour structurer le contenu, ou même passer à des solutions plus avancées comme GPT-4 ou d'autres APIs de génération de texte.
+2. **Optimiser la génération de texte** : Il faut que je continue à optimiser les paramètres de l'API OpenAI pour obtenir des résultats plus homogènes et de meilleure qualité. Cela peut inclure l'ajustement des niveaux de créativité, la longueur du texte, l'introduction de balises pour structurer le contenu, ou même passer à des solutions plus avancées comme GPT-4 ou d'autres APIs de génération de texte.
 
 3. **Intégrer une vérification humaine** : Même si l'IA a fait des progrès de dingue, rien ne vaut l’œil humain pour relire, éditer et valider le contenu avant publication. Je pourrais ajouter une étape d'approbation dans le processus d'automatisation. Dans mon système de blogging Gridsome, j'ai mis en place un système de frontmatters YAML pour chaque article, et je pourrais ajouter un champ "approved" pour valider l'article avant publication.
 
-4. **Automatiser le référencement (SEO)** : Pour que les articles générés soient bien visibles, ça serait cool d'ajouter une étape d'automatisation pour optimiser le référencement des articles, avec des balises méta, des mots clés et des descriptions bien ciblées.
+4. **Automatiser le référencement (SEO)** : Pour que les articles générés soient bien visibles, ça serait bien d'ajouter une étape d'automatisation pour optimiser le référencement des articles, avec des balises méta, des mots clés et des descriptions bien ciblées.
 
 5. **Gestion des médias** : Je pourrais intégrer une solution pour rechercher et insérer des images et des vidéos pertinentes dans les articles générés, tout en respectant les droits d'auteur et les licences associées.
 
@@ -339,10 +369,10 @@ Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des
 
 ## En conclusion
 
-En résumé, l'utilisation de n8n et OpenAI pour automatiser la rédaction d'articles de blog a de sacrés avantages, comme un gain de temps fou et la possibilité de publier régulièrement des articles sur des sujets innovants. Ok, ça ne produit pas un article parfait à 100%, mais ça donne un excellent point de départ pour une ébauche. Je m'en sers souvent pour générer des idées d'article ou des intros, et ensuite je peaufine à la main.
+En résumé, l'utilisation de n8n et OpenAI pour automatiser la rédaction d'articles de blog a de sacrés avantages, comme un gain de temps fou et la possibilité de publier régulièrement des articles sur des sujets innovants. Ok, ça ne produit pas un article parfait à 100%, mais ça donne un excellent point de départ pour une ébauche. Je m'en ser souvent pour générer des idées d'article ou des intros, et ensuite je peaufine à la main.
 
 En alliant la puissance de l'automatisation de n8n et les capacités bluffantes des modèles de langage d'OpenAI, on a la possibilité de transformer notre processus de rédaction et de publication d'articles de blog. Cela nous permet de nous concentrer davantage sur l'amélioration du contenu, l'analyse des performances et l'interaction avec notre public.
 
-Juste pour vous donner un exemple concret, j'ai utilisé ce workflow pour pondre un article sur l'hyperautomation, qui dévoile le concept et explique comment ce processus d'automatisation fonctionne. Vous pouvez le lire [ici](https://cv.arnaudjoye.fr/fr/thought/article-open-ai-hyperautomation/).
+Juste pour vous donner un exemple concret, j'ai utilisé ce workflow pour générer un article sur l'hyperautomation, qui dévoile le concept et explique comment ce processus d'automatisation fonctionne. Vous pouvez le lire [ici](https://cv.arnaudjoye.fr/fr/thought/article-open-ai-hyperautomation/).
 
 Alors, lancez-vous, explorez ces outils et intégrez l'automatisation dans votre propre processus de création de contenu. Vous risquez d'être agréablement surpris par les résultats... :D
