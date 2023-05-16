@@ -4,7 +4,7 @@ title: "OpenAI et n8n : le duo de choc"
 description: "Des outils d'automatisation taillés sur mesure pour l'écriture d'articles de blog"
 date: 2023-03-20
 lang: fr
-published: false
+published: true
 relateTo:
 
 - openAI-n8n2_en
