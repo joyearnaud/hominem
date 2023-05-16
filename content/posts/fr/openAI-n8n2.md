@@ -1,6 +1,6 @@
 ---
 id: "openAI-n8n2_fr"
-title: "OpenAI et n8n : le duo de choc"
+title: "OpenAI et n8n : le duo de choc de l'hyperautomatisation"
 description: "Des outils d'automatisation taillés sur mesure pour l'écriture d'articles de blog"
 date: 2023-03-20
 lang: fr
@@ -27,7 +27,7 @@ relateTo:
     - [Le décodage](#le-décodage)
   - [Les embûches sur le chemin](#les-embûches-sur-le-chemin)
 - [L'automatisation en action](#lautomatisation-en-action)
-- [n8n, la clé de l'automatisation](#n8n-la-clé-de-lautomatisation)
+  - [n8n, la clé de l'automatisation](#n8n-la-clé-de-lautomatisation)
   - [Photo de famille de l'automatisation avec n8n](#photo-de-famille-de-lautomatisation-avec-n8n)
   - [Exemple de configuration des noeuds](#exemple-de-configuration-des-noeuds)
     - [HTTP Request \[GET github search repositories\]](#http-request-get-github-search-repositories)
@@ -207,7 +207,7 @@ Le flux de travail sera déclenché par un "Schedule Trigger", une sorte de chro
 
 Voilà, c'est notre plan ! Avec ça, on va pouvoir sortir des articles de blog tout chauds du four, sans lever le petit doigt. Prêt à automatiser ? Allons-y !
 
-## n8n, la clé de l'automatisation
+### n8n, la clé de l'automatisation
 
 Bon, ça y est, vous avez décidé de vous lancer dans la grande aventure de l'automatisation avec n8n ? Alors, accrochez-vous, on est parti pour un tour d'horizon de cet outil magique, avec tout ce qu'il faut savoir pour l'utiliser à fond. Que vous soyez un fan du DIY qui aime bidouiller sur son ordi ou un adepte du clé en main, il y en a pour tous les goûts !
 
