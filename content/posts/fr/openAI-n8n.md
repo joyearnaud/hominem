@@ -264,6 +264,15 @@ J'ai tenter ici de nommé au mieux les nœuds pour que vous puissiez facilement 
 
 Un exemple de configuration des noeuds pour le workflow d'automatisation de génération d'articles de blog pour donner une idée de la façon dont cela fonctionne. N'hesitez pas à consulter la documentation officielle de n8n pour plus d'informations ou à me contacter pour plus de détails.
 
+<div class="contenttable">
+
+- [HTTP Request \[GET github search repositories\]](#http-request-get-github-search-repositories)
+- [Code \[randomize and format\] 2](#code-randomize-and-format-2)
+- [OpenAI \[build an article about subject\]](#openai-build-an-article-about-subject)
+- [GitHub \[create file EN\]](#github-create-file-en)
+
+</div>
+
 #### HTTP Request [GET github search repositories]
 
 ##### Parameters
