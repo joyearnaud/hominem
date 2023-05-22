@@ -11,8 +11,8 @@ relateTo:
 
 <article>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Physical_culture_%281908%29_%2814759598416%29.jpg/640px-Physical_culture_%281908%29_%2814759598416%29.jpg"
-     alt="Acculturation"
+<img src="https://raw.githubusercontent.com/joyearnaud/hominem/main/src/assets/apim/physical_culture_1908.jpg?raw=true"
+     alt="Physical culture"
      class="img-cover">
 
 <div class="contenttable">
@@ -69,8 +69,8 @@ Mais quand tu as une armée d'APIs à gérer, ça peut vite tourner au casse-tê
 
 #### Banque et Finance
 
-<img src="https://www.midiatismo.com.br/wp-content/uploads/2017/10/digiday-wtf-open-banking.jpg"
-     alt="apim icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/open-banking.jpg?raw=true"
+     alt="open-banking icon"
      class="img-cover">
 
 Dans le domaine de la banque et de la finance, les APIs sont un outil précieux. Elles permettent aux banques, aux jeunes entreprises fintech et aux fournisseurs de divers horizons de partager des données et des services. C'est comme une grande conférence où tous les participants partagent leurs idées. Cela a facilité l'émergence de l'open banking, un concept innovant qui utilise les APIs pour permettre aux développeurs de créer des applications et des services qui se connectent directement aux données et aux services bancaires.
@@ -79,7 +79,7 @@ Cependant, avec un tel rassemblement d'informations, la responsabilité est imme
 
 #### Santé
 
-<img src="https://www.shutterstock.com/image-vector/hippa-compliance-web-banner-header-260nw-1098001868.jpg"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/hippa-compliance.jpg?raw=true"
      alt="HIPAA icon"
      class="img-cover">
 
@@ -91,7 +91,7 @@ Avec l'API Management, les données de santé peuvent être partagées de maniè
 
 #### Retail et E-commerce
 
-<img src="https://rtslabs.com/wp-content/uploads/2017/10/Retail-Graphic.jpg"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/retail.jpg?raw=true"
      alt="retail icon"
      class="img-cover">
 
@@ -112,14 +112,14 @@ Au début, les APIs étaient gérées en interne par les entreprises. C'était l
 #### L'arrivée des fournisseurs spécialisés
 
 <div class="text-img-container">
-<img src="https://nordicapis.com/wp-content/uploads/Apigee_TransparentPrimaryLogo-4.png"
-     alt="openAI icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/apigee.png?raw=true"
+     alt="apigee icon"
      class="text-img">
-<img src="https://assets.themuse.com/uploaded/companies/411/small_logo.png"
-     alt="openAI icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/mulesoft.png?raw=true"
+     alt="mulesoft icon"
      class="text-img">
-<img src="https://techcrunch.com/wp-content/uploads/2012/07/mashery_from_eps.png?w=500"
-     alt="openAI icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/mashery.png?raw=true"
+     alt="mashery icon"
      class="text-img">
 </div>
 
@@ -132,8 +132,8 @@ Ces fournisseurs ont grandement contribué à démocratiser l'API Management et 
 #### L'entrée en jeu des géants de la tech
 
 <div class="text-img-container">
-<img src="https://www.tuexperto.com/wp-content/uploads/2017/04/amazon-google-microsoft.png"
-     alt="openAI icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/amazon-google-microsoft.png?raw=true"
+     alt="amazon-google-microsoft icon"
      class="text-img">
 </div>
 
@@ -144,8 +144,8 @@ Ces solutions s'intégraient parfaitement avec leurs autres services cloud, ce q
 #### L'émergence des solutions open source
 
 <div class="text-img-container">
-<img src="https://static.goodrain.com/app/logo/f9a8852403894c1ba970076c16d2ef95.png"
-     alt="openAI icon"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/kong.png?raw=true"
+     alt="kong icon"
      class="text-img">
 </div>
 
@@ -653,7 +653,7 @@ En permettant à des partenaires et des développeurs de créer des applications
 
 ## Outro
 
-<img src="https://live.staticflickr.com/8259/8692704103_ae4cd86d81_b.jpg"
+<img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/choas2.jpg?raw=true"
      alt="Making singularity the prevailing norm is paramount"
      class="img-cover">
 
