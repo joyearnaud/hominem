@@ -79,7 +79,7 @@ Cependant, avec un tel rassemblement d'informations, la responsabilité est imme
 
 #### Santé
 
-<img src="https://tylerbryden.com/wp-content/uploads/2020/07/HIPAA-Compliant.jpg"
+<img src="https://www.shutterstock.com/image-vector/hippa-compliance-web-banner-header-260nw-1098001868.jpg"
      alt="HIPAA icon"
      class="img-cover">
 
@@ -179,7 +179,7 @@ Pour diriger ce nouveau ballet, plusieurs outils se présentent :
 
 L'acculturation, c'est ce processus par lequel on intègre des nouvelles technologies, des nouveaux processus ou modes de pensée à une équipe ou à une organisation. C'est le moyen par lequel on prépare le terrain pour que tout le monde puisse naviguer sereinement dans ce nouvel environnement.
 
-L'idée, c'est d'assurer que les équipes et les organisations peuvent non seulement s'adapter aux nouveaux outils et approches, mais aussi les utiliser efficacement pour atteindre leurs objectifs. C'est en quelque sorte un apprentissage intensif destiné à transformer les participants en experts de l'API Management.
+L'idée, c'est d'assurer que les équipes et les organisations peuvent non seulement s'adapter aux nouveaux outils et approches, mais aussi les utiliser efficacement pour atteindre leurs objectifs. C'est en quelque sorte un apprentissage intensif destiné à transformer les participants en experts de l'API Management. s
 
 <div class="contenttable">
 
@@ -652,6 +652,10 @@ En permettant à des partenaires et des développeurs de créer des applications
 *La monétisation est un aspect important de la gestion d'API, aidant les fournisseurs à créer des programmes d'API durables et rentables.*
 
 ## Outro
+
+<img src="https://live.staticflickr.com/8259/8692704103_ae4cd86d81_b.jpg"
+     alt="Making singularity the prevailing norm is paramount"
+     class="img-cover">
 
 **Préparer le terrain**
 
