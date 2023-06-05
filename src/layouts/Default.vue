@@ -1,22 +1,20 @@
 <template>
+
   <main class="layout" role="main">
+
     <Header />
+
     <slot />
+
     <Footer />
+
   </main>
+
 </template>
 
 <script>
-import Header from "~/layouts/partials/Header";
-import Footer from "~/layouts/partials/Footer";
-
-export default {
-  components: {
-    Header,
-    Footer,
-  },
-  async mounted() {},
-};
+ import Header from "~/layouts/partials/Header"; import Footer from "~/layouts/partials/Footer";
+export default { components: { Header, Footer, }, async mounted() {}, };
 </script>
 
 <style>
@@ -193,17 +191,40 @@ article .text-img-container {
   margin-right: 1em;
   padding: 1em;
   width: 10em;
-  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+article .text-letter-container {
+  float: left;
+  margin-right: 1em;
+  padding: 1em;
+  width: 5em;
+  border: thick double var(--border-color);
   border-radius: 10px;
   text-align: center;
 }
 article .text-img {
+  background-color: white;
+  border-radius: 5px;
   width: 8em;
+}
+article .text-letter {
+  border-radius: 3px;
+  width: 3em;
+  font-family: emoji;
+  color: var(--accent-color);
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1em;
 }
 article .contenttable {
   font-size: 0.8em;
   margin: 1em;
-  padding: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
   text-decoration: none;
   background-color: var(--line-color) !important;
   color: var(--text-color) !important;
@@ -246,3 +267,4 @@ article table th {
   color: var(--border-color);
 }
 </style>
+
