@@ -1,7 +1,7 @@
 <template>
   <section>
     <a
-      href="https://github.com/joyearnaud/file/raw/main/CV_09-2022.pdf"
+      href="https://github.com/joyearnaud/resume/releases/download/1.0.0/resume.pdf"
       download
     >
       <button class="btn btn-outline-info color" type="submit">
