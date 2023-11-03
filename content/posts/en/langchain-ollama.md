@@ -17,40 +17,40 @@ relateTo:
 
 <div class="contenttable">
 	
-1. [Introduction](#Introduction)
-1. [Overview of Language Models](#Overview%20of%20Language%20Models)
-	1. [Definition and significance of language models in NLP](#Definition%20and%20significance%20of%20language%20models%20in%20NLP)
-	1. [Brief history and evolution of language models leading up to `GPT-3`](#Brief%20history%20and%20evolution%20of%20language%20models%20leading%20up%20to%20%60GPT-3%60)
-1. [Introduction to `LangchainJS` and `Ollama`](#Introduction%20to%20%60LangchainJS%60%20and%20%60Ollama%60)
-	1. [Detailed description of `LangchainJS` and its capabilities](#Detailed%20description%20of%20%60LangchainJS%60%20and%20its%20capabilities)
-	1. [Exploration of `Ollama`'s framework and its role in local machine implementation.](#Exploration%20of%20%60Ollama%60's%20framework%20and%20its%20role%20in%20local%20machine%20implementation.)
-1. [Setting Up the Environment](#Setting%20Up%20the%20Environment)
-	1. [Step-by-step guide to installing](#Step-by-step%20guide%20to%20installing)
-		1. [LangChainJS](#LangChainJS)
-		1. [Ollama](#Ollama)
-	1. [Best practices for setting up a conducive environment for training language models.](#Best%20practices%20for%20setting%20up%20a%20conducive%20environment%20for%20training%20language%20models.)
-1. [Integrating `HNSWLib` for Efficient Vector Searching](#Integrating%20%60HNSWLib%60%20for%20Efficient%20Vector%20Searching)
-	1. [Explanation of `HNSWLib` and its importance in the context of language models](#Explanation%20of%20%60HNSWLib%60%20and%20its%20importance%20in%20the%20context%20of%20language%20models)
-	1. [Guidance on incorporating `HNSWLib` into the training process for enhanced performance](#Guidance%20on%20incorporating%20%60HNSWLib%60%20into%20the%20training%20process%20for%20enhanced%20performance)
-1. [Creating a Training Dataset](#Creating%20a%20Training%20Dataset)
-	1. [Strategies for compiling a comprehensive and effective training dataset.](#Strategies%20for%20compiling%20a%20comprehensive%20and%20effective%20training%20dataset.)
-	1. [Techniques for preprocessing and structuring data for optimal training outcomes.](#Techniques%20for%20preprocessing%20and%20structuring%20data%20for%20optimal%20training%20outcomes.)
-1. [The  process from training to querying](#The%20%20process%20from%20training%20to%20querying)
-	1. [Training](#Training)
-	1. [Querying](#Querying)
-		1. [Diagram](#Diagram)
-1. [Bringing the Model to Life](#Bringing%20the%20Model%20to%20Life)
-	1. [Methods for testing and refining the trained model](#Methods%20for%20testing%20and%20refining%20the%20trained%20model)
-	1. [Tips for troubleshooting common issues during the training and implementation phases](#Tips%20for%20troubleshooting%20common%20issues%20during%20the%20training%20and%20implementation%20phases)
-1. [Applications and Implications](#Applications%20and%20Implications)
-	1. [Discussion of potential applications of locally trained language models](#Discussion%20of%20potential%20applications%20of%20locally%20trained%20language%20models)
-	1. [Reflection on the broader implications of accessible AI tools for developers and researchers](#Reflection%20on%20the%20broader%20implications%20of%20accessible%20AI%20tools%20for%20developers%20and%20researchers)
-1. [Code](#Code)
-	1. [Source](#Source)
-	1. [Sample](#Sample)
-		1. [train.js](#train.js)
-		1. [query.js](#query.js)
-1. [Conclusion](#Conclusion)
+1. [Introduction](#introduction)
+2. [Overview of Language Models](#overview-of-language-models)
+	1. [Definition and significance of language models in NLP](#definition-and-significance-of-language-models-in-nlp)
+	2. [Brief history and evolution of language models leading up to `GPT-3`](#brief-history-and-evolution-of-language-models-leading-up-to-gpt-3)
+3. [Introduction to `LangchainJS` and `Ollama`](#introduction-to-langchainjs-and-ollama)
+	1. [Detailed description of `LangchainJS` and its capabilities](#detailed-description-of-langchainjs-and-its-capabilities)
+	2. [Exploration of `Ollama`'s framework and its role in local machine implementation.](#exploration-of-ollamas-framework-and-its-role-in-local-machine-implementation)
+4. [Setting Up the Environment](#setting-up-the-environment)
+	1. [Step-by-step guide to installing](#step-by-step-guide-to-installing)
+		1. [LangChainJS](#langchainjs)
+		2. [Ollama](#ollama)
+	2. [Best practices for setting up a conducive environment for training language models.](#best-practices-for-setting-up-a-conducive-environment-for-training-language-models)
+5. [Integrating `HNSWLib` for Efficient Vector Searching](#integrating-hnswlib-for-efficient-vector-searching)
+	1. [Explanation of `HNSWLib` and its importance in the context of language models](#explanation-of-hnswlib-and-its-importance-in-the-context-of-language-models)
+	2. [Guidance on incorporating `HNSWLib` into the training process for enhanced performance](#guidance-on-incorporating-hnswlib-into-the-training-process-for-enhanced-performance)
+6. [Creating a Training Dataset](#creating-a-training-dataset)
+	1. [Strategies for compiling a comprehensive and effective training dataset.](#strategies-for-compiling-a-comprehensive-and-effective-training-dataset)
+	2. [Techniques for preprocessing and structuring data for optimal training outcomes.](#techniques-for-preprocessing-and-structuring-data-for-optimal-training-outcomes)
+7. [The  process from training to querying](#the--process-from-training-to-querying)
+	1. [Training](#training)
+	2. [Querying](#querying)
+		1. [Diagram](#diagram)
+8. [Bringing the Model to Life](#bringing-the-model-to-life)
+	1. [Methods for testing and refining the trained model](#methods-for-testing-and-refining-the-trained-model)
+	2. [Tips for troubleshooting common issues during the training and implementation phases](#tips-for-troubleshooting-common-issues-during-the-training-and-implementation-phases)
+9. [Applications and Implications](#applications-and-implications)
+	1. [Discussion of potential applications of locally trained language models](#discussion-of-potential-applications-of-locally-trained-language-models)
+	2. [Reflection on the broader implications of accessible AI tools for developers and researchers](#reflection-on-the-broader-implications-of-accessible-ai-tools-for-developers-and-researchers)
+10. [Code](#code)
+	1. [Source](#source)
+	2. [Sample](#sample)
+		1. [train.js](#trainjs)
+		2. [query.js](#queryjs)
+11. [Conclusion](#conclusion)
 
 </div>
 
@@ -68,349 +68,4 @@ Language models are a cornerstone of natural language processing (NLP), providin
 ### Brief history and evolution of language models leading up to `GPT-3`
 The journey of language models began with simple rule-based systems and gradually evolved through statistical models to the complex neural network-based models we see today. This evolution reached a pivotal moment with the introduction of `OpenAI`'s `GPT-3`, a state-of-the-art language model known for its deep understanding of language and its ability to generate coherent and contextually relevant text.
 
-## Introduction to `LangchainJS` and `Ollama`
-
-### Detailed description of `LangchainJS` and its capabilities
-`LangchainJS` is an innovative JavaScript library designed to bridge the gap between large language models and application development. It provides a robust set of tools that enable developers to integrate sophisticated language models like `GPT-3` into their applications with ease. Its capabilities extend from simple text generation to complex tasks such as semantic search, text summarization, and even language translation, making it an indispensable tool in the arsenal of modern NLP developers.
-
-### Exploration of `Ollama`'s framework and its role in local machine implementation.
-`Ollama` stands out as a lightweight and extensible framework specifically crafted for running language models on local machines. Its significance lies in its ability to provide a streamlined and efficient way to deploy and manage language models without the need for extensive infrastructure. With `Ollama`, developers can effortlessly bring the power of language models like `GPT-3` right to their desktops, enabling rapid prototyping, offline development, and personalized model training.
-
-## Setting Up the Environment
-
-### Step-by-step guide to installing
-#### LangChainJS
-The initial step towards training a local language model involves setting up a development environment capable of supporting the intricacies of NLP tasks. This begins with the installation of `LangchainJS`, which can be seamlessly integrated into your project via npm, the Node.js package manager. 
-
-```sh
-npm install langchain/embeddings/openai langchain/embeddings/ollama langchain/text_splitter hnswlib fs path
-```
-
-#### Ollama
-Following this, `Ollama` is installed to facilitate the local deployment of language models. 
-All usable **LangChain** LLM are available here: [LLMs](https://python.langchain.com/docs/integrations/llms/)
-I'm using **Ollama**. Installation and **LangChain** usage are documented here: [LLM Ollama](https://python.langchain.com/docs/integrations/llms/ollama)
-
-### Best practices for setting up a conducive environment for training language models.
-Establishing a conducive environment for training language models is not just about installing the right software. It's about creating a workspace that fosters efficiency, accuracy, and innovation. This includes adhering to best practices such as version control with Git, setting up virtual environments to manage dependencies, and maintaining a structured project directory. Additionally, it's crucial to ensure that the hardware resources, such as CPU, GPU, and memory, are optimized to handle the computational demands of training language models.
-
-## Integrating `HNSWLib` for Efficient Vector Searching
-
-### Explanation of `HNSWLib` and its importance in the context of language models
-`HNSWLib` is a cutting-edge library designed for efficient approximate nearest neighbor search in high dimensional spaces, which is crucial in the realm of language models. When a language model processes text, it converts it into high-dimensional vectors. These vectors encapsulate the semantic meaning of the text. `HNSWLib` shines by swiftly searching through these vectors to find the most relevant information, thereby enhancing the model's comprehension and response generation capabilities.
-### Guidance on incorporating `HNSWLib` into the training process for enhanced performance
-By integrating `HNSWLib`, developers ensure that their language models not only learn efficiently but also retrieve information with remarkable speed and accuracy during inference, significantly boosting performance.
-
-## Creating a Training Dataset
-
-### Strategies for compiling a comprehensive and effective training dataset.
-Compiling a comprehensive and effective training dataset is paramount for the success of any language model. The key is diversity and relevance. Data should be collected from a variety of sources that align with the intended application of the model, ensuring a rich tapestry of language nuances, contexts, and styles. This can range from books and articles to transcripts and online forums, depending on the model's end goal.
-
-### Techniques for preprocessing and structuring data for optimal training outcomes.
-Once the data is collected, preprocessing and structuring become critical. Techniques like tokenization, stemming, and lemmatization help standardize the text, making it more digestible for the model. Noise reduction methods, such as removing special characters and correcting typos, further clean the dataset. Structuring the data in a consistent format, typically as JSON or CSV files, facilitates efficient training and can significantly impact the model's learning outcomes.
-
-## The  process from training to querying
-
-### Training
-- The training process is a critical phase where the prepared dataset is fed into the model to develop its language understanding and generation capabilities. Using `LangchainJS`, developers can initiate the training by configuring the model parameters such as learning rate, batch size, and the number of epochs. `Ollama` plays a role here by providing the infrastructure to run the training locally.
-
-- Once you have your training data, we can start the training process. The training process involves splitting the text into smaller chunks, creating a vector store using an embedding model, and then saving the trained model for future use.
-
-Here's the step-by-step process:
-1) **Split the text**: We first split the Markdown files into smaller chunks using a text splitter. In this case, we are using the RecursiveCharacterTextSplitter from LangchainJS. This will help us to better handle long texts and improve the performance of our model.
-
-2) **Create documents**: After splitting the text, we create documents using the MarkdownTextSplitter. This will allow us to feed the training data into the vector store.
-
-3) **Embedding model**: Next, we select an embedding model to generate vectors for each document. In this example, we are using OpenAI's embeddings from LangchainJS. You can also use other models like Ollama or Hugging Face Transformers.
-
-4) **Vector store creation**: We then create a vector store using the HNSWLib library from LangchainJS. This vector store will be used to store and search for documents based on their embeddings.
-
-5) **Saving the trained model**: Finally, we save the trained model using the save() function provided by the HNSWLib library. This allows us to use the trained model in future applications without needing to re-train it every time.
-	
-	#### Diagram
-	```mermaid
-	graph TD
-	    A[Start] --> B[Get Files from Directory]
-	    subgraph a [fs]
-	    B --> C[Check if Documents Exist && Filter Markdown]
-	    end a
-	    subgraph langchain/text_splitter
-	    C --> F[Split Text into Chunks]
-	    F --> G[Create Documents from Chunks]
-	    end
-	    subgraph langchain/embeddings/openai or ollama
-	    G --> H[Generate Vector Store from Documents]
-	    end
-	    subgraph langchain/vectorstores/hnswlib
-	    H --> I[Save Vector Store]
-	    end
-	    I --> J[End]
-	
-	```
-	
-	Training a language model with **LangchainJS** is a straightforward process that involves splitting text into smaller *chunks*, creating *documents*, selecting an *embedding* model, and saving the *trained model*. With this approach, AI applications can understand and generate text based on their trained data.
-
-### Querying
-After the training completed we can query the `vector` database and use `LLM` to answer question.
-
-Here's the step-by-step process:
-1) **Initialize `OpenAI` and `Ollama` models** with specific parameters: the `OpenAI` model uses an API key and a temperature setting, while the `Ollama` model is initialized with a specific model name.
-
-2) **Loading Vector Store**: use the HNSWLib library to load a vector store using the OpenAI embeddings. This will be used for context retrieval during the query process. This vector store is based on OpenAI embeddings and is used to retrieve relevant context for answering the question.
-
-3) **Creating the Prompt**: use the PromptTemplate function to create  a prompt designed to answer the given question based on the loaded context from vector store. Something as `Answer the question based only on the following context: {context} \nQuestion: {question}
-
-4) **Creating and Invoke the Runnable Sequences**: sequences represent the steps that the AI models will follow to answer the question. They include retrieving the context, passing the question, generating the prompt, invoking the AI model, and parsing the output.
-
-#### Diagram
-```mermaid
-graph TD
-A[Initialize OpenAI and Ollama models] --> B[Load Vector Store]
-B --> C[Create Prompt]
-C --> D[Create Runnable Sequences]
-   subgraph E [Invoke Runnable Sequence]
-    e1[Retrieve Context]
-	f1[Generate Prompt]
-    h1[Invoke OpenAI Model]
-    j1[Invoke Ollama Model]
-    g1[Output]
-    g2[Output'] 
-   end
-   e1 --> f1
-   f1 --> h1
-   f1 --> j1
-   h1 --> g1
-   j1 --> g2
-D --> E
-E --> F[Parse Output]
-```
-
-Using different Large Language Models (LLMs) on the same dataset is an effective way to determine which model provides a more accurate or appropriate answer. This method can be used to benchmark and fine-tune settings for specific datasets, helping to optimize the
-models' performance on similar tasks in the future.
-
-## Bringing the Model to Life
-
-### Methods for testing and refining the trained model
-Once training is complete, it's essential to test and refine the model to ensure it meets the desired performance standards. This involves evaluating the model on a separate validation dataset and analyzing its ability to understand and generate text accurately. Techniques like cross-validation and confusion matrix analysis can provide insights into the model's strengths and weaknesses, guiding further refinements.
-
-### Tips for troubleshooting common issues during the training and implementation phases
-During the training and implementation phases, it's common to encounter issues such as overfitting, underfitting, or slow convergence. To address these, developers can adjust hyperparameters, augment the training data, or modify the model architecture. Implementing early stopping, regularization techniques, and learning rate schedules can also enhance the model's learning process. Monitoring tools like TensorBoard can aid in visualizing the training progress and pinpointing bottlenecks.
-
-> [!NOTE] **Note on performance**
-> Be aware that using LLM may consume significant resources. Therefore, choose the model and version based on your device's capabilities. Moreover, embedding can be computationally expensive due to the numerous parameters and calculations involved. *For small projects, I recommend using local embeddings from sources like **Ollama** or **HuggingFace***. However, if you have a massive amount of data, utilizing ***OpenAI** embeddings will be more efficient, faster, and won't strain your CPU/GPU*.
-
-> [!NOTE] **Note on effectiveness**
-> It took me some time to choose between chunking tools. There are various choices available in lanchain text splitter library, such as the simple *CharacterTextSplitter* or more complex and specific ones like the *MarkdownTextSplitter*. For a comprehensive list and explanation, check out this article: [Chunking Strategies](https://www.pinecone.io/learn/chunking-strategies/). However, *it's crucial to focus on embedding, as it significantly improves the quality of the ingested data by LLMs*. Currently, I mostly use **OpenAI** and **HuggingFace**
-embeddings, but find **Ollama** a bit difficult to use.
-
-> [!NOTE] **Note2 on effectiveness**
-> [Chains](https://js.langchain.com/docs/modules/chains/document/)are a good way to improve the chunking, by summarizing, interpreting or classifying each document with a specific prompt before embedding it. This approach is particularly useful with heterogeneous dataset.
-
-## Applications and Implications
-
-### Discussion of potential applications of locally trained language models
-The potential applications of locally trained language models are vast and varied. They range from enhancing customer service with chatbots that understand and respond to queries, to aiding in content creation by generating articles or scripts. In the educational sector, they can personalize learning by providing students with tailored feedback. In healthcare, they can interpret medical notes and assist in diagnosis. The decentralization aspect also allows for specialized training on niche datasets, leading to highly specialized models for unique industry needs.
-
-### Reflection on the broader implications of accessible AI tools for developers and researchers
-The broader implications of making AI tools like `LangchainJS` and `Ollama` accessible to developers and researchers are profound. It democratizes AI, enabling a wider community to innovate and experiment. This accessibility can accelerate the pace of AI advancements, leading to more diverse and creative applications. It also encourages ethical AI development, as a broader base of developers can contribute to shaping the principles and practices guiding AI's evolution.
-
-## Code
-
-### Source
-Available on github on : 
-
-### Sample
-Quick exemple using an express base to train and query
-
-#### train.js
-```js
-const { OpenAIEmbeddings } = require("langchain/embeddings/openai");
-const { OllamaEmbeddings } = require("langchain/embeddings/ollama");
-const { HuggingFaceTransformersEmbeddings } = require("langchain/embeddings/hf_transformers");
-const {
-  MarkdownTextSplitter
-} = require("langchain/text_splitter");
-const { HNSWLib } = require("langchain/vectorstores/hnswlib");
-const fs = require("fs");
-const path = require("path");
-
-async function getFiles(dir) {
-  const dirents = await fs.promises.readdir(dir, { withFileTypes: true });
-
-  const files = await Promise.all(dirents.map(async (dirent) => {
-    const res = path.resolve(dir, dirent.name);
-
-    return dirent.isDirectory() ? getFiles(res) : res;
-  }));
-
-  return Array.prototype.concat(...files);
-}
-
-async function getMarkdownFiles(directoryPath) {
-  const files = await getFiles(directoryPath);
-
-  return files.filter(file => {
-    return (path.extname(file) === '.md'
-      && !file.includes(".trash")
-      && !file.includes("/assets"));
-  });
-}
-
-async function getDocumentsFromFiles(mdFiles) {
-  const documents = [];
-  for (const file of mdFiles) {
-    if (file && file.includes(".md")) {
-      const trainingText = await fs.promises.readFile(file, "utf-8");
-      if (trainingText) {
-        documents.push(trainingText);
-      }
-    }
-  }
-
-  return documents;
-}
-
-async function createVectorStores(docs) {
-  let vectorStoreOpenAI, vectorStoreOllama, vectorStoreHuggingface;
-
-  vectorStoreOpenAI = await HNSWLib.fromDocuments(
-    docs,
-    new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
-  );
-  vectorStoreOllama = await HNSWLib.fromDocuments(
-    docs,
-    new OllamaEmbeddings(),
-  );
-  vectorStoreHuggingface = await HNSWLib.fromDocuments(
-    docs,
-    new HuggingFaceTransformersEmbeddings(),
-  );
-
-  return { vectorStoreOpenAI, vectorStoreOllama, vectorStoreHuggingface };
-}
-
-async function trainBot(req, res) {
-  console.log("Training ...");
-  try {
-    const directoryPath = "training-data";
-    const mdFiles = await getMarkdownFiles(directoryPath);
-    const documents = await getDocumentsFromFiles(mdFiles);
-
-    if (documents.length === 0) {
-      throw new Error("No documents to process");
-    }
-
-    const mdSplitter = new MarkdownTextSplitter({
-      chunkSize: 1000,
-    });
-
-    const docs = await mdSplitter.createDocuments(documents);
-    const { vectorStoreOpenAI, vectorStoreOllama, vectorStoreHuggingface } = await createVectorStores(docs);
-
-    vectorStoreOpenAI.save("hnswlib_openai");
-    vectorStoreOllama.save("hnswlib_ollama");
-    vectorStoreHuggingface.save("hnswlib_huggingface");
-
-    console.log("success");
-    return res.status(200).json({
-      message: vectorStoreOpenAI,
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-}
-
-module.exports = trainBot;
-```
-
-#### query.js
-```js
-const { OpenAI } = require("langchain/llms/openai");
-const { Ollama } = require("langchain/llms/ollama");
-const { OpenAIEmbeddings } = require("langchain/embeddings/openai");
-const { HNSWLib } = require("langchain/vectorstores/hnswlib");
-const { PromptTemplate } = require("langchain/prompts");
-const { StringOutputParser } = require("langchain/schema/output_parser");
-const {
-  RunnableSequence,
-  RunnablePassthrough,
-} = require("langchain/schema/runnable");
-
-const modelOpenapi = new OpenAI({
-  openAIApiKey: process.env.OPENAI_API_KEY,
-  temperature: 0.9,
-});
-
-const modelOllama = new Ollama({ model: "mistral-openorca" });
-
-async function getAnswer(req, res) {
-  const { question } = req.body;
-  try {
-    const vectorStoreOpenAI = await HNSWLib.load(
-      "hnswlib_openai",
-      new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
-    );
-
-    const prompt =
-      PromptTemplate.fromTemplate(`Answer the question based only on the following context:
-{context}
-
-Question: {question}`);
-
-    const serializeDocs = (docs) =>
-      docs.map((doc) => doc.pageContent).join("\n");
-
-    const chainOpenai = RunnableSequence.from([
-      {
-        context: vectorStoreOpenAI.asRetriever().pipe(serializeDocs),
-        question: new RunnablePassthrough(),
-      },
-      prompt,
-      modelOpenapi,
-      new StringOutputParser(),
-    ]);
-
-    const chainOllamaWithOpenaiEmbedding = RunnableSequence.from([
-      {
-        context: vectorStoreOpenAI.asRetriever().pipe(serializeDocs),
-        question: new RunnablePassthrough(),
-      },
-      prompt,
-      modelOllama,
-      new StringOutputParser(),
-    ]);
-
-    const resultOpenai = await chainOpenai.invoke(
-      question
-    );
-    const resultOllamaWithOpenaiEmbedding = await chainOllamaWithOpenaiEmbedding.invoke(
-      question
-    );
-
-    return res.status(200).json({
-      answer_openai: resultOpenai,
-      answer_ollama_with_openaiembedding: resultOllamaWithOpenaiEmbedding,
-    });
-  } catch (error) {
-    console.log(error);
-    return res.status(200).send({
-      message: "Something went wrong",
-      error,
-    });
-  }
-}
-
-module.exports = getAnswer;
-
-```
-
-## Conclusion
-
-In conclusion, the process of training a language model using **LangchainJS** on a local machine is a testament to the flexibility and power of modern AI tools. By leveraging open-source libraries such as **LangchainJS** and frameworks like **Ollama**, along with the efficient vector searching capabilities of **HNSWLib**, developers can create and train robust language models tailored to their specific needs.
-
-Throughout this guide, we've navigated the intricacies of setting up the necessary environment, creating a training dataset, and integrating various components to bring our language model to life. The provided code snippets serve as a practical reference, **illustrating how these tools can be combined to build a functioning language model capable of understanding and generating natural language**.
-
-As AI continues to evolve, the accessibility of these technologies opens up a world of possibilities for developers, researchers, and businesses alike. Whether you're looking to enhance your application with natural language processing capabilities or explore the frontiers of AI research, the tools and techniques discussed in this article provide a solid foundation to embark on that journey.
-
-By demystifying the process of training a language model on a local machine, we hope to **empower more individuals to innovate and contribute to the ever-growing landscape of AI**. The future is ripe with potential, and with the knowledge and resources at our disposal, there's no limit to what we can achieve.
+## Introduction to `Langch
