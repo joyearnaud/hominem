@@ -17,41 +17,41 @@ relateTo:
 
 <div class="contenttable">
 	
-1. [Introduction](#introduction)
-1. [Overview of Language Models](#overview-of-language-models)
-	1. [Definition and significance of language models in NLP](#definition-and-significance-of-language-models-in-nlp)
-	1. [Brief history and evolution of language models leading up to GPT-3](#brief-history-and-evolution-of-language-models-leading-up-to-gpt-3)
-1. [Introduction to LangchainJS and Ollama](#introduction-to-langchainjs-and-ollama)
-	1. [Detailed description of LangchainJS and its capabilities](#detailed-description-of-langchainjs-and-its-capabilities)
-	1. [Exploration of Ollama's framework and its role in local machine implementation.](#exploration-of-ollamas-framework-and-its-role-in-local-machine-implementation)
-1. [Setting Up the Environment](#setting-up-the-environment)
-	1. [Step-by-step guide to installing](#step-by-step-guide-to-installing)
-		1. [LangChainJS](#langchainjs)
-		1. [Ollama](#ollama)
-	1. [Best practices for setting up a conducive environment for training language models.](#best-practices-for-setting-up-a-conducive-environment-for-training-language-models)
-1. [Integrating HNSWLib for Efficient Vector Searching](#integrating-hnswlib-for-efficient-vector-searching)
-	1. [Explanation of HNSWLib and its importance in the context of language models](#explanation-of-hnswlib-and-its-importance-in-the-context-of-language-models)
-	1. [Guidance on incorporating HNSWLib into the training process for enhanced performance](#guidance-on-incorporating-hnswlib-into-the-training-process-for-enhanced-performance)
-1. [Creating a Training Dataset](#creating-a-training-dataset)
-	1. [Strategies for compiling a comprehensive and effective training dataset.](#strategies-for-compiling-a-comprehensive-and-effective-training-dataset)
-	1. [Techniques for preprocessing and structuring data for optimal training outcomes.](#techniques-for-preprocessing-and-structuring-data-for-optimal-training-outcomes)
-1. [The  process from training to querying](#the--process-from-training-to-querying)
-	1. [Training](#training)
-		1. [Diagram](#diagram)
-	1. [Querying](#querying)
-		1. [Diagram](#diagram)
-1. [Bringing the Model to Life](#bringing-the-model-to-life)
-	1. [Methods for testing and refining the trained model](#methods-for-testing-and-refining-the-trained-model)
-	1. [Tips for troubleshooting common issues during the training and implementation phases](#tips-for-troubleshooting-common-issues-during-the-training-and-implementation-phases)
-1. [Applications and Implications](#applications-and-implications)
-	1. [Discussion of potential applications of locally trained language models](#discussion-of-potential-applications-of-locally-trained-language-models)
-	1. [Reflection on the broader implications of accessible AI tools for developers and researchers](#reflection-on-the-broader-implications-of-accessible-ai-tools-for-developers-and-researchers)
-1. [Code](#code)
-	1. [Source](#source)
-	1. [Sample](#sample)
-		1. [train.js](#trainjs)
-		1. [query.js](#queryjs)
-1. [Conclusion](#conclusion)
+- [Introduction](#introduction)
+- [Overview of Language Models](#overview-of-language-models)
+	- [Definition and significance of language models in NLP](#definition-and-significance-of-language-models-in-nlp)
+	- [Brief history and evolution of language models leading up to GPT-3](#brief-history-and-evolution-of-language-models-leading-up-to-gpt-3)
+- [Introduction to LangchainJS and Ollama](#introduction-to-langchainjs-and-ollama)
+	- [Detailed description of LangchainJS and its capabilities](#detailed-description-of-langchainjs-and-its-capabilities)
+	- [Exploration of Ollama's framework and its role in local machine implementation.](#exploration-of-ollamas-framework-and-its-role-in-local-machine-implementation)
+- [Setting Up the Environment](#setting-up-the-environment)
+	- [Step-by-step guide to installing](#step-by-step-guide-to-installing)
+		- [LangChainJS](#langchainjs)
+		- [Ollama](#ollama)
+	- [Best practices for setting up a conducive environment for training language models.](#best-practices-for-setting-up-a-conducive-environment-for-training-language-models)
+- [Integrating HNSWLib for Efficient Vector Searching](#integrating-hnswlib-for-efficient-vector-searching)
+	- [Explanation of HNSWLib and its importance in the context of language models](#explanation-of-hnswlib-and-its-importance-in-the-context-of-language-models)
+	- [Guidance on incorporating HNSWLib into the training process for enhanced performance](#guidance-on-incorporating-hnswlib-into-the-training-process-for-enhanced-performance)
+- [Creating a Training Dataset](#creating-a-training-dataset)
+	- [Strategies for compiling a comprehensive and effective training dataset.](#strategies-for-compiling-a-comprehensive-and-effective-training-dataset)
+	- [Techniques for preprocessing and structuring data for optimal training outcomes.](#techniques-for-preprocessing-and-structuring-data-for-optimal-training-outcomes)
+- [The  process from training to querying](#the--process-from-training-to-querying)
+	- [Training](#training)
+		- [Diagram](#diagram)
+	- [Querying](#querying)
+		- [Diagram](#diagram)
+- [Bringing the Model to Life](#bringing-the-model-to-life)
+	- [Methods for testing and refining the trained model](#methods-for-testing-and-refining-the-trained-model)
+	- [Tips for troubleshooting common issues during the training and implementation phases](#tips-for-troubleshooting-common-issues-during-the-training-and-implementation-phases)
+- [Applications and Implications](#applications-and-implications)
+	- [Discussion of potential applications of locally trained language models](#discussion-of-potential-applications-of-locally-trained-language-models)
+	- [Reflection on the broader implications of accessible AI tools for developers and researchers](#reflection-on-the-broader-implications-of-accessible-ai-tools-for-developers-and-researchers)
+- [Code](#code)
+	- [Source](#source)
+	- [Sample](#sample)
+		- [train.js](#trainjs)
+		- [query.js](#queryjs)
+- [Conclusion](#conclusion)
 
 </div>
 
@@ -158,11 +158,12 @@ Training a language model with **LangchainJS** is a straightforward process that
 After the training completed we can query the `vector` database and use `LLM` to answer question.
 
 Here's the step-by-step process:
+
 1) **Initialize `OpenAI` and `Ollama` models** with specific parameters: the `OpenAI` model uses an API key and a temperature setting, while the `Ollama` model is initialized with a specific model name.
 
 2) **Loading Vector Store**: use the HNSWLib library to load a vector store using the OpenAI embeddings. This will be used for context retrieval during the query process. This vector store is based on OpenAI embeddings and is used to retrieve relevant context for answering the question.
 
-3) **Creating the Prompt**: use the PromptTemplate function to create  a prompt designed to answer the given question based on the loaded context from vector store. Something as `Answer the question based only on the following context: {context} \nQuestion: {question}
+3) **Creating the Prompt**: use the PromptTemplate function to create  a prompt designed to answer the given question based on the loaded context from vector store. Something as `Answer the question based only on the following context: {context} \nQuestion: {question}`
 
 4) **Creating and Invoke the Runnable Sequences**: sequences represent the steps that the AI models will follow to answer the question. They include retrieving the context, passing the question, generating the prompt, invoking the AI model, and parsing the output.
 
