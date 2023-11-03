@@ -120,6 +120,7 @@ Once the data is collected, preprocessing and structuring become critical. Techn
 - Once you have your training data, we can start the training process. The training process involves splitting the text into smaller chunks, creating a vector store using an embedding model, and then saving the trained model for future use.
 
 Here's the step-by-step process:
+
 1) **Split the text**: We first split the Markdown files into smaller chunks using a text splitter. In this case, we are using the RecursiveCharacterTextSplitter from LangchainJS. This will help us to better handle long texts and improve the performance of our model.
 
 2) **Create documents**: After splitting the text, we create documents using the MarkdownTextSplitter. This will allow us to feed the training data into the vector store.
@@ -172,19 +173,19 @@ graph TD;
 A[Initialize OpenAI and Ollama models] --> B[Load Vector Store]
 B --> C[Create Prompt]
 C --> D[Create Runnable Sequences]
-   subgraph E [Invoke Runnable Sequence]
-    e1[Retrieve Context]
-	f1[Generate Prompt]
-    h1[Invoke OpenAI Model]
-    j1[Invoke Ollama Model]
-    g1[Output 1]
-    g2[Output 2] 
-   end
-   e1 --> f1
-   f1 --> h1
-   f1 --> j1
-   h1 --> g1
-   j1 --> g2
+subgraph E [Invoke Runnable Sequence]
+e1[Retrieve Context]
+f1[Generate Prompt]
+h1[Invoke OpenAI Model]
+j1[Invoke Ollama Model]
+g1[Output 1]
+g2[Output 2] 
+end
+e1 --> f1
+f1 --> h1
+f1 --> j1
+h1 --> g1
+j1 --> g2
 D --> E
 E --> F[Parse Output]
 ```
