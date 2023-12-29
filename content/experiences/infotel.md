@@ -43,6 +43,8 @@ keywords:
 Conception et réalisation d'une application de gestion de compte à destination du CROUS ; Conception et réalisation d'une
 application collaborative et de réseau social interne à Infotel.
 
+---
+
 - Etudes des solutions techniques possibles pour le développement d'application
 - Modile hybrid (Phonegap, SenchaTouch)
 - Réalisation d'un POC pour solution mobile et desktop
@@ -53,3 +55,5 @@ application collaborative et de réseau social interne à Infotel.
 - Manuel d'utilisation avec le client
 - Maintenance corrective et évolutive
 - Support
+
+---

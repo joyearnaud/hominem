@@ -52,6 +52,8 @@ keywords:
 
 Conception et réalisation de services pour la mise à jour et l'extension des possibilités du portail associations, particuliers, professionnels et entreprises; Notamment sur le développement d'outil de saisie et signature pour de nouveaux types de virements, et sur la maintenance et migration des portails applicatifs de la Société Générale pour être compatible avec Weblogic 11g.
 
+---
+
 - Etudes de besoins utilisateurs
 - Rédaction des spécifications et documentations techniques
 - Graphisme et maquettage d'interface utilisateur
@@ -66,3 +68,5 @@ Conception et réalisation de services pour la mise à jour et l'extension des p
 - Recettage
 - Utilisation d'environnement Unix et Linux
 - Support
+
+---

@@ -15,9 +15,6 @@
         </div>
       </div>
     </div>
-    <div class="skill-content">
-      <p v-html="$page.skill.content" />
-    </div>
     <div class="skill-belongsto">
       <br />
       <h3>{{ $t("skill.references.label") }}</h3>
@@ -28,6 +25,10 @@
           >
         </li>
       </ul>
+    </div>
+    <hr />
+    <div class="skill-content">
+      <p v-html="$page.skill.content" />
     </div>
   </Layout>
 </template>

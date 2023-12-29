@@ -27,7 +27,11 @@ keywords:
       - "SPLUNK"
 ---
 
-Conception et réalisation d'outils de gestion financier, gestion et migration de l'existant; Notamment réalisation de l'outil MOREP de référentiel, gestion et restitution des états financiers SMA, avec `Spring` côté service et `AngularJS` côté restitution.
+Conception & réalisation de services pour la communication de Média vers les interfaces de télétransmission satellitaire.
+Notamment, réalisation d'une migration depuis Oracle Data Integrator vers une solution intégralement sous ESB Mule.
+Et maintenance de l'outil ESB Mule.
+
+---
 
 - Mise en place du socle technique
 - Développement des web-service SOAP
@@ -42,3 +46,5 @@ Conception et réalisation d'outils de gestion financier, gestion et migration d
 - Tests unitaires et TDD
 - Support
 - Vieille technologique
+
+---

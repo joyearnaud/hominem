@@ -59,8 +59,12 @@ keywords:
 
 Reprise d'une application de gestion des collectivités, sur les bases d'une ancienne équipe. Réécriture en concert avec la MOA de l'ensemble des besoins, mise en place du `Kanban board` avec les Project Owner, `refactoring` suite à la revue et analyse de code, `pair programming` pour faire monter en compétence les membres de l'équipe.
 
+---
+
 - revu des objectifs
 - automatisation de la revu de code
-- mise en place de CI/CD 
-- amélioration des compétences et autonomie de l'équipe 
+- mise en place de CI/CD
+- amélioration des compétences et autonomie de l'équipe
 - mise en place de l'agilité Kanban
+
+---

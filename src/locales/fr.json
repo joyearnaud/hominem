@@ -7,7 +7,7 @@
       "name": "bienvenue",
       "title": "bienvenue",
       "description": "Page d'accueil de 'Dev in progress' avec un blog technologique, des expériences professionnelles et une liste de toutes les compétences déjà testées",
-      "welcome-message": "Salut et bienvenue dans mon humble antre numérique, où je dévoile avec fierté mes super-pouvoirs et mes prouesses réalisées. Ici, vous trouverez des articles de blog captivants qui abordent un tas de sujets passionnants. Faites un plongeon dans mon parcours pro et mes projets pour découvrir ce qui me rend unique. Si vous voulez bosser ensemble, échanger des infos ou juste papoter autour de mes écrits, n'hésitez surtout pas à me contacter. Allez, installez-vous confortablement et laissez-vous séduire par mon univers !"
+      "welcome-message": "Bienvenue sur mon site, un espace numérique où je partage mes compétences et réalisations. Vous y trouverez des articles de blog traitant divers sujets intéressants. Explorez mon parcours professionnel et mes projets pour mieux comprendre mon profil unique. Si vous souhaitez collaborer, discuter ou simplement commenter mes écrits, je vous invite à me contacter. Installez-vous et découvrez mon univers !"
     },
     "about": {
       "name": "à propos",
@@ -26,7 +26,7 @@
       "presentation5": "En tant qu'artisan du Web, je reconnais qu'il y a toujours plus à apprendre et à découvrir. Face à un obstacle, je le surmonte avec audace et m'élance dans l'inconnu, toujours prêt à repousser les frontières du possible."
     },
     "experiences": {
-      "name": "expériences" ,
+      "name": "expériences",
       "title": "expériences et projets",
       "description": "En savoir plus sur les expériences passées et présentes, triées de la plus récente à la plus ancienne, avec des compétences surlignées cliquables."
     },
@@ -37,17 +37,17 @@
     }
   },
   "template": {
-    "experience": {      
+    "experience": {
       "name": "expérience",
       "title": "projet",
       "description": "En savoir plus sur le projet"
     },
-    "skill": {      
+    "skill": {
       "name": "compétence",
       "title": "compétence",
       "description": "Plus de détails, d'utilisations et liens vers les expérience afférentes pour la compétence"
     },
-    "thought": {      
+    "thought": {
       "name": "pensées",
       "title": "",
       "description": ""
@@ -57,7 +57,7 @@
   "min": "min",
   "read": "lecture",
   "back": "Retour",
-  "built with": "Construit autour de",
+  "built with": "Construit à l'aide de",
   "made with": "Réalisé avec",
   "by": "par",
   "keyword": "mot-clé",
@@ -69,7 +69,7 @@
   },
   "skill": {
     "references": {
-      "label": "références dans la section Expérience",
+      "label": "références clés",
       "total": "total"
     },
     "confidence": {

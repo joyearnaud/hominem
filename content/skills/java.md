@@ -7,7 +7,31 @@ datestart: 2020-01-05
 dateend: 2022-01-05
 ---
 
-## Définition Wikipedia [[source]](https://fr.wikipedia.org/wiki/Java_(langage))
+## Sommaire
+
+- [Sommaire](#sommaire)
+- [1. Définition Wikipedia \[source\]](#1-définition-wikipedia-source)
+- [2. Spring](#2-spring)
+- [3. Kotlin](#3-kotlin)
+- [4. Immutabilité](#4-immutabilité)
+- [5. Version et évolution](#5-version-et-évolution)
+  - [5.1. Timeline: Java 1.8 à aujourd'hui](#51-timeline-java-18-à-aujourdhui)
+  - [5.2. Changelog](#52-changelog)
+    - [5.2.1. Ajout de la version Java 1.8 \[digitalocean\]](#521-ajout-de-la-version-java-18-digitalocean)
+    - [5.2.2. Ajout de la version Java 9](#522-ajout-de-la-version-java-9)
+    - [5.2.3. Ajout de la version Java 10](#523-ajout-de-la-version-java-10)
+    - [5.2.4. Ajout de la version Java 11](#524-ajout-de-la-version-java-11)
+    - [5.2.7. Ajout de la version Java 14](#527-ajout-de-la-version-java-14)
+    - [5.2.8. Ajout de la version Java 15](#528-ajout-de-la-version-java-15)
+    - [5.2.9. Ajout de la version Java 16](#529-ajout-de-la-version-java-16)
+    - [5.2.10. Ajout de la version Java 17](#5210-ajout-de-la-version-java-17)
+    - [5.2.11. Ajout de la version Java 18](#5211-ajout-de-la-version-java-18)
+    - [5.2.12. Ajout de la version Java 19](#5212-ajout-de-la-version-java-19)
+    - [5.2.13. Ajout toujours en `preview`](#5213-ajout-toujours-en-preview)
+
+---
+
+## 1. Définition Wikipedia [[source]](<https://fr.wikipedia.org/wiki/Java_(langage)>)
 
 **Java** est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy en 1982, présenté officiellement le 23 mai 1995 au _SunWorld_
 
@@ -17,7 +41,7 @@ Une particularité de Java est que les logiciels écrits dans ce langage sont co
 
 ---
 
-##  2. <a name='Spring'></a>Spring
+## 2. Spring
 
 En Java, **Spring comme Java EE permettent depuis longtemps de réaliser des web services**. Néanmoins, dans le cas de Java EE, cela nécessite le recours à un serveur d'application certifié, tel que WildFly, alors **qu'en Spring, un simple serveur web (léger) tel que Tomcat suffit.**
 
@@ -27,7 +51,7 @@ De son côté **Spring propose Spring Boot, une approche module particulièremen
 
 ---
 
-##  3. <a name='Kotlin'></a>Kotlin
+## 3. Kotlin
 
 **Kotlin est simplement une dépendance et un plugin pour Maven/Gradle**. C'est un langage agréable, compact et facile à utiliser qui supprime toute la lourdeur syntaxique (par opposition au "syntactic sugar") que Java fournit.
 
@@ -39,9 +63,9 @@ Ainsi, **Kotlin fonctionne bien avec Spring**, qui fournit une grande partie des
 
 **Kotlin a une syntaxe beaucoup plus compacte et son système de type permet un code beaucoup plus robuste grâce à la sécurité nulle (null safety), aux classes scellées (sealed classes) et aux notions d'immutabilités.**
 
---- 
+---
 
-##  4. <a name='Immutabilit'></a>Immutabilité
+## 4. Immutabilité
 
 Il est aussi possible d'utilisé la bibliothèque Java **Immutables** ou la fonctionnalité Java des **Record** pour atteindre cette notions d'immutabilité, **permettant de facilement implémenté des valeurs (value object) associés au Domain Driven Design (DDD)**.
 
@@ -49,21 +73,21 @@ Ainsi, **une requête HTTP doit être considérée comme une valeur car celle-ci
 
 ---
 
-##  5. <a name='Versionetvolution'></a>Version et évolution
+## 5. Version et évolution
 
-###  5.1. <a name='Timeline:Java1.8aujourdhui'></a>Timeline: Java 1.8 à aujourd'hui
+### 5.1. Timeline: Java 1.8 à aujourd'hui
 
 Les cycles de publication jusqu'a la version 1.8 durait environs 3 à 5 ans. `Les nouvelles versions de Java sortent désormais tous les 6 mois`.
 
 Les projets "legacy" d'entreprises sont souvent bloqués à Java 1.8, plus rarement avec des versions antérieurs. Pourquoi? La réponse est un mélange de problèmes pratiques (mise à niveau de vos outils, bibliothèques, frameworks) et de problèmes politiques:
-  - les outils de build (Maven, Gradle etc.) et certaines librairies avaient initialement des bugs avec les versions supérieurs à Java 8 et nécessitaient des mises à jour;
-  - Oracle a modifié le système de licences en 2019, ce qui à provoqué la confusion des utilisateurs. Jusqu'à Java 1.8, seul les versions JDK d'Oracle étaient disponibles et il n'y avait pas à ce soucier des licences (sauf cas à la marge);
-  - les entreprises ont pour politique de n'utiliser que les versions LTS et de compter sur leurs fournisseurs de systèmes pour leur fournir ces versions, ce qui prend du temps.
+
+- les outils de build (Maven, Gradle etc.) et certaines librairies avaient initialement des bugs avec les versions supérieurs à Java 8 et nécessitaient des mises à jour;
+- Oracle a modifié le système de licences en 2019, ce qui à provoqué la confusion des utilisateurs. Jusqu'à Java 1.8, seul les versions JDK d'Oracle étaient disponibles et il n'y avait pas à ce soucier des licences (sauf cas à la marge);
+- les entreprises ont pour politique de n'utiliser que les versions LTS et de compter sur leurs fournisseurs de systèmes pour leur fournir ces versions, ce qui prend du temps.
 
 Si vous démarrez un nouveau projet, vous pouvez, sans hésitation, utiliser `Java 17 (LTS)` ou plus récente.
 
 Pour des fonctionnalités actualisées sur une version antérieur, l'utilisation de `Kotlin permet de cibler un JDK 1.8` (d'anciennes versions permettent de l'utiliser à partir d'un JDK 1.6).
-
 
 <div class="timeline">
   <div class="flex-parent">
@@ -120,15 +144,16 @@ Pour des fonctionnalités actualisées sur une version antérieur, l'utilisation
   </div>
 </div>
 
-###  5.2. <a name='Changelog'></a>Changelog
+### 5.2. Changelog
 
-####  5.2.1. <a name='AjoutdelaversionJava1.8digitaloceanhttps:www.digitalocean.comcommunitytutorialsjava-8-features-with-examples'></a>Ajout de la version Java 1.8 [[digitalocean]](https://www.digitalocean.com/community/tutorials/java-8-features-with-examples)
+#### 5.2.1. Ajout de la version Java 1.8 [[digitalocean]](<https://www.digitalocean.com/community/tutorials/java-8-features-with-examples>)
 
 Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur fonctionnent également dans les versions supérieur (tel que Java 19). Ces fonctionnalités forment une base et comprennent:
 
-  - JAVA 1.7 `Generic` et `Diamond Operator`
-  - methodes d'interfaces `default` et `static` 
-  - `functional Interfaces` et `lambda expressions`, permettent de traiter les fonctions comme un argument de méthode ou le code comme des données (et qui permettent de s'affranchir de l'écriture de `anonymous inner class` pour l'implémentation)
+- JAVA 1.7 `Generic` et `Diamond Operator`
+- methodes d'interfaces `default` et `static`
+- `functional Interfaces` et `lambda expressions`, permettent de traiter les fonctions comme un argument de méthode ou le code comme des données (et qui permettent de s'affranchir de l'écriture de `anonymous inner class` pour l'implémentation)
+
     ```java
     //Anciennement
     for (int i = 0; i < list.size(); i++) {
@@ -145,7 +170,9 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
     list.forEach(System.out::println);
     Thread monThread = new Thread(() -> { System.out.println("Mon traitement"); });
     ```
-  - Stream API, prendre en charge les opérations séquentiels ou parallèles de style fonctionnel sur des flux d'éléments
+
+- Stream API, prendre en charge les opérations séquentiels ou parallèles de style fonctionnel sur des flux d'éléments
+
     ```java
     List<String> list = Arrays.asList("one", "two");
     list.stream()
@@ -154,50 +181,54 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
       .sorted()
       .forEach(System.out::println);
     ```
-  - Iterable Interface
-    - `forEach` se focus sur la partie
-  - `Optional` Le but de la classe est de fournir une solution au niveau du type pour représenter des valeurs facultatives au lieu de références nulles
-  - Java Time API
-    - `LocalDate`
-    - `LocalDateTime`
-    - `Instant`
-  - Collections API
-    - Collection `spliterator()`
-    - Map
-      - ajout de Map `replaceAll()`, `compute()`, `merge()`;
-      - amélioration des performances pour la classe HashMap avec Key Collisions
-  - Concurrency API improvements
-    - `ConcurrentHashMap`
-    - `CompletableFuture`
 
-####  5.2.2. <a name='AjoutdelaversionJava9'></a>Ajout de la version Java 9
+- Iterable Interface
+  - `forEach` se focus sur la partie
+- `Optional` Le but de la classe est de fournir une solution au niveau du type pour représenter des valeurs facultatives au lieu de références nulles
+- Java Time API
+  - `LocalDate`
+  - `LocalDateTime`
+  - `Instant`
+- Collections API
+  - Collection `spliterator()`
+  - Map
+    - ajout de Map `replaceAll()`, `compute()`, `merge()`;
+    - amélioration des performances pour la classe HashMap avec Key Collisions
+- Concurrency API improvements
+  - `ConcurrentHashMap`
+  - `CompletableFuture`
 
-  - Collections helper de création
-    - `of`
+#### 5.2.2. Ajout de la version Java 9
+
+- Collections helper de création
+  - `of`
+
     ```java
     List<String> list = List.of("one", "two", "three");
     Set<String> set = Set.of("one", "two", "three");
     Map<String, String> map = Map.of("foo", "one", "bar", "two");
     ```
-  - nouvelles méthodes Streams
-    - `takeWhile`
-    - `dropWhile`
-    - `iterate`
-  - optional
-    - `ifPresentOrElse`
-  - interfaces
-    - méthodes privées
-  - `diamond operator` pour `anonymous inner class`
-  - `JShell`, shell JAVA avec résultat immédiat
-  - projet `Jigsaw`: Modules JAVA et Multi-Release Jar Files
 
-####  5.2.3. <a name='AjoutdelaversionJava10'></a>Ajout de la version Java 10
+- nouvelles méthodes Streams
+  - `takeWhile`
+  - `dropWhile`
+  - `iterate`
+- optional
+  - `ifPresentOrElse`
+- interfaces
+  - méthodes privées
+- `diamond operator` pour `anonymous inner class`
+- `JShell`, shell JAVA avec résultat immédiat
+- projet `Jigsaw`: Modules JAVA et Multi-Release Jar Files
 
-  - mot-clef `var`, variable locale s'appliquant seulement au scope d'une méthode, toujours fortement typée
+#### 5.2.3. Ajout de la version Java 10
+
+- mot-clef `var`, variable locale s'appliquant seulement au scope d'une méthode, toujours fortement typée
   
-####  5.2.4. <a name='AjoutdelaversionJava11'></a>Ajout de la version Java 11
+#### 5.2.4. Ajout de la version Java 11
 
-  - Différentes méthodes Strings et Files
+- Différentes méthodes Strings et Files
+
   ```java
   "Marco".isBlank();
   "Mar\nco".lines();
@@ -206,27 +237,31 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   Path path = Files.writeString(Files.createTempFile("helloworld", ".txt"), "Hi, my name is!");
   String s = Files.readString(path);
   ```
-  - `execution de fichier source`: exécution des fichiers source Java sans avoir à les compiler au préalable. Un pas vers la scripting.
-  - inférence de type variable local (var) pour les paramètre de fonction lambda
+
+- `execution de fichier source`: exécution des fichiers source Java sans avoir à les compiler au préalable. Un pas vers la scripting.
+- inférence de type variable local (var) pour les paramètre de fonction lambda
+
   ```java
   (var firstName, var lastName) -> firstName + lastName
   ```
-  - `HTTPClient`, implémentation intégré au JDK en version final
-  - `Flight Recorder`
-  - `No-Op Garbage Collector`
+
+- `HTTPClient`, implémentation intégré au JDK en version final
+- `Flight Recorder`
+- `No-Op Garbage Collector`
   
-####  5.2.7. <a name='AjoutdelaversionJava14'></a>Ajout de la version Java 14
+#### 5.2.7. Ajout de la version Java 14
 
-  - nouvelle expression `switch` en version final
-    - retour possible
-    - synthaxe lambda possible
-  - `NullPointerExceptions` plus précis sur les causes
-  - Garbage Collectors
-    - Concurrent Mark Sweep (CMS) Garbage Collector supprimé
+- nouvelle expression `switch` en version final
+  - retour possible
+  - synthaxe lambda possible
+- `NullPointerExceptions` plus précis sur les causes
+- Garbage Collectors
+  - Concurrent Mark Sweep (CMS) Garbage Collector supprimé
 
-####  5.2.8. <a name='AjoutdelaversionJava15'></a>Ajout de la version Java 15
+#### 5.2.8. Ajout de la version Java 15
 
-  - `Text-Blocks` / `Multiline Strings` en version final
+- `Text-Blocks` / `Multiline Strings` en version final
+
   ```java
   String htmlBeforeJava13 = "<html>\n" +
               "    <body>\n" +
@@ -242,12 +277,14 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
                 </html>
                 """;
   ```
-  - Garbage Collectors
-    - ZGC, Z Garbage Collector en version final
 
-####  5.2.9. <a name='AjoutdelaversionJava16'></a>Ajout de la version Java 16
+- Garbage Collectors
+  - ZGC, Z Garbage Collector en version final
 
-  - `Pattern Matching for instanceof`
+#### 5.2.9. Ajout de la version Java 16
+
+- `Pattern Matching for instanceof`
+
   ```java
   //before
   if (obj instanceof String) {
@@ -260,8 +297,10 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
     s.substring(1)
   }
   ```
-  - `Unix-Domain Socket Channels`
-  - `records` en version finale, sont un nouveau type de classe dans le langage Java (record class), qui proposent une syntaxe compacte pour la déclaration de classes aux fonctionnalités restreintes qui agrègent des valeurs de manière immuable
+
+- `Unix-Domain Socket Channels`
+- `records` en version finale, sont un nouveau type de classe dans le langage Java (record class), qui proposent une syntaxe compacte pour la déclaration de classes aux fonctionnalités restreintes qui agrègent des valeurs de manière immuable
+
   ```java
   //before
   final class Point {
@@ -280,18 +319,18 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   record Point(int x, int y) { }
   ```
 
-####  5.2.10. <a name='AjoutdelaversionJava17'></a>Ajout de la version Java 17
+#### 5.2.10. Ajout de la version Java 17
 
-  - `Sealed Classes` en version final, sont des classes et interfaces qui limitent les classes qui peuvent les étendre/implémenter
+- `Sealed Classes` en version final, sont des classes et interfaces qui limitent les classes qui peuvent les étendre/implémenter
   
-####  5.2.11. <a name='AjoutdelaversionJava18'></a>Ajout de la version Java 18
+#### 5.2.11. Ajout de la version Java 18
 
-  - UTF-8 par défaut
-  - `jwebserver`, web server basic
+- UTF-8 par défaut
+- `jwebserver`, web server basic
 
-####  5.2.12. <a name='AjoutdelaversionJava19'></a>Ajout de la version Java 19
+#### 5.2.12. Ajout de la version Java 19
 
-####  5.2.13. <a name='Ajouttoujoursenpreview'></a>Ajout toujours en `preview`
+#### 5.2.13. Ajout toujours en `preview`
 
 - Pattern Matching pour switch
 - Virtual Threads
@@ -306,12 +345,12 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   color: var(--text-color);
-  /* background-color: #ECF0F1; */
+  /*background-color: #ECF0F1;*/
   padding: 0 25px;
   display: flex;
   flex-direction: column;
   position: relative;
-  /* border-radius: 10px; */
+  /*border-radius: 10px;*/
   margin: 40px
 }
 
@@ -386,7 +425,7 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
 }
 
 .timeline .input.active::after {
-  /* background-color: #AEB6BF; */
+  /*background-color: #AEB6BF;*/
   background-color: var(--border-color);
 }
 
@@ -491,7 +530,7 @@ Essentiellement, toutes les fonctionnalités du langage Java 1.8 et antérieur f
     justify-content: center;
     width: 100%;
     height: auto;
-    /* margin-top: 15vh; */
+    /*margin-top: 15vh;*/
   }
 
   .input {

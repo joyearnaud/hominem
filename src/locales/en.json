@@ -37,17 +37,17 @@
     }
   },
   "template": {
-    "experience": {      
+    "experience": {
       "name": "experience",
       "title": "project",
       "description": "More details about project"
     },
-    "skill": {      
+    "skill": {
       "name": "skill",
       "title": "skill",
-      "description": "More details, uses and links to related experiences for the skill"
+      "description": "More details, uses links to related experiences for the skill"
     },
-    "thought": {      
+    "thought": {
       "name": "thought",
       "title": "",
       "description": ""
@@ -69,7 +69,7 @@
   },
   "skill": {
     "references": {
-      "label": "reference in Experience section",
+      "label": "key references",
       "total": "total"
     },
     "confidence": {

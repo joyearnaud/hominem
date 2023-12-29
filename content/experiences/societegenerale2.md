@@ -69,6 +69,8 @@ keywords:
 
 Développement pour l'`Agence Digitale du Crédit du Nord` d'une application `multiplateformes` web, desktop et tablette, interagissant avec le système central via une panoplie de services dans le cadre d'une `architecture SOA`, à des fins d'acquisition de nouveaux clients par les conseillers professionnels.
 
+---
+
 - Conseil sur technologies & architectures
 - Refactoring, Code review, Test-Driven Development (TDD), Pair Programming
 - Conception d'API REST pour Back For Front (BFF)
@@ -79,3 +81,5 @@ Développement pour l'`Agence Digitale du Crédit du Nord` d'une application `mu
   - tests fonctionnels
 - Maintenance corrective et évolutive
 - Animation Scrum
+
+---

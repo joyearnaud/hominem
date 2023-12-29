@@ -39,6 +39,8 @@ keywords:
 
 Conception et réalisation d'outils de gestion financier, gestion et migration de l'existant; Notamment réalisation de l'outil MOREP de référentiel, gestion et restitution des états financiers SMA, avec `Spring` côté service et `AngularJS` côté restitution.
 
+---
+
 - Mise en place du socle technique (framework interne)
 - Développement des web-services Spring
 - Développement d'interface AngularJS
@@ -51,3 +53,5 @@ Conception et réalisation d'outils de gestion financier, gestion et migration d
 - Recettage
 - Support
 - Veille technologique
+
+---
