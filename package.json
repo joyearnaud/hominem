@@ -2,7 +2,7 @@
   "name": "arnaudjoye-blog",
   "private": true,
   "engines": {
-    "node": "21.0.0"
+    "node": "18.x"
   },
   "scripts": {
     "build": "NODE_OPTIONS='--openssl-legacy-provider' gridsome build",
