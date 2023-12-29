@@ -157,6 +157,7 @@ Here's the step-by-step process:
 #### Diagram
 
 ```mermaid
+
 graph TD;
 A[Initialize OpenAI and Ollama models] --> B[Load Vector Store]
 B --> C[Create Prompt]
@@ -174,8 +175,9 @@ f1 --> h1
 f1 --> j1
 h1 --> g1
 j1 --> g2
-D --> E
-E --> F[Parse Output]
+D -..-> e1
+g1 -..-> F[Parse Output]
+g2 -..-> F[Parse Output]
 ```
 
 Using different Large Language Models (LLMs) on the same dataset is an effective way to determine which model provides a more accurate or appropriate answer. This method can be used to benchmark and fine-tune settings for specific datasets, helping to optimize the
