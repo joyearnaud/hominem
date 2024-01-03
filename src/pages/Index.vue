@@ -2,13 +2,15 @@
   <Layout>
     <section class="home">
       <Landing :page="$t('page.welcome.name')" />
-      <p>
+      <p class="welcom-msg">
         {{ $t("page.welcome.welcome-message") }}
       </p>
+      <hr />
       <div>
         <div class="wordcloud container-sm">
           <Wordcloud></Wordcloud>
         </div>
+        <hr />
         <div class="skilllist container-sm">
           <SkillList />
         </div>
@@ -82,5 +84,10 @@ query {
 .wordcloud {
   margin-top: 5vh;
   height: 30vh;
+}
+
+.welcom-msg {
+  margin: 2em;
+  text-align: justify;
 }
 </style>
