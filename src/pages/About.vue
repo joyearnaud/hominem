@@ -15,17 +15,93 @@
               {{ $t("page.about.job.location") }}
             </h6>
             <h7>{{ $t("page.about.job.period") }}</h7>
+            <hr />
             <SocialButton />
             <Download />
+            <hr />
+            <b-list-group
+              class="company-logo-group flex-column align-items-center"
+            >
+              <h5>{{ $t("page.about.company.title") }}</h5>
+
+              <b-list-group-item class="company-logo-item">
+                <b-img-lazy
+                  class="company-logo"
+                  src="https://www.oodrive.com/wp-content/uploads/2021/12/LOGO-OODRIVE-2022-noir.svg"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+              <b-list-group-item class="company-logo-item"
+                ><b-img-lazy
+                  class="company-logo"
+                  src="https://investors.societegenerale.com/themes/custom/sg_refonte_old/assets/images/logos/logo-footer.svg"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+              <b-list-group-item class="company-logo-item"
+                ><b-img-lazy
+                  class="company-logo"
+                  src="http://logonews.fr/wp-content/uploads/2023/01/SMABTP_Apres.png"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+              <b-list-group-item class="company-logo-item"
+                ><b-img-lazy
+                  class="company-logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/55/Ville_de_Paris_logo.svg"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+              <b-list-group-item class="company-logo-item"
+                ><b-img-lazy
+                  class="company-logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Logo_Eutelsat.svg"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+              <b-list-group-item class="company-logo-item"
+                ><b-img-lazy
+                  class="company-logo"
+                  src="https://upload.wikimedia.org/wikipedia/fr/e/e6/Logo-infotel.png"
+                  width="100%"
+                ></b-img-lazy
+              ></b-list-group-item>
+            </b-list-group>
           </b-col>
           <b-col class="description">
-            <h4>Me, Myself & I</h4>
-
-            <p>{{ $t("page.about.presentation1") }}</p>
-            <p>{{ $t("page.about.presentation2") }}</p>
-            <p>{{ $t("page.about.presentation3") }}</p>
-            <p>{{ $t("page.about.presentation4") }}</p>
-            <p>{{ $t("page.about.presentation5") }}</p>
+            <h4>{{ $t("page.about.presentation0.title") }}</h4>
+            <div class="description">
+              {{ $t("page.about.presentation0.description") }}
+            </div>
+            <hr />
+            <h5 class="title">
+              {{ $t("page.about.presentation1.title") }}
+            </h5>
+            <div class="description">
+              {{ $t("page.about.presentation1.description") }}
+            </div>
+            <h5 class="title">
+              {{ $t("page.about.presentation2.title") }}
+            </h5>
+            <div class="description">
+              {{ $t("page.about.presentation2.description") }}
+            </div>
+            <h5 class="title">
+              {{ $t("page.about.presentation3.title") }}
+            </h5>
+            <div class="description">
+              {{ $t("page.about.presentation3.description") }}
+            </div>
+            <h5 class="title">
+              {{ $t("page.about.presentation4.title") }}
+            </h5>
+            <div class="description">
+              {{ $t("page.about.presentation4.description") }}
+            </div>
+            <hr />
+            <div class="description">
+              {{ $t("page.about.presentation5.description") }}
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -84,7 +160,42 @@ query {
 .titre {
   margin: 2em;
 }
-.description {
-  min-width: 20em;
+div.description {
+  min-width: 15em;
+}
+div.description.col {
+  margin-top: 2em;
+}
+div.description .title {
+  font-size: 100%;
+  font-weight: bold;
+  color: var(--border-color);
+  padding-top: 2%;
+}
+hr {
+  margin: 3em;
+}
+
+div.description div.description {
+  font-size: 85%;
+  text-align: justify;
+  color: var(--text-color);
+}
+.company-logo-group {
+  margin: 2em;
+  display: flex;
+  align-content: center;
+  color: var(--bckg-color);
+  background-color: var(--txt-color);
+  max-width: 18em;
+  min-width: none;
+}
+.company-logo-item {
+  align-content: center;
+  background-color: var(--bkg-logo-color);
+}
+.company-logo {
+  background-color: var(--txt-color);
+  margin: 1em;
 }
 </style>

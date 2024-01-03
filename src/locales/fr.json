@@ -14,16 +14,38 @@
       "title": "à propos",
       "description": "Présentation, contact et téléchargement du CV actuel",
       "job": {
-        "title": "Ingénieur full-stack",
+        "title": "Expertise en développement logiciel, gestion de projet et architecture systèmes",
         "company": "Freelance",
         "location": "Paris, France",
         "period": "depuis 2013"
       },
-      "presentation1": "Vous vous demandez ce qu'un artisan du Web full-stack et passionné peut réaliser ?",
-      "presentation2": "Je façonne les sites Web à partir du néant, en harmonisant les fondations du Web en faisant vrombir V8 et en déchaînant l'agilité du SpiderMonkey. Les serveurs répondent à mon appel, les domaines constituent mon espace d'expression et les certificats attestent de ma fiabilité.",
-      "presentation3": "Néanmoins, c'est dans les coulisses du Web que je m'épanouis éellement. En tant qu'expert backend, je conçois, développe et déploie des API solides et performantes. Mes 10 années d'expérience et la réussite de nombreux projets témoignent de ma passion pour les rouages internes du Web.",
-      "presentation4": "Toujours avide de nouveaux défis, je suis à présent tourné vers le futur et explore l'univers du Cloud, où je peux laisser libre cours à ma créativité et mon savoir-faire.",
-      "presentation5": "En tant qu'artisan du Web, je reconnais qu'il y a toujours plus à apprendre et à découvrir. Face à un obstacle, je le surmonte avec audace et m'élance dans l'inconnu, toujours prêt à repousser les frontières du possible."
+      "company": {
+        "title": "Compagnies qui m'ont fait confiance"
+      },
+      "presentation0": {
+        "title": "Passionné d'Informatique et d'Innovation Technologique",
+        "description": "Bonjour, je suis Arnaud Joye, un ingénieur fullstack basé à Paris avec une forte expertise en développement logiciel, gestion de projet et architecture de systèmes. Ma passion pour l'informatique et mon engagement envers l'innovation technologique me poussent constamment à explorer et maîtriser de nouveaux défis."
+      },
+      "presentation1": {
+        "title": "Expérience Diversifiée",
+        "description": "J'ai une solide expérience dans le développement de solutions logicielles complexes. J'ai travaillé sur divers projets, allant de la conception et réalisation d'applications pour Infotel et Société Générale, qu'a de l'architecture logiciel à la gestion de projets chez Oodrive et Scipivo. Mon rôle en tant que lead developer à la Mairie de Paris a renforcé mes compétences en matière de leadership et de gestion d'équipes agiles."
+      },
+      "presentation2": {
+        "title": "Compétences Techniques Avancées",
+        "description": "Ma maîtrise des technologies Java, Spring, Javascript, Angular, et conteneurs, combinée à mon expérience avec les architectures SOA et microservices, me permet de concevoir des solutions robustes et évolutives. Mon intérêt pour les domaines de l'Hyperautomation et de l'API Management témoigne de ma capacité à intégrer les dernières innovations dans mes projets."
+      },
+      "presentation3": {
+        "title": "Approche Orientée Projet",
+        "description": "Que ce soit dans la mise en place de systèmes de facturation chez Oodrive ou la co-fondation d'une startup technologique, j'ai toujours une approche centrée sur l'efficacité et l'innovation. Mon expérience dans le développement de produits et services, combinée à mes compétences en gestion de projet, me permet de mener à bien des projets complexes."
+      },
+      "presentation4": {
+        "title": "Esprit Collaboratif et Communautaire",
+        "description": "Je suis un fervent défenseur du travail d'équipe et de la collaboration. Je m'adapte aisément au full-télétravail comme au travail en full-présentiel. Chaque mode de travail requiert simplement une organisation appropriée et une bonne volonté spécifique, deux aspects que je maîtrise et valorise dans ma pratique professionnelle. Que ce soit en formant des équipes à la Mairie de Paris ou en conduisant des workshops sur l'API Management, j'accorde une grande importance à l'échange de connaissances et à l'apprentissage mutuel."
+      },
+      "presentation5": {
+        "title": "",
+        "description": "Je suis constamment à la recherche de nouveaux défis et opportunités pour appliquer ma passion pour la technologie et mon expertise en développement logiciel. N'hésitez pas à me contacter pour discuter de projets innovants et collaboratifs !"
+      }
     },
     "experiences": {
       "name": "expériences",

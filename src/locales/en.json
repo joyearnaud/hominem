@@ -12,18 +12,40 @@
     "about": {
       "name": "about",
       "title": "about",
-      "description": "Presentation, contact and download of the current CV",
+      "description": "Presentation, contact, and download of the current CV",
       "job": {
-        "title": "Full-stack engineer",
+        "title": "Expertise in software development, project management, and system architecture",
         "company": "Freelance",
         "location": "Paris, France",
         "period": "since 2013"
       },
-      "presentation1": "You might wonder what a passionate full-stack web artisan can achieve?",
-      "presentation2": "I shape websites from scratch, harmonizing the foundations of the Web by revving up V8 and unleashing the agility of SpiderMonkey. Servers respond to my call, domains represent my space for expression, and certificates attest to my reliability.",
-      "presentation3": "However, it is behind the scenes of the Web where I truly thrive. As a backend expert, I design, develop, and deploy solid and efficient APIs. My 10 years of experience and the success of numerous projects bear witness to my passion for the inner workings of the Web.",
-      "presentation4": "Always eager for new challenges, I am now looking towards the future and exploring the universe of the Cloud, where I can give free rein to my creativity and expertise.",
-      "presentation5": "As a web artisan, I recognize that there is always more to learn and discover. Faced with an obstacle, I overcome it with audacity and plunge into the unknown, always ready to push the boundaries of what is possible."
+      "company": {
+        "title": "Companies that trusted me"
+      },
+      "presentation0": {
+        "title": "Passionate about Computer Science and Technological Innovation",
+        "description": "Hello, I'm Arnaud Joye, a fullstack engineer based in Paris with a strong expertise in software development, project management, and system architecture. My passion for computer science and my commitment to technological innovation constantly drive me to explore and master new challenges."
+      },
+      "presentation1": {
+        "title": "Diverse Experience",
+        "description": "I have a solid experience in developing complex software solutions. I have worked on various projects, ranging from designing and implementing applications for Infotel and Société Générale, to software architecture and project management at Oodrive and Scipivo. My role as a lead developer at the City of Paris has strengthened my skills in leadership and agile team management."
+      },
+      "presentation2": {
+        "title": "Advanced Technical Skills",
+        "description": "My mastery of Java, Spring, Javascript, Angular, and containers, combined with my experience with SOA and microservices architectures, allows me to design robust and scalable solutions. My interest in the fields of Hyperautomation and API Management demonstrates my ability to integrate the latest innovations into my projects."
+      },
+      "presentation3": {
+        "title": "Project-Oriented Approach",
+        "description": "Whether it's implementing billing systems at Oodrive or co-founding a technology startup, I always have an approach focused on efficiency and innovation. My experience in product and service development, combined with my project management skills, enables me to successfully deliver complex projects."
+      },
+      "presentation4": {
+        "title": "Collaborative and Community Spirit",
+        "description": "I am a strong advocate for teamwork and collaboration. I easily adapt to full remote work as well as full on-site work. Each mode of work simply requires appropriate organization and specific willingness, two aspects that I master and value in my professional practice. Whether it's forming teams at the City of Paris or conducting workshops on API Management, I attach great importance to knowledge sharing and mutual learning."
+      },
+      "presentation5": {
+        "title": "",
+        "description": "I am constantly looking for new challenges and opportunities to apply my passion for technology and my expertise in software development. Feel free to contact me to discuss innovative and collaborative projects!"
+      }
     },
     "experiences": {
       "name": "experiences",

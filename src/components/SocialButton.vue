@@ -73,7 +73,7 @@ export default {
   text-orientation: mixed;*/
 }
 .social-buttons {
-  padding: 16px 16px 16px 16px;
+  padding: 0.2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

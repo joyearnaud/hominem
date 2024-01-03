@@ -1,20 +1,17 @@
 <template>
-
   <main class="layout" role="main">
-
     <Header />
 
     <slot />
 
     <Footer />
-
   </main>
-
 </template>
 
 <script>
- import Header from "~/layouts/partials/Header"; import Footer from "~/layouts/partials/Footer";
-export default { components: { Header, Footer, }, async mounted() {}, };
+import Header from "~/layouts/partials/Header";
+import Footer from "~/layouts/partials/Footer";
+export default { components: { Header, Footer }, async mounted() {} };
 </script>
 
 <style>
@@ -31,6 +28,7 @@ export default { components: { Header, Footer, }, async mounted() {}, };
   --line-color: #00a672;
   --link-color: #7a5422;
   --accent-color: #ff1493;
+  --bkg-logo-color: #fecd43a0;
   --reverted-color: 0;
 }
 :root [data-theme="sepia"] {
@@ -40,6 +38,7 @@ export default { components: { Header, Footer, }, async mounted() {}, };
   --line-color: #5a64c4;
   --link-color: #015238;
   --accent-color: #ff1493;
+  --bkg-logo-color: #fecd43a0;
   --reverted-color: 0;
 }
 
@@ -50,6 +49,7 @@ export default { components: { Header, Footer, }, async mounted() {}, };
   --line-color: #fecd43;
   --link-color: #587af7;
   --accent-color: #ff1493;
+  --bkg-logo-color: #fecd43a0;
   --reverted-color: 1;
 }
 
@@ -267,4 +267,3 @@ article table th {
   color: var(--border-color);
 }
 </style>
-
