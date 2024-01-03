@@ -1,0 +1,10 @@
+hr {
+  margin: 3em;
+  max-width: none;
+  min-width: none;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  border: 1px dashed var(--accent-color);
+  background-color: var(--bkg-color);
+}

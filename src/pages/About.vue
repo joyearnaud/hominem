@@ -172,9 +172,6 @@ div.description .title {
   color: var(--border-color);
   padding-top: 2%;
 }
-hr {
-  margin: 3em;
-}
 
 div.description div.description {
   font-size: 85%;
