@@ -29,6 +29,8 @@ relateTo:
 
 </div>
 
+---
+
 ## Overview
 
 ### Why and when to use Maps?
@@ -102,6 +104,8 @@ classDiagram
 | **getOrDefault**(Object key, V defaultValue) | Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key. |
 | **merge**(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction) | If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
 | **putIfAbsent**(K key, V value) | If the specified key is not already associated with a value (or is mapped to null) associates it with the given value and returns null, else returns the curassociaterent value. |
+
+---
 
 ## Differences
 

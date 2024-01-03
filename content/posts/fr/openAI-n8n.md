@@ -49,6 +49,8 @@ relateTo:
 
 Lorsque l'on écrit des articles et que l'on gère son blog quotidiennement, cela prend du temps. Je vais vous présenter comment tirer profit de l'automatisation avec n8n et OpenAI pour écrire des articles de blog automatiquement et de manière régulière. Ce processus fait gagner un temps considérable et permet par exemple de publier régulièrement des articles sur des sujets novateurs qui se mettent parfois à jour plus rapidement que ce que nous pouvons rédiger manuellement. L'objectif de cet article n'est pas de fournir une méthode pas à pas pour l'installation et la configuration, mais plutôt de donner une idée générale de ce que l'on peut faire avec ces outils.
 
+---
+
 ## Présentation de la stack
 
 Voici une liste des outils que j'utilise pour automatiser l'écriture d'article de blog :
@@ -127,6 +129,8 @@ J'utilise également **Checkly** pour surveiller les performances de notre site 
 
 Maintenant que vous connaissez les outils que j'utilise, je peux vous expliquer l'idée générale du projet.
 
+---
+
 ## Idée générale du projet
 
 Avant de passer au scénario d'automatisation, il est important de comprendre l'idée générale du projet. Voici les points clés à retenir :
@@ -188,6 +192,8 @@ Voici les sources que j'ai utilisées pour trouver des buzzwords pertinents :
 
 En utilisant ces sources, je suis confiant de trouver des buzzwords pertinents pour mes articles de blog, et de les générer automatiquement avec OpenAI et n8n.
 
+---
+
 ## Scénario d'automatisation
 
 Maintenant que l'idée générale est posée et les difficultés identifiées, je vais commencer à travailler sur le scénario d'automatisation. Pour cela, j'utiliserai n8n.
@@ -229,6 +235,8 @@ graph TB
         OpenAIT--translate-->GitHub
     end
 ```
+
+---
 
 ## n8n dans la pratique
 
@@ -357,6 +365,8 @@ relateTo:
 
 ```
 
+---
+
 ## Ce qu'il reste à faire
 
 Bien que l'automatisation de l'écriture d'articles de blog avec n8n et OpenAI puisse être un gain de temps considérable, il y a toujours des améliorations à apporter et des défis à relever. Voici quelques points à considérer pour améliorer et étendre ce système :
@@ -372,6 +382,8 @@ Bien que l'automatisation de l'écriture d'articles de blog avec n8n et OpenAI p
 5. **Gestion des médias** : Intégrer une solution pour la recherche et l'insertion d'images et de vidéos pertinentes dans les articles générés, tout en respectant les droits d'auteur et les licences associées.
 
 6. **Analyse des performances** : Mettre en place un suivi des performances des articles générés automatiquement, en mesurant les indicateurs clés tels que le taux de rebond, le temps passé sur la page et le nombre de vues. Ces données peuvent être utilisées pour affiner davantage le processus d'automatisation et améliorer la qualité des articles générés. Une partie peux être déjà réalisé avec Vercel et Clicky.
+
+---
 
 ## Outro
 

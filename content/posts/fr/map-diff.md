@@ -29,6 +29,8 @@ relateTo:
 
 </div>
 
+---
+
 ## Présentation
 
 ### Pourquoi et quand utiliser une Maps?
@@ -102,6 +104,8 @@ classDiagram
 | **getOrDefault**(Object key, V defaultValue) | Renvoie la valeur à laquelle la clé spécifiée est mappée, ou defaultValue si cette map ne contient aucun mappage pour la clé. |
 | **merge**(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction) | Si la clé spécifiée n'est pas déjà associée à une valeur ou est associée à null, l'associe à la valeur non nulle donnée. |
 | **putIfAbsent**(K key, V value) | Si la clé spécifiée n'est pas déjà associée à une valeur (ou est mappée sur null), l'associe à la valeur donnée et renvoie null, sinon renvoie la valeur actuelle associée. |
+
+---
 
 ## Différences
 

@@ -52,6 +52,8 @@ On parle ainsi d'une économie de temps monstre, et d'un moyen d'assurer une cad
 
 Attention, le but du jeu ici n'est pas de vous donner un tutoriel complet pour l'installation et la configuration. Non, je veux juste vous teaser sur ce que l'on peut faire avec ces outils.
 
+---
+
 ## Présentation de la stack
 
 Et voilà la bande des super-héros qui me permettent d'automatiser la rédaction d'articles de blog :
@@ -129,6 +131,8 @@ Et pour finir, **Checkly** est mon petit espion. Il surveille les performances d
 
 Bon, maintenant que vous avez rencontré toute l'équipe, je vais vous expliquer le plan de bataille.
 
+---
+
 ## Le concept en deux mots
 
 Avant de vous lancer dans la grande aventure de l'automatisation, il faut comprendre le fil rouge du projet. Voici les bases :
@@ -191,6 +195,8 @@ Voici les filons que j'ai exploités pour dégoter des buzzwords intéressants :
   ```
 
 Avec ces sources, je suis sûr de pouvoir trouver des buzzwords qui font mouche pour mes articles de blog, et de les générer automatiquement avec OpenAI et n8n. C'est parti pour l'automatisation !
+
+---
 
 ## L'automatisation en action
 
@@ -350,6 +356,8 @@ relateTo:
 
 ```
 
+---
+
 ## Liste de choses à faire ou mieux faire
 
 Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des articles de blog, il y a toujours des éléments à peaufiner et des challenges à relever. Voici quelques points sur ma liste pour améliorer et étendre ce système :
@@ -365,6 +373,8 @@ Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des
 5. **Gestion des médias** : Je pourrais intégrer une solution pour rechercher et insérer des images et des vidéos pertinentes dans les articles générés, tout en respectant les droits d'auteur et les licences associées.
 
 6. **Analyse des performances** : Il serait intéressant de suivre les performances des articles générés automatiquement, en mesurant des indicateurs clés comme le taux de rebond, le temps passé sur la page et le nombre de vues. Ces données pourraient aider à peaufiner encore plus le processus d'automatisation et améliorer la qualité des articles générés. Une partie de cela peut déjà être réalisée avec Vercel et Clicky.
+
+---
 
 ## En conclusion
 

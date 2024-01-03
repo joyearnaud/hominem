@@ -44,6 +44,8 @@ relateTo:
 
 </div>
 
+---
+
 ## API Management, quésaco ?
 
 L'API Management, ou Gestion des API en bon français, c'est un peu comme le maestro d'un orchestre. Son job, c'est de s'assurer que tout est bien réglé, que les musiciens (ici les API) sont bien à leur place et qu'ils jouent la bonne partition.
@@ -60,6 +62,8 @@ C'est complexe, car l'API Management, ça touche à tout :
 - À l'architecture (gateway proxy)
 - À la gouvernance de données
 - Et même à l'organisationnel
+
+---
 
 ### API Management : un couteau suisse dans le monde du numérique
 
@@ -100,6 +104,8 @@ Dans le monde du retail et de l'e-commerce, les APIs agissent comme des connecte
 Mais ce n'est pas une tâche facile. Imaginez-vous jongler avec une multitude de services tout en maintenant une performance optimale. C'est là que les outils de gestion des API entrent en scène. Ils permettent de gérer la charge de trafic sur un site e-commerce pendant les périodes de forte affluence, tout en surveillant l'utilisation des API pour identifier d'éventuels problèmes de performance.
 
 En somme, avec l'API Management, le monde du e-commerce peut fonctionner de manière fluide, évolutive et sécurisée, offrant ainsi la meilleure expérience utilisateur possible.
+
+---
 
 ### L'historique
 
@@ -163,11 +169,15 @@ Les solutions de Google, Amazon et Microsoft sont très populaires. Les fourniss
 
 Enfin, les solutions open source comme Kong et Tyk gagnent de plus en plus en popularité.
 
+---
+
 ## Mettre en place l'API Management : mode d'emploi
 
 On se lance dans le grand bain de l'API Management. Pour ceux qui ne sont pas familiers, c'est un nouveau champ de bataille avec des règles du jeu qui peuvent dérouter. Il faut s'adapter, s'instruire, `s'immerger dans de nouveaux concepts`. On parle ici d'équipes métiers et techniques qui doivent se synchroniser pour faire tourner cette machine.
 
 Au menu, de nouvelles fonctions et une gouvernance revue. Sans oublier l'aspect le plus important : `une approche API produit`. Parce que oui, une API, ce n'est pas seulement un bout de code. C'est aussi du marketing, de la diffusion, de la commercialisation.
+
+---
 
 ### Les instruments du maître d'orchestre
 
@@ -651,6 +661,8 @@ En permettant à des partenaires et des développeurs de créer des applications
 
 *La monétisation est un aspect important de la gestion d'API, aidant les fournisseurs à créer des programmes d'API durables et rentables.*
 
+---
+
 ## Outro
 
 <img src="https://github.com/joyearnaud/hominem/blob/main/src/assets/apim/choas2.jpg?raw=true"
@@ -669,13 +681,15 @@ Il est important de souligner que c'est le métier, grâce à sa connaissance du
 
 Le processus de gestion d'API commence alors par la conception et la publication d'une API à l'aide d'outils de publication, suivie d'outils de portail pour l'abonnement et la gestion des utilisateurs. Ensuite, des outils de surveillance et de reporting sont utilisés pour s'assurer que les API répondent aux besoins des utilisateurs et fonctionnent correctement.
 
-**Dernière étape: la mnétisation**
+**Dernière étape: la monétisation**
 
 La monétisation intervient une fois que les API sont établies et utilisées de manière efficace. Elle implique la création de modèles de tarification et de structures de paiement, la mise en place de systèmes de facturation et de facturation, ainsi que la gestion des flux de revenus. Ainsi, bien que la monétisation soit importante, elle n'est qu'un élément d'un processus de gestion d'API plus vaste et continu qui nécessite une variété d'outils et de stratégies pour assurer le succès.
 
 `Les solutions de gestion d'API sont essentielles pour aider les organisations à réussir avec leurs programmes API. Ces solutions fournissent une plate-forme sécurisée et évolutive pour gérer les API et garantir que les personnes qui en ont besoin peuvent y accéder rapidement et en toute sécurité. Elles fournissent également des analyses et des informations sur la manière dont les API sont utilisées, ce qui permet aux organisations de mesurer leur succès. De plus, les solutions de gestion d'API peuvent permettre aux organisations de monétiser leurs API et de s'assurer que leur utilisation est documentée et suivie pour se conformer aux réglementations. En tirant parti d'une solution de gestion d'API, les organisations peuvent stimuler le succès de leurs programmes API et maximiser la valeur qu'ils apportent à l'entreprise.`
 
 Ainsi se termine notre parcours de la gestion d'API. Avec une bonne stratégie et les bons outils, le voyage de votre API peut être une route sereine vers le succès.
+
+---
 
 références externes:
 

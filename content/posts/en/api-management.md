@@ -34,6 +34,8 @@ relateTo:
 
 </div>
 
+---
+
 ## What is API Mangement?
 
 API Management is a set of processes for `designing, publishing, documenting and analyzing APIs` within a secure environment.
@@ -47,9 +49,13 @@ API Management covers a wide spectrum of uses because it operates at several lev
 - Data governance
 - Organizational
 
+---
+
 ## How to deal with it?
 
 It comes with `new concepts with which the business and technical teams must become familiar`. This goes through a learning phase in which the organization must also integrate new functions and new modes of governance. These relate to a `necessary product API mindset` which extends from the marketing of APIs to their distribution and commercialization.
+
+---
 
 ### Tools
 
@@ -185,6 +191,8 @@ Monetization also plays a critical role in justifying the investment in API deve
 
 *Monetization is an important aspect of API management, helping providers to create sustainable and profitable API programs.*
 
+---
+
 ## Outro
 
 The process of API management starts with designing and publishing an API using publication tools, followed by portal tools for user subscription and management. Then, monitoring and reporting tools are used to ensure that the APIs are meeting user needs and performing well.
@@ -192,6 +200,8 @@ The process of API management starts with designing and publishing an API using 
 Monetization comes into play once the APIs are established and being used effectively. It involves creating pricing models and payment structures, setting up billing and invoicing systems, and managing revenue streams. Therefore, while monetization is important, it is just one component of a larger, ongoing API management process that requires a variety of tools and strategies to ensure success.
 
 `API Management solutions are essential to help organizations succeed with their API programs. These solutions provide a secure and scalable platform to manage APIs and ensure that the APIs can be accessed quickly and securely by the people who need them. They also provide analytics and insights into how the APIs are being used, allowing organizations to measure their success. Additionally, API management solutions can enable organizations to monetize their APIs and ensure that their usage is documented and tracked for compliance. By leveraging an API management solution, organizations can boost their API programs' success and maximize the value they bring to the enterprise.`
+
+---
 
 External reference:
 
