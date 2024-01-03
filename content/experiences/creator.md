@@ -5,7 +5,6 @@ project: "Création d'entreprise et développement de services"
 role: "Founder and Lead Developer" 
 description: "Co-fondation d'une startup technologique axée sur le développement de services innovants, avec deux projets principaux"
 datestart: 2022-10-09
-dateend: 2023-06-05
 keySkill: "projectManagement"
 skills:
   - "projectManagement"

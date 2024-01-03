@@ -9,15 +9,14 @@
             <div class="timeline-event-copy">
               <g-link :to="$tp(experience.path)">
                 <p class="timeline-event-thumbnail">
-                  <span
-                    class="datestart"
-                    v-html="$d(new Date(experience.datestart), 'short')"
-                  />
-                  <span> - </span>
-                  <span
-                    class="dateend"
-                    v-html="$d(new Date(experience.dateend), 'short')"
-                  />
+                  <span class="datestart"
+                    >{{ $d(new Date(experience.datestart), "short") }}
+                  </span>
+                  -
+                  <span v-if="experience.dateend" class="dateend">{{
+                    $d(new Date(experience.dateend), "short")
+                  }}</span>
+                  <span v-else>{{ $t("present") }}</span>
                 </p>
                 <h3>
                   <span class="client" v-html="experience.client" />

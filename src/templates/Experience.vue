@@ -13,8 +13,12 @@
       </h1>
       <h2 v-html="$page.experience.role" />
       <p class="experience-date">
-        {{ $d(new Date($page.experience.datestart), "short") }} |
-        {{ $d(new Date($page.experience.dateend), "short") }}
+        <span>{{ $d(new Date($page.experience.datestart), "short") }} </span>
+        -
+        <span v-if="$page.experience.dateend">{{
+          $d(new Date($page.experience.dateend), "short")
+        }}</span>
+        <span v-else>{{ $t("present") }}</span>
       </p>
     </div>
 
@@ -206,5 +210,9 @@ query Experience ($path: String!) {
   margin-right: 0.5em;
   margin-top: 0.5em;
   transition: background 1s;
+}
+
+hr {
+  margin: 3em !important;
 }
 </style>
