@@ -36,6 +36,61 @@ Des architecture et solutions complètes utilisant la conteneurisation permetten
 
 ## Docker
 
+Docker, un outil populaire pour la création, le déploiement et la gestion de conteneurs, utilise un ensemble spécifique de termes et de concepts clés. Voici une liste du vocabulaire essentiel associé à Docker
+
+- **Conteneur** : Une instance légère, portable et exécutable qui contient tout ce dont une application a besoin pour s'exécuter, y compris le code, les bibliothèques, les variables d'environnement, et les fichiers de configuration.
+
+- **Image Docker** : Un modèle immuable utilisé pour créer des conteneurs. Il contient l'application et toutes ses dépendances.
+
+- **Dockerfile** : Un script contenant des instructions pour construire une image Docker.
+
+- **Docker Hub** : Un registre public pour trouver, partager et gérer des images Docker.
+
+- **Docker Compose** : Un outil pour définir et exécuter des applications multi-conteneurs avec Docker, en utilisant un fichier YAML pour configurer les services de l'application.
+
+- **Volume** : Un système de stockage persistant utilisé par Docker pour conserver les données générées par et utilisées par les conteneurs Docker.
+
+- **Docker Engine** : Le cœur de Docker, il s'agit d'un service client-serveur qui construit et exécute des conteneurs en utilisant la technologie des conteneurs Linux.
+
+- **Docker Swarm** : Un outil de gestion de cluster pour Docker qui permet de transformer un ensemble de machines Docker en un seul hôte virtuel Docker.
+
+- **Réseau Docker** : La couche de réseau intégrée à Docker qui permet aux conteneurs de communiquer entre eux et avec l'extérieur.
+
+- **Docker Daemon** : Le service en arrière-plan qui gère la création, l'exécution et la distribution des conteneurs Docker.
+
+- **Docker Registry** : Un service de stockage et de distribution d'images Docker. Docker Hub et d'autres solutions tierces offrent des registres Docker.
+
+- **Docker CLI** : L'interface en ligne de commande pour interagir avec Docker.
+
+```mermaid
+graph TD;
+    dockerfile[Dockerfile]
+    image[Docker Image]
+    container[Conteneur]
+    volume[Volume]
+    engine[Docker Engine]
+    daemon[Docker Daemon]
+    cli[Docker CLI]
+    compose[Docker Compose]
+    hub[Docker Hub]
+    registry[Docker Registry]
+    swarm[Docker Swarm]
+    network[Réseau Docker]
+
+    dockerfile -->|construit| image
+    image -->|exécuté par| engine
+    engine --->|gère| container
+    engine -->|communique avec| daemon
+    container -->|utilise| volume
+    cli -->|interagit avec| daemon
+    compose -->|définit| container
+    hub -->|héberge| image
+    registry -->|stocke| image
+    swarm -->|orchestre| container
+    container -->|connecté via| network
+    daemon -->|pull/push| hub
+```
+
 ---
 
 ## Kubernetes
@@ -80,37 +135,37 @@ Pour enrichir votre compréhension de Kubernetes, voici quelques termes clés et
 ```mermaid
 flowchart TD;
     subgraph master [Master/Control Plane]
-    direction BT
-      apiserver[API Server - communique avec les nodes]
-      scheduler[Scheduler - assigne Pods à Nodes]
+    direction LR
+      apiserver["API Server - communique avec les nodes"]
+      scheduler("Scheduler - assigne les pods")
       controller[Controller Manager - gère les contrôleurs]
       etcd[etcd - stocke état et config]
     end
   
     subgraph n1[Node 1 parmis N]
     direction BT
-      kubelet1[Kubelet 11]
+      kubelet1[Kubelet]
       subgraph pn1[pods]
-        pod1[Pod 11]
-        pod2[Pod 12]
+        pod1[Pod 1]
+        pod2[Pod 1]
       end
     end
 
     subgraph c1[Cluster 1 parmis N]
     direction BT
-      deployment[Deployment - gère les pods]
-      service[Service - route vers les pods]
+      deployment[Deployment]
+      service[Service]
       namespace[Namespace - limiter et de gérer l'accès aux ressources]
       n1
     end
 
-    master ----> n1
-    deployment -.-> pn1
-    service -.-> pn1
+    kubectl[Kubectl] -->|interaction utilisateur avec API| master
+    master -->|"gère les clusters"| c1
+    deployment -->|gère les pods| pn1
+    service -->|route vers les pods| pn1
     namespace -.-> pn1
     namespace -.-> deployment
     namespace -.-> service
-    kubectl[Kubectl - interaction utilisateur] --> apiserver
 ```
 
 </article>
