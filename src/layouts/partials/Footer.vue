@@ -11,7 +11,7 @@
       </p>
     </span>
     <p><SocialButton label="true" /></p>
-    <p>© 2022 ➔ 2023 Arnaud JOYE | <a href="#">Credits</a></p>
+    <p>© 2022 ➔ {{ year }} | Arnaud JOYE | <a href="#">Credits</a></p>
   </footer>
 </template>
 
@@ -19,8 +19,16 @@
 import SocialButton from "@/components/SocialButton";
 
 export default {
+  data() {
+    return {
+      year: "current",
+    };
+  },
   components: {
     SocialButton,
+  },
+  async mounted() {
+    this.year = new Date().getFullYear();
   },
 };
 </script>
