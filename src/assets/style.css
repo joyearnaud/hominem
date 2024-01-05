@@ -8,3 +8,36 @@ hr {
   border: 1px dashed var(--accent-color);
   background-color: var(--bkg-color);
 }
+
+hr.round {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+}
+
+article strong {
+  font-family: var(--font-family);
+  font-size: 1.1em;
+  background-color: var(--bkg-color);
+  padding-left: 0.2em ;
+  border-radius: 5px;
+  color: var(--border-color);
+}
+
+article code {
+  font-family: var(--font-family);
+  font-size: 1.1em;
+  background-color: var(--bkg-color);
+  padding-left: 0.2em ;
+  padding-right: 0.2em ;
+  border-radius: 5px;
+  color: var(--accent-color);
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: auto;
+  width: 1024px; 
+  padding: 5px;
+}

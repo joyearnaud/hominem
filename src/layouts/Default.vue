@@ -29,6 +29,7 @@ export default { components: { Header, Footer }, async mounted() {} };
   --link-color: #7a5422;
   --accent-color: #ff1493;
   --bkg-logo-color: #fecd43a0;
+  --diagram-color: #00a672;
   --reverted-color: 0;
 }
 :root [data-theme="sepia"] {
@@ -74,11 +75,6 @@ body {
   padding-right: 20px;
 }
 
-hr.round {
-  border: 2px solid var(--border-color);
-  border-radius: 5px;
-}
-
 a {
   font-family: "IBM Plex Sans Roman";
   color: inherit;
@@ -112,7 +108,6 @@ article h6 {
   margin: 0;
   font-family: Gotham, Tahoma, sans-serif;
   color: var(--border-color);
-  font-style: italic;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -163,14 +158,42 @@ article .mermaid {
   margin-bottom: 2em;
   transition: 2s;
   text-align: center;
+  background-color: black;
 }
 article .mermaid rect {
-  fill: var(--accent-color) !important;
-  stroke: var(--bkg-color) !important;
+  fill: var(--diagram-color) !important;
+  stroke: var(--border-color) !important;
+  border-radius: 15px;
   stroke-width: 1px !important;
+  text-align: center;
+  border: thick double var(--txt-color);
 }
+
+article g rect.basic.label-container {
+  filter: invert(0.8);
+  border: red;
+}
+
+article g g.clusters g#n1.cluster.default rect {
+  filter: invert(0.3);
+}
+
+article g g.cluster-label foreignObject div span.nodeLabel {
+  color: var(--bkg-color) !important;
+  margin-bottom: 4em !important;
+  padding-bottom: 4em !important;
+}
+
+article ul li {
+  padding-bottom: 1em;
+}
+
+article ol li {
+  padding-bottom: 1em;
+}
+
 article .mermaid path {
-  stroke: var(--text-color) !important;
+  stroke: var(--accent-color) !important;
   stroke-width: 2px !important;
 }
 article .mermaid .label {
@@ -180,6 +203,7 @@ article .mermaid .edgeLabel {
 }
 article pre {
   border-radius: 10px;
+  filter: invert(0.9);
 }
 article .img-cover {
   object-fit: cover;
@@ -220,34 +244,37 @@ article .text-letter {
   font-size: 1em;
 }
 article .contenttable {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 1em;
   padding-top: 1em;
   padding-right: 1em;
   padding-left: 1em;
   text-decoration: none;
-  background-color: var(--line-color) !important;
+  background-color: var(--diagram-color) !important;
   color: var(--text-color) !important;
   border: 2px solid var(--border-color);
   border-radius: 5px;
   text-justify: none;
   text-align: start;
 }
-article .contenttable p {
+
+article .contenttable ul li {
+  margin-bottom: 0em !important;
+  padding-bottom: 0em !important;
+}
+
+article .contenttable ul li p {
   margin: 0;
   padding: 0;
 }
 article .contenttable a {
   padding: 1px;
-  color: var(--bkg-color);
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 article .contenttable a:hover {
   color: var(--accent-color);
-  text-decoration: none;
-}
-article code {
-  font-size: 0.8em !important;
+  text-decoration: underline;
 }
 article table {
   margin-bottom: 2em;
