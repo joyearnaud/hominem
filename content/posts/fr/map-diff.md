@@ -46,16 +46,16 @@ Les maps sont parfaites pour le `mappage d'association clé-valeur` tel que les 
 ```mermaid
 classDiagram
     Map~K,V~ <|-- SortedMap~K,V~
-    Map~K,V~ <.. AbstractMap~K,V~
+    Map~K,V~ <|.. AbstractMap~K,V~
     AbstractMap~K,V~ <|-- HashMap~K,V~
-    Map~K,V~ <.. HashMap~K,V~
+    Map~K,V~ <|.. HashMap~K,V~
     HashMap~K,V~ <|-- LinkedHashMap~K,V~
-    Map~K,V~ <.. LinkedHashMap~K,V~
+    Map~K,V~ <|.. LinkedHashMap~K,V~
     SortedMap~K,V~ <|-- NavigableMap~K,V~
-    NavigableMap~K,V~ <.. TreeMap~K,V~
+    NavigableMap~K,V~ <|.. TreeMap~K,V~
     AbstractMap~K,V~ <|-- TreeMap~K,V~
     Map~K,V~ <|-- ConcurrentMap~K,V~
-    ConcurrentMap~K,V~ <.. ConcurrentHashMap~K,V~
+    ConcurrentMap~K,V~ <|.. ConcurrentHashMap~K,V~
     AbstractMap~K,V~ <|-- ConcurrentHashMap~K,V~
 
     class Map{
