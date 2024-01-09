@@ -147,7 +147,7 @@ flowchart TD;
       kubelet1[Kubelet]
       subgraph pn1[pods]
         pod1[Pod 1]
-        pod2[Pod 1]
+        pod2[Pod 2]
       end
     end
 
