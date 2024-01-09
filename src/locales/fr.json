@@ -7,7 +7,7 @@
       "name": "bienvenue",
       "title": "bienvenue",
       "description": "Page d'accueil de 'Dev in progress' avec un blog technologique, des expériences professionnelles et une liste de toutes les compétences déjà testées",
-      "welcome-message": "Bienvenue sur mon site, un espace numérique où je partage mes compétences et réalisations. Vous y trouverez des articles de blog traitant divers sujets intéressants. Explorez mon parcours professionnel et mes projets pour mieux comprendre mon profil unique. Si vous souhaitez collaborer, discuter ou simplement commenter mes écrits, je vous invite à me contacter. Installez-vous et découvrez mon univers !"
+      "welcome-message": "Bienvenue sur mon espace professionnel en ligne, où dynamisme et expertise en technologie se rencontrent. Parcourez mes articles de blog pour des insights pointus, explorez mon parcours et mes projets innovants pour saisir ma vision d'entreprise. Vous avez un projet, une idée, ou simplement envie de réagir ? Je suis à un clic ! Entrez dans mon univers entrepreneurial et découvrons ensemble les possibilités."
     },
     "about": {
       "name": "à propos",
@@ -75,6 +75,7 @@
       "description": ""
     }
   },
+  "present": "présent",
   "minute": "minute",
   "min": "min",
   "read": "lecture",

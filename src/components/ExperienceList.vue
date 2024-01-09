@@ -12,7 +12,7 @@
                   <span class="datestart"
                     >{{ $d(new Date(experience.datestart), "short") }}
                   </span>
-                  -
+                  →
                   <span v-if="experience.dateend" class="dateend">{{
                     $d(new Date(experience.dateend), "short")
                   }}</span>
