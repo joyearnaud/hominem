@@ -152,10 +152,10 @@ export default {
 }
 
 .head {
-  color: var(--text-color);
+  color: var(--skilllist-col-color);
 }
 .col {
-  color: var(--text-color);
+  color: var(--skilllist-col-color);
 }
 
 .col-skill {
