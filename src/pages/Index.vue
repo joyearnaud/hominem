@@ -58,8 +58,7 @@ export default {
         },
         {
           name: "og:image",
-          content:
-            "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png",
+          content: this.$t("page.welcome.image"),
         },
         {
           name: "og:site_name",
@@ -87,20 +86,19 @@ export default {
         },
         {
           name: "twitter:image",
-          content:
-            "https://www.alexandrebonhomme.fr/img/alexandre-bonhomme.jpg",
+          content: this.$t("page.welcome.image"),
         },
         {
           name: "twitter:url",
-          content: "https://www.alexandrebonhomme.fr",
+          content: this.$t("page.welcome.url"),
         },
         {
           name: "twitter:site",
-          content: "@alexbonhomme",
+          content: "@arnaudjoye",
         },
         {
           name: "twitter:creator",
-          content: "@alexbonhomme",
+          content: "@arnaudjoye",
         },
       ],
     };

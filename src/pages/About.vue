@@ -138,6 +138,58 @@ export default {
           name: "robots",
           content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
         },
+        {
+          name: "og:title",
+          content: this.$t("page.about.title"),
+        },
+        {
+          name: "og:description",
+          content: this.$t("page.about.description"),
+        },
+        {
+          name: "og:image",
+          content: this.$t("page.about.image"),
+        },
+        {
+          name: "og:site_name",
+          content: this.$t("page.about.name"),
+        },
+        {
+          name: "og:locale",
+          content: "fr_FR",
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:title",
+          content: this.$t("page.about.title"),
+        },
+        {
+          name: "twitter:description",
+          content: this.$t("page.about.description"),
+        },
+        {
+          name: "twitter:image",
+          content: this.$t("page.about.image"),
+        },
+        {
+          name: "twitter:url",
+          content: this.$t("page.about.url"),
+        },
+        {
+          name: "twitter:site",
+          content: "@arnaudjoye",
+        },
+        {
+          name: "twitter:creator",
+          content: "@arnaudjoye",
+        },
       ],
     };
   },

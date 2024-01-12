@@ -10,12 +10,15 @@
       "welcome-message": "Bienvenue sur mon espace professionnel en ligne, où dynamisme et expertise en technologie se rencontrent. Parcourez mes articles de blog pour des insights pointus, explorez mon parcours et mes projets innovants pour saisir ma vision d'entreprise. Vous avez un projet, une idée, ou simplement envie de réagir ? Je suis à un clic ! Entrez dans mon univers entrepreneurial et découvrons ensemble les possibilités.",
       "keywords": "blog, expériences, compétences, technologie, innovation, entreprise, projet, idée, réaction, univers, possibilités",
       "url": "https://cv.arnaudjoye.fr/fr/",
-      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/main/src/assets/apim/choas2.jpg"
+      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png"
     },
     "about": {
       "name": "à propos",
       "title": "à propos",
       "description": "Présentation, contact et téléchargement du CV actuel",
+      "keywords": "blog, expériences, compétences, technologie, innovation, entreprise, projet, idée, réaction, univers, possibilités",
+      "url": "https://cv.arnaudjoye.fr/fr/about",
+      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png",
       "job": {
         "title": "Expertise en développement logiciel, gestion de projet et architecture systèmes",
         "company": "Freelance",
@@ -53,12 +56,18 @@
     "experiences": {
       "name": "expériences",
       "title": "expériences et projets",
-      "description": "En savoir plus sur les expériences passées et présentes, triées de la plus récente à la plus ancienne, avec des compétences surlignées cliquables."
+      "description": "En savoir plus sur les expériences passées et présentes, triées de la plus récente à la plus ancienne, avec des compétences surlignées cliquables.",
+      "keywords": "blog, expériences, compétences, technologie, innovation, entreprise, projet, idée, réaction, univers, possibilités",
+      "url": "https://cv.arnaudjoye.fr/fr/experience",
+      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png"
     },
     "thoughts": {
       "name": "pensées",
       "title": "blog",
-      "description": "Articles personnels sur des sujets techniques ou organisationnels de missions de développement"
+      "description": "Articles personnels sur des sujets techniques ou organisationnels de missions de développement",
+      "keywords": "blog, expériences, compétences, technologie, innovation, entreprise, projet, idée, réaction, univers, possibilités",
+      "url": "https://cv.arnaudjoye.fr/fr/thought",
+      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png"
     }
   },
   "template": {
