@@ -67,7 +67,7 @@ C'est complexe, car l'API Management, ça touche à tout :
 
 ### API Management : un couteau suisse dans le monde du numérique
 
-Les API, c'est un peu comme les petites mains invisibles qui font tourner notre monde numérique. Elles permettent aux développeurs de construire des applications plus complexes qu'un Rubik's Cube en s'appuyant sur une flopée de services et de plateformes externes.
+Les API, c'est un peu comme les petites mains invisibles qui font tourner notre monde numérique. Elles permettent aux développeurs de construire des applications plus complexes qu'un Rubik's Cube en s'appuyant sur une grande quantité de services et de plateformes externes.
 
 Mais quand tu as une armée d'APIs à gérer, ça peut vite tourner au casse-tête. Voici des exemples de problématiques qu'essaie de résoudre l'API management pour différents secteurs.
 
@@ -244,7 +244,7 @@ L'idée, c'est d'assurer que les équipes et les organisations peuvent non seule
 
 Un manifeste est une déclaration publique des intentions, des objectifs et des valeurs d'une organisation en ce qui concerne son programme API. Il énonce les principes qui guident l'approche de l'organisation en matière de conception, de développement, de déploiement et de gestion d'API.
 
-Le manifeste sert de point de référence pour l'organisation et ses parties prenantes afin de s'assurer que leurs actions sont alignées sur leurs valeurs et leurs objectifs déclarés. Il aide également à communiquer les priorités et l'approche de l'organisation en matière de gestion d'API aux parties externes, telles que les développeurs qui peuvent créer des applications qui consomment les API de l'organisation.
+Le manifeste sert de point de référence pour l'organisation et ses parties prenantes afin de s'assurer que leurs actions sont alignées sur leurs valeurs et leurs objectifs déclarés. Il aide également à communiquer aux parties externes les priorités et l'approche de l'organisation en matière de gestion d'API, telles que les développeurs qui peuvent créer des applications qui consomment les API de l'organisation.
 
 Un manifeste peut couvrir une variété de sujets liés à la gestion d'API, tels que la sécurité, la scalabilité, l'expérience des développeurs et l'ouverture. Par exemple, un manifeste de gestion d'API peut prioriser la facilité d'utilisation pour les développeurs, préconiser l'utilisation de protocoles de sécurité standard de l'industrie et encourager la collaboration avec des développeurs et des partenaires externes.
 
@@ -557,6 +557,10 @@ Un outil de portail se concentre sur la fourniture d'une interface conviviale ba
 </div>
 <div
      class="text-letter">
+     T
+</div>
+<div
+     class="text-letter">
      I
 </div>
 <div
@@ -589,7 +593,7 @@ Les reporting sont un composant essentiel de la gestion des API, fournissant des
 
 ##### Monétisation d'API: un passage clé vers la rentabilité
 
-`Permet de générer des revenus, à l'usage, par forfait ou en créant de nouveau flux avec des partenaires à valeur ajouté basé sur l'API. Permet aussi de justifier les investissement en démontrant la valeur commercial`
+`L'API permet de créer des partenariats stratégiques et de nouveaux flux de revenus, offrant des modèles de tarification flexibles et justifiant les investissements par sa valeur commerciale.`
 
 <div class="text-letter-container">
 <div
@@ -685,7 +689,7 @@ Le processus de gestion d'API commence alors par la conception et la publication
 
 La monétisation intervient une fois que les API sont établies et utilisées de manière efficace. Elle implique la création de modèles de tarification et de structures de paiement, la mise en place de systèmes de facturation et de facturation, ainsi que la gestion des flux de revenus. Ainsi, bien que la monétisation soit importante, elle n'est qu'un élément d'un processus de gestion d'API plus vaste et continu qui nécessite une variété d'outils et de stratégies pour assurer le succès.
 
-`Les solutions de gestion d'API sont essentielles pour aider les organisations à réussir avec leurs programmes API. Ces solutions fournissent une plate-forme sécurisée et évolutive pour gérer les API et garantir que les personnes qui en ont besoin peuvent y accéder rapidement et en toute sécurité. Elles fournissent également des analyses et des informations sur la manière dont les API sont utilisées, ce qui permet aux organisations de mesurer leur succès. De plus, les solutions de gestion d'API peuvent permettre aux organisations de monétiser leurs API et de s'assurer que leur utilisation est documentée et suivie pour se conformer aux réglementations. En tirant parti d'une solution de gestion d'API, les organisations peuvent stimuler le succès de leurs programmes API et maximiser la valeur qu'ils apportent à l'entreprise.`
+`Les solutions de gestion d'API sont essentielles pour aider les organisations à réussir avec leurs programmes API. Ces solutions fournissent une plate-forme sécurisée et évolutive pour gérer les API et garantir que les personnes qui en ont besoin peuvent y accéder rapidement et en toute sécurité. Elles fournissent également des analyses et des informations sur la manière dont les API sont utilisées, ce qui permet aux organisations de mesurer leur efficacité. De plus, les solutions de gestion d'API peuvent permettre aux organisations de monétiser leurs API et de s'assurer que leur utilisation est documentée et suivie pour se conformer aux réglementations. En tirant parti d'une solution de gestion d'API, les organisations peuvent stimuler la réussite de leurs programmes API et maximiser la valeur qu'ils apportent à l'entreprise.`
 
 Ainsi se termine notre parcours de la gestion d'API. Avec une bonne stratégie et les bons outils, le voyage de votre API peut être une route sereine vers le succès.
 

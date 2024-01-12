@@ -90,7 +90,7 @@ Allez, maintenant que les présentations sont faites, on peut passer aux choses 
      class="text-img">
 </div>
 
-**n8n**, c'est comme votre assistant personnel qui gère tout ce qui vous embêtes dans votre routine. Cette plateforme d'automatisation connecte toutes vos applications favorites pour vous épargner les tâches qui vous font perdre du temps. Vous pouvez créer des workflows sur mesure en utilisant des modules préfabriqués ou en ajoutant vos propres modules. C'est mon petit secret pour automatiser la rédaction des articles de blog.
+**n8n**, c'est comme votre assistant personnel qui gère tout ce qui vous embête dans votre routine. Cette plateforme d'automatisation connecte toutes vos applications favorites pour vous épargner les tâches qui vous font perdre du temps. Vous pouvez créer des workflows sur mesure en utilisant des modules préfabriqués ou en ajoutant vos propres modules. C'est mon petit secret pour automatiser la rédaction des articles de blog.
 
 <div class="text-img-container">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
@@ -139,7 +139,7 @@ Avant de vous lancer dans la grande aventure de l'automatisation, il faut compre
 
 - Dans le coin des automates :
   - n8n, c'est votre maître d'œuvre qui fait collaborer toutes vos applis.
-  - OpenAI, c'est votre écrivain personnel qui crache du texte à la demande.
+  - OpenAI, c'est votre écrivain personnel qui débite du texte à la demande.
 - Dans le coin de l'infrastructure du blog :
   - Gridsome transforme vos fichiers Markdown en un site web statique plus rapide que l'éclair.
   - À chaque commit sur GitHub, Vercel se met en marche pour déployer votre site en ligne.
@@ -370,7 +370,7 @@ Même si le combo n8n et OpenAI nous fait gagner un temps fou pour générer des
 
 4. **Automatiser le référencement (SEO)** : Pour que les articles générés soient bien visibles, ça serait bien d'ajouter une étape d'automatisation pour optimiser le référencement des articles, avec des balises méta, des mots clés et des descriptions bien ciblées.
 
-5. **Gestion des médias** : Je pourrais intégrer une solution pour rechercher et insérer des images et des vidéos pertinentes dans les articles générés, tout en respectant les droits d'auteur et les licences associées.
+5. **Gestion des médias** : Nous pourrions intégrer une solution pour rechercher et insérer des images et des vidéos pertinentes dans les articles générés, tout en respectant les droits d'auteur et les licences associées.
 
 6. **Analyse des performances** : Il serait intéressant de suivre les performances des articles générés automatiquement, en mesurant des indicateurs clés comme le taux de rebond, le temps passé sur la page et le nombre de vues. Ces données pourraient aider à peaufiner encore plus le processus d'automatisation et améliorer la qualité des articles générés. Une partie de cela peut déjà être réalisée avec Vercel et Clicky.
 
@@ -384,4 +384,4 @@ En alliant la puissance de l'automatisation de n8n et les capacités bluffantes 
 
 Juste pour vous donner un exemple concret, j'ai utilisé ce workflow pour générer un article sur l'hyperautomation, qui dévoile le concept et explique comment ce processus d'automatisation fonctionne. Vous pouvez le lire [ici](https://cv.arnaudjoye.fr/fr/thought/article-open-ai-hyperautomation/).
 
-Alors, lancez-vous, explorez ces outils et intégrez l'automatisation dans votre propre processus de création de contenu. Vous risquez d'être agréablement surpris par les résultats... :D
+Alors, lancez-vous, explorez ces outils et intégrez l'automatisation dans votre propre processus de création de contenu. Vous risquez d'être agréablement surpris par les résultats... 😉
