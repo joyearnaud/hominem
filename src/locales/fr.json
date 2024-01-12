@@ -7,7 +7,10 @@
       "name": "bienvenue",
       "title": "bienvenue",
       "description": "Page d'accueil de 'Dev in progress' avec un blog technologique, des expériences professionnelles et une liste de toutes les compétences déjà testées",
-      "welcome-message": "Bienvenue sur mon espace professionnel en ligne, où dynamisme et expertise en technologie se rencontrent. Parcourez mes articles de blog pour des insights pointus, explorez mon parcours et mes projets innovants pour saisir ma vision d'entreprise. Vous avez un projet, une idée, ou simplement envie de réagir ? Je suis à un clic ! Entrez dans mon univers entrepreneurial et découvrons ensemble les possibilités."
+      "welcome-message": "Bienvenue sur mon espace professionnel en ligne, où dynamisme et expertise en technologie se rencontrent. Parcourez mes articles de blog pour des insights pointus, explorez mon parcours et mes projets innovants pour saisir ma vision d'entreprise. Vous avez un projet, une idée, ou simplement envie de réagir ? Je suis à un clic ! Entrez dans mon univers entrepreneurial et découvrons ensemble les possibilités.",
+      "keywords": "blog, expériences, compétences, technologie, innovation, entreprise, projet, idée, réaction, univers, possibilités",
+      "url": "https://cv.arnaudjoye.fr/fr/",
+      "image": "https://raw.githubusercontent.com/joyearnaud/hominem/main/src/assets/apim/choas2.jpg"
     },
     "about": {
       "name": "à propos",

@@ -48,6 +48,31 @@ export default {
           name: "robots",
           content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
         },
+        {
+          name: "keywords",
+          content: this.$t("page.welcome.keywords"),
+        },
+        //og
+        {
+          name: "og:title",
+          content: this.$t("page.welcome.title"),
+        },
+        {
+          name: "og:url",
+          content: this.$t("page.welcome.url"),
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
+        {
+          name: "og:description",
+          content: this.$t("page.welcome.description"),
+        },
+        {
+          name: "og:image",
+          content: this.$t("page.welcome.image"),
+        },
       ],
     };
   },
