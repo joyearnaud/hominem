@@ -42,12 +42,9 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     clientSecret: process.env.GRIDSOME_GITHUB_CLIENT_SECRET,
   })
   router.beforeEach((to, _from, next) => {
-    console.log("from", _from.path);
-    console.log("to", to.path);
     head.meta.push({
       key: 'og:url',
       name: 'og:url',
-      // content: process.env.GRIDSOME_BASE_PATH + to.path,
       content: "https://cv.arnaudjoye.fr" + to.path,
     });
     next();

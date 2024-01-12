@@ -48,6 +48,64 @@ export default {
           name: "robots",
           content: "FOLLOW", //FOLLOW,INDEX,NOFOLLOW,NOINDEX
         },
+        {
+          name: "og:title",
+          content: this.$t("page.welcome.title"),
+        },
+        {
+          name: "og:description",
+          content: this.$t("page.welcome.description"),
+        },
+        {
+          name: "og:image",
+          content:
+            "https://www.alexandrebonhomme.fr/img/alexandre-bonhomme.jpg",
+        },
+        {
+          name: "og:url",
+          content: "https://www.alexandrebonhomme.fr",
+        },
+        {
+          name: "og:site_name",
+          content: this.$t("page.welcome.name"),
+        },
+        {
+          name: "og:locale",
+          content: "fr_FR",
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:title",
+          content: this.$t("page.welcome.title"),
+        },
+        {
+          name: "twitter:description",
+          content: this.$t("page.welcome.description"),
+        },
+        {
+          name: "twitter:image",
+          content:
+            "https://www.alexandrebonhomme.fr/img/alexandre-bonhomme.jpg",
+        },
+        {
+          name: "twitter:url",
+          content: "https://www.alexandrebonhomme.fr",
+        },
+        {
+          name: "twitter:site",
+          content: "@alexbonhomme",
+        },
+        {
+          name: "twitter:creator",
+          content: "@alexbonhomme",
+        },
       ],
     };
   },
