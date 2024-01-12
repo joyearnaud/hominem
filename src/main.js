@@ -17,9 +17,19 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Stylish&display=swap'
-  }),
-    appOptions.i18n.setLocaleMessage('en', require('./locales/en.json')),
-    appOptions.i18n.setLocaleMessage('fr', require('./locales/fr.json'))
+  })
+  appOptions.i18n.setLocaleMessage('en', require('./locales/en.json'))
+  appOptions.i18n.setLocaleMessage('fr', require('./locales/fr.json'))
+  head.meta.push({
+    key: 'og:title',
+    name: 'og:title',
+    content: `dev in progress`,
+  });
+  head.meta.push({
+    key: 'og:description',
+    name: 'og:description',
+    content: `Arnaud JOYE's experiences and thoughts on programming`,
+  });
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
@@ -30,5 +40,13 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     repo: process.env.GRIDSOME_GITHUB_REPO,
     clientId: process.env.GRIDSOME_GITHUB_CLIENT_ID,
     clientSecret: process.env.GRIDSOME_GITHUB_CLIENT_SECRET,
+  })
+  router.beforeEach((to, _from, next) => {
+    head.meta.push({
+      key: 'og:url',
+      name: 'og:url',
+      content: process.env.GRIDSOME_BASE_PATH + to.path,
+    });
+    next();
   })
 }
