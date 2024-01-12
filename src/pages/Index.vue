@@ -59,11 +59,7 @@ export default {
         {
           name: "og:image",
           content:
-            "https://www.alexandrebonhomme.fr/img/alexandre-bonhomme.jpg",
-        },
-        {
-          name: "og:url",
-          content: "https://www.alexandrebonhomme.fr",
+            "https://raw.githubusercontent.com/joyearnaud/hominem/f72bd66b367dd774c50623485c4ac9836a020fcb/src/assets/bannier.png",
         },
         {
           name: "og:site_name",
