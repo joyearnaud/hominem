@@ -37,7 +37,21 @@ Le Domain-Driven Design (DDD) est une approche de conception de logiciels qui se
 
 #### Ubiquitous Language
 
+C'est un langage commun, partagé par tous les membres d'une équipe de développement, qui permet de décrire le domaine métier. Ce langage est utilisé pour décrire les concepts du domaine métier, les relations entre ces concepts, les processus métier, etc.
+
+Par exemple, dans le domaine de la banque, le terme `compte` est utilisé pour décrire un compte bancaire. Ce terme est utilisé par les développeurs, les analystes, les testeurs, les utilisateurs, etc. Il est utilisé et diffusé dans les documents, les diagrammes, le code, les tests, etc.
+
+Le terme compte peux aussi être utilisé dans d'autres domaines, par exemple dans le domaine de la comptabilité. Dans ce cas, le terme `compte` fait référence à un compte de résultat, un compte de bilan, etc. Dans ce cas, le terme `compte` n'est pas utilisé pour décrire un compte bancaire.
+
+Il faut bien identifier le contexte dans lequel le terme est utilisé. Le terme `compte` est utilisé dans deux domaines différents, mais il a un sens différent dans chaque domaine. Ainsi pour les distinguer, on peut utiliser le terme "compte bancaire" pour le domaine de la banque et "compte comptable" pour le domaine de la comptabilité. Aussi, il est possible d'utiliser le terme `compte` pour le domaine de la banque et `compte` pour le domaine de la comptabilité, mais dans ce cas, il faut bien préciser le contexte dans lequel le terme est utilisé, avec par exemple "Compte au sens de compte bancaire" et "Compte au sens de compte comptable". **Cette notion est le `Bounded Context`**.
+
+Il est donc important que chaque domaine métier ait son propre langage commun définissant les concepts et les relations entre eux. Ce langage commun est appelé "ubiquitous language". Il permet à tous de partager des notions complexes et de les comprendre de la même manière.
+
 #### Bounded context
+
+C'est un contexte délimité. Il s'agit d'un ensemble de concepts qui ont un sens dans un domaine métier donné. Ils représentent des domaines d'activités métier spécifiques au sein de l'organisation. Ils sont délimités par des frontières qui définissent les limites de ce contexte. Ces frontières peuvent être des frontières organisationnelles, des frontières techniques, des frontières de processus métier, etc.
+
+Dans l'organisation traditionnelle d'une entreprise, les différents départements (comptabilité, marketing, vente, etc.) peuvent être considérés comme des contextes délimités. Dans le domaine de la banque, les différents types de comptes (compte courant, compte épargne, compte titres, etc.) peuvent être considérés comme des contextes délimités.
 
 ##### Diagramme
 
@@ -55,23 +69,23 @@ graph BT
     BC -->|relationships with| CM
 ```
 
-Un bounded context est un contexte délimité. Il s’agit d’un ensemble de concepts qui ont un sens dans un domaine métier donné.
+Un bounded context est un contexte délimité. Il s'agit d'un ensemble de concepts qui ont un sens dans un domaine métier donné.
 
-Un bounded context n’est pas un module. Un contexte délimité fournit le cadre logique au sein duquel le module évolue. Les modules sont utilisés pour organiser les éléments d’un modèle, donc le contexte délimité inclue / englobe le module.
+Un bounded context n'est pas un module. Un contexte délimité fournit le cadre logique au sein duquel le module évolue. Les modules sont utilisés pour organiser les éléments d'un modèle, donc le contexte délimité inclue / englobe le module.
 
-L’aspect négatif découle du fait qu’avoir plusieurs modèles implique que les frontières doivent être définies ainsi que les relations entre les modèles. Ceci peut être difficile à gérer.
+L'aspect négatif découle du fait qu'avoir plusieurs modèles implique que les frontières doivent être définies ainsi que les relations entre les modèles. Ceci peut être difficile à gérer.
 
-Il n’est pas suffisant d’avoir des modèles unifiés séparés. Ils doivent être intégrés, car la fonctionnalité de chaque modèle fait partie du système entier / dans son ensemble. A la fin, les bouts doivent être assemblés, et le système dans son ensemble doit fonctionner correctement.
+Il n'est pas suffisant d'avoir des modèles unifiés séparés. Ils doivent être intégrés, car la fonctionnalité de chaque modèle fait partie du système entier / dans son ensemble. A la fin, les bouts doivent être assemblés, et le système dans son ensemble doit fonctionner correctement.
 
 ##### Terminologie
 
 ###### Continuous integration
 
-L’intégration continue est un process nécessaire dans le cadre d’un contexte délimité. Ce process d’intégration permet de s’assurer que l’ensemble des nouveaux éléments qui sont ajoutés correspondent de manière harmonieuse au reste du modèle, et sont correctement implémentés dans le code.
+L'intégration continue est un process nécessaire dans le cadre d'un contexte délimité. Ce process d'intégration permet de s'assurer que l'ensemble des nouveaux éléments qui sont ajoutés correspondent de manière harmonieuse au reste du modèle, et sont correctement implémentés dans le code.
 
 ###### Context map
 
-Il est conseillé d’utiliser le contexte sur la base de l’organisation de l’équipe. Les individus appartenant à la même équipe peuvent communiquer plus facilement, et peuvent faire un meilleur travail d’intégration et d’implémentation du modèle. Si chaque équipe travaille sur son propre modèle, il est préférable que tout le monde ait une idée de la vue d’ensemble / vision globale.
+Il est conseillé d'utiliser le contexte sur la base de l'organisation de l'équipe. Les individus appartenant à la même équipe peuvent communiquer plus facilement, et peuvent faire un meilleur travail d'intégration et d'implémentation du modèle. Si chaque équipe travaille sur son propre modèle, il est préférable que tout le monde ait une idée de la vue d'ensemble / vision globale.
 
 Un contexte map est un document qui esquisse les différents Bounded Context ainsi que les relations entre eux. Un Context map peut être un diagramme ou un document écrit. Le niveau de détail peut varier.
 
@@ -129,41 +143,41 @@ graph BT
 
 ###### Les Entités
 
-Les entités sont des catégories d’objet qui ont une identité qui au-delà des attributs qu’ils possèdent conservent une certaine continuité et une identité unique (i.e. une personne, un compte bancaire) pendant leur cycle de vie. Ceci peut se matérialiser au travers d’un identifiant unique, d’une clef primaire unique, etc.
+Les entités sont des catégories d'objet qui ont une identité qui au-delà des attributs qu'ils possèdent conservent une certaine continuité et une identité unique (i.e. une personne, un compte bancaire) pendant leur cycle de vie. Ceci peut se matérialiser au travers d'un identifiant unique, d'une clef primaire unique, etc.
 
 Ces objets sont des objets fondamentaux du modèle et doivent être identifiés dès le début du processus de modélisation.
 
 ###### Value objects (objets-valeurs)
 
-Un objet valeur, est une classe utilisée pour décrire certains aspects d’un domaine (métier), et qui ne possède pas une identité. Ici nous sommes intéressés par les attributs que possèdent l’objet et non pas son unicité. Ces objets-valeurs peuvent être créés et détruits lorsqu’ils ne sont plus référencés par un objet. Ces objets-valeurs doivent être immuables pendant leur durée de vie. Si l’on souhaite qu’ils aient une valeur différente, vaut mieux en créer un autre.
+Un objet valeur, est une classe utilisée pour décrire certains aspects d'un domaine (métier), et qui ne possède pas une identité. Ici nous sommes intéressés par les attributs que possèdent l'objet et non pas son unicité. Ces objets-valeurs peuvent être créés et détruits lorsqu'ils ne sont plus référencés par un objet. Ces objets-valeurs doivent être immuables pendant leur durée de vie. Si l'on souhaite qu'ils aient une valeur différente, vaut mieux en créer un autre.
 
-Etant donné que ce sont des objets sans identité et immuables, les objets-valeurs peuvent donc être partagés. Ceci permet de garantir l’intégrité de la donnée.
+Etant donné que ce sont des objets sans identité et immuables, les objets-valeurs peuvent donc être partagés. Ceci permet de garantir l'intégrité de la donnée.
 
-Les objets-valeurs sont utilisés pour contenir des attributs d’un objet métier.
+Les objets-valeurs sont utilisés pour contenir des attributs d'un objet métier.
 
 ###### Services
 
 Lorsque nous définissons le _ubiquitous_ _language_, les concepts clefs du métier sont introduits dans le langage. Les noms du langage sont reproduits en objets, en classes. Les verbes du langage associés aux noms correspondants deviennent une partie du comportement de ces objets, des méthodes.
 
-En revanche, il arrive parfois qu’il y ait des comportements actions, verbes du domaine métier qui ne peuvent être associés à un objet en particulier. Il peut s’agir d’un comportement partagé entre diverses classes mais qui ne peut être lié à aucune directement pour autant.
+En revanche, il arrive parfois qu'il y ait des comportements actions, verbes du domaine métier qui ne peuvent être associés à un objet en particulier. Il peut s'agir d'un comportement partagé entre diverses classes mais qui ne peut être lié à aucune directement pour autant.
 
 On peut déclarer un tel comportement comme un Service dont le seul rôle est de fournir une fonctionnalité au métier au service des entités et des objets-valeurs. Le Service encapsule un concept. Les Services agissent comme les Interfaces qui fournissent des opérations, on peut les utiliser dans la couche métier. Le Service est un point de connexion entre plusieurs objets.
 
 ###### Modules
 
-Les Modules sont une méthode qui permet d’organiser des concepts et des tâches qui ont un lien les uns avec les autres de manière à réduire la complexité. Ceci est notamment important pour les applications larges et complexes, pour lesquels le modèle à tendance à grossir à un point où il devient difficile de l’appréhender comme un tout et de comprendre les relations et les interactions entre ses différents composants.
+Les Modules sont une méthode qui permet d'organiser des concepts et des tâches qui ont un lien les uns avec les autres de manière à réduire la complexité. Ceci est notamment important pour les applications larges et complexes, pour lesquels le modèle à tendance à grossir à un point où il devient difficile de l'appréhender comme un tout et de comprendre les relations et les interactions entre ses différents composants.
 
-Cette gestion de la complexité consiste à définir plusieurs modules à un projet, les relations entre les modules, comprendre les interactions entre eux et ensuite seulement regarder les détails à l’intérieur d’un module.
+Cette gestion de la complexité consiste à définir plusieurs modules à un projet, les relations entre les modules, comprendre les interactions entre eux et ensuite seulement regarder les détails à l'intérieur d'un module.
 
 Recourir aux modules permet de garantir aussi la qualité du code. Le code doit avoir un niveau élevé de cohésion et un faible niveau de couplage.
 
 ###### Agrégats / Factories / Repositories
 
-Les objets du domaine traversent un certain nombre d’états pendant leur durée de vie. Ces objets sont créés, placés en mémoire, utilisés pendant les traitements, sauvegardés dans des endroits permanents et ensuite détruits.
+Les objets du domaine traversent un certain nombre d'états pendant leur durée de vie. Ces objets sont créés, placés en mémoire, utilisés pendant les traitements, sauvegardés dans des endroits permanents et ensuite détruits.
 
 Il existe trois patterns qui peuvent gérer cela.
 
-**Les `agrégats` permettent de définir la propriété et les frontières des objets. Ils peuvent être composés d’une entité + value object.**
+**Les `agrégats` permettent de définir la propriété et les frontières des objets. Ils peuvent être composés d'une entité + value object.**
 
 Un **agrégat DDD** est un regroupement d'objets de domaine qui peuvent être traités comme une seule unité. Un exemple peut être une commande et ses articles, qui sont des objets distincts, mais il est utile de traiter la commande (avec ses articles) comme un seul agrégat.
 
